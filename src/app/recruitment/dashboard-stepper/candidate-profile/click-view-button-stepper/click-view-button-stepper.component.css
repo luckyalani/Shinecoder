@@ -1,0 +1,183 @@
+p {
+  margin: 0px;
+  padding: -0px;
+}
+.search-bar {
+  position: relative;
+}
+
+.icon-search {
+  position: absolute;
+  top: 5px;
+  left: 1px;
+}
+
+@media (max-width: 767px) {
+  /* heading and button */
+
+  .source-sercha .mat-mdc-raised-button:not(:disabled) {
+    width: 30% !important;
+  }
+  .button-width {
+    width: 100%;
+    /* margin-bottom: 0.5rem; */
+  }
+
+  .heading-top {
+    width: 100%;
+    text-align: left;
+  }
+
+  .icon-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-bar {
+    display: flex;
+  }
+
+  /* .search-div {
+          flex-direction: column;
+          gap: 10px;
+      } */
+
+  .action-btn-gap {
+    justify-content: center !important;
+    /* width: none !important; */
+  }
+}
+
+.delete-with-text {
+  font-size: 10px !important;
+}
+
+.line-div {
+  display: flex;
+  align-items: center;
+  gap: -1;
+  width: 100%;
+}
+
+.arrow-icon {
+  color: #0163d2;
+  font-size: 8px;
+  width: fit-content;
+  height: 100% !important;
+  transform: rotate(45deg);
+}
+
+.text-primary {
+  color: #0163d2;
+}
+
+.line {
+  width: 100%;
+  background-color: #0163d2;
+  height: 1px;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+::ng-deep .manuf-tab .mat-mdc-tab-labels {
+  flex-wrap: wrap !important;
+}
+
+/* ::ng-deep .manuf-tab .mdc-tab {
+    margin: 5px !important;
+} */
+
+::ng-deep .manuf-tab .mat-mdc-tab-body-wrapper {
+  box-shadow: unset !important;
+}
+
+/* --------------------------------------icons--------------------------- */
+.icon-div button {
+  padding: 2px 10px;
+  color: white;
+
+}
+.mail-icon {
+  background-color: rgb(51, 181, 233);
+  margin-left: 10px;
+  text-wrap: nowrap;
+}
+.star-icon {
+  background-color: orange;
+  margin-left: 10px;
+}
+.edit-icon {
+  background-color: blue;
+  margin-left: 10px;
+}
+.doctor-icon {
+  background-color: lightgreen;
+  margin: 0 10px;
+}
+
+/* Mat menu content */
+::ng-deep .cdk-overlay-pane .mat-mdc-elevation-specific .mat-mdc-menu-content{
+  overflow: visible;
+  margin-right:20px !important;
+ }
+
+ /* Overlay pane */
+::ng-deep .doctor-icon .cdk-overlay-container .cdk-overlay-pane{
+  margin-top: 10px;
+  margin-right:40px;
+  overflow: visible !important;
+
+
+ }
+ 
+ 
+/* 
+:host > .container {
+    max-width: 1264px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background: none;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    flex: 1 0 auto;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#content {
+    box-sizing: content-box;
+    margin: 0 auto;
+    width: 1264px;
+    background-color: #ffffff;
+}
+
+#content {
+    max-width: 1100px;
+    width: 100%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+#content,
+#main-content {
+    content: "";
+    display: table;
+}
+
+#content::after,
+#main-content::after {
+    clear: both;
+}
+
+.dropdown {
+    padding: 10px;
+} */
+
+/* --------------------------------------icons--------------------------- */

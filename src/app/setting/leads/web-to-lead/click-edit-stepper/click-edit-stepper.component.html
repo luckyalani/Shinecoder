@@ -1,0 +1,60 @@
+<div class="p-10">
+    <div class="d-flex jc-sb align-items-center heading-column ">
+        <div class="heading-top">
+            <h1 class="text-dark">Leads</h1>
+        </div>
+        <div class="button-width">
+        </div>
+    </div>
+
+    <div class="main-container boxed space manuf-tab">
+
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="tab-group div-2">
+            <!-- General  -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+                    <span class="m-l-5">Form Builder</span>
+                </ng-template>
+                <app-click-edit-second-stepper></app-click-edit-second-stepper>
+
+            </mat-tab>
+
+            <!-- Branding  -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+
+                    <span class="m-l-5"> Form Information & Setup</span>
+                </ng-template>
+                <app-add-new-stapper></app-add-new-stapper>
+            </mat-tab>
+
+            <!-- Submission -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+
+                    <span class="m-l-5"> Integration Code</span>
+                </ng-template>
+                <app-second-stepper-integration-code></app-second-stepper-integration-code>
+
+            </mat-tab>
+
+
+
+
+        </mat-tab-group>
+    </div>
+
+
+    <!-- <hr>
+    <div class="d-flex gap-2 p-10">
+        <button mat-dialog-close="true"
+            class="bg-success"
+            mat-raised-button> Save</button>
+        <button mat-dialog-close="true"
+            class="bg-close"
+            mat-raised-button color="primary">Close</button>
+        
+    </div> -->
+
+
+</div>

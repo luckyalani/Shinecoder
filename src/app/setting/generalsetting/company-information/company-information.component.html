@@ -1,0 +1,110 @@
+<div class="main-container boxed space">
+    <div class="d-flex jc-sb align-items-center heading-column ">
+        <div class="heading-top">
+            <h1 class="text-dark">Company Information</h1>
+        </div>
+        <div class="button-width"></div>
+    </div>
+    <app-general-setting-headings></app-general-setting-headings>
+
+<p class="text-bg-blue" >These information will be displayed on invoices/estimates/payments and other PDF documents where company info is required</p>
+  
+<div class="form-row">
+        <!-- Left Side -->
+        <div class="in-form-row">
+            <div>
+                <mat-label class="form-input-label">Company Name </mat-label>
+                <div class="calendar-input-field">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input" placeholder="Company Name">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div>
+                <mat-label class="form-input-label">City </mat-label>
+                <div class="calendar-input-field">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input" placeholder="Company Name">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div>
+                <mat-label class="form-input-label">Country Code </mat-label>
+                <div class="calendar-input-field">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input" placeholder="Canada [CA]">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div>
+                <mat-label class="form-input-label">Phone </mat-label>
+                <div class="calendar-input-field">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input" placeholder="9855">
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+        <!-- ---------------------Right Side----------------------------- -->
+        <div class="in-form-row">
+            <div>
+                <mat-label class="form-input-label">Address </mat-label>
+                <div class="calendar-input-field">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input" placeholder="172 Ivy Club Gottliebfurt">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div>
+                <mat-label class="form-input-label">State </mat-label>
+                <div class="calendar-input-field">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input" placeholder="">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div>
+                <mat-label class="form-input-label">Zip Code</mat-label>
+                <div class="calendar-input-field">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input" placeholder="2364">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div>
+                <mat-label class="form-input-label">VAT Number </mat-label>
+                <div class="calendar-input-field">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input" placeholder="">
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+        <mat-label class="form-input-label">Company Information Format (PDF and HTML)</mat-label>
+        <textarea name="" id="" cols="50" rows="20" class="mat-input text-area">
+  {company_name}
+    {address}           
+    {city} {state}           
+    {country_code} {zip_code}           
+    {vat_number_with_label}</textarea>
+    </div>
+    <p class="text-blue" >
+        <span>{{ '{' }}company_name{{ '}' }}, {{ '{' }}address{{ '}' }}, {{ '{' }}city{{ '}' }}, {{ '{' }}state{{ '}' }}, {{ '{' }}zip_code{{ '}' }}, {{ '{' }}country_code{{ '}' }}, {{ '{' }}phone{{ '}' }}, {{ '{' }}vat_number{{ '}' }}, {{ '{' }}vat_number_with_label{{ '}' }}</span>
+    </p>
+    
+    
+    <hr>
+    <div class="d-flex gap-1 p-10">
+        <button mat-dialog-close="true"
+            class=" mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base "
+            mat-raised-button color="warn">Cancel</button>
+        <button mat-dialog-close="true"
+            class="bg-success"
+            mat-raised-button> Save</button>        
+        
+    </div>
+</div>

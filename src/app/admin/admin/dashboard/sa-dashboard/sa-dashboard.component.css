@@ -1,0 +1,102 @@
+.card-div {
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    justify-content: space-between;
+}
+
+.numbers {
+    color: #301e6b;
+    font-weight: 800;
+    font-size: 14px;
+    margin: 0;
+}
+.width{
+    width: 12rem;
+}
+
+.cards-1 {
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 0px 0px rgb(71 85 105);
+    padding: 7px 10px;
+}
+
+.cards-2 {
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 0px 0px rgb(18 139 206);
+    padding: 7px 10px;
+}
+
+.cards-3 {
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 0px 0px rgb(194 132 4);
+    padding: 7px 10px;
+}
+
+.cards-4 {
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 0px 0px rgb(239 68 68);
+    padding: 7px 10px;
+}
+
+.cards-5 {
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 0px 0px rgb(22 163 74);
+    padding: 7px 10px;
+}
+
+.card-p-1 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #5e6a7c;
+    margin: 0;
+}
+
+.card-p-2 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #128bcb;
+    margin: 0;
+}
+
+.card-p-3 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ca8a04;
+    margin: 0;
+}
+
+.card-p-4 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ef4444;
+    margin: 0;
+}
+
+.card-p-5 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #16a34a;
+    margin: 0;
+}
+
+
+
+
+
+
+
+@media (max-width: 767px){
+    .cards-main-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    
+}

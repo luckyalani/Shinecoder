@@ -1,0 +1,135 @@
+<div class="rounded">
+    <div class="d-flex jc-e p-10 bg-light align-items-center">
+        <svg class="close-btn" (click)="closepopup()" xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em"
+            viewBox="0 0 32 32">
+            <path fill="#f70202"
+                d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2m5.4 21L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z" />
+        </svg>
+    </div>
+    <div class="p-20">
+        <!-- Strreet -->
+        <div class="">
+            <mat-label class="form-input-label">Street</mat-label>
+            <div>
+                <textarea name="" id="" cols="30" rows="10" class="mat-input text-area"></textarea>
+            </div>
+        </div>
+        <!-- City And state Div -->
+        <div class="d-flex jc-sb">
+            <div class="inner-left">
+                <mat-label class="form-input-label">City</mat-label>
+                <div class="calendar-input-field">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input" placeholder="Harveyfurt">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="inner-right">
+                <mat-label class="form-input-label">State </mat-label>
+                <div class="calendar-input-field">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input" placeholder="New Jersey">
+                    </mat-form-field>
+                </div>
+            </div>
+
+        </div>
+        <!-- Country and Zip Code div -->
+        <div class="d-flex jc-sb">
+            <div class="inner-left">
+                <mat-label class="form-input-label">Zip</mat-label>
+                <div class="calendar-input-field">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input" placeholder="08191">
+                    </mat-form-field>
+                </div>
+
+            </div>
+            <div class="inner-right">
+                <mat-label class="form-input-label">Country</mat-label>
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-select class="select_in" placeholder="Draft">
+                            <mat-option value="Antarctica AQ">Antarctica AQ</mat-option>
+                            <mat-option value="Antarctica AQ">Antarctica AQ</mat-option>
+                            <mat-option value="Antarctica AQ">Antarctica AQ</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="p-l-20">
+        <div class="float-right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
+                <path fill="#0163d2"
+                    d="M12 12q-1.65 0-2.825-1.175T8 8q0-1.65 1.175-2.825T12 4q1.65 0 2.825 1.175T16 8q0 1.65-1.175 2.825T12 12m-8 8v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q1.65 0 3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2V20z" />
+            </svg>
+        </div>
+        <div>
+            <mat-checkbox class="example-margin" color="primary"></mat-checkbox>
+            <span class="text-medium fs-16">Send also an email for this reminder</span>
+        </div>
+        <div>
+            <mat-checkbox class="example-margin" color="primary" checked></mat-checkbox>
+            <span class="text-medium fs-16">Show shipping details in invoice</span>
+        </div>
+    </div>
+
+    <div class="p-20">
+        <!-- Strreet -->
+        <div class="">
+            <mat-label class="form-input-label">Street</mat-label>
+            <div>
+                <textarea name="" id="" cols="30" rows="10" class="mat-input text-area"></textarea>
+            </div>
+        </div>
+        <!-- City And state Div -->
+        <div class="d-flex jc-sb">
+            <div class="inner-left">
+                <mat-label class="form-input-label">City</mat-label>
+                <div class="calendar-input-field">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input" placeholder="Harveyfurt">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="inner-right">
+                <mat-label class="form-input-label">State </mat-label>
+                <div class="calendar-input-field">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input" placeholder="New Jersey">
+                    </mat-form-field>
+                </div>
+            </div>
+
+        </div>
+        <!-- Country and Zip Code div -->
+        <div class="d-flex jc-sb">
+            <div class="inner-left">
+                <mat-label class="form-input-label">Zip</mat-label>
+                <div class="calendar-input-field">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input" placeholder="08191">
+                    </mat-form-field>
+                </div>
+
+            </div>
+            <div class="inner-right">
+                <mat-label class="form-input-label">Country</mat-label>
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-select class="select_in" placeholder="Draft">
+                            <mat-option value="Antarctica AQ">Antarctica AQ</mat-option>
+                            <mat-option value="Antarctica AQ">Antarctica AQ</mat-option>
+                            <mat-option value="Antarctica AQ">Antarctica AQ</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex gap-2 p-10 b-t">
+        <button (click)="closepopup()" mat-raised-button color="primary">Apply</button>
+    </div>
+</div>

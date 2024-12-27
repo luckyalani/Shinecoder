@@ -1,0 +1,39 @@
+.search-bar {
+    position: relative;
+}
+
+.search-div {
+    gap: 5px;
+
+}
+
+.icon-search {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+}
+.no-data-p{
+    margin: 1rem;
+    text-align: center;
+    font-size: 20px;
+    color:gray
+}
+
+
+@media (max-width: 767px) {
+
+    .right-icon {
+        flex-direction: column;
+        width: 100%;
+    }
+    .icon-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .search-bar {
+        display: flex;
+    }
+    
+    
+   
+}

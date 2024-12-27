@@ -1,0 +1,90 @@
+
+
+.space{
+    /* padding:1rem; */
+}
+
+.header{
+    background-color: #f6f6f6;
+    /* padding: 0 1rem; */
+}
+mat-icon{
+    color:red;
+}
+
+.heading{
+    font-weight: 500;
+    color: black;
+}
+.description{
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 3rem; */
+    margin: 1rem 0rem;
+}
+
+.instructions{
+    /* border: 0.1rem solid #e1dafb; */
+   
+    border-radius: 0.3rem;
+    background-color: #e1dafb;
+}
+
+ol li {
+    margin: 0 0.2rem;
+    color:#0163d2;
+    font-size: 13px;
+    font-weight: 500;
+}
+.special-list{
+    color: red !important;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+   
+    align-items: center;
+}
+.icon_and_heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.importing{
+    display: flex;
+    gap: 2.5rem;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+.choosing{
+    width: 25%;
+    margin-left: 15px;
+}
+
+p{
+    font-size: 13px;
+    color: black;
+    font-weight: 500;
+}
+
+
+img{
+    width: 100%;
+    height: 75%;
+}
+#attachmentBtn{
+    padding: 5px;
+    margin-block: 15px;
+    margin-inline: 15px;
+}
+
+#text{
+    border-radius:5px ;
+    margin: 15px;
+    /* margin: auto; */
+    padding-block: 10px;
+    width: 90%;
+}

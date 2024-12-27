@@ -1,0 +1,90 @@
+<div class="main-container boxed space">
+    <div class="d-flex jc-sb align-items-center heading-column ">
+        <div class="heading-top">
+            <h1 class="text-dark">General</h1>
+        </div>
+        <div class="button-width">
+        </div>
+    </div>
+    <app-general-setting-headings></app-general-setting-headings>
+
+    <div class="p-10">
+        <div>
+            <div class=" w-100 " [ngClass]="{'hide-image': imageHidden}">
+                <div class="click-hide">
+                    <p class="cancle-x" (click)="onhide()">x</p>
+                    <img class="logo-fav" src="assets/images/fav1.png" alt="Group 1000005973.png">
+                </div>
+                <hr>
+            </div>
+            <div class=" w-100" [ngClass]="{'hide-image2': imageHidden2}">
+                <div class="click-hide">
+                    <p class="cancle-x-2" (click)="onhide2()">x</p>
+                    <img class="img-g" src="assets/images/Logo 3.png" alt="Group 1000005974.png">
+                </div>
+                <hr>
+            </div>
+            <div class=" w-100" [ngClass]="{'hide-image3': imageHidden3}">
+                <div class="click-hide">
+                    <p class="cancle-x-3" (click)="onhide3()">x</p>
+                    <img class="img-g" src="assets/images/Logo 3.png" alt="Group 1000005975.png">
+
+                </div>
+                <hr>
+            </div>
+        </div>
+
+
+        <div>
+            <mat-label class="form-input-label"> Company Name</mat-label>
+            <div class="selected-form-field">
+                <input type="text" class="mat-input" placeholder="Perfex CRM">
+            </div>
+        </div>
+        <div>
+            <mat-label class="form-input-label"> Company Main Domain</mat-label>
+            <div class="selected-form-field">
+                <input type="text" class="mat-input" placeholder="https://perfexcrm.com">
+            </div>
+        </div>
+
+
+        <div class="">
+            <mat-label class="form-input-label" class="form-input-label"> RTL Admin Area (Right to Left)</mat-label>
+            <div>
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="">Yes </mat-radio-button>
+                    <mat-radio-button value="">No </mat-radio-button>
+                </mat-radio-group>
+            </div>
+        </div>
+        <div class="">
+            <mat-label class="form-input-label" class="form-input-label"> RTL Customers Area (Right to Left)</mat-label>
+            <div>
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="">Yes </mat-radio-button>
+                    <mat-radio-button value="">No </mat-radio-button>
+                </mat-radio-group>
+            </div>
+        </div>
+
+        <div>
+            <mat-label class="form-input-label"> Allowed file types</mat-label>
+            <div class="selected-form-field">
+                <input type="text" class="mat-input" placeholder=".png,.jpg,.pdf,.doc,.docx,.xls,.xlsx,.zip,.rar,.txt">
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+    <div class="d-flex gap-1 p-10">
+        <button mat-dialog-close="true"
+            class=" mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base "
+            mat-raised-button color="warn">Cancel</button>
+        <button mat-dialog-close="true"
+            class="bg-success"
+            mat-raised-button> Save</button>
+
+    </div>
+</div>

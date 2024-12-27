@@ -1,0 +1,67 @@
+<div class="main-container boxed space manuf-tab">
+    <div class="d-flex gap-1 align-items-center m-b-10">
+        <div>
+            <h1 class="text-dark text-primary m-0">Setting</h1>
+        </div>
+        <div class="line-div">
+            <mat-icon class="arrow-icon">square</mat-icon>
+            <p class="line "></p>
+        </div>
+    </div>
+    <div class="form">
+        <div class=" d-flex gap-1 flex-wrap">
+            <button routerLink="/market-place/accounting/setting/general" class="disactive">General</button>
+            <button routerLink="/market-place/accounting/setting/banking-rules" class="disactive">Banking Rules</button>
+            <button routerLink="/market-place/accounting/setting/mapping-setup" class="disactive">Mapping Setup</button>
+            <button routerLink="/market-place/accounting/setting/account-detail-type" class="disactive">Account Detail
+                Type</button>
+            <button routerLink="/market-place/accounting/setting/plaid-environment" class="active">Plaid
+                Environment</button>
+        </div>
+    </div>
+
+    <div class="form">
+        <div>
+            <p class="m-0 fw-medium fs-14">Plaid environment</p>
+            <mat-radio-group aria-label="Select an option" class="radio-btns">
+                <mat-radio-button value="one">Live</mat-radio-button>
+                <mat-radio-button value="two" checked>Sandbox</mat-radio-button>
+            </mat-radio-group>
+        </div>
+        <div class="m-t-10">
+            <mat-label class="form-input-label">client_id
+            </mat-label>
+            <div class="m-t-10">
+                <mat-form-field appearance="outline" class="form-field">
+                    <input matInput class="input" placeholder="64035af80eef210013839c08">
+                </mat-form-field>
+            </div>
+        </div>
+        <p class="bg-light-blue">Secrets</p>
+        <div class="d-flex flex-wrap gap-1">
+            <div class="w-full">
+                <mat-label class="form-input-label">Live
+                </mat-label>
+                <div class="m-t-10">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input" placeholder="2">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="w-full">
+                <mat-label class="form-input-label">Sandbox
+                </mat-label>
+                <div class="m-t-10">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input" placeholder="abe4840b674fe6874fb0bd7ca5e040">
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <mat-divider></mat-divider>
+    <div>
+        <button mat-raised-button class="bg-success">Save</button>
+    </div>
+</div>

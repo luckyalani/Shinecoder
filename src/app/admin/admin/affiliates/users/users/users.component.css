@@ -1,0 +1,45 @@
+.search-bar {
+    position: relative;
+}
+
+.search-div {
+    gap: 5px;
+
+}
+
+.icon-search {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+}
+.approved {
+    background-color: #CDFFD2;
+    color: #00C814;
+    border: 1px solid #00C814;
+    border-radius: 0.3rem;
+    padding: 4px 0px;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+
+
+@media (max-width: 767px) {
+
+    .right-icon {
+        flex-direction: column;
+        width: 100%;
+    }
+    .icon-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .search-bar {
+        display: flex;
+    }
+    
+    
+   
+}

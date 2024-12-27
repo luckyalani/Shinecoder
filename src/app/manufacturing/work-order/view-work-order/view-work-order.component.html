@@ -1,0 +1,218 @@
+<div class="main-container boxed space manuf-tab">
+    <div class="d-flex align-items-center m-b-10">
+        <div>
+            <h1 class="text-dark text-primary m-0 m-r-5">Manufacturing</h1>
+        </div>
+        <div class="line-div">
+            <mat-icon class="arrow-icon">square</mat-icon>
+            <p class="line "></p>
+        </div>
+    </div>
+    <div class="form">
+        <!-- -------------------------------Laser Div Start--------------------------- -->
+        <div>
+            <div class="p-10 box-shadow "><button mat-raised-button color="primary">Service order / GH00124 - product
+                    test 21 - Cutting</button>
+            </div>
+            <div class="d-flex jc-e ">
+                <div class="outer one fs-10 d-flex jc-sb align-items-center p-5">
+                    <span>Waiting for another WO</span>
+                    <span>Ready</span>
+                    <span>In Progress</span>
+                    <span>Finished</span>
+                </div>
+            </div>
+
+            <div class="d-flex flex-wrap gap-3 p-10 gray">
+                <!-- Left Side -->
+                <div class="w-full">
+                    <div class="">
+                        <mat-label class="form-input-label">To product
+                        </mat-label>
+                        <div class="m-t-10">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" placeholder="product test 21">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Side -->
+                <div class="w-full">
+                    <div class="">
+                        <mat-label class="form-input-label">Quantity produced
+                        </mat-label>
+                        <div class="m-t-10">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" placeholder="1.00/1.00 KG">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------------------------------Laser Div End--------------------------- -->
+    </div>
+    <!-- Product Information -->
+    <div>
+        <div class="d-flex align-items-center m-b-10 p-10">
+            <div>
+                <h1 class="text-dark text-primary m-0 m-r-5">Production Information</h1>
+            </div>
+            <div class="line-div">
+                <mat-icon class="arrow-icon">square</mat-icon>
+                <p class="line "></p>
+            </div>
+        </div>
+        <!-- Tabs  -->
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="tab-group div-2 form work-order-view">
+            <!-- -------------------------Work instructions Tab Start--------------------------- -->
+            <mat-tab class="rounded  " label="Work instructions">
+                <p class="p-10"></p>
+            </mat-tab>
+            <!-- -------------------------Work instructions Tab End--------------------------- -->
+
+            <!-- -------------------------Current production Tab Start--------------------------- -->
+            <mat-tab class="rounded" label="Current production">
+                <div class="d-flex flex-wrap gap-3 p-10 gray">
+                    <!-- Left Side -->
+                    <div class="w-full">
+                        <div class="">
+                            <mat-label class="form-input-label">Quantity in production
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="0.00">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full"></div>
+                </div>
+            </mat-tab>
+            <!-- -------------------------Current production Tab Start--------------------------- -->
+
+
+
+            <!-- -------------------------Time Tracking Tab Start--------------------------- -->
+            <mat-tab class="rounded " label="Time Tracking">
+                <div class="d-flex flex-wrap gap-3 p-10 gray">
+                    <!-- Left Side -->
+                    <div class="w-full">
+                        <div class="">
+                            <mat-label class="form-input-label">Planned date
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input"
+                                        placeholder="2024-02-15 03:59:00 To 2024-02-15 03:59:00">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Effective date
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input"
+                                        placeholder="2024-02-15 03:59:00 To 2024-02-15 03:59:00">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Side -->
+                    <div class="w-full">
+                        <div class="">
+                            <mat-label class="form-input-label">Expected duration
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="0.00 Minutes">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Real duration
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="0.15 Minutes">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-10">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>SNo.</th>
+                                <th>Name</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Reserved</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Albi Solution Solutions</td>
+                                <td>2024-02-14 13:41:50</td>
+                                <td>2024-02-14 13:41:56</td>
+                                <td>0.10</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Albi Solution Solutions</td>
+                                <td>2024-02-14 13:41:50</td>
+                                <td>2024-02-14 13:41:56</td>
+                                <td>0.10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </mat-tab>
+            <!-- -------------------------Time Tracking Tab Start--------------------------- -->
+
+            <!-- -------------------------Miscellaneous Tab Start--------------------------- -->
+            <mat-tab class="rounded " label="Miscellaneous">
+                <div class="d-flex flex-wrap gap-3 p-10 gray">
+                    <!-- Left Side -->
+                    <div class="w-full">
+                        <div class="">
+                            <mat-label class="form-input-label">Work Centers
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Side -->
+                    <div class="w-full">
+                        <div class="">
+                            <mat-label class="form-input-label">Manufacturing order
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="GH00124">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </mat-tab>
+            <!-- -------------------------Miscellaneous Tab Start--------------------------- -->
+        </mat-tab-group>
+    </div>
+
+
+
+
+
+    <hr class="m-t-20">
+    <div class="d-flex gap-1 p-10">
+        <button mat-raised-button color="primary">Fabrication order</button>
+        <button mat-raised-button class="bg-close">Close</button>
+    </div>
+</div>

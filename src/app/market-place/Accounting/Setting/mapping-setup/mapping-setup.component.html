@@ -1,0 +1,39 @@
+<div class="main-container boxed space manuf-tab">
+    <div class="d-flex gap-1 align-items-center m-b-10">
+        <div>
+            <h1 class="text-dark text-primary m-0">Setting</h1>
+        </div>
+        <div class="line-div">
+            <mat-icon class="arrow-icon">square</mat-icon>
+            <p class="line "></p>
+        </div>
+    </div>
+    <div class="form">
+        <div class=" d-flex gap-1 flex-wrap">
+            <button routerLink="/market-place/accounting/setting/general" class="disactive">General</button>
+            <button routerLink="/market-place/accounting/setting/banking-rules" class="disactive">Banking Rules</button>
+            <button routerLink="/market-place/accounting/setting/mapping-setup" class="active">Mapping Setup</button>
+            <button routerLink="/market-place/accounting/setting/account-detail-type" class="disactive">Account Detail
+                Type</button>
+            <button routerLink="/market-place/accounting/setting/plaid-environment" class="disactive">Plaid
+                Environment</button>
+        </div>
+    </div>
+
+    <div class="form mapping-setup">
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="tab-group div-2" >
+            <mat-tab class="rounded " label="General" >
+                <app-general-tab></app-general-tab>
+            </mat-tab>  
+            <mat-tab class="rounded " label="Payslips" >
+                <app-payslips-tab></app-payslips-tab>
+            </mat-tab>  
+            <mat-tab class="rounded " label="Purchase" >
+                <app-purchase-tab></app-purchase-tab>
+            </mat-tab>  
+            <mat-tab class="rounded " label="Inventory" >
+                <app-inventory-tab></app-inventory-tab>
+            </mat-tab>  
+        </mat-tab-group>
+    </div>
+</div>

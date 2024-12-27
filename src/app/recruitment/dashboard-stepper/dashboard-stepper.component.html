@@ -1,0 +1,103 @@
+<div class="p-10">
+    <div class="d-flex jc-sb align-items-center heading-column ">
+        <div class="heading-top">
+            <h1 class="text-dark">Recruitment</h1>
+        </div>
+        <div class="button-width">
+        </div>
+    </div>
+    <!-- <app-general-setting-headings></app-general-setting-headings> -->
+    <div class="main-container boxed space manuf-tab">
+
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="tab-group div-2">
+            <!-- Dashboard -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M425.7 118.25A240 240 0 0 0 76.32 447l.18.2c.33.35.64.71 1 1.05c.74.84 1.58 1.79 2.57 2.78a41.17 41.17 0 0 0 60.36-.42a157.13 157.13 0 0 1 231.26 0a41.18 41.18 0 0 0 60.65.06l3.21-3.5l.18-.2a239.93 239.93 0 0 0-10-328.76ZM240 128a16 16 0 0 1 32 0v32a16 16 0 0 1-32 0ZM128 304H96a16 16 0 0 1 0-32h32a16 16 0 0 1 0 32m48.8-95.2a16 16 0 0 1-22.62 0l-22.63-22.62a16 16 0 0 1 22.63-22.63l22.62 22.63a16 16 0 0 1 0 22.62m149.3 23.1l-47.5 75.5a31 31 0 0 1-7 7a30.11 30.11 0 0 1-35-49l75.5-47.5a10.23 10.23 0 0 1 11.7 0a10.06 10.06 0 0 1 2.3 14m31.72-23.1a16 16 0 0 1-22.62-22.62l22.62-22.63a16 16 0 0 1 22.63 22.63ZM416 304h-32a16 16 0 0 1 0-32h32a16 16 0 0 1 0 32" />
+                    </svg>
+                    <span class="m-l-5">Dashboard</span>
+                </ng-template>
+                <app-dashboard></app-dashboard>
+            </mat-tab>
+    
+            <!-- Product -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 512 512">
+                        <path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="48"
+                            d="M144 144h320M144 256h320M144 368h320" />
+                        <path fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round"
+                            stroke-width="32" d="M64 128h32v32H64zm0 112h32v32H64zm0 112h32v32H64z" />
+                    </svg>
+                    <span class="m-l-5">Campaign</span>
+                </ng-template>
+                <app-campaign></app-campaign>
+            </mat-tab>
+    
+            <!-- Product variants -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 1200 1200">
+                        <path fill="currentColor"
+                            d="M0 0v1200h1200V424.292l-196.875 196.875v381.958h-806.25v-806.25h381.958L775.708 0zm1050 0l-76.831 76.831l150 150L1200 150zM936.914 113.086L497.168 552.832l150 150l439.746-439.746zM441.943 622.339c-2.225.034-4.493.195-6.738.366v142.09h142.09c0-38.708-18.492-78.039-47.314-105.542c-23.842-22.751-54.675-37.428-88.038-36.914" />
+                    </svg>
+                    <span class="m-l-5">Candidate profile</span>
+                </ng-template>
+                <app-candidate-profile></app-candidate-profile>
+            </mat-tab>
+    
+            <!-- Bill of materials -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 256 256">
+                        <path fill="currentColor"
+                            d="M228 128a12 12 0 0 1-12 12H40a12 12 0 0 1 0-24h176a12 12 0 0 1 12 12M40 76h176a12 12 0 0 0 0-24H40a12 12 0 0 0 0 24m176 104H40a12 12 0 0 0 0 24h176a12 12 0 0 0 0-24" />
+                    </svg>
+                    <span class="m-l-5">Interview schedule</span>
+                </ng-template>
+    
+                <!-- <app-bill-materials></app-bill-materials> -->
+            </mat-tab>
+            <!-- Routings -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M9 2c-.47 0-.93.047-1.376.135a.75.75 0 0 0-.59.593l-.36 1.859a.25.25 0 0 1-.327.189l-1.79-.618a.75.75 0 0 0-.808.212a6.993 6.993 0 0 0-1.383 2.391a.75.75 0 0 0 .219.807L4.017 8.81a.25.25 0 0 1 0 .378l-1.432 1.243a.75.75 0 0 0-.22.806a6.993 6.993 0 0 0 1.384 2.391a.75.75 0 0 0 .807.213l1.791-.618a.25.25 0 0 1 .327.189l.36 1.859a.75.75 0 0 0 .59.593a7.03 7.03 0 0 0 2.762-.002a.75.75 0 0 0 .588-.593l.36-1.857a.25.25 0 0 1 .327-.19l1.785.617a.75.75 0 0 0 .807-.213a6.995 6.995 0 0 0 1.384-2.395a.75.75 0 0 0-.22-.805l-1.426-1.238a.25.25 0 0 1 0-.378l1.426-1.238a.75.75 0 0 0 .22-.806a6.99 6.99 0 0 0-1.384-2.394a.75.75 0 0 0-.808-.213l-1.784.616a.25.25 0 0 1-.327-.19l-.36-1.856a.75.75 0 0 0-.588-.593A7.03 7.03 0 0 0 9 2M7.251 9a1.75 1.75 0 1 1 3.5 0a1.75 1.75 0 0 1-3.5 0m6.16 5.784a.468.468 0 0 1 .53-.15l1.259.435a.454.454 0 0 0 .595-.344l.253-1.308a.467.467 0 0 1 .395-.383a4.536 4.536 0 0 1 1.114 0a.467.467 0 0 1 .395.383l.253 1.308a.455.455 0 0 0 .595.344l1.26-.435a.468.468 0 0 1 .528.15c.224.295.412.62.559.965c.079.187.019.4-.134.533l-1.008.875a.455.455 0 0 0 0 .686l1.008.874a.467.467 0 0 1 .134.533c-.146.346-.335.67-.559.966a.468.468 0 0 1-.528.15l-1.26-.435a.455.455 0 0 0-.595.343l-.253 1.309a.467.467 0 0 1-.395.383a4.533 4.533 0 0 1-1.114 0a.467.467 0 0 1-.395-.383l-.253-1.309a.454.454 0 0 0-.595-.343l-1.26.435a.468.468 0 0 1-.528-.15a4.493 4.493 0 0 1-.559-.966a.467.467 0 0 1 .134-.533l1.008-.874a.455.455 0 0 0 0-.686l-1.007-.875a.467.467 0 0 1-.135-.533c.146-.346.335-.67.559-.965m4.84 2.716a1.25 1.25 0 1 0-2.502 0a1.25 1.25 0 0 0 2.501 0" />
+                    </svg>
+                    <span class="m-l-5">Recruitment channels</span>
+                </ng-template>
+                <!-- <app-routing-tab></app-routing-tab> -->
+            </mat-tab>
+    
+            <!-- Work centers -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 256 256">
+                        <path fill="currentColor"
+                            d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m0 168a12 12 0 1 1 12-12a12 12 0 0 1-12 12m8-48.72v.72a8 8 0 0 1-16 0v-8a8 8 0 0 1 8-8c13.23 0 24-9 24-20s-10.77-20-24-20s-24 9-24 20v4a8 8 0 0 1-16 0v-4c0-19.85 17.94-36 40-36s40 16.15 40 36c0 17.38-13.76 31.93-32 35.28" />
+                    </svg>
+                    <span class="m-l-5">Recruitment Portal</span>
+                </ng-template>
+                <!-- <app-work-center></app-work-center> -->
+            </mat-tab>
+    
+            <!-- Manufacturing Orders -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M19.14 12.94c.04-.3.06-.61.06-.94c0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.488.488 0 0 0-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 0 0-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6s3.6 1.62 3.6 3.6s-1.62 3.6-3.6 3.6" />
+                    </svg>
+                    <span class="m-l-5">Settings</span>
+                </ng-template>
+                <!-- <app-manufucturing-order></app-manufucturing-order> -->
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+
+
+  
+</div>

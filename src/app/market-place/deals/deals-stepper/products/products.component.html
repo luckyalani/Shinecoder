@@ -1,0 +1,73 @@
+<div class="mx-10">
+
+<div class="mx-10">
+  
+    <div class="">
+        <mat-form-field appearance="outline" class="form-field">
+            <div class="b-r-1">
+                <span class="m-r-20 mx-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M2 6h2v12H2zm3 0h1v12H5zm2 0h3v12H7zm4 0h1v12h-1zm3 0h2v12h-2zm3 0h3v12h-3zm4 0h1v12h-1z"/></svg>
+                </span>
+            </div>
+            <input matInput class="input" placeholder="You Can Sent Multiple Email Semicolon(;) Separated">
+
+            <div (click)="addNewItem()" class="b-l-1 ">
+              <mat-icon  class="mat-18 ml-20">add</mat-icon>
+            </div>
+
+        </mat-form-field>
+        <!-- <span class="text-xxs text-grey mt-0">Enter decimal value Ex. 300.00</span> -->
+    </div>
+</div>
+
+<div class="table-div shadow my-1r mt-2r ">
+    <table class="table-full ">
+        <tr>
+            <th>SNo.</th>
+            <th>Items</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>Tax</th>
+            <th>Total</th>
+            <th>action</th>
+           
+           
+            
+        </tr>
+      <tr>
+        <td>1</td>
+        <td>Flyers 500</td>
+        <td>1.00</td>
+        <td>250</td>
+        <td></td>
+        <td>R$250,00</td>
+        <td>
+            <div class="d-flex align-items-center action-btn-gap">
+      
+             
+
+                <span (click)="EditItem()"  class="action-btn primary" ><svg xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em" viewBox="0 0 24 24"><path fill="#0163d2" d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83l3.75 3.75z"/></svg></span>
+
+                <span (click)="deleteOpen()" class="action-btn danger" ><svg xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em" viewBox="0 0 24 24"><path fill="#da0000" d="M9 3v1H4v2h1v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1V4h-5V3zM7 6h10v13H7zm2 2v9h2V8zm4 0v9h2V8z"/></svg></span>
+            </div>
+        </td>
+       
+      </tr>
+    </table>
+    
+</div>
+
+<div class=" d-flex jc-e ">
+
+    <div class="d-flex  bb-grey jc-sb gap-2r justify-content-right text-sm f-w-5 my-10 align-items-center px-10">
+<p class="text-md">Total</p>
+<div class="">
+   <p>R$250,00</p> 
+   <p>R$250,00</p> 
+</div>
+
+</div>
+</div>
+
+
+</div>

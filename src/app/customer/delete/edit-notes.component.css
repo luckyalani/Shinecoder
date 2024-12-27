@@ -1,0 +1,46 @@
+
+
+.space{
+    padding:1rem;
+}
+
+.header{
+    background-color: #f6f6f6;
+    padding: 0 1rem;
+}
+mat-icon{
+    color:red;
+}
+.description{
+    border: 1px solid #9c9c9c;
+    margin-left: 1rem;
+    border-radius: 0.3rem;
+    margin-right: 2rem;
+}
+.heading{
+    font-weight: 500;
+    color: black;
+}
+.des-detail {
+    font-size: 12px;
+    padding: 10px;
+    padding-right: 30px;
+    margin: 0;
+    border: none;
+}
+.des-heading{
+    color: black;
+    font-size: 15px;
+    font-weight:500;
+    margin: 0.6rem;
+    }
+
+.mat-mdc-raised-button:not(:disabled) {
+    /* color: var(--mdc-protected-button-label-text-color, inherit); */
+    margin: 10px !important;
+    margin-left: 1rem !important;
+}
+
+
+
+

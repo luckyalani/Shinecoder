@@ -1,0 +1,47 @@
+label{
+    margin: 0 !important;
+}
+.search-bar {
+    position: relative;
+}
+
+.search-div {
+    gap: 5px;
+
+}
+
+.icon-search {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+}
+.action-add {
+    width: 10%;
+}
+
+
+
+
+
+@media (max-width: 767px){
+    .small-screen{
+        flex-direction: column;
+        align-items: start;
+    }
+    .responsive-btn{
+        margin-left: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    .right-icon {
+        flex-direction: column;
+        width: 100%;
+    }
+    .icon-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .search-bar {
+        display: flex;
+    }
+
+}

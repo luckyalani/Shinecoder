@@ -1,0 +1,22 @@
+.merge .mat-input {
+    border: unset;
+}
+
+.merge {
+    border: 1px solid gray;
+    border-radius: 0.2rem;
+    padding: 0 4px;
+    height: 2.2rem;
+}
+
+.border-right {
+    border-right: 1px solid gray;
+}
+
+.w-3 {
+    width: 5rem;
+}
+
+.flex {
+    display: flex;
+}

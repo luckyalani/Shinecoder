@@ -1,0 +1,118 @@
+.line-div {
+    display: flex;
+    align-items: center;
+    gap: -1;
+    width: 100%;
+}
+
+.arrow-icon {
+    color: #0163D2;
+    font-size: 8px;
+    width: fit-content;
+    height: 100% !important;
+    transform: rotate(45deg);
+}
+
+.text-primary {
+    color: #0163D2;
+    width: max-content;
+}
+
+.line {
+    width: 100%;
+    background-color: #0163D2;
+    height: 1px;
+}
+
+/* input-border */
+
+
+
+::ng-deep .gray .mat-mdc-text-field-wrapper {
+    background-color: #EEEEEE !important;
+}
+
+
+
+
+
+/* Dropdown */
+::ng-deep .mat-mdc-select-panel {
+    padding: 0 0.5rem !important;
+}
+
+
+::ng-deep .mat-mdc-form-field-infix {
+    padding: 0px 1rem !important;
+    display: flex;
+    align-items: center;
+    min-height: 2rem !important;
+}
+
+
+
+.gap-3 {
+    gap: 2rem;
+}
+
+
+
+.form {
+    padding: unset;
+}
+
+/* Tabs */
+::ng-deep .work-order-view .mat-mdc-tab-body-wrapper {
+    margin-top: 0rem !important;
+    box-shadow: unset !important;
+    border-radius: 0.8rem;
+}
+
+@media (max-width: 767px) {
+
+    .flex-wrap {
+        flex-wrap: wrap;
+    }
+
+    .flex-remove {
+        display: unset;
+    }
+
+}
+
+
+.img {
+    margin-top: 1rem;
+    width: 10rem;
+    position: relative;
+    /* margin-left: 1rem; */
+}
+
+.bg span {
+    position: relative;
+    top: -1.8em;
+    right: 10rem;
+}
+
+.outer {
+    background-image: url('/assets/images/sec.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 3rem;
+    width: 25rem;
+    color: white;
+}
+
+@media screen and (max-width:424px) {
+    .outer {
+        height: 2.6rem;
+    }
+
+    .outer :nth-child(1) {
+        width: 27%;
+    }
+
+    .outer :nth-child(3) {
+        padding-left: 17px;
+    }
+}

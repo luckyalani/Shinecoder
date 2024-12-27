@@ -1,0 +1,87 @@
+<div>
+    <div class="d-flex jc-sb align-items-center heading-column ">
+        <div class="heading-top">
+            <h1 class="text-dark">User Name</h1>
+        </div>
+        <div class="icon-div d-flex ">
+            <div>
+                <button mat-raised-button class="mail-icon"><mat-icon> email</mat-icon> Send Mail</button>
+            </div>
+            <div> <button mat-raised-button class="star-icon"><mat-icon>star_half</mat-icon> Rate </button></div>
+            <div> <button mat-raised-button class="edit-icon"><mat-icon>mode_edit</mat-icon>Edit </button> </div>
+            <div class="mat-buttons-div">
+                <div id="content">
+                    <div id="maini-mat-buttons-div">
+                        <button mat-flat-button color="primary" #ddTrigger="matMenuTrigger" [matMenuTriggerFor]="dd"
+                            class="doctor-icon">
+                            <div class="d-flex align-items-center"><mat-icon>person</mat-icon> <span>Care</span>
+                                <span><mat-icon>arrow_drop_up</mat-icon></span>
+                            </div>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <mat-menu #dd="matMenu" [overlapTrigger]="false">
+                <div class="dropdown">
+
+                    <div class="d-flex" >
+
+                        <button mat-raised-button class="mail-icon"><mat-icon> email</mat-icon> Send Mail</button>
+                        <button mat-raised-button class="star-icon"><mat-icon>star_half</mat-icon> Rate </button>
+                        <button mat-raised-button class="edit-icon"><mat-icon>mode_edit</mat-icon>Edit </button>
+                        <button mat-raised-button class="edit-icon"><mat-icon>mode_edit</mat-icon>Edit </button>
+                    </div>
+                </div>
+            </mat-menu>
+
+
+        </div>
+    </div>
+    <div class="main-container boxed space ">
+
+        <!-- <app-general-setting-headings></app-general-setting-headings> -->
+
+        <div class=" ">
+
+            <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="tab-group div-2">
+                <!-- General Details  -->
+                <mat-tab class="rounded ">
+                    <ng-template mat-tab-label class="d-flex align-items-center">
+                        <span class="m-l-5">Details</span>
+                    </ng-template>
+                    <app-details></app-details>
+                </mat-tab>
+
+                <!-- Candidate requirements  -->
+                <mat-tab class="rounded ">
+                    <ng-template mat-tab-label class="d-flex align-items-center">
+
+                        <span class="m-l-5">Recruitment history </span>
+                    </ng-template>
+                    <app-recruitment-history></app-recruitment-history>
+                </mat-tab>
+
+                <!-- Candidate requirements  -->
+                <mat-tab class="rounded ">
+                    <ng-template mat-tab-label class="d-flex align-items-center">
+
+                        <span class="m-l-5">Capacity profile </span>
+                    </ng-template>
+                    <app-capacity-profile></app-capacity-profile>
+                </mat-tab>
+
+                <!-- Candidate requirements  -->
+                <mat-tab class="rounded ">
+                    <ng-template mat-tab-label class="d-flex align-items-center">
+
+                        <span class="m-l-5">Attachment</span>
+                    </ng-template>
+                    <app-attachment></app-attachment>
+                </mat-tab>
+
+            </mat-tab-group>
+        </div>
+    </div>
+</div>

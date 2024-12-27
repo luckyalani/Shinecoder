@@ -1,0 +1,61 @@
+<div class="main-container boxed space ">
+
+    <div class="d-flex jc-sb align-items-center heading-column ">
+        <div class="heading-top">
+            <h1 class="text-dark">Branches</h1>
+        </div>
+        <div class="button-width"><button routerLink="/setting/add-branch"
+                class="mdc-button mdc-button--raised mat-mdc-raised-button mat-primary mat-mdc-button-base"
+                mat-raised-button color="primary">Add Branch</button><span routerLink="/setting/transaction-series" class="pointer m-l-5 fs-14 text-primary fw-medium">Transaction Series Preferences</span>
+ 
+        </div>
+    </div>
+    <div class="form">
+        <div class=" d-flex gap-1 flex-wrap">
+            <button routerLink="/setting/organization/profile" class="disactive">Profile</button>
+            <button routerLink="/setting/organization/brand" class="disactive">Brand</button>
+            <button routerLink="/setting/organization/branches" class="active">Branches</button>
+            <button routerLink="/setting/organization/currencies" class="disactive">Currencies</button>
+            <button routerLink="/setting/organization/manage-subscription" class="disactive word-nowrap">Manage Subscription</button>
+        </div>
+    </div>
+    <div class="form">
+        <div class="table-div">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Branch</th>
+                        <th>GSTIN</th>
+                        <th>Associated series</th>
+                        <th>Address Details</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td (click)="openpop()" class="text-primary pointer">Head Office</td>
+                        <td>29AACCP4478N2ZN</td>
+                        <td>Default Transaction Series</td>
+                        <td>Karnataka India</td>
+                        <td>
+                            <div class="d-flex align-items-center action-btn-gap">
+
+                                <span class="action-btn primary" routerLink="/setting/add-branch" ><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="#0163d2"
+                                            d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83l3.75 3.75z" />
+                                    </svg></span>
+                                <span class="action-btn danger" (click)="delete()" ><svg xmlns="http://www.w3.org/2000/svg" width="0.6em"
+                                        height="0.6em" viewBox="0 0 24 24">
+                                        <path fill="#da0000"
+                                            d="M9 3v1H4v2h1v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1V4h-5V3zM7 6h10v13H7zm2 2v9h2V8zm4 0v9h2V8z" />
+                                    </svg></span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+
+    <div class="p-10">
+        <div class="d-flex jc-sb align-items-center heading-column ">
+            <div class="heading-top">
+                <h1 class="text-dark">Edit Expense</h1>
+            </div>
+            <div class="button-width">
+            </div>
+        </div>
+        <div class="main-container boxed space manuf-tab">
+
+            <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="tab-group div-2">
+                <!-- General  -->
+                <mat-tab class="rounded ">
+                    <ng-template mat-tab-label class="d-flex align-items-center">
+                        <span class="m-l-5">Expense</span>
+                    </ng-template>
+                    <app-view-expense></app-view-expense>
+                </mat-tab>
+
+                <!-- Branding  -->
+                <mat-tab class="rounded ">
+                    <ng-template mat-tab-label class="d-flex align-items-center">
+
+                        <span class="m-l-5">Tasks</span>
+                    </ng-template>
+                    <app-view-tasks></app-view-tasks>
+                </mat-tab>
+
+                <!-- Submission -->
+                <mat-tab class="rounded ">
+                    <ng-template mat-tab-label class="d-flex align-items-center">
+
+                        <span class="m-l-5">Reminders</span>
+                    </ng-template>
+                    <app-view-reminders></app-view-reminders>
+                </mat-tab>          
+            
+            </mat-tab-group>
+        </div>
+
+
+
+    </div>
+

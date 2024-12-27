@@ -1,0 +1,148 @@
+.text-area,
+.mat-mdc-form-field-textarea-control {
+  height: 6rem;
+  overflow: hidden !important;
+  resize: none !important;
+  width: 100%;
+}
+
+.question-icon {
+  margin-bottom: -2.5px;
+}
+
+.input-and-file-div{
+    display: flex;
+    gap: 30px;
+}
+@media (max-width: 768px) {
+    
+.input-and-file-div{
+    display: flex;
+    flex-direction: column;
+}
+.w-70{
+    width: 100% !important;
+}
+.w-30{
+    width: 100% !important;
+}
+
+.Expense-Category{
+  width: 100% !important;
+}
+
+}
+.w-70{
+    width: 70%;
+}
+.w-30{
+    width: 30%;
+}
+
+.date-picker .mat-mdc-form-field {
+    width: 100% !important;
+}
+.date-field {
+    margin: 0 10px;
+}
+
+.amount-customer-fields .mat-input{
+    margin-top: 0 !important;
+}
+.Advanced-Options .mat-input {
+  margin-top: 0 !important;
+}
+
+.Advanced-Options .down-arrow {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+}
+
+.amount-customer-fields .down-arrow {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+}
+
+.Expense-Category{
+  width: 80%;
+}
+.gray-bg select{
+  background-color:lightgray;
+ }
+ 
+ 
+
+
+
+
+
+
+
+/* -----------------------------plus icon field -------------------------------------------- */
+
+.selected-form-field{
+    display: flex;
+    position: relative;
+    align-items: center;
+    
+}
+.icon-add {
+    height: 2rem !important;
+    width: 2.2rem !important;
+    position: absolute;
+    left: 0.7rem;
+    /* border-radius: 0.3rem; */
+    border-right: 0.1rem solid gray;
+    background-color: gray;
+    padding-top: 0.3rem;
+    text-align: center;
+    color: #505050;
+    background-color: #eeeeee;
+}
+
+.mat-input{
+    margin: 0.6rem;
+}
+
+/* -----------------------------plus icon field -------------------------------------------- */
+
+/* ------------------------imagee-lable----------------------------------- */
+
+/* File  */
+.file-border {
+  background-image: url("/assets/images/file.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 16rem;
+  height: 12rem;
+}
+
+.full {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.file {
+  background-color: #8fbbfd;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.img-and-inputs {
+  display: flex;
+}
+.imagee-lable {
+  /* width: 30%; */
+}
+/* ------------------------imagee-lable----------------------------------- */

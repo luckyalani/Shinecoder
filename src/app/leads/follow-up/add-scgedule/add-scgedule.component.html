@@ -1,0 +1,143 @@
+<div class="main-container boxed space px-5">
+    <div class="left-icon d-flex ">
+        <div>
+            <h1 class="f-w-5">List of Scheduled follow up for Lead</h1>
+        </div>
+
+
+    </div>
+    <div class="px-5">
+        <p class="text-primary f-w-5 ">Create Schedule for Leads to take followup remainder by sending SMS/Email to
+            Lead's contact number.</p>
+
+
+        <div>
+            <mat-label class=" form-input-label"><span class="text-danger">*</span>Schedule Name
+            </mat-label>
+            <div class="">
+                <mat-form-field appearance="outline" class="form-field">
+                    <input matInput class="input" placeholder="All staff Members">
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <!-- left Div -->
+            <div class="in-form-row">
+                <div>
+                    <mat-label class=" form-input-label"><span class="text-danger">*</span>Lead Status
+                    </mat-label>
+                    <div class="mt2">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <mat-select class="select_in" placeholder="Bank">
+                                <mat-option value="Bank">FaceBook</mat-option>
+                                <mat-option value="Bank">Bank</mat-option>
+                                <mat-option value="Bank">Bank</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <mat-label class=" form-input-label"><span class="text-danger">*</span>Auto send reminder after (days)
+                    </mat-label>
+                    <div class="">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="6547.00">
+                        </mat-form-field>
+                    </div>
+                </div>
+            
+            </div>
+            <!-- Right Div -->
+            <div class="in-form-row">
+
+                <div class="mt2">
+                    <mat-label class="form-input-label">
+                       Lead Source </mat-label>
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-select class="select_in" placeholder="Bank">
+                            <mat-option value="Bank">FaceBook</mat-option>
+                            <mat-option value="Bank">Bank</mat-option>
+                            <mat-option value="Bank">Bank</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-label class="form-input-label">
+                        <span class="text-danger">*</span>Schedule Hour </mat-label>
+                    <div class="">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="Nothing Selected">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="check d-flex">
+
+            <mat-radio-button formControlName="formControlName">Leads</mat-radio-button>
+            <mat-radio-button formControlName="formControlName">Staff Members</mat-radio-button>
+        </div>
+        <div class="check d-flex">
+
+            <mat-checkbox  value="" color="primary">SMS</mat-checkbox>
+            <mat-checkbox  value="" color="primary">Email</mat-checkbox>
+       
+        </div>
+
+        <div class="">
+            <mat-label class="form-input-label d-flex jc-sb align-items-center "> 
+                <div> <span class="text-danger">*</span>SMS Text</div>
+                <p class="text-primary f-w-5 m-l-5">Available merge fields</p>
+            </mat-label>
+            <div>
+                <textarea name="" id="" cols="30" rows="10" class="mat-input text-area"></textarea>
+            </div>
+        </div>
+
+        <div class="">
+            <p class="text-grey">
+                <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name
+                    &#125; </span>, <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name &#125; </span>,
+                <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name
+                    &#125; </span>, <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name &#125; </span>,
+                <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name
+                    &#125; </span>, <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name &#125; </span>,
+                <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name
+                    &#125; </span>, <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name &#125; </span>,
+                <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name
+                    &#125; </span>, <span>&#123; lead_name &#125; </span>,
+            </p>
+        </div>
+
+
+        <div class="">
+            <mat-label class="form-input-label d-flex jc-sb align-items-center "> 
+                <div> <span class="text-danger">*</span>SMS Text</div>
+                <p class="text-primary f-w-5 m-l-5">Available merge fields</p>
+            </mat-label>
+            <div>
+                <ckeditor [editor]="Editor" data="<p> Minimum 300 words. HTML and images supported. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit similique et illo obcaecati temporibus asperiores culpa sequi at, id voluptate. Ab vero quibusdam quas blanditiis iste ducimus officia accusantium. Quaerat illo aut facere dolores nihil quidem consequatur nostrum dolorem porro voluptatem autem enim, hic, eveniet maiores voluptatum animi ipsa 
+                </p>">
+              </ckeditor>
+            </div>
+        </div>
+
+        <div class="text-danger ">
+            <p class="text-danger  m-l-5">Note: This scheduler will run everyday at specified schedule Hour</p>
+               <p> SMS/Email will be triggered only for that leads which are created before specified Days of Auto send Reminder and having Lead starus and source as per selected in this schedule</p>
+    
+        </div>
+
+    </div>
+
+   
+
+    <hr class="m-t-20">
+    <div class="d-flex m-t-5 gap-1">
+        <button mat-raised-button color="warn">Cancel</button>
+        <button mat-raised-button class="bg-success">Save</button>
+    </div>
+</div>

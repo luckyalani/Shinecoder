@@ -1,0 +1,67 @@
+.line-div {
+    display: flex;
+    align-items: center;
+    gap: -1;
+    width: 100%;
+}
+
+.arrow-icon {
+    color: #0163D2;
+    font-size: 8px;
+    width: fit-content;
+    height: 100% !important;
+    transform: rotate(45deg);
+}
+
+.text-primary {
+    color: #0163D2;
+    width: max-content;
+}
+
+.line {
+    width: 100%;
+    background-color: #0163D2;
+    height: 1px;
+}
+
+::ng-deep .mapping-setup {
+    .mat-mdc-tab-labels {
+        border: 0px solid lightgrey !important;
+        border-bottom: 1px solid #DCDCDC !important;
+        border-radius: 0.2rem;
+        padding-left: 0rem !important;
+    }
+    .mat-mdc-tab-header, .shadow {
+        box-shadow: unset !important;
+        border-radius: 0.2rem;
+    }
+    .mat-mdc-tab .mdc-tab__text-label {
+        color: unset !important;
+        font-weight: 500 !important;
+        font-size: 0.8rem !important;
+    }
+   .mdc-tab {
+    margin: 0px 10px !important;
+        border: 0px solid #0163d2 !important;
+        border-bottom: 2px solid #7F7F7F !important;
+        border-radius: 0.5rem;
+        color: #7F7F7F;
+    }
+
+
+    .mdc-tab:hover,
+    .mdc-tab-indicator--active {
+        background-color: unset !important;
+        color: #0163D2 !important;
+        border-bottom: 2px solid #0163D2 !important;
+    }
+    .mdc-tab:hover.mat-mdc-tab .mdc-tab__text-label, .mdc-tab-indicator--active  .mdc-tab__text-label{
+        color:#0163D2 !important;
+    }
+    .mdc-tab:hover , .mdc-tab-indicator--active{
+        background-color: unset !important;
+    }
+    .mat-mdc-tab-body-wrapper {
+        box-shadow: unset !important;
+    }
+}

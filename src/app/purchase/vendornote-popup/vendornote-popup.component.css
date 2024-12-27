@@ -1,0 +1,137 @@
+
+
+.space{
+    padding:1rem;
+}
+
+.header{
+    background-color: #f6f6f6;
+    padding: 0 1rem;
+}
+mat-icon{
+    color:red;
+}
+
+.heading{
+    font-weight: 500;
+    color: black;
+}
+.description{
+    display: flex ;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* padding: 3rem; */
+    gap: 10px;
+    margin: 1rem 0rem;
+    padding-inline: 20px;
+}
+.main-box{
+    width: 50vw;
+    border-radius: 1rem;
+}
+
+
+.mat-mdc-raised-button:not(:disabled) {
+    /* color: var(--mdc-protected-button-label-text-color, inherit); */
+    margin: 10px !important;
+    margin-left: 1rem !important;
+}
+/*  */
+/* Button */
+ .jc-c button{
+    width:64px !important;
+    border-radius: 2px;
+    margin-left: 10px;
+    height:26px;
+    font-size: 12px;
+
+   }
+
+   
+   /* Button */
+   .main-box .jc-c button:nth-child(2){
+    background-color:#ff0000;
+    color:#ffffff;
+    border-style:none;
+   }
+
+
+
+
+   
+
+
+
+
+
+
+
+
+   
+
+
+   .main-box .jc-c button:nth-child(1){
+    background-color: #00B807;
+    color:#ffffff;
+    border-style:none;
+   }
+   .main-box .jc-c{
+    justify-content:flex-start;
+   }
+
+
+
+   /* media query */
+   @media (max-width:1023px){
+
+    /* Description */
+     .main-box .description{
+     flex-direction:column;
+    }
+    
+   }
+   
+   @media (max-width:960px){
+   
+    /* Division */
+    .main-box .jc-c{
+     justify-content:center !important;
+    }
+    
+    /* Button */
+    .main-box .jc-c button{
+     width:70px !important;
+    }
+    
+   }
+   
+   @media (max-width:592px){
+   
+    /* Inputdivofmain */
+    .description .inputfielddiv .inputdivofmain{
+     height:35px;
+    }
+    
+    /* Button */
+      .main-box .jc-c button{
+     width:60px !important;
+    }
+    
+    /* Main box */
+    .main-box{
+     width:70vw;
+    }
+    
+   }
+
+   .description > textarea{
+    height: 150px;
+    border-radius: 5px;
+   }
+
+
+
+
+
+

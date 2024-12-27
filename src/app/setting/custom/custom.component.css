@@ -1,0 +1,131 @@
+.mat-mdc-tab-labels {
+    border: none !important;
+    border-radius: 0.8rem;
+    padding-left: 0.9rem;
+}
+
+.right-icon {
+    display: flex;
+    padding: 5px;
+    gap: 0.5rem;
+
+}
+
+.mat-mdc-raised-button:not(:disabled) {
+    border: 1px solid #0163d2;
+}
+
+.mat-mdc-card-sm-image {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* ---------- header cards ------------*/
+
+.example-card {
+    border-radius: 15px;
+    background-color: #f7f7f7;
+    box-shadow: 0px 1px 4px 0px rgb(172, 167, 167);
+
+}
+
+.cards-div {
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+
+.header {
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.img-pointer {
+    cursor: pointer;
+}
+
+.cards {
+    border-radius: 1rem;
+    background-color: #f7f7f7;
+    box-shadow: 0px 1px 4px 0px rgb(172, 167, 167);
+    padding: 3px 5px 0px 5px;
+    /* flex-wrap: wrap; */
+    width: 10rem;
+}
+
+.card_text {
+    line-height: 1.2;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    font-size: 0.6rem;
+    font-weight: 500;
+}
+
+.col-2 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 14.5vw;
+    margin: 0.4rem;
+    min-width: 12rem;
+}
+
+.count {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+.icon-delete {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* table header icons with search bar */
+.search-bar {
+    position: relative;
+}
+
+.search-div {
+    gap: 5px;
+
+}
+
+.icon-search {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+}
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+    .right-icon {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .icon-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar {
+        display: flex;
+    }
+
+    .cards {
+        justify-content: space-between;
+    }
+
+}

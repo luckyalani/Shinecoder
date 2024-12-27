@@ -1,0 +1,64 @@
+<div class="main-container boxed space">
+    <div>
+        <h1 class="fw-medium fs-26 m-l-3">Sales</h1>
+    </div>
+    <div class="subject-tab box-shadow">
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="tab-group div-2 box-shadow">
+            <!-- --------------------------Proposal------------------------ -->
+            <mat-tab label="Estimate" class="rounded ">
+                <app-common></app-common>
+                <div class="b-all"></div>
+                <app-view-estimate-content></app-view-estimate-content>
+
+            </mat-tab>
+            <!-- --------------------------Propopsal Tab End------------------------ -->
+
+            <!-- --------------------------Tasks Tab Start------------------------ -->
+            <mat-tab label="Tasks">
+                <app-common></app-common>
+                <app-task-tab></app-task-tab>
+            </mat-tab>
+            <!-- --------------------------Notes------------------------ -->
+
+            <!-- --------------------------Comments Tab Start------------------------ -->
+            <mat-tab label="Activity Log">
+                <app-common></app-common>
+                <app-comments-tab></app-comments-tab>
+            </mat-tab>
+            <!-- --------------------------Comments Tab End------------------------ -->
+
+            <!-- --------------------------Reminders Tab Start------------------------ -->
+            <mat-tab label="Reminders">
+                <app-common></app-common>
+                <app-reminder-tab></app-reminder-tab>
+            </mat-tab>
+            <!-- --------------------------Reminder Tab End ------------------------ -->
+
+            <!-- --------------------------Notes tab Start------------------------ -->
+            <mat-tab label="Notes">
+                <app-common></app-common>
+                <app-notes-tab></app-notes-tab>
+            </mat-tab>
+
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <mat-icon> email</mat-icon>
+                </ng-template>
+                <app-common></app-common>
+                <div class="b-t p-20 m-b-10 text-secondary text-medium ">
+                    No tracked emails sent
+                </div>
+            </mat-tab>
+            <!-- --------------------------Eye------------------------ -->
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <mat-icon>remove_red_eye</mat-icon>
+                </ng-template>
+                <app-common></app-common>
+                <div class="b-t p-20 m-b-10 text-secondary text-medium ">
+                    This proposal is not viewed yet by the customer
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+</div>

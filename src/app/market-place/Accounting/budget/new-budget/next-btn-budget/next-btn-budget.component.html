@@ -1,0 +1,40 @@
+<div class="rounded">
+    <div class="d-flex jc-sb p-10 bg-light align-items-center">
+        <div class="d-flex align-items-center">
+            <span class="fw-medium fs-16">Year and Type</span>
+        </div>
+        <svg class="close-btn" mat-dialog-close="true" xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em"
+            viewBox="0 0 32 32">
+            <path fill="#f70202"
+                d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2m5.4 21L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z" />
+        </svg>
+    </div>
+
+    <div class="p-10">
+        <div class="m-t-10">
+            <mat-label class="form-input-label">Fiscal Year for this budget
+            </mat-label>
+            <div class="m-t-10">
+                <mat-form-field appearance="outline" class="form-field">
+                    <input matInput class="input">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="fw-medium fs-14 m-t-10">
+            Specify the type of accounts you want to use in this budget.<br> Choose Profit and Loss Accounts if you want
+            to budget income of expenses. Choose Balance <br> Sheet Accounts if you want to budget balances in asset or
+            liability accounts.
+        </div>
+        <div>
+            <mat-checkbox class="example-margin " color="primary"> Profit and Loss Accounts</mat-checkbox> <br>
+            <mat-checkbox class="example-margin " color="primary">Balance Sheet Accounts </mat-checkbox>
+        </div>
+    </div>
+
+    <mat-divider></mat-divider>
+    <div class="d-flex gap-1 jc-c m-b-10">
+        <button mat-dialog-close="true" (click)="Previous()" class="bg-close" mat-raised-button> Previous</button>
+        <button mat-dialog-close="true" (click)="newopen()" color="primary" mat-raised-button> Next</button>
+    </div>
+
+</div>

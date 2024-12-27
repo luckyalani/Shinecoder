@@ -1,0 +1,131 @@
+<div class="main-container boxed space manuf-tab">
+    <div>
+        <div class="d-flex align-items-center m-b-10">
+            <div>
+                <h1 class="text-dark text-primary m-0 m-r-5">Add Work Center</h1>
+            </div>
+            <div class="line-div">
+                <mat-icon class="arrow-icon">square</mat-icon>
+                <p class="line "></p>
+            </div>
+        </div>
+
+        <div class="d-flex flex-wrap gap-1 p-10">
+            <!-- Left Side -->
+            <div class="w-full">
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span> Work Center Name </mat-label>
+                    <div class="m-t-10">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="AZIENDA">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="m-t-10">
+                    <mat-label class="form-input-label">Working Hours</mat-label>
+                    <mat-form-field appearance="outline" class="m-t-10">
+                        <mat-select placeholder="None Selected">
+                            <mat-option value="None Selected">None Selected</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+            <!-- Right Side -->
+            <div class="w-full">
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span> Code</mat-label>
+                    <div class="m-t-10">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input">
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product Information -->
+    <div>
+        <div class="d-flex align-items-center m-b-10">
+            <div>
+                <h1 class="text-dark text-primary m-0 m-r-5">Production Information</h1>
+            </div>
+            <div class="line-div">
+                <mat-icon class="arrow-icon">square</mat-icon>
+                <p class="line "></p>
+            </div>
+        </div>
+
+        <div class="d-flex flex-wrap gap-1 p-10">
+            <!-- Left Side -->
+            <div class="w-full">
+                <div>
+                    <mat-label class="form-input-label">Time Efficiency (%)</mat-label>
+                    <div class="m-t-10">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="100">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="m-t-10">
+                    <mat-label class="form-input-label">Capacity</mat-label>
+                    <div class="m-t-10">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="1">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="m-t-10">
+                    <mat-label class="form-input-label">Time before prod (m)</mat-label>
+                    <div class="m-t-10">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="0">
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Side -->
+            <div class="w-full">
+                <div>
+                    <mat-label class="form-input-label">Cost per hour</mat-label>
+                    <div class="m-t-10">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="0">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="m-t-10">
+                    <mat-label class="form-input-label">OEE Target (%)</mat-label>
+                    <div class="m-t-10">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="90">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="m-t-10">
+                    <mat-label class="form-input-label">Time after prod</mat-label>
+                    <div class="m-t-10">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="0">
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m-t-10">
+        <mat-label class="form-input-label">Description</mat-label>
+        <div class="m-t-10">
+            <ckeditor [editor]="Editor" data="<p>Hello, world!</p>"></ckeditor>
+        </div>
+    </div>
+
+
+
+
+    <hr class="m-t-20">
+    <div class="d-flex gap-1 p-10">
+        <button mat-raised-button color="warn">Cancle</button>
+        <button mat-raised-button class="bg-success">Save</button>
+    </div>
+
+</div>

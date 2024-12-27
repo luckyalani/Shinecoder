@@ -1,0 +1,117 @@
+<div class="main-box ">
+    <div class="header d-flex jc-sb align-items-center">
+        <p class="heading">New Items</p>
+        <mat-icon mat-dialog-close="true">cancel</mat-icon>
+    </div>
+    <!-- <div class="description ">
+        <div>
+            <mat-label class="form-input-label">
+                <span class="text-danger">*</span> Lost Reason </mat-label>
+            <div class="">
+               
+                <textarea class="textarea" placeholder="Lost Reason"></textarea>
+            </div>
+        </div>
+
+    
+       
+    </div> -->
+
+    <!-- Text area -->
+    <div class="px-10">
+        <mat-label class="form-input-label">Item Name</mat-label>
+        <div class="mt2">
+            <mat-form-field appearance="outline" class="form-field ">
+
+                <input matInput class="input px-unset" placeholder=" ">
+            </mat-form-field>
+        </div>
+    </div>
+
+
+    <!-- Lower left and right input fields -->
+
+    <div class="form-row px-10">
+        <!-- Left Side -->
+        <div class="in-form-row">
+            <div>
+                <mat-label class="form-input-label">
+                    Description</mat-label>
+                <div class="">
+                    <mat-form-field appearance="outline" class="form-field h-8r">
+                        <input matInput class="input" placeholder="">
+
+                    </mat-form-field>
+
+                </div>
+            </div>
+
+            <div>
+                <mat-label class="form-input-label">Unit type</mat-label>
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+
+                        <input matInput class=" px-unset" placeholder="Unit Type Example ">
+                    </mat-form-field>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+        <!-- ---------------------Right Side----------------------------- -->
+        <div class="in-form-row">
+
+
+            <div>
+                <mat-label class="form-input-label">Quantity<span class="text-danger">*</span></mat-label>
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+
+
+                        <input matInput class="input px-unset" placeholder=" 1">
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div>
+                <mat-label class="form-input-label">price<span class="text-danger">*</span></mat-label>
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+
+                        <input matInput class="input px-unset" placeholder=" ">
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div>
+                <mat-label class="form-input-label">Tax</mat-label>
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+
+                        <input matInput class="input px-unset" placeholder=" ">
+                    </mat-form-field>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <mat-divider class="divider-bottom m-t-15 m-b-10"></mat-divider>
+
+    <div class="d-flex align-items-center mx-10 m-10"> <button mat-flat-button color="secondary"
+            mat-dialog-close="true">close</button>
+        <button mat-flat-button class="m-l-15 bg-blue" mat-dialog-close="true">Added Manually</button>
+        <!-- <button mat-flat-button color="warn" class="m-l-15" mat-dialog-close="true">save</button> -->
+    </div>
+</div>

@@ -1,0 +1,287 @@
+p{
+    margin: 0;
+}
+.icon-btn-1 {
+    color: blue;
+    border: 1px solid blue;
+}
+.icon-btn-2 {
+    color: blue;
+    border: 1px solid blue;
+}
+.icon-btn-3 {
+    color: blue;
+    border: 1px solid blue;
+}
+.icon-btn-4 {
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+}
+
+.text-1{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+.text-2{
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.Amount-text{
+    font-size: 14px;
+    font-weight: 500;
+}
+.Amount-text-blue{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(58, 190, 235);
+}
+.Automobile-Expense{
+    display: flex;
+    justify-content: space-between
+}
+@media (max-width: 768px) {
+    
+.Automobile-Expense{
+    display: flex;
+    flex-direction: column;
+}
+}
+
+.float-right{
+    float: inline-end;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.mat-mdc-tab-labels {
+    border: none !important;
+    border-radius: 0.8rem;
+    padding-left: 0.9rem;
+}
+
+.right-icon {
+    display: flex;
+    padding: 5px;
+    gap: 0.5rem;
+
+}
+
+.mat-mdc-raised-button:not(:disabled) {
+    border: 1px solid #0163d2;
+}
+
+.mat-mdc-card-sm-image {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* ---------- header cards ------------*/
+
+.example-card {
+    border-radius: 15px;
+    background-color: #f7f7f7;
+    box-shadow: 0px 1px 4px 0px rgb(172, 167, 167);
+
+}
+
+.cards-div {
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+
+.header {
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.img-pointer {
+    cursor: pointer;
+}
+
+.cards {
+    border-radius: 1rem;
+    background-color: #f7f7f7;
+    box-shadow: 0px 1px 4px 0px rgb(172, 167, 167);
+    padding: 3px 5px 0px 5px;
+    /* flex-wrap: wrap; */
+    width: 10rem;
+}
+
+.card_text {
+    line-height: 1.2;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    font-size: 0.6rem;
+    font-weight: 500;
+}
+
+.col-2 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 14.5vw;
+    margin: 0.4rem;
+    min-width: 12rem;
+}
+
+.count {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+.icon-delete {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* table header icons with search bar */
+.search-bar {
+    position: relative;
+}
+
+.search-div {
+    gap: 5px;
+
+}
+
+.icon-search {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+}
+
+
+/* button */
+.dropbtn {
+    padding: 7px 7px;
+    color: white;
+    background-color: #0163d2;
+    cursor: pointer;
+    transition: 0.35s ease-out;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* drop down content */
+.dropdown .dropdown-content {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    background-color: #f7f7f7;
+    min-width: 10rem;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 100000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.35s ease-out;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    transition: 0.35s ease-out;
+}
+
+.dropdown-content a:hover {
+    background-color: #eaeaea;
+}
+
+/* show drop down content */
+.dropdown:focus .dropdown-content {
+    outline: none;
+    transform: translateY(20px);
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* mask to close menu by clicking on the button */
+.dropdown .db2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+}
+
+.dropdown:focus .db2 {
+    display: inline-block;
+}
+
+.dropdown .db2:focus .dropdown-content {
+    outline: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.mdc-checkbox__background {
+
+    width: 15px !important;
+    height: 15px !important;
+
+}
+
+.customer-name {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+
+
+
+@media (max-width: 767px) {
+
+    .heading-column{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .right-icon {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .icon-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar {
+        display: flex;
+    }
+
+    .cards {
+        justify-content: space-between;
+    }
+
+}

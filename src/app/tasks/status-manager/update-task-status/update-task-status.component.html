@@ -1,0 +1,101 @@
+<div class="header d-flex ">
+    <p class="heading">Update Task Status</p>
+    <mat-icon mat-dialog-close="true">cancel</mat-icon>
+</div>
+
+<div class="main-container boxed space">
+
+
+
+    <div class="">
+
+
+        <div class="form-row">
+            <!-- Left Side -->
+            <div class="in-form-row">
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span>Status Name </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span>Status Color </mat-label>
+                    <div class="calendar-input-field date-picker">
+                        <mat-form-field appearance="outline" class="form-field date">
+
+                            <input type="color" class="input" [(ngModel)]="linkColor" [value]="linkColor" />
+                            <div class="date-border"></div>
+                            <input matInput type="text" #picker1 for="picker1" [(ngModel)]="linkColor"
+                                [value]="linkColor" class="input">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span>Status Order </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <div class="check d-flex align-items-center">
+                    <input type="checkbox" checked>
+                    <p>Default Filter</p>
+                </div>
+
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span>Is Hidden For </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <mat-select class="select_in" placeholder="Nothing Selected">
+                                <mat-option value="Draft">Noting Selected</mat-option>
+                                <mat-option value="Draft">Draft</mat-option>
+                                <mat-option value="Draft">Draft</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span>Can be changed to </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <mat-select class="select_in" placeholder="Awaiting Feedback, In Progress">
+                                <mat-option value="Draft">Awaiting Feedback, In Progress</mat-option>
+                                <mat-option value="Draft">Draft</mat-option>
+                                <mat-option value="Draft">Draft</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <div class="d-flex">
+            <button mat-raised-button mat-dialog-close="" class="bg-close">Close</button>
+            <button mat-raised-button mat-dialog-close="" class="bg-success">Save</button>
+        </div>
+
+    </div>
+
+
+
+
+</div>

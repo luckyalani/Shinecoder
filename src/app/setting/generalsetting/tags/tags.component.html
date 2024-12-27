@@ -1,0 +1,81 @@
+<div class="main-container boxed space">
+    <div class="d-flex jc-sb m-t-15align-items-center heading-column ">
+        <div class="heading-top">
+            <h1 class="text-dark">Tasks</h1>
+        </div>
+        <div class="button-width"></div>
+    </div>
+    <app-general-setting-headings></app-general-setting-headings>
+
+    <!-- main div  -->
+    <div class="p-10">
+
+        <div [ngClass]="{'hidediv':hideTag}" class="d-flex jc-sb m-t-15">
+            <div class="d-flex w-full">
+                <p class="half-b">22</p>
+                <p class="full-b w-full">follow up</p>
+            </div>
+            <div (click)="onClose()" class="half-b-2">
+                <p  class="text-20"  >x</p>
+            </div>
+        </div>
+        <div [ngClass]="{'hidediv2':hideTag2}" class="d-flex jc-sb m-t-15">
+            <div class="d-flex w-full">
+                <p class="half-b">07</p>
+                <p class="full-b w-full">important</p>
+            </div>
+            <div (click)="onClose2()" class="half-b-2">
+                <p  class="text-20"  >x</p>
+            </div>
+        </div>
+        <div [ngClass]="{'hidediv3':hideTag3}" class="d-flex jc-sb m-t-15">
+            <div class="d-flex w-full">
+                <p class="half-b">05</p>
+                <p class="full-b w-full">logo</p>
+            </div>
+            <div (click)="onClose3()" class="half-b-2">
+                <p  class="text-20"  >x</p>
+            </div>
+        </div>
+        <div [ngClass]="{'hidediv4':hideTag4}" class="d-flex jc-sb m-t-15">
+            <div class="d-flex w-full">
+                <p class="half-b">08</p>
+                <p class="full-b w-full">review</p>
+            </div>
+            <div (click)="onClose4()" class="half-b-2">
+                <p  class="text-20"  >x</p>
+            </div>
+        </div>
+        <div [ngClass]="{'hidediv5':hideTag5}" class="d-flex jc-sb m-t-15">
+            <div class="d-flex w-full">
+                <p class="half-b">07</p>
+                <p class="full-b w-full">todo</p>
+            </div>
+            <div (click)="onClose5()" class="half-b-2">
+                <p  class="text-20"  >x</p>
+            </div>
+        </div>
+        <div [ngClass]="{'hidediv6':hideTag6}" class="d-flex jc-sb m-t-15">
+            <div class="d-flex w-full">
+                <p class="half-b">17</p>
+                <p class="full-b w-full">tomorrow</p>
+            </div>
+            <div (click)="onClose6()" class="half-b-2">
+                <p  class="text-20"  >x</p>
+            </div>
+        </div>
+        <div [ngClass]="{'hidediv7':hideTag7}" class="d-flex jc-sb m-t-15">
+            <div class="d-flex w-full">
+                <p class="half-b">06</p>
+                <p class="full-b w-full">wordpress</p>
+            </div>
+            <div (click)="onClose7()" class="half-b-2">
+                <p  class="text-20"  >x</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- main div  -->
+
+
+</div>

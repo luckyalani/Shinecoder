@@ -1,0 +1,326 @@
+
+label {
+    font-size: small;
+    color: black;
+    font-weight: 500;
+    margin-left: 0.6rem;
+}
+.mat-input{
+    margin: 0.6rem;
+}
+
+.mat-mdc-tab-header {
+    margin-top: 1rem !important;
+}
+
+.info-p{
+    margin: 0;
+}
+.special-input{
+    padding-left:2.2rem ;
+}
+
+.selected-form-field{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.icon-add {
+    height: 2.1rem !important;
+    width: 2rem !important;
+    position: absolute;
+    left: 0.7rem;
+    border-right: 0.1rem solid lightgrey;
+    background-color: gray;
+    padding-top: 0.3rem;
+    text-align: center;
+    background-color: #eeeeee;
+    color: #505050;
+}
+
+.dual-field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.8rem 0.6rem;
+}
+
+.dual-input {
+    height: 2.2rem;
+    border: 0.5px solid lightgray;
+    border-radius: 0.3rem;
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+}
+.dual-down-arrow {
+    position: absolute;
+    right: 0.8rem;
+    top: 0.8rem;
+}
+.dual-form{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+  
+}
+.icon-help{
+    font-size: 1rem !important;
+    height: 0.9rem !important;
+    width: 1.2rem !important;
+}
+mat-divider{
+    margin: 1.4rem 0rem;
+}
+
+.text-area{
+    height: 6rem !important;
+}
+
+
+
+
+
+
+/* ######################### summary ############################## */
+
+
+.summary-form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary-form-left{
+    width: 50%;
+    border-right: 0.5px solid #efefef;
+    padding-right: 2rem;
+    
+}
+.summary-form-right{
+    border-left: 0.5px solid #efefef;
+    width: 50%;
+    padding-left: 2rem;
+    
+}
+.labeling{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+p{
+    font-size: 13px;
+    margin: 0.3rem 0.7rem;
+    color:black;
+    font-weight: 500;
+}
+
+.icon-delete{
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* table header contains search bar and icons */
+.search-bar{
+    position: relative;
+    /* display: flex; */
+}
+
+.icon-search {
+    position: absolute;
+    top: 5px;
+    left: 1px;
+}
+
+.table-full{
+    width: 100%;
+}
+th {
+    font-size: 18px;
+    color: #253d4e !important;
+    padding: 0.5rem 1rem !important;
+    
+}
+.no-data-p{
+    margin: 1rem;
+    text-align: center;
+    font-size: 20px;
+    color:gray
+}
+
+@media (max-width: 767px){
+    .heading-column{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .text-dark{
+       text-align: center;
+       
+    }
+    .summary-form{
+        flex-direction: column;
+        
+    }
+    .summary-form-left{
+        width: 100%;
+        /* border:none; */
+        border:1px solid #efefef;
+        padding: 0.1rem;
+        border-radius: 0.8rem;
+        
+    }
+    .summary-form-right{
+        border:1px solid #efefef;
+        width: 100%;
+        margin-top: 1.5rem;
+        padding: 0.1rem;
+        border-radius: 0.8rem;
+
+        
+    }
+    .search-bar{
+        margin: 0.5rem 0;
+        display: flex;
+    }
+   
+    
+    .icon-smallscreen{
+        gap: 0.7rem;
+    }
+    .right-icon {
+        flex-direction: column;
+        width: 100%;
+    }
+    .icon-bar {
+        flex-direction: column;
+        /* gap: 10px; */
+    }
+    .action-btn-gap {
+        justify-content: center !important;
+        /* width: none !important; */
+    }
+    .search-button{
+        margin: 0 !important;
+    }
+}
+
+.mat-mdc-tab-group{
+    margin-top:20px;
+padding-inline: 10px;
+   }
+
+
+   /* Button */
+ .p-10 button:nth-child(1){
+    background-color:#dd0000;
+    color:#ffffff;
+    border-style:none;
+    height:35px;
+    width:90px;
+    border-radius: 5px;
+   }
+   
+   /* Success */
+    .p-10 .bg-success{
+    border-style:none;
+    height:35px;
+    width:90px;
+    border-radius: 5px;
+   }
+
+   .inputlabel{
+    font-size: 13px !important;
+    font-weight: 600;
+    margin-left: 10px;
+   }
+   
+   .textareadivreturnpolicy > textarea{
+    width: 95%;
+    margin-left: 10px;
+    height: 130px !important;
+   }
+   .profileheadingdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+    border-bottom-color:rgba(153,153,153,0.87);
+   }
+
+   .profileheadingdiv .buttondiv .bg-success{
+    border-style:none;
+    background-color:#0163d2 !important;
+    height:30px;
+    width:150px;
+    white-space: nowrap !important;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* color:#ffffff; */
+   }
+
+   .profilespan{
+    font-size: 30px;
+   }
+
+   /*  */
+   @media (max-width:599px){
+
+    /* Profileheadingdiv */
+     .profileheadingdiv{
+     flex-direction:column;
+    }
+    
+    /* Buttondiv */
+    .profileheadingdiv .buttondiv{
+     width:100% !important;
+    }
+    
+    /* Success */
+    .profileheadingdiv .buttondiv .bg-success{
+     width:100% !important;
+    }
+    
+    /* Dual field */
+    .dual-field{
+     flex-direction:column;
+    }
+    
+    /* Dual form */
+    .dual-field .dual-form{
+     width:100% !important;
+    }
+    
+   }
+
+   .contactspan{
+    font-size: 30px;
+    margin-left:8px;
+
+
+   }
+
+  
+   /* Search button */
+.search-div .search-bar .search-button{
+    background-color:#0163d2;
+    color:#ffffff;
+    border-style:none;
+    height:25px;
+    width:65px;
+    border-radius: 4px;
+   }
+
+   @media (max-width:599px){
+
+    /* Search div */
+    .form .search-div{
+     padding-left:10px;
+     padding-right:10px;
+    }
+    
+   }
+

@@ -1,0 +1,122 @@
+<!-- Main Heading -->
+<div class="header d-flex ">
+    <p class="heading">Add New Configuration</p>
+    <mat-icon mat-dialog-close="true">cancel</mat-icon>
+</div>
+
+
+<!-- Pop-Up Content Start -->
+<div class="main-container boxed space">
+
+    <!-- Radio Buttons -->
+    <div class="check d-flex">
+        <mat-radio-button formControlName="formControlName">Staff</mat-radio-button>
+        <mat-radio-button checked="" formControlName="formControlName">Client</mat-radio-button>
+    </div>
+
+    <div>
+        <mat-label class="form-input-label">Role </mat-label>
+        <div class="mt2">
+            <mat-form-field appearance="outline" class="form-field">
+                <mat-select class="select_in" placeholder="Employee">
+                    <mat-option value="Draft">Employee</mat-option>
+                    <mat-option value="Draft">Draft</mat-option>
+                    <mat-option value="Draft">Draft</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div>
+        <mat-label class="form-input-label">Download limits</mat-label>
+        <div class="mt2">
+            <mat-form-field appearance="outline" class="form-field">
+                <mat-select class="select_in" placeholder="Employee">
+                    <mat-option value="Draft">Employee</mat-option>
+                    <mat-option value="Draft">Draft</mat-option>
+                    <mat-option value="Draft">Draft</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <!-- Grid Div Start -->
+    <div class="grid-div">
+
+        <div>
+            <mat-label class="form-input-label">Minimum size</mat-label>
+            <div class="calendar-input-field form-field two-icon-div-1">
+
+                <div class="img-right-border">
+                    Mb
+                </div>
+                <input type="text" class="link-div" placeholder="0" />
+
+            </div>
+        </div>
+
+        <div>
+            <mat-label class="form-input-label">Maximum size</mat-label>
+            <div class="calendar-input-field form-field two-icon-div-1">
+
+                <div class="img-right-border">
+                    Mb
+                </div>
+                <input type="text" class="link-div" placeholder="0" />
+
+            </div>
+        </div>
+
+        <!-- Client Permissions Toggle Div -->
+        <div class="toggle-div">
+            <mat-label class="form-input-label">Client permissions</mat-label>
+            <div class="left-space-div">
+
+                <div class="download-line-div">
+                    <mat-label class="form-input-label">View</mat-label>
+                    <p></p>
+                    <mat-slide-toggle checked="" color="primary"></mat-slide-toggle>
+                </div>
+
+                <div class="download-line-div">
+                    <mat-label class="form-input-label">Upload and override</mat-label>
+                    <p></p>
+                    <mat-slide-toggle checked="" color="primary"></mat-slide-toggle>
+                </div>
+
+                <div class="download-line-div">
+                    <mat-label class="form-input-label">Delete</mat-label>
+                    <p></p>
+                    <mat-slide-toggle checked="" color="primary"></mat-slide-toggle>
+                </div>
+
+                <div class="download-line-div">
+                    <mat-label class="form-input-label">Upload</mat-label>
+                    <p></p>
+                    <mat-slide-toggle checked="" color="primary"></mat-slide-toggle>
+                </div>
+
+                <div class="download-line-div">
+                    <mat-label class="form-input-label">Download</mat-label>
+                    <p></p>
+                    <mat-slide-toggle checked="" color="primary"></mat-slide-toggle>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Grid Div End -->
+
+    <mat-divider></mat-divider>
+
+    <!-- Close and Save Buttons -->
+    <div class="d-flex">
+        <button mat-raised-button mat-dialog-close="" class="bg-close">Close</button>
+        <button mat-raised-button mat-dialog-close="" class="bg-success">Save</button>
+    </div>
+
+
+</div>
+<!-- Pop-Up Content End -->

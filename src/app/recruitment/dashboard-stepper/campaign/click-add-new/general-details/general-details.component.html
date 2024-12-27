@@ -1,0 +1,202 @@
+<div class="p-10">
+
+    <div class="two-inputs">
+        <div class="w-full">
+            <mat-label class="form-input-label"> <span class="text-danger">*</span>Campaign code</mat-label>
+            <input type="text" class="mat-input" placeholder="Gram">
+        </div>
+        <div class="w-full">
+            <mat-label class="form-input-label"> <span class="text-danger">*</span>Campaign Name</mat-label>
+            <input type="text" class="mat-input" placeholder="Gram">
+        </div>
+    </div>
+
+    <div class="m-t-10">
+        <mat-label class="form-input-label">Recruitment pipeline form</mat-label>
+        <div class="selected-form-field">
+            <select name="" id="" class="mat-input">
+                <option value="">Nenhuma</option>
+            </select>
+            <span class="down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                    viewBox="0 0 15 15">
+                    <path fill="#808080" d="M7.5 12L0 4h15z" />
+                </svg></span>
+        </div>
+    </div>
+
+
+    <div class="multi-imput-div">
+        <div class="w-full">
+            <div class="m-t-10">
+                <mat-label class="form-input-label"><span class="text-danger">*</span>Position</mat-label>
+                <div class="selected-form-field">
+                    <select name="" id="" class="mat-input">
+                        <option value="">Nenhuma</option>
+                    </select>
+                    <span class="down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 15 15">
+                            <path fill="#808080" d="M7.5 12L0 4h15z" />
+                        </svg></span>
+                </div>
+            </div>
+
+            <div class="m-t-10">
+                <mat-label class="form-input-label">Quantity to be recruited</mat-label>
+                <input type="text" class="mat-input" placeholder="">
+            </div>
+
+            <div class="m-t-10">
+                <mat-label class="form-input-label"> Department</mat-label>
+                <div class="selected-form-field">
+                    <select name="" id="" class="mat-input">
+                        <option value="">Nenhuma</option>
+                    </select>
+                    <span class="down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 15 15">
+                            <path fill="#808080" d="M7.5 12L0 4h15z" />
+                        </svg></span>
+                </div>
+            </div>
+
+            <div class="m-t-10">
+                <mat-label class="form-input-label">Starting salary (from)</mat-label>
+                <div class="">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <div class="date-1   m-r-5">
+                            <span class="zar-text">ZAR</span>
+                        </div>
+                        <input matInput class="input" class="date-input" placeholder="">
+                        <!-- <input matInput [matDatepicker]="picker"> -->
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="date-field m-t-10 ">
+                <mat-label class="form-input-label">From date </mat-label>
+                <div class="calendar-input-field date-picker ">
+                    <mat-form-field appearance="outline" class="form-field date">
+                        <mat-datepicker-toggle matIconSuffix [for]="picker1" class="">
+                            <svg matDatepickerToggleIcon xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em"
+                                viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M2 19c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-8H2zM19 4h-2V3c0-.6-.4-1-1-1s-1 .4-1 1v1H9V3c0-.6-.4-1-1-1s-1 .4-1 1v1H5C3.3 4 2 5.3 2 7v2h20V7c0-1.7-1.3-3-3-3" />
+                            </svg>
+                        </mat-datepicker-toggle>
+                        <div class="date-border"></div>
+                        <input matInput [matDatepicker]="picker1" class="input" placeholder="2024-02-20">
+                        <mat-datepicker #picker1></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="w-full">
+            <div class="m-t-10">
+                <mat-label class="form-input-label">Company</mat-label>
+                <div class="selected-form-field">
+                    <select name="" id="" class="mat-input">
+                        <option value="">Nenhuma</option>
+                    </select>
+                    <span class="down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 15 15">
+                            <path fill="#808080" d="M7.5 12L0 4h15z" />
+                        </svg></span>
+                </div>
+            </div>
+
+            <div class="m-t-10">
+                <mat-label class="form-input-label">Way of working</mat-label>
+                <div class="selected-form-field">
+                    <select name="" id="" class="mat-input">
+                        <option value="">Nenhuma</option>
+                    </select>
+                    <span class="down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 15 15">
+                            <path fill="#808080" d="M7.5 12L0 4h15z" />
+                        </svg></span>
+                </div>
+            </div>
+            <div class="m-t-10">
+                <mat-label class="form-input-label"> Desktop</mat-label>
+                <input type="text" class="mat-input" placeholder="">
+            </div>
+
+            <div class="m-t-10">
+                <mat-label class="form-input-label">Starting salary (for)</mat-label>
+                <div class="">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <div class="date-1   m-r-5">
+                            <span class="zar-text">ZAR</span>
+                        </div>
+                        <input matInput class="input" class="date-input" placeholder="">
+                        <!-- <input matInput [matDatepicker]="picker"> -->
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="date-field m-t-10 ">
+                <mat-label class="form-input-label"><span class="text-danger">*</span>The date </mat-label>
+                <div class="calendar-input-field date-picker ">
+                    <mat-form-field appearance="outline" class="form-field date">
+                        <mat-datepicker-toggle matIconSuffix [for]="picker1" class="">
+                            <svg matDatepickerToggleIcon xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em"
+                                viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M2 19c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-8H2zM19 4h-2V3c0-.6-.4-1-1-1s-1 .4-1 1v1H9V3c0-.6-.4-1-1-1s-1 .4-1 1v1H5C3.3 4 2 5.3 2 7v2h20V7c0-1.7-1.3-3-3-3" />
+                            </svg>
+                        </mat-datepicker-toggle>
+                        <div class="date-border"></div>
+                        <input matInput [matDatepicker]="picker1" class="input" placeholder="2024-02-20">
+                        <mat-datepicker #picker1></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m-t-10">
+        <mat-label class="form-input-label">The reason for recruitment</mat-label>
+        <textarea name="" id="" cols="30" rows="10" class="text-area mat-input"></textarea>
+    </div>
+
+    <div class="ckeditorpart">
+        <div class="labeldiv">
+            <mat-label class="form-input-label">Job description</mat-label>
+        </div>
+        <ckeditor [editor]="Editor" data="<p> </p>">
+        </ckeditor>
+    </div>
+
+
+    <div class="two-inputs m-t-10">
+        <div class="w-full">
+            <mat-label class="form-input-label">Manager</mat-label>
+            <div class="selected-form-field">
+                <select name="" id="" class="mat-input">
+                    <option value="">Nenhuma</option>
+                </select>
+                <span class="down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                        viewBox="0 0 15 15">
+                        <path fill="#808080" d="M7.5 12L0 4h15z" />
+                    </svg></span>
+            </div>
+        </div>
+        <div class="w-full">
+            <mat-label class="form-input-label">Follower</mat-label>
+            <div class="selected-form-field">
+                <select name="" id="" class="mat-input">
+                    <option value="">Nenhuma</option>
+                </select>
+                <span class="down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                        viewBox="0 0 15 15">
+                        <path fill="#808080" d="M7.5 12L0 4h15z" />
+                    </svg></span>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>

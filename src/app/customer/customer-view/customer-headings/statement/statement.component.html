@@ -1,0 +1,130 @@
+<div class="main-container boxed space">
+    <h1 class="text-dark">Statement</h1>
+
+    <app-customer-headings></app-customer-headings>
+    <div class="form p-10">
+        <div class="d-flex jc-sb m-b-15 align-items-center">
+            <div class="dual-form">
+                <div class="selected-form-field">
+                    <select class="dual-input">
+                        <option value="">-- select --</option>
+                    </select>
+                    <span class="dual-down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 15 15">
+                            <path fill="#808080" d="M7.5 12L0 4h15z" /></svg>
+                    </span>
+                </div>
+            </div>
+            <div>  <div class="d-flex align-items-center action-btn-gap">
+                
+                <span class="icon-btn bg-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="white" d="M18 3H6v4h12m1 5a1 1 0 0 1-1-1a1 1 0 0 1 1-1a1 1 0 0 1 1 1a1 1 0 0 1-1 1m-3 7H8v-5h8m3-6H5a3 3 0 0 0-3 3v6h4v4h12v-4h4v-6a3 3 0 0 0-3-3"/></svg>
+                </span>
+                
+                <span class="icon-btn bg-danger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="white" d="M8.267 14.68c-.184 0-.308.018-.372.036v1.178c.076.018.171.023.302.023c.479 0 .774-.242.774-.651c0-.366-.254-.586-.704-.586m3.487.012c-.2 0-.33.018-.407.036v2.61c.077.018.201.018.313.018c.817.006 1.349-.444 1.349-1.396c.006-.83-.479-1.268-1.255-1.268"/><path fill="white" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM9.498 16.19c-.309.29-.765.42-1.296.42a2.23 2.23 0 0 1-.308-.018v1.426H7v-3.936A7.558 7.558 0 0 1 8.219 14c.557 0 .953.106 1.22.319c.254.202.426.533.426.923c-.001.392-.131.723-.367.948m3.807 1.355c-.42.349-1.059.515-1.84.515c-.468 0-.799-.03-1.024-.06v-3.917A7.947 7.947 0 0 1 11.66 14c.757 0 1.249.136 1.633.426c.415.308.675.799.675 1.504c0 .763-.279 1.29-.663 1.615M17 14.77h-1.532v.911H16.9v.734h-1.432v1.604h-.906V14.03H17zM14 9h-1V4l5 5z"/></svg>
+                </span>
+                <span (click)="openDialog()" class="icon-btn bg-warning">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="white" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44"/></svg>
+                </span>
+               
+
+            </div></div>
+        </div>
+       
+        <p class="statement-tag">Customer Statement For Drop Cyprus</p>
+      
+     
+            <div class="statement-1">
+                <p class="customer-name">Lenzcreative</p>
+                    <p class="customer-detail">Berliner Strasse 269</p>
+                    <p class="customer-detail">Wiesbaden Hesse</p>
+                    <p class="customer-detail">GE 10000</p>
+                    <p class="customer-detail">VAT Number: 4214217462141</p>
+            </div>
+
+        <mat-divider></mat-divider>
+
+        <div class="d-flex jc-sb">
+            <p class="customer-name">To:</p>
+            <div>
+                <p class="account-summary">Account Summary</p>
+                <p class="date">2024-01-01 To 2024-01-31</p>
+            </div>
+        </div>
+        <div class="divider d-flex"><mat-divider class="line-half"></mat-divider></div>
+        
+        <div class="d-flex jc-sb">
+            <p class="customer-name">Drop Cyprus</p>
+            <div class="d-flex jc-sb">
+                <div class="d-flex jc-sb balance-div" >
+                    <div >
+                        <p class="balance">Beginning Balance:</p>
+                        <p class="balance">Invoiced Amount:</p>
+                        <p class="balance">Amount paid:</p>
+                    </div>
+                    <div>
+                        <p class="balance">$0.00</p>
+                        <p class="balance">$0.00</p>
+                        <p class="balance">$0.00</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="divider-2 d-flex"><mat-divider class="line-half-2"></mat-divider></div>
+
+        <div class="d-flex jc-sb balance-div-2">
+            <div class="d-flex jc-sb  balance-div-gap" >
+                <div >
+                    <p class="balance">Balance Due:</p>
+                   
+                </div>
+                <div>
+                    <p class="balance">$0.00</p>
+                   
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p class="heading-2">Showing all invoices and payments between 2024-01-01 and 2024-01-31</p>
+        </div>
+        
+        <div class="table-div">
+            <table class="table-full">
+                <tr>
+                    <th>Date</th>
+                    <th>Details</th>
+                    <th>Amount</th>
+                    <th>payment</th>
+                    <th>Balance</th>
+                </tr>
+                <tr>
+                    <td>2024-01-01</td>
+                    <td>Beginning Balance</td>
+                    <td>0.00</td>
+                    <td></td>
+                    <td>0.00</td>
+                    
+                </tr>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Beginning Balance:</th>
+                        <th></th>
+                        <th>$0.00</th>
+                      
+                    </tr>
+                  </tfoot>
+                
+                
+            </table>
+            
+        </div>
+            
+           
+      
+
+    </div>

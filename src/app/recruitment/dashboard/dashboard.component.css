@@ -1,0 +1,110 @@
+.line-div {
+  display: flex;
+  align-items: center;
+  gap: -1;
+  width: 100%;
+}
+
+.arrow-icon {
+  color: #0163d2;
+  font-size: 8px;
+  width: fit-content;
+  height: 100% !important;
+  transform: rotate(45deg);
+}
+
+.text-primary-1 {
+  width: max-content;
+  font-size: 22px;
+}
+
+.line {
+  width: 100%;
+  background-color: #0163d2;
+  height: 1px;
+}
+
+.dashboard-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.content {
+  padding: 5px 10px 10px 10px !important;
+}
+
+.b-b-pink {
+  border-bottom: 1px solid #ffbccb;
+}
+
+.first {
+  background-color: #fff9e4 !important;
+}
+
+.secound {
+  background-color: #ecdce5 !important;
+}
+
+.third {
+  background-color: #dcfce7 !important;
+}
+
+.fourth {
+  background-color: #dcfce7 !important;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 769px) {
+  .grid-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .grid-cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+.Normal-text {
+  font-size: 12px;
+  padding: 3px;
+  border-radius: 3px;
+  background-color: #fdf0ba;
+}
+.Normal-text-2 {
+  font-size: 12px;
+  padding: 3px;
+  border-radius: 3px;
+  background-color: #ecbfd9;
+}
+.Normal-text-3 {
+  font-size: 12px;
+  padding: 3px;
+  border-radius: 3px;
+  background-color: #bdf5d1;
+}
+.Normal-text-4 {
+  font-size: 12px;
+  padding: 3px;
+  border-radius: 3px;
+  background-color: #bdf5d1;
+}
+
+.text-primary-1-small {
+  margin-left: 10px;
+  font-size: 12px !important;
+  color: gray;
+}
+
+.mat-mdc-card-header {
+  display: flex;
+  padding: 16px 16px 16px 2px !important;
+}

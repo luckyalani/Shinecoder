@@ -1,0 +1,55 @@
+<div class="rounded">
+    <div class="d-flex jc-sb p-10 bg-light align-items-center">
+        <div class="">
+            <span class="fw-medium fs-16">Signature & Confirmation de l'identité</span>
+        </div>
+        <svg class="close-btn" (click)="closepopup()" xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em"
+            viewBox="0 0 32 32">
+            <path fill="#f70202"
+                d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2m5.4 21L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z" />
+        </svg>
+    </div>
+    <div class="p-20">
+        <div>
+            <mat-label class="form-input-label">Prénom</mat-label>
+            <div class="mt2">
+                <mat-form-field appearance="outline" class="form-field">
+                    <input matInput class="input">
+                </mat-form-field>
+            </div>
+        </div>
+        <div>
+            <mat-label class="form-input-label">Nom</mat-label>
+            <div class="mt2">
+                <mat-form-field appearance="outline" class="form-field">
+                    <input matInput class="input">
+                </mat-form-field>
+            </div>
+        </div>
+        <div>
+            <mat-label class="form-input-label">Email</mat-label>
+            <div class="mt2">
+                <mat-form-field appearance="outline" class="form-field">
+                    <input matInput class="input">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="">
+            <mat-label class="form-input-label text-danger">Signature</mat-label>
+            <div class="ddress">
+                <mat-form-field appearance="outline" class="form-field address">
+                    <input matInput class="input">
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+    <div class="b-all">
+        <div class="p-20 fs-14">
+            By clicking on "Sign", I consent to be legally bound by this electronic representation of my signature.
+        </div>
+    </div>
+    <div class="d-flex gap-2 p-10 b-t">
+        <button (click)="closepopup()" mat-raised-button color="primary">Signer</button>
+        <button (click)="closepopup()" mat-raised-button>Annuler</button>
+    </div>
+</div>

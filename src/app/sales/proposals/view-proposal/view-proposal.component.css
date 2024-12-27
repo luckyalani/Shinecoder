@@ -1,0 +1,61 @@
+.total {
+    gap: 2rem;
+    border-top: 1px solid gainsboro;
+    width: 24rem;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+}
+
+.total-div {
+    margin-top: 2rem;
+    font-weight: 400;
+    float: right;
+}
+
+.div-2 {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.text-areas {
+    height: 100%;
+    width: 100%;
+}
+
+.text-area {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+
+p {
+    margin: 0;
+}
+
+.inner {
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.gap-3 {
+    gap: 2rem;
+}
+
+.date {
+    padding-right: 1.8rem;
+}
+
+.fw-5 {
+    font-weight: 500;
+}
+
+.fw-4 {
+    font-weight: 400;
+}
+
+@media screen and (max-width:428px) {
+    .total {
+        width: 12rem;
+    }
+}

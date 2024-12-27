@@ -1,0 +1,266 @@
+<div class="main-container boxed space">
+    <h1 class="text-dark">Add Media</h1>
+
+    <div class="form">
+        <div>
+            <p class=" m-0 fs-16 m-l-10 fw-medium">Add Menu item</p>
+        </div>
+        <mat-divider class="m-b-20"></mat-divider>
+        <div class="m-10">
+            <label for=""><span class="text-danger">*</span>Menu Title</label>
+            <input type="text" class="mat-input">
+        </div>
+        <div class="m-10 d-flex align-items-center gap-1">
+            <p class="fs-12 fw-medium">External URL</p>
+            <mat-slide-toggle [color]="color"></mat-slide-toggle>
+        </div>
+
+        <div class="m-10">
+
+            <label for="">External URL Address</label>
+            <input type="text" class="mat-input">
+        </div>
+        <div class="m-10 d-flex align-items-center gap-1">
+            <p class="fs-12 fw-medium">Open In New Tab</p>
+            <mat-slide-toggle [color]="color"></mat-slide-toggle>
+        </div>
+        <div class="m-10">
+            <label for="">Page</label>
+            <input type="text" class="mat-input" placeholder="select">
+        </div>
+        <mat-divider class="m-t-20 m-b-10"></mat-divider>
+        <div class="m-l-10 "><button mat-raised-button class="bg-success">Save</button></div>
+    </div>
+
+    <div class="form">
+        <div>
+            <p class=" m-0 fs-16 m-l-10 fw-medium">Menu item List</p>
+        </div>
+        <mat-divider class="m-b-20"></mat-divider>
+
+        <div class="row gap-1 m-10">
+            <div class="col-6 list d-flex jc-sb align-items-center">
+                <div>
+                    <p class="fs-12 fw-medium m-0">PRICING</p>
+                </div>
+                <div class="p-t-5">
+                    <span class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                            viewBox="0 0 24 24">
+                            <path fill="black"
+                                d="m7 17.013l4.413-.015l9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583zM18.045 4.458l1.589 1.583l-1.597 1.582l-1.586-1.585zM9 13.417l6.03-5.973l1.586 1.586l-6.029 5.971L9 15.006z" />
+                            <path fill="black"
+                                d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01c-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2" />
+                        </svg></span>
+                    <span (click)="deleteDialog()" class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                            viewBox="0 0 24 24">
+                            <g fill="black" fill-rule="evenodd" clip-rule="evenodd">
+                                <path
+                                    d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12m10-8a8 8 0 1 0 0 16a8 8 0 0 0 0-16" />
+                                <path
+                                    d="M13 7a1 1 0 1 0-2 0v4H7a1 1 0 1 0 0 2h4v4a1 1 0 1 0 2 0v-4h4a1 1 0 1 0 0-2h-4z" />
+                            </g>
+                        </svg></span>
+                </div>
+
+            </div>
+            <div class="col-6 list  d-flex jc-sb align-items-center">
+                <div>
+                    <p class="fs-12 fw-medium m-0">ABOUT</p>
+                </div>
+                <div class="p-t-5">
+                    <span class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                            viewBox="0 0 24 24">
+                            <path fill="black"
+                                d="m7 17.013l4.413-.015l9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583zM18.045 4.458l1.589 1.583l-1.597 1.582l-1.586-1.585zM9 13.417l6.03-5.973l1.586 1.586l-6.029 5.971L9 15.006z" />
+                            <path fill="black"
+                                d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01c-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2" />
+                        </svg></span>
+                    <span (click)="deleteDialog()" class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                            viewBox="0 0 24 24">
+                            <g fill="black" fill-rule="evenodd" clip-rule="evenodd">
+                                <path
+                                    d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12m10-8a8 8 0 1 0 0 16a8 8 0 0 0 0-16" />
+                                <path
+                                    d="M13 7a1 1 0 1 0-2 0v4H7a1 1 0 1 0 0 2h4v4a1 1 0 1 0 2 0v-4h4a1 1 0 1 0 0-2h-4z" />
+                            </g>
+                        </svg></span>
+                </div>
+
+            </div>
+            <div class="col-6 list d-flex jc-sb align-items-center">
+                <div>
+                    <p class="fs-12 fw-medium m-0">HOME</p>
+                </div>
+                <div class="p-t-5">
+                    <span class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                            viewBox="0 0 24 24">
+                            <path fill="black"
+                                d="m7 17.013l4.413-.015l9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583zM18.045 4.458l1.589 1.583l-1.597 1.582l-1.586-1.585zM9 13.417l6.03-5.973l1.586 1.586l-6.029 5.971L9 15.006z" />
+                            <path fill="black"
+                                d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01c-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2" />
+                        </svg></span>
+                    <span (click)="deleteDialog()" class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                            viewBox="0 0 24 24">
+                            <g fill="black" fill-rule="evenodd" clip-rule="evenodd">
+                                <path
+                                    d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12m10-8a8 8 0 1 0 0 16a8 8 0 0 0 0-16" />
+                                <path
+                                    d="M13 7a1 1 0 1 0-2 0v4H7a1 1 0 1 0 0 2h4v4a1 1 0 1 0 2 0v-4h4a1 1 0 1 0 0-2h-4z" />
+                            </g>
+                        </svg></span>
+                </div>
+
+            </div>
+            <div class="col-6 list d-flex jc-sb align-items-center">
+                <div>
+                    <p class="fs-12 fw-medium m-0">GALLERY</p>
+                </div>
+                <div class="p-t-5">
+                    <span class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                            viewBox="0 0 24 24">
+                            <path fill="black"
+                                d="m7 17.013l4.413-.015l9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583zM18.045 4.458l1.589 1.583l-1.597 1.582l-1.586-1.585zM9 13.417l6.03-5.973l1.586 1.586l-6.029 5.971L9 15.006z" />
+                            <path fill="black"
+                                d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01c-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2" />
+                        </svg></span>
+                    <span (click)="deleteDialog()" class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                            viewBox="0 0 24 24">
+                            <g fill="black" fill-rule="evenodd" clip-rule="evenodd">
+                                <path
+                                    d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12m10-8a8 8 0 1 0 0 16a8 8 0 0 0 0-16" />
+                                <path
+                                    d="M13 7a1 1 0 1 0-2 0v4H7a1 1 0 1 0 0 2h4v4a1 1 0 1 0 2 0v-4h4a1 1 0 1 0 0-2h-4z" />
+                            </g>
+                        </svg></span>
+                </div>
+
+            </div>
+            <div class="col-6 list d-flex jc-sb align-items-center">
+                <div>
+                    <p class="fs-12 fw-medium m-0">AFFILIATE</p>
+                </div>
+                <div class="p-t-5">
+                    <span class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                            viewBox="0 0 24 24">
+                            <path fill="black"
+                                d="m7 17.013l4.413-.015l9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583zM18.045 4.458l1.589 1.583l-1.597 1.582l-1.586-1.585zM9 13.417l6.03-5.973l1.586 1.586l-6.029 5.971L9 15.006z" />
+                            <path fill="black"
+                                d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01c-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2" />
+                        </svg></span>
+                    <span class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                            viewBox="0 0 24 24">
+                            <g fill="black" fill-rule="evenodd" clip-rule="evenodd">
+                                <path
+                                    d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12m10-8a8 8 0 1 0 0 16a8 8 0 0 0 0-16" />
+                                <path
+                                    d="M13 7a1 1 0 1 0-2 0v4H7a1 1 0 1 0 0 2h4v4a1 1 0 1 0 2 0v-4h4a1 1 0 1 0 0-2h-4z" />
+                            </g>
+                        </svg></span>
+                </div>
+
+            </div>
+            <div class="col-6 list d-flex jc-sb align-items-center">
+                <div>
+                    <p class="fs-12 fw-medium m-0">BLOG</p>
+                </div>
+                <div class="p-t-5">
+                    <span class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                            viewBox="0 0 24 24">
+                            <path fill="black"
+                                d="m7 17.013l4.413-.015l9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583zM18.045 4.458l1.589 1.583l-1.597 1.582l-1.586-1.585zM9 13.417l6.03-5.973l1.586 1.586l-6.029 5.971L9 15.006z" />
+                            <path fill="black"
+                                d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01c-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2" />
+                        </svg></span>
+                    <span class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                            viewBox="0 0 24 24">
+                            <g fill="black" fill-rule="evenodd" clip-rule="evenodd">
+                                <path
+                                    d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12m10-8a8 8 0 1 0 0 16a8 8 0 0 0 0-16" />
+                                <path
+                                    d="M13 7a1 1 0 1 0-2 0v4H7a1 1 0 1 0 0 2h4v4a1 1 0 1 0 2 0v-4h4a1 1 0 1 0 0-2h-4z" />
+                            </g>
+                        </svg></span>
+                </div>
+
+            </div>
+            <div class="col-6 list d-flex jc-sb align-items-center">
+                <div>
+                    <p class="fs-12 fw-medium m-0">OTHERS</p>
+                </div>
+                <div class="p-t-5">
+                    <span class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                            viewBox="0 0 24 24">
+                            <path fill="black"
+                                d="m7 17.013l4.413-.015l9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583zM18.045 4.458l1.589 1.583l-1.597 1.582l-1.586-1.585zM9 13.417l6.03-5.973l1.586 1.586l-6.029 5.971L9 15.006z" />
+                            <path fill="black"
+                                d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01c-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2" />
+                        </svg></span>
+                    <span class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                            viewBox="0 0 24 24">
+                            <g fill="black" fill-rule="evenodd" clip-rule="evenodd">
+                                <path
+                                    d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12m10-8a8 8 0 1 0 0 16a8 8 0 0 0 0-16" />
+                                <path
+                                    d="M13 7a1 1 0 1 0-2 0v4H7a1 1 0 1 0 0 2h4v4a1 1 0 1 0 2 0v-4h4a1 1 0 1 0 0-2h-4z" />
+                            </g>
+                        </svg></span>
+                </div>
+
+            </div>
+            <div class="col-6 list d-flex jc-sb align-items-center">
+                <div>
+                    <p class="fs-12 fw-medium m-0">FEATURES</p>
+                </div>
+                <div class="p-t-5">
+                    <span class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                            viewBox="0 0 24 24">
+                            <path fill="black"
+                                d="m7 17.013l4.413-.015l9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583zM18.045 4.458l1.589 1.583l-1.597 1.582l-1.586-1.585zM9 13.417l6.03-5.973l1.586 1.586l-6.029 5.971L9 15.006z" />
+                            <path fill="black"
+                                d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01c-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2" />
+                        </svg></span>
+                    <span class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                            viewBox="0 0 24 24">
+                            <g fill="black" fill-rule="evenodd" clip-rule="evenodd">
+                                <path
+                                    d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12m10-8a8 8 0 1 0 0 16a8 8 0 0 0 0-16" />
+                                <path
+                                    d="M13 7a1 1 0 1 0-2 0v4H7a1 1 0 1 0 0 2h4v4a1 1 0 1 0 2 0v-4h4a1 1 0 1 0 0-2h-4z" />
+                            </g>
+                        </svg></span>
+                </div>
+
+            </div>
+            <div class="col-6 list d-flex jc-sb align-items-center">
+                <div>
+                    <p class="fs-12 fw-medium m-0">CONTACT US</p>
+                </div>
+                <div class="p-t-5">
+                    <span class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                            viewBox="0 0 24 24">
+                            <path fill="black"
+                                d="m7 17.013l4.413-.015l9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583zM18.045 4.458l1.589 1.583l-1.597 1.582l-1.586-1.585zM9 13.417l6.03-5.973l1.586 1.586l-6.029 5.971L9 15.006z" />
+                            <path fill="black"
+                                d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01c-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2" />
+                        </svg></span>
+                    <span class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                            viewBox="0 0 24 24">
+                            <g fill="black" fill-rule="evenodd" clip-rule="evenodd">
+                                <path
+                                    d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12m10-8a8 8 0 1 0 0 16a8 8 0 0 0 0-16" />
+                                <path
+                                    d="M13 7a1 1 0 1 0-2 0v4H7a1 1 0 1 0 0 2h4v4a1 1 0 1 0 2 0v-4h4a1 1 0 1 0 0-2h-4z" />
+                            </g>
+                        </svg></span>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+    </div>
+</div>

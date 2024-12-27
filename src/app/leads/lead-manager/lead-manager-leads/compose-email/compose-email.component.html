@@ -1,0 +1,76 @@
+<div class="header d-flex jc-sb align-items-center ">
+    <p class="heading">
+         Message</p>
+    <mat-icon mat-dialog-close="true">cancel</mat-icon>
+</div>
+
+
+<div class="main-container boxed space w-95">
+ 
+
+
+    <div class="m-b-10">
+        <mat-label class="form-input-label"> To </mat-label>
+        <div class="calendar-input-field">
+            <mat-form-field appearance="outline" class="">
+                <input matInput class="input" placeholder="">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="m-b-10">
+        <mat-label class="form-input-label"> CC </mat-label>
+        <div class="calendar-input-field">
+            <mat-form-field appearance="outline" class="">
+                <input matInput class="input" placeholder="">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="m-b-10">
+        <mat-label class="form-input-label"> Subject </mat-label>
+        <div class="calendar-input-field">
+            <mat-form-field appearance="outline" class="">
+                <input matInput class="input" placeholder="">
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="ckeditorpart">
+        <div class="labeldiv">
+            <mat-label>Task Description</mat-label>
+        </div>
+        <ckeditor [editor]="Editor" data="<p> Minimum 300 words. HTML and images supported. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit similique et illo obcaecati temporibus asperiores culpa sequi at, id voluptate. Ab vero quibusdam quas blanditiis iste ducimus officia accusantium. Quaerat illo aut facere dolores nihil quidem consequatur nostrum dolorem porro voluptatem autem enim, hic, eveniet maiores voluptatum animi ipsa 
+          </p>">
+        </ckeditor>
+    </div>
+
+    <div class="importing">
+        <div class="choosing">
+            <p><span>*</span> Attachment <span class="bg-green" id="redPlus">+</span> </p>
+
+            <!-- <label for="imgInput"> <img src="assets/images/Group.png" alt=""></label> -->
+            <label for="imgInput"><img src="assets/images/Group.png" alt=""></label>
+            <input type="file" hidden id="imgInput">
+        </div>
+
+
+        <div class="choosing">
+            <p><span>*</span> Attachment <span class="bg-red" id="redPlus">-</span></p>
+            <label for="imgInput"> <img src="assets/images/Group.png" alt=""></label>
+            <input type="file" hidden id="imgInput">
+        </div>
+
+    </div>
+
+
+
+    <!-- Lower Section -->
+    <mat-divider></mat-divider>
+
+   <div class="d-flex gap-2">
+    <button mat-raised-button color="warn">Cancle</button>
+    <button mat-raised-button class="bg-success">Save</button>
+</div>
+   
+</div>
+
+

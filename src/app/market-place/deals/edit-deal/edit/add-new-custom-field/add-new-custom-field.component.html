@@ -1,0 +1,187 @@
+<div class="main-container boxed space">
+    <div class="d-flex flex-no-wrap  align-items-center  ">
+        <div class="text-blue d-flex">
+            <h1 class="text-dark text-no-wrap text-blue">Add new custom field </h1>
+
+        </div>
+        <div class="d-flex flex-no-wrap align-items-center w-full">
+            <span id="diamond"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256">
+                    <path fill="currentColor"
+                        d="M240 128a15.85 15.85 0 0 1-4.67 11.28l-96.05 96.06a16 16 0 0 1-22.56 0l-96-96.06a16 16 0 0 1 0-22.56l96.05-96.06a16 16 0 0 1 22.56 0l96.05 96.06A15.85 15.85 0 0 1 240 128" />
+                </svg></span>
+            <span id="line"></span>
+        </div>
+
+    </div>
+
+
+
+    <div class="form">
+
+
+
+
+        <div class="form-row">
+            <!-- Left Side -->
+            <div class="in-form-row">
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span> Field Belongs to </mat-label>
+                    <div class="mt2">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <mat-select class="select_in" placeholder="Deals">
+                                <mat-option value="Draft">Draft</mat-option>
+                                <mat-option value="Draft">Draft</mat-option>
+                                <mat-option value="Draft">Draft</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <div>
+                    <mat-label class="form-input-label"> Type </mat-label>
+                    <div class="mt2">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <mat-select class="select_in" placeholder="Hyperlink">
+                                <mat-option value="Draft">Draft</mat-option>
+                                <mat-option value="Draft">Draft</mat-option>
+                                <mat-option value="Draft">Draft</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+            <!-- ---------------------Right Side----------------------------- -->
+            <div class="in-form-row">
+
+                <div>
+                    <mat-label class="form-input-label">
+                        <span class="text-danger">*</span> Field Name </mat-label>
+                    <div class="">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="Order">
+
+                        </mat-form-field>
+                        <!-- <span class="text-xxs text-grey mt-0">Enter decimal value Ex. 300.00</span> -->
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label">
+                        Default Value </mat-label>
+                    <div class="">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="0">
+
+                        </mat-form-field>
+                        <!-- <span class="text-xxs text-grey mt-0">Enter decimal value Ex. 300.00</span> -->
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div>
+            <mat-label class="form-input-label">Default Value</mat-label>
+            <div class="mt2">
+                <mat-form-field appearance="outline" class="form-field h-5r">
+
+                    <input matInput class="input h-2r" placeholder="Nothing ">
+                </mat-form-field>
+            </div>
+        </div>
+
+
+        <!-- Lower left and right input fields -->
+
+        <div class="form-row">
+            <!-- Left Side -->
+            <div class="in-form-row">
+                <div>
+                    <mat-label class="form-input-label">
+                        Order</mat-label>
+                    <div class="">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="">
+
+                        </mat-form-field>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+            <!-- ---------------------Right Side----------------------------- -->
+            <div class="in-form-row">
+
+
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span>Grid (Bootstrap Column eq. 12)
+                        - Max is 12</mat-label>
+                    <div class="mt2">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <div class="m-r-3 b-r d-flex align-items-center ">
+                                <span class="text-no-wrap text-sm">col-md-</span>
+                                <!-- <mat-icon class="mat-18  p-r-5">add</mat-icon> -->
+                            </div>
+                            <input matInput class="input" placeholder="Nothing ">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+
+        <!-- Checkboxes -->
+        <div class="checkContainer d-flex flex-col">
+            <mat-checkbox formControlName="" value="" color="primary">Disabled</mat-checkbox>
+            <mat-checkbox formControlName="" value="" color="primary">Restrict visibility for administrators
+                only</mat-checkbox>
+            <mat-checkbox formControlName="" value="" color="primary">Required</mat-checkbox>
+            <span class="text-sm f-w-5 mx-5">Visibility</span>
+            <mat-checkbox formControlName="" value="" color="primary">Show on table</mat-checkbox>
+        </div>
+
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <div class="d-flex m-t-5 gap-1">
+        <button mat-raised-button color="warn">Cancel</button>
+        <button mat-raised-button class="bg-success">Save</button>
+    </div>

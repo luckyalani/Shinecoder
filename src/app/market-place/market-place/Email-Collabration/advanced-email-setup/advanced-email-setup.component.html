@@ -1,0 +1,201 @@
+<div class="main-container boxed space">
+    <div class="d-flex jc-sb">
+        <p class="text-dark p-l-5">Advanced email setup</p>
+    </div>
+
+    <p class="text-blue p-10">Advanced email setup</p>
+    <div class="p-10">
+
+        <div class="width-60">
+            <div class="m-t-10">
+                <label> Select Staff member</label>
+                <div class="selected-form-field">
+                    <select name="" id="" class="mat-input">
+                        <option value="">Nothing Selected</option>
+                    </select>
+                    <span class="down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 15 15">
+                            <path fill="#808080" d="M7.5 12L0 4h15z" />
+                        </svg></span>
+                </div>
+            </div>
+            <div class="result-statistics m-t-10">
+                <div class="my-quizzer-heading-div">
+                    <p class=" text-14 text-wrap">Allow this Staff menber to modify his/her settings</p>
+                    <div class="quizzers-arrow-line-div">
+                        <p class="quizzers-pink-line m0"></p>
+                        <mat-icon class="mat-18 quizzers-arrow-icon">square</mat-icon>
+                    </div>
+                </div>
+                <div class="text-with-toggle-div">
+                    <mat-slide-toggle></mat-slide-toggle>
+                </div>
+            </div>
+        </div>
+
+        <!-- Configure Settings -->
+        <div class="m-t-30">
+            <p class="text-18"> Configure Settings for this Staff member </p>
+            <hr>
+            <div class="d-flex gap-2 jc-sb ">
+                <div class="">
+                    <mat-label class="form-input-label"> Mail Engine</mat-label>
+                    <div>
+                        <mat-radio-group aria-label="Select an option">
+                            <mat-radio-button value=""> PHPMailer </mat-radio-button>
+                            <mat-radio-button value="">CodeIgniter </mat-radio-button>
+                        </mat-radio-group>
+                    </div>
+                </div>
+                <div class="m-r-20">
+                    <mat-label class="form-input-label"> Email Protocol </mat-label>
+                    <div>
+                        <mat-radio-group aria-label="Select an option">
+                            <mat-radio-button value="">SMTP </mat-radio-button>
+                            <mat-radio-button value="">Send Mail </mat-radio-button>
+                            <mat-radio-button value="">Mail</mat-radio-button>
+                        </mat-radio-group>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-t-10">
+                <label> Email Encryption</label>
+                <div class="selected-form-field">
+                    <select name="" id="" class="mat-input">
+                        <option value="">None</option>
+                    </select>
+                    <span class="down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 15 15">
+                            <path fill="#808080" d="M7.5 12L0 4h15z" />
+                        </svg></span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <!-- Left Side -->
+                <div class="in-form-row">
+
+                    <div class="m-t-10">
+                        <label> SMTP Password</label>
+                        <div class="selected-form-field">
+                            <input type="text" class="mat-input">
+                        </div>
+                    </div>
+                    <div class="m-t-10">
+                        <label> Email</label>
+                        <div class="selected-form-field">
+                            <input type="text" class="mat-input">
+                        </div>
+                    </div>
+                    <div class="m-t-10">
+                        <label> SMTP Password</label>
+                        <div class="selected-form-field">
+                            <input type="text" class="mat-input">
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ---------------------Right Side----------------------------- -->
+                <div class="in-form-row">
+
+                    <div class="m-t-10">
+                        <label> SMTP Port</label>
+                        <div class="selected-form-field">
+                            <input type="text" class="mat-input">
+                        </div>
+                    </div>
+                    <div class="m-t-10">
+                        <label> <svg class="top-3"
+                                matTooltip="If you add contract to trash, won't be shown on client side, won't be included in chart and other stats and also by default won't be shown when you will list all contracts."
+                                xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                                <g fill="none">
+                                    <path
+                                        d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                    <path fill="black"
+                                        d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 14a1 1 0 1 0 0 2a1 1 0 0 0 0-2m0-9.5a3.625 3.625 0 0 0-3.625 3.625a1 1 0 1 0 2 0a1.625 1.625 0 1 1 2.23 1.51c-.676.27-1.605.962-1.605 2.115V14a1 1 0 1 0 2 0c0-.244.05-.366.261-.47l.087-.04A3.626 3.626 0 0 0 12 6.5" />
+                                </g>
+                            </svg> SMTP Username</label>
+                        <div class="selected-form-field">
+                            <input type="text" class="mat-input">
+                        </div>
+                    </div>
+                    <div class="m-t-10">
+                        <label> Email Charset</label>
+                        <div class="selected-form-field">
+                            <input type="text" class="mat-input" placeholder="utf-8">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="m-t-10">
+                <label> BCC All Emails To</label>
+                <div class="selected-form-field">
+                    <input type="text" class="mat-input" placeholder="">
+                </div>
+            </div>
+            <div>
+                <label>Email Signature</label>
+                <textarea name="" id="" cols="50" rows="20" class="mat-input text-area"></textarea>
+            </div>
+
+            <div>
+                <label>Predefined Header</label>
+                <textarea name="" id="" cols="50" rows="20" class="mat-input text-area">&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="viewport" content="width=device-width" /&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+&lt;style&gt;
+                                  </textarea>
+            </div>
+
+            <hr>
+            <div>
+                <label>Predefined Footer</label>
+                <textarea name="" id="" cols="50" rows="20" class="mat-input text-area">&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="viewport" content="width=device-width" /&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+&lt;style&gt;
+        </textarea>
+            </div>
+
+            <hr>
+
+            <div class="w-full">
+                <mat-label class="form-input-label">Send Test Email</mat-label>
+                <p class="input-bottom-text">Send test email to make sure that your SMTP settings is set
+                    correctly.</p>
+
+                <div class="calendar-input-field">
+                    <div class="second_icon">
+                        <input matInput class="mat-input" placeholder="Email Address">
+                    </div>
+                    <div class="first_icon">
+                        <button
+                            class="blue-btn mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base "
+                            mat-raised-button> Test </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Configure Settings close -->
+
+    </div>
+
+
+    <div class="d-flex gap-1 p-10">
+        <button mat-dialog-close="true"
+            class=" mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base "
+            mat-raised-button color="warn">Cancel</button>
+        <button mat-dialog-close="true"
+            class="bg-success mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base "
+            mat-raised-button> Save</button>
+    </div>
+</div>

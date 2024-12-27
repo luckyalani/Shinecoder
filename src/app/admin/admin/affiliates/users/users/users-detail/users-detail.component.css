@@ -1,0 +1,136 @@
+.search-bar {
+    position: relative;
+}
+
+.search-div {
+    gap: 5px;
+
+}
+
+.icon-search {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+}
+.card-div {
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    justify-content: space-between;
+}
+
+.numbers {
+    color: #301e6b;
+    font-weight: 800;
+    font-size: 14px;
+    margin: 0;
+}
+.width{
+    width: 12rem;
+}
+
+.cards-1 {
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 0px 0px rgb(71 85 105);
+    padding: 7px 10px;
+}
+
+.cards-2 {
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 0px 0px rgb(18 139 206);
+    padding: 7px 10px;
+}
+
+.cards-3 {
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 0px 0px rgb(194 132 4);
+    padding: 7px 10px;
+}
+
+.cards-4 {
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 0px 0px rgb(239 68 68);
+    padding: 7px 10px;
+}
+
+
+
+.card-p-1 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #5e6a7c;
+    margin: 0;
+}
+
+.card-p-2 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #128bcb;
+    margin: 0;
+}
+
+.card-p-3 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ca8a04;
+    margin: 0;
+}
+
+.card-p-4 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ef4444;
+    margin: 0;
+}
+.approved {
+    background-color: #CDFFD2;
+    color: #00C814;
+    border: 1px solid #00C814;
+    border-radius: 0.3rem;
+    padding: 4px 0px;
+    text-align: center;
+    font-size: 12px;
+    max-width: 5rem;
+}
+.pending {
+    background-color: #d5e1f6;
+    color: #4885ed;
+    border: 1px solid #4885ed;
+    border-radius: 0.3rem;
+    padding: 4px 0px;
+    text-align: center;
+    font-size: 12px;
+    max-width: 5rem;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 767px){
+    .cards-main-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .right-icon {
+        flex-direction: column;
+        width: 100%;
+    }
+    .icon-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .search-bar {
+        display: flex;
+    }
+    
+    
+}

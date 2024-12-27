@@ -1,0 +1,72 @@
+<div class="main-container boxed space manuf-tab">
+    <div class="d-flex gap-1 align-items-center m-b-10">
+        <div>
+            <h1 class="text-dark text-primary m-0">Budget</h1>
+        </div>
+        <div class="line-div">
+            <mat-icon class="arrow-icon">square</mat-icon>
+            <p class="line "></p>
+        </div>
+    </div>
+    <div class="form">
+        <div class="d-flex gap-1 flex-wrap">
+            <button mat-raised-button color="primary">Download Sample For The Month</button>
+            <button mat-raised-button color="primary">Download Sample For The Quarter</button>
+            <button mat-raised-button color="primary">Download Sample For The Year</button>
+        </div>
+        <mat-divider></mat-divider>
+
+        <div class="">
+            <div class="m-t-10 w-50">
+                <mat-label class="form-input-label">Fiscal Year for this budget
+                </mat-label>
+                <div class="m-t-10">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="fw-medium fs-14 m-t-10">
+                Specify the type of accounts you want to use in this budget.<br> Choose Profit and Loss Accounts if you
+                want
+                to budget income of expenses. Choose Balance <br> Sheet Accounts if you want to budget balances in asset
+                or
+                liability accounts.
+            </div>
+            <div>
+                <mat-checkbox class="example-margin " color="primary"> Profit and Loss Accounts</mat-checkbox> <br>
+                <mat-checkbox class="example-margin " color="primary">Balance Sheet Accounts </mat-checkbox>
+            </div>
+            <div class="m-t-10 w-50">
+                <mat-label class="form-input-label">Type</mat-label>
+                <mat-form-field appearance="outline" class="m-t-10">
+                    <mat-select placeholder="Month">
+                        <mat-option value="Month">Month</mat-option>
+                        <mat-option value="Quarter">Quarter</mat-option>
+                        <mat-option value="Year">Year</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="m-t-10">
+            <mat-label class="form-input-label"><span class="text-danger">*</span>Choose excel file</mat-label>
+            <div class="file-border  m-t-10">
+                <div class="m-b-20 full">
+                    <label for="file" class="file"> Choose File</label>
+                    <input type="file" name="" id="file" class="hidden">
+                </div>
+            </div>
+        </div>
+        <div class="text-danger fw-normal fs-14 m-t-10">
+           <p class="m-0">1. The column with the symbol * is required to enter </p>
+           <p class="m-0">2. The Account Name column can enter ID or Name. </p>
+           <p class="m-0">3. Format the excel file (type: text) before entering a value. </p>
+           <p class="m-0">4. Duplicate rows will not be imported. </p>
+        </div>
+    </div>
+
+    <mat-divider></mat-divider>
+    <div>
+        <button mat-raised-button color="primary">Import</button>
+    </div>
+</div>

@@ -1,0 +1,126 @@
+<div class="m-10">
+
+    <label>Description</label>
+    <textarea name="" id="" cols="20" rows="10" class="mat-input text-area"></textarea>
+
+    <div>
+        <mat-label class="form-input-label "><span class="text-danger">*</span>Date Contacted </mat-label>
+        <div class="calendar-input-field date-picker w-auto">
+            <mat-form-field appearance="outline" class="form-field date">
+                <mat-datepicker-toggle matIconSuffix [for]="picker1" class=" w-99p">
+                    <svg matDatepickerToggleIcon xmlns="http://www.w3.org/2000/svg" width="1.4em"
+                        height="1.4em" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M2 19c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-8H2zM19 4h-2V3c0-.6-.4-1-1-1s-1 .4-1 1v1H9V3c0-.6-.4-1-1-1s-1 .4-1 1v1H5C3.3 4 2 5.3 2 7v2h20V7c0-1.7-1.3-3-3-3" />
+                    </svg>
+                </mat-datepicker-toggle>
+                <div class="date-border"></div>
+                <input matInput [matDatepicker]="picker1" class="input">
+                <mat-datepicker #picker1></mat-datepicker>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="d-flex flex-col">
+        <mat-radio-button class="p-r-5" value="1">I got in touch with this lead</mat-radio-button>
+        <mat-radio-button class="p-r-5" value="1">I have not contacted this lead</mat-radio-button>      
+    </div>
+
+    <div class="b-block d-flex jc-e p-10">
+        <button mat-raised-button color="primary">Add Note</button>
+    </div>
+
+    <div class="card-container">
+
+      <div class="card-container ">
+        <!-- Upper Card -->
+        <div class="card">
+            <!-- upperLeft -->
+            <div class="card-upper">
+                <div class="upper-left">
+            <div class="image">
+                <img src="../../../../assets/images/Leads/cartoonBoy.png" alt="">
+            </div>
+            <!-- Detail -->
+            <div class="detail">
+               
+                <p class="text-blue">Emiliano Batz</p>
+                 <p>Note added: 11/03/2024 03:30:08</p>
+            </div>
+        </div>
+        <!-- Upper Right -->
+        <div class="UpperRight">
+            <!-- pen -->
+<span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="text-blue rounded-5 text-small border-blue" width="1em" height="1em" viewBox="0 0 512 512"><path fill="currentColor" d="m70.2 337.4l104.4 104.4L441.5 175L337 70.5zM.6 499.8c-2.3 9.3 2.3 13.9 11.6 11.6L151.4 465L47 360.6zM487.9 24.1c-46.3-46.4-92.8-11.6-92.8-11.6c-7.6 5.8-34.8 34.8-34.8 34.8l104.4 104.4s28.9-27.2 34.8-34.8c0 0 34.8-46.3-11.6-92.8"/></svg>
+</span>
+
+<span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="text-red rounded-5 border-red text-small" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" d="M2 5v10c0 .55.45 1 1 1h9c.55 0 1-.45 1-1V5zm3 9H4V7h1zm2 0H6V7h1zm2 0H8V7h1zm2 0h-1V7h1zm2.25-12H10V.75A.753.753 0 0 0 9.25 0h-3.5A.753.753 0 0 0 5 .75V2H1.75a.752.752 0 0 0-.75.75V4h13V2.75a.752.752 0 0 0-.75-.75M9 2H6v-.987h3z"/></svg>
+</span>
+
+        </div>
+        
+    </div>
+
+    <div class="card-lower">
+        
+        <!-- <label>Description</label> -->
+        <textarea name="" id="" cols="20" rows="10" class="mat-input text-area" placeholder="Queen. 'I never went to school every day--' 'I'VE been to the Gryphon. 'Then, you know,' said Alice indignantly. 'Ah! then yours wasn't a really good school,' said the Pigeon. 'I can hardly breathe.' 'I can't go no lower,' said the Footman, 'and that for two Pennyworth only of beautiful Soup?."></textarea>
+    </div>
+
+    <div class="btnDiv">
+        <button mat-raised-button class="bg-grey" >Cancel</button>
+        <button mat-raised-button color="primary">Update Note</button>
+    </div>
+
+</div>
+
+      </div>
+      
+      <div class="card-container p-10 b-block">
+        <!-- Upper Card -->
+        <div class="card">
+            <!-- upperLeft -->
+            <div class="card-upper">
+                <div class="upper-left">
+            <div class="image">
+                <img src="../../../../assets/images/Leads/cartoonBoy.png" alt="">
+            </div>
+            <!-- Detail -->
+            <div class="detail">
+               
+                <p class="text-blue">Emiliano Batz</p>
+                 <p>Note added: 11/03/2024 03:30:08</p>
+            </div>
+        </div>
+        <!-- Upper Right -->
+        <div class="UpperRight">
+            <!-- pen -->
+<span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="text-blue rounded-5 text-small border-blue" width="1em" height="1em" viewBox="0 0 512 512"><path fill="currentColor" d="m70.2 337.4l104.4 104.4L441.5 175L337 70.5zM.6 499.8c-2.3 9.3 2.3 13.9 11.6 11.6L151.4 465L47 360.6zM487.9 24.1c-46.3-46.4-92.8-11.6-92.8-11.6c-7.6 5.8-34.8 34.8-34.8 34.8l104.4 104.4s28.9-27.2 34.8-34.8c0 0 34.8-46.3-11.6-92.8"/></svg>
+</span>
+
+<span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="text-red rounded-5 border-red text-small" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" d="M2 5v10c0 .55.45 1 1 1h9c.55 0 1-.45 1-1V5zm3 9H4V7h1zm2 0H6V7h1zm2 0H8V7h1zm2 0h-1V7h1zm2.25-12H10V.75A.753.753 0 0 0 9.25 0h-3.5A.753.753 0 0 0 5 .75V2H1.75a.752.752 0 0 0-.75.75V4h13V2.75a.752.752 0 0 0-.75-.75M9 2H6v-.987h3z"/></svg>
+</span>
+
+        </div>
+        
+    </div>
+
+    <div class="card-lower">
+        
+        <!-- <label>Description</label> -->
+        <textarea name="" id="" cols="20" rows="10" class="mat-input text-area" placeholder="Queen. 'I never went to school every day--' 'I'VE been to the Gryphon. 'Then, you know,' said Alice indignantly. 'Ah! then yours wasn't a really good school,' said the Pigeon. 'I can hardly breathe.' 'I can't go no lower,' said the Footman, 'and that for two Pennyworth only of beautiful Soup?."></textarea>
+    </div>
+
+  
+
+</div>
+
+      </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,82 @@
+.form-input-label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.calendar-input-field {
+    display: flex;
+    height: fit-content !important;
+    /* height: 1rem; */
+    width: 100% !important;
+}
+
+::ng-deep .mat-mdc-form-field-infix {
+    padding: 0px 1rem !important;
+    display: flex;
+    align-items: center;
+    min-height: 2rem !important;
+}
+
+
+
+.date {
+    position: relative;
+    left: -0.6rem;
+    width: 2.5rem;
+    border-right: 1px solid gray;
+    height: 100%;
+}
+
+.form-field {
+    width: 100% !important;
+    height: fit-content;
+    margin: 0.5rem 0;
+}
+
+.select_in {
+    display: flex !important;
+    align-items: center;
+}
+
+.text-area {
+    height: 7rem !important;
+    border: 1px solid gray;
+    font-size: 16px;
+    width: 100%;
+}
+
+.text-area:focus {
+    border: 1.7px solid #0163d2;
+    /* border-radius: 0.2rem; */
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.gap-2 {
+    gap: 2em;
+}
+
+.gap-1 {
+    gap: 1em;
+}
+
+
+
+@media (max-width: 700px) {
+
+
+    .d-flex {
+        flex-wrap: wrap;
+    }
+
+    .fs-16 {
+        font-size: 13px;
+    }
+
+    .close-btn {
+        height: 1em !important;
+    }
+}

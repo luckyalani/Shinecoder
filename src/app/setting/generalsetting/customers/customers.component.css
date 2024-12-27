@@ -1,0 +1,84 @@
+/* ---------------------------------text field --------------------------------- */
+.selected-form-field {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.icon-add {
+  height: 1.9rem !important;
+  width: 2.2rem !important;
+  position: absolute;
+  /* left: 0.7rem; */
+  right: 0.7rem;
+  border-left: 0.1rem solid gray;
+  background-color: white !important;
+  padding-top: 0.3rem;
+  text-align: center;
+  color: #505050;
+  background-color: gray;
+}
+.mat-input {
+  /* margin: 0.6rem; */
+}
+.down-arrow {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+}
+
+.input-bottom-text {
+  color: grey;
+  margin: 0 0 10px 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.question-icon {
+  margin-bottom: -3px;
+}
+
+.text-area,
+.mat-mdc-form-field-textarea-control {
+  height: 6rem !important;
+  overflow: hidden !important;
+  resize: none !important;
+  width: 100%;
+}
+.text-blue {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(69, 191, 231);
+}
+
+.input-bottom-text {
+  color: grey;
+  margin: 0;
+  /* margin: 0 0 10px 10px; */
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.Custom-Fields {
+  display: flex;
+}
+@media (max-width: 425px) {
+  .Custom-Fields {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.tl {
+  text-align: start;
+  width: 100%;
+}
+
+.Custom-Fields-borders {
+  border: 2px solid gray;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px;
+  margin: -2px -2px 0 0;
+}
+p {
+  margin: 0;
+}

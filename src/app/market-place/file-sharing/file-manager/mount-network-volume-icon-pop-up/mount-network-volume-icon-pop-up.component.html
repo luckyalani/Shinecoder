@@ -1,0 +1,96 @@
+<!-- Main Heading -->
+<div class="header d-flex ">
+    <p class="heading">Mount Network Volume</p>
+    <mat-icon mat-dialog-close="true">cancel</mat-icon>
+</div>
+
+
+<!-- Pop-Up Content Start -->
+<div class="main-container boxed space">
+
+
+    <div class="">
+
+        <div class="form-row">
+            <!-- All Input Fileds Start Here -->
+            <div class="in-form-row">
+
+                <div>
+                    <mat-label class="form-input-label">Protocol </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <mat-select class="select_in" placeholder="FTP">
+                                <mat-option value="Draft">FTP</mat-option>
+                                <mat-option value="Draft">TCS</mat-option>
+                                <mat-option value="Draft">Draft</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label">Host </mat-label>
+                    <div class="calendar-input-field">
+                        <input matInput class="input">
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label">Port </mat-label>
+                    <div class="calendar-input-field">
+                        <input matInput class="input">
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label">Path </mat-label>
+                    <div class="calendar-input-field">
+                        <input matInput class="input">
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label">User </mat-label>
+                    <div class="calendar-input-field">
+                        <input matInput class="input">
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label">Password </mat-label>
+                    <div class="calendar-input-field">
+                        <input matInput class="input">
+                    </div>
+                </div>
+
+                <div class="check d-flex align-items-center">
+                    <input type="checkbox" checked>
+                    <p>FTPS</p>
+                </div>
+
+                <div>
+                    <mat-label class="form-input-label">Encoding </mat-label>
+                    <div class="calendar-input-field">
+                        <input matInput class="input" placeholder="Optional">
+                    </div>
+                </div>
+
+                <div>
+                    <mat-label class="form-input-label">Locale </mat-label>
+                    <div class="calendar-input-field">
+                        <input matInput class="input" placeholder="Optional">
+                    </div>
+                </div>
+
+            </div>
+            <!-- All Input Fields Ends Here -->
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <!-- Close and Save Buttons -->
+        <div class="d-flex">
+            <button mat-raised-button mat-dialog-close="" class="bg-close">Close</button>
+            <button mat-raised-button mat-dialog-close="" class="bg-success">Save</button>
+        </div>
+
+    </div>
+
+
+</div>
+<!-- Pop-Up Content End -->

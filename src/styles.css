@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+
+::-webkit-scrollbar {
+    width: 5px !important;
+    height: 5px !important;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #ffffff; 
+    margin: 0 1rem;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #CDCDCD; 
+    border-radius: 5px;
+  }
+/* ---------------ly---------------- */
+:root {
+  --lightblue: #F8FBFF;
+  --blue:#0163D2;
+  --gray:#F9F9FB;
+  --lightgray:#F6F6F6;
+  --darkgray:#808080;
+  
+ 
+
+
+  /* Add more colors as needed */
+}
+  
+  

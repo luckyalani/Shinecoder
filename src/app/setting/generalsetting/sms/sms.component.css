@@ -1,0 +1,73 @@
+p {
+  margin: 0;
+}
+.text-area,
+.mat-mdc-form-field-textarea-control {
+  height: 8rem !important;
+  overflow: hidden !important;
+  resize: none !important;
+  width: 100%;
+}
+
+.question-icon {
+  margin-bottom: -3px;
+}
+
+.text-blue {
+  font-weight: 14px;
+  color: rgb(83, 186, 250);
+  cursor: pointer;
+}
+.text-gray {
+  font-size: 14px;
+  color: gray;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .text-gray {
+    font-size: 10px;
+    color: gray;
+    font-weight: 400;
+  }
+}
+.text-bg-blue {
+  font-size: 14px;
+  font-weight: 400;
+  color: blue;
+  background-color: rgb(212, 234, 248);
+  padding: 12px;
+}
+
+.text-n {
+  font-size: 14px;
+  font-weight: 500;
+}
+.two-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sm-16{
+    font-size: 10px;
+}
+
+/* --------------------------------- Mat expansion panel -------------------------------- */
+
+::ng-deep .mat-expansion-panel-body {
+  background-color: rgb(248, 248, 248);
+}
+.mat-expansion-panel {
+  background: rgb(212, 234, 248);
+}
+
+.mat-expansion-panel-header-title {
+  color: blue;
+}
+::ng-deep.mat-expansion-indicator::after {
+  color: blue;
+}
+
+
+
+

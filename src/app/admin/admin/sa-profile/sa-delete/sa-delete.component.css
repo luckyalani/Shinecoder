@@ -1,0 +1,53 @@
+
+
+.space{
+    padding:1rem;
+}
+
+.header{
+    background-color: #f6f6f6;
+    padding: 0 1rem;
+}
+mat-icon{
+    color:red;
+}
+
+.heading{
+    font-weight: 500;
+    color: black;
+}
+.description {
+    padding: 1rem;
+    margin: 15px;
+    text-align: center;
+}
+.main-box{
+    width: 50vw;
+    border-radius: 1rem;
+}
+label{
+    margin: 0rem !important;
+}
+.selected-form-field{
+    display: flex;
+    position: relative;
+    align-items: center;
+
+}
+.down-arrow {
+    position: absolute;
+    right: 10px !important;
+    top: 8px !important;
+}
+
+
+.mat-mdc-raised-button:not(:disabled) {
+    /* color: var(--mdc-protected-button-label-text-color, inherit); */
+    margin: 10px !important;
+    margin-left: 1rem !important;
+}
+
+
+
+
+

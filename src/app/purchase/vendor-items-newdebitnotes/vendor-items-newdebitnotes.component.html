@@ -1,0 +1,246 @@
+
+<div class="main-container boxed space">
+    <!-- <div class="d-flex jc-sb align-items-center"> -->
+    <div>
+        <h1 class="text-dark fs-30">New Debit Notes</h1>
+    </div>
+    <div class="form">
+        <div>
+            <mat-label class="form-input-label"><span class="text-danger">*</span>Subject </mat-label>
+            <div class="calendar-input-field">
+                <mat-form-field appearance="outline" class="form-field">
+                    <input matInput class="input">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="form-row">
+            <!-- Left Side -->
+            <div class="in-form-row">
+
+  
+   <div class="billshiptodiv">
+    <!-- bill to div -->
+    <div class="billto">
+        <span (click)=" vnitemsdnpopup()">Bill To
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="#0163D2" d="M21 12a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1m-15 .76V17a1 1 0 0 0 1 1h4.24a1 1 0 0 0 .71-.29l6.92-6.93L21.71 8a1 1 0 0 0 0-1.42l-4.24-4.29a1 1 0 0 0-1.42 0l-2.82 2.83l-6.94 6.93a1 1 0 0 0-.29.71m10.76-8.35l2.83 2.83l-1.42 1.42l-2.83-2.83ZM8 13.17l5.93-5.93l2.83 2.83L10.83 16H8Z"/></svg>
+        </span>
+
+    </div>
+  <!-- ship to div -->
+    <div class="shipto">
+        <span>Ship To</span>
+
+
+    </div>
+   </div>
+
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span>Currency</mat-label>
+                    <div class="mt2">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <mat-select class="select_in" placeholder="USD$">
+                                <mat-option value="USD$">USD$</mat-option>
+                                <mat-option value="USD$">USD$</mat-option>
+                                <mat-option value="USD$">USD$</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- ---------------------Right Side----------------------------- -->
+            <div class="in-form-row">
+                <div>
+                    <mat-label class="form-input-label">Status </mat-label>
+                    <div class="mt2">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <mat-select class="select_in" placeholder="Draft">
+                                <mat-option value="Draft">Draft</mat-option>
+                                <mat-option value="Draft">Draft</mat-option>
+                                <mat-option value="Draft">Draft</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label">Assigned</mat-label>
+                    <div class="mt2">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <mat-select class="select_in" placeholder="Rigoberto Langworth">
+                                <mat-option value="Rigoberto Langworth">Rigoberto Langworth</mat-option>
+                                <mat-option value="Rigoberto Langworth">Rigoberto Langworth</mat-option>
+                                <mat-option value="Rigoberto Langworth">Rigoberto Langworth</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span>TO </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="Chauncey Kiehn">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <div>
+            <mat-label class="form-input-label"><span class="text-danger">*</span>Subject </mat-label>
+            <div class="calendar-input-field">
+                <mat-form-field appearance="outline" class="form-field">
+                    <input matInput class="input">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="textareadiv">
+            <mat-label class="form-input-label"><span class="text-danger">*</span>Subject </mat-label>
+           <textarea>Hello</textarea>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="d-flex jc-sb">
+            <div class=" mt2">
+                <mat-form-field appearance="outline" class="add-items">
+                    <div class=" add-item p-t-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24">
+                            <path fill="#b1aaaa" d="M11 13H5v-2h6V5h2v6h6v2h-6v6h-2z" />
+                        </svg>
+                    </div>
+                    <mat-select class="" placeholder="Add Item">
+                        <mat-option value="1">1</mat-option>
+                        <mat-option value="1">1</mat-option>
+                        <mat-option value="1">1</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+        </div>
+        <div class="table-div">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="sno">
+                            <!-- <div> -->
+                            <mat-icon matTooltip="Subject is also visible to customer" matTooltipPosition="above"
+                                class="fs-2 error">error</mat-icon>Item
+                            <!-- </div> -->
+                        </th>
+                        <th>Discription</th>
+                        <th>Qty/Hours</th>
+                        <th>Rate</th>
+                        <th>Tax</th>
+                        <th>Amount</th>
+                        <th><mat-icon>settings</mat-icon></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Description</td>
+                        <td>
+                            <div class="text-area text-area-w">
+                                <mat-form-field appearance="outline" class="">
+                                    <textarea matInput class="input" placeholder="Long Descriptipn"></textarea>
+                                </mat-form-field>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <mat-form-field appearance="outline">
+                                    <input matInput placeholder="1">
+                                </mat-form-field>
+                                <span class="float-right text-secondary p-r-5">unit</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+
+                                <mat-form-field appearance="outline">
+                                    <input matInput placeholder="Rate">
+                                </mat-form-field>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <mat-form-field appearance="outline">
+                                    <mat-select placeholder="10.00%">
+                                        <mat-option value="10.00%">10.00%</mat-option>
+                                        <mat-option value="10.00%">10.00%</mat-option>
+                                        <mat-option value="10.00%">10.00%</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                        </td>
+                        <td>0.00</td>
+                        <td><mat-checkbox class="example-margin" color="primary"></mat-checkbox></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="text-right total-div ">
+            <div class="total d-flex jc-e">
+                <span>Sub Total:</span>
+                <span>$0.00</span>
+            </div>
+            <div class=" total d-flex jc-e align-items-center">
+                <div class="d-flex align-items-center gap2">
+                    <span>Discount:</span>
+                    <div>
+                        <mat-form-field appearance="outline" class="form-d">
+                            <input matInput placeholder="0">
+                            <div class="row m-r-5"></div>
+                            <mat-select placeholder="%" class="discount">
+                                <mat-option value="%">%</mat-option>
+                                <mat-option value="%">%</mat-option>
+                                <mat-option value="%">%</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <span>-$0.00</span>
+            </div>
+            <div class=" total d-flex jc-e ">
+                <div class="d-flex align-items-center gap2">
+                    <span>Adjustment:</span>
+                    <div>
+                        <mat-form-field appearance="outline" class="form-d">
+                            <input matInput placeholder="0">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <span>$0.00</span>
+            </div>
+            <div class=" total d-flex jc-e ">
+                <span>Total:</span>
+                <span>$0.00</span>
+            </div>
+
+            <div class="bottomtextareadiv">
+                <div class="firsttextarea">
+                    <span>Vendor Note</span>
+                    <textarea></textarea>
+                </div>
+                <div class="firsttextarea">
+                    <span>Vendor Note</span>
+                    <textarea></textarea>
+                </div>
+            </div>
+            
+
+ 
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <div class="p-10">
+            <button mat-raised-button class="m-r-10" color="warn">Close</button>
+            <button mat-raised-button class="bg-success">Save</button>
+        </div>
+
+
+    </div>
+
+</div>

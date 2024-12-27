@@ -1,0 +1,96 @@
+.space {
+    /* padding: 1rem; */
+    width: 60vw;
+}
+
+.header {
+    background-color: #f6f6f6;
+    padding: 0 1rem;
+}
+
+
+radio-btns 
+.heading {
+    font-weight: 500;
+    color: black;
+}
+.main-div{
+    padding: 1rem;
+}
+label {
+    font-size: small;
+    color: black;
+    margin: 0 !important;
+    font-weight: 500 !important;
+  }
+.text-area{
+    height: 5rem !important;
+}
+.icon-help{
+    font-size: 1rem !important;
+    height: 0.9rem !important;
+    width: 1.2rem !important;
+}
+.input-2{
+    width: 45% !important;
+
+}
+
+.down-arrow{
+    position: absolute;
+    right: 0.5rem !important;
+    top: 0.5rem !important;
+}
+
+.icon-add {
+   
+    height: 2rem !important;
+    width: 2.5rem !important;
+    color: #505050;
+    position: absolute;
+    left: 0.7rem;
+    border-radius: 0.3rem;
+    border-right: 0.1rem solid gray;
+    background-color: gray;
+    padding-top:0.3rem;
+    text-align: center;
+    background-color: #eeeeee;
+    font-size: 22px;
+}
+
+
+
+.selected-form-field {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+}
+
+.icon-add{
+    height: 1.8rem !important;
+    width: 3rem !important;
+    position: absolute;
+    left: 0.9px;
+    border-right: 0.1rem solid gray;
+    background-color: gray;
+    padding-top: 0.3rem;
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+    bottom: 0.2rem;
+}
+.mat-input{
+    width: 100% !important;
+}
+
+
+
+.mat-mdc-raised-button:not(:disabled) {
+    /* color: var(--mdc-protected-button-label-text-color, inherit); */
+    margin-right: 10px !important;
+    /* margin-left: 1rem !important; */
+}
+
+
+

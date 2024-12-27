@@ -1,0 +1,26 @@
+.user-img{
+    width: 5rem;
+}
+.bg-light{
+    background-color: #CDFFD2;
+    color: #00C814;
+    border: 1px solid #00C814;
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.2rem;
+}
+.border-dotted{
+    height: 100%;
+    border: 1px dotted #0163D2;
+    width: 1px;
+    position: absolute;
+    top: 1.6rem;
+    left: 7.5rem;
+}
+::ng-deep .mat-mdc-tab-body.mat-mdc-tab-body-active {
+    overflow-y: hidden !important;
+}
+@media screen and (max-width:374px) {
+    .flex-col{
+        flex-direction: row;
+    }
+}

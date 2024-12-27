@@ -1,0 +1,126 @@
+.log0-img{
+    display: block;
+}
+.attachment-logo{
+    width: 20%;
+}
+.selected-form-field{
+    display: flex;
+    position: relative;
+    align-items: center;
+
+}
+.special-input{
+    width: 48% !important;
+}
+label {
+    margin: 0rem;
+}
+.dual-field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.8rem 0.6rem;
+}
+.dual-input {
+    height: 2.2rem;
+    border: 0.5px solid lightgray;
+    border-radius: 0.3rem;
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+}
+.dual-form{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+  
+}
+.selected-form-field{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.icon-help{
+    font-size: 1rem !important;
+    height: 0.9rem !important;
+    width: 1.2rem !important;
+}
+.dual-down-arrow {
+    position: absolute;
+    right: 0.8rem;
+    top: 0.8rem;
+}
+.radio-btns {
+    display: block;
+}
+
+.para-div {
+    border: 1px solid #cb495b;
+    padding: 0.5rem;
+    background: #fef2f2;
+    margin: 0.5rem;
+    border-radius: 0.3rem;
+}
+.para{
+    color: #cb495b;
+}
+.boxx {
+    border: 1px solid #9c9c9c;
+    background: #eeeeee;
+    padding: 0.1rem;
+    border-radius: 0.3rem;
+}
+.DB-name {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    padding: 5px;
+}
+.DB{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 0.5rem;
+    color: #7f7f7f;
+}
+.DB-name-div{
+    border: 1px solid #9c9c9c;
+    margin-left: 5px;
+    background: #253d4e;
+    border-radius: 0.3rem;
+}
+/* authorization */
+.description-para{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: orange;
+}
+/* 2checkout */
+.checkout-para-div {
+    background-color: #dce9ff;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+}
+.checkout-para {
+    font-size: 13px;
+    font-weight: 500;
+    color: #4885ed;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+
+
+
+
+@media (max-width: 767px){
+    .small-screen{
+    flex-direction: column;
+    gap: 10px;
+    }
+
+
+}

@@ -1,0 +1,44 @@
+.mat-expansion-panel-header {
+  background: linear-gradient(90deg, #0163d2d9 24%, #4d96e885 73%, #9BCAFF 13%) !important;
+  margin: 0px !important;
+}
+
+.mat-expansion-panel-header-title,
+.mat-expansion-panel-header-description {
+
+  color: white;
+}
+
+.mat-expansion-panel {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+
+}
+
+::ng-deep .budget-change .mat-expansion-panel-body {
+  padding: 0px 24px 10px 24px !important;
+}
+
+.dot {
+  width: 7px;
+  background: #FF8A00;
+  height: 8px;
+  border-radius: 100%;
+}
+
+.dot-line {
+  background: #FF8A00;
+  width: 1px;
+  height: 100%;
+}
+.rotate{
+  transform: rotate(180deg);
+}
+.w-50{
+  width: 50%;
+}
+@media screen and (max-width:767px) {
+  .w-50{
+    width: 100%;
+  }
+}

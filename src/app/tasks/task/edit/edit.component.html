@@ -1,0 +1,223 @@
+<div class="header d-flex ">
+    <p class="heading">Add New Task</p>
+    <mat-icon mat-dialog-close="true">cancel</mat-icon>
+</div>
+
+<div class="main-container boxed space">
+
+    <div class="d-flex jc-sb">
+        <div class="check d-flex align-items-center">
+            <input type="checkbox" checked>
+            <p>Public</p>
+            <input type="checkbox">
+            <p>Billable</p>
+        </div>
+        <button mat-raised-button class="px-3" color="primary">Attach Files</button>
+    </div>
+
+
+    <mat-divider></mat-divider>
+
+
+    <div class="form-row">
+        <!-- Left Side -->
+        <div class="in-form-row">
+            <div>
+                <mat-label class="form-input-label"><span class="text-danger">*</span>Subject </mat-label>
+                <div class="calendar-input-field">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div>
+                <mat-label class="form-input-label"><span class="text-danger">*</span>Start Date </mat-label>
+                <div class="calendar-input-field date-picker">
+                    <mat-form-field appearance="outline" class="form-field date">
+                        <mat-datepicker-toggle matIconSuffix [for]="picker1" class="">
+                            <svg matDatepickerToggleIcon xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em"
+                                viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M2 19c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-8H2zM19 4h-2V3c0-.6-.4-1-1-1s-1 .4-1 1v1H9V3c0-.6-.4-1-1-1s-1 .4-1 1v1H5C3.3 4 2 5.3 2 7v2h20V7c0-1.7-1.3-3-3-3" />
+                            </svg>
+                        </mat-datepicker-toggle>
+                        <div class="date-border"></div>
+                        <input matInput [matDatepicker]="picker1" class="input">
+                        <mat-datepicker #picker1></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div>
+                <mat-label class="form-input-label">Priority </mat-label>
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-select class="select_in" placeholder="Medium">
+                            <mat-option value="Draft">Draft</mat-option>
+                            <mat-option value="Draft">Draft</mat-option>
+                            <mat-option value="Draft">Draft</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div>
+                <mat-label class="form-input-label">Related To </mat-label>
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-select class="select_in" placeholder="Nothing selected">
+                            <mat-option value="Draft">Draft</mat-option>
+                            <mat-option value="Draft">Draft</mat-option>
+                            <mat-option value="Draft">Draft</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+            <!-- <div>
+                        <mat-label class="form-input-label"><span class="text-danger"></span>Website </mat-label>
+                        <div class="calendar-input-field">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input">
+                            </mat-form-field>
+                        </div>
+                    </div> -->
+            <div>
+                <mat-label class="form-input-label">Asignees </mat-label>
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-select class="select_in" placeholder="Nelson Franecki">
+                            <mat-option value="Draft">Draft</mat-option>
+                            <mat-option value="Draft">Draft</mat-option>
+                            <mat-option value="Draft">Draft</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div>
+
+
+            </div>
+
+        </div>
+        <!-- ---------------------Right Side----------------------------- -->
+        <div class="in-form-row">
+
+
+
+
+            <div>
+                <mat-label class="form-input-label"><span class="text-danger"></span>Hourly Rate </mat-label>
+                <div class="calendar-input-field">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div>
+                <mat-label class="form-input-label"><span class="text-danger"></span>Due Date </mat-label>
+                <div class="calendar-input-field date-picker">
+                    <mat-form-field appearance="outline" class="form-field date">
+                        <mat-datepicker-toggle matIconSuffix [for]="picker2" class="">
+                            <svg matDatepickerToggleIcon xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em"
+                                viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M2 19c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-8H2zM19 4h-2V3c0-.6-.4-1-1-1s-1 .4-1 1v1H9V3c0-.6-.4-1-1-1s-1 .4-1 1v1H5C3.3 4 2 5.3 2 7v2h20V7c0-1.7-1.3-3-3-3" />
+                            </svg>
+                        </mat-datepicker-toggle>
+                        <div class="date-border"></div>
+                        <input matInput [matDatepicker]="picker2" class="input">
+                        <mat-datepicker #picker2></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </div>
+
+
+            <div>
+                <mat-label class="form-input-label">Repeat every </mat-label>
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-select class="select_in" placeholder="Nothing selected">
+                            <mat-option value="Draft">Draft</mat-option>
+                            <mat-option value="Draft">Draft</mat-option>
+                            <mat-option value="Draft">Draft</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div>
+                <mat-label class="form-input-label">Lead </mat-label>
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-select class="select_in" placeholder="Draft">
+                            <mat-option value="Draft">Draft</mat-option>
+                            <mat-option value="Draft">Draft</mat-option>
+                            <mat-option value="Draft">Draft</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div>
+                <mat-label class="form-input-label">Followers </mat-label>
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-select class="select_in" placeholder="Nothing selected">
+                            <mat-option value="Draft">Draft</mat-option>
+                            <mat-option value="Draft">Draft</mat-option>
+                            <mat-option value="Draft">Draft</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <app-common-tag></app-common-tag>
+
+
+    <mat-divider></mat-divider>
+
+    <div class="">
+
+
+        <div class="ckeditorpart">
+            <div class="labeldiv">
+                <mat-label>Task Description</mat-label>
+            </div>
+            <ckeditor [editor]="Editor" data="<p> Minimum 300 words. HTML and images supported. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit similique et illo obcaecati temporibus asperiores culpa sequi at, id voluptate. Ab vero quibusdam quas blanditiis iste ducimus officia accusantium. Quaerat illo aut facere dolores nihil quidem consequatur nostrum dolorem porro voluptatem autem enim, hic, eveniet maiores voluptatum animi ipsa 
+                      </p>">
+            </ckeditor>
+        </div>
+
+
+
+        <hr>
+        <div class="d-flex">
+            <button mat-raised-button mat-dialog-close="" class="bg-close">Close</button>
+            <button mat-raised-button mat-dialog-close="" class="bg-success">Save</button>
+        </div>
+
+    </div>
+
+
+
+
+</div>

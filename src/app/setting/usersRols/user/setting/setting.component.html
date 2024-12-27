@@ -1,0 +1,120 @@
+<div class="main-container boxed space ">
+
+    <div class="d-flex jc-sb flex-wrap align-items-center">
+        <div>
+            <h1 class="text-dark">Users & Roles</h1>
+        </div>
+    </div>
+
+    <div class="form d-flex jc-sb flex-wrap">
+        <div class="d-flex">
+            <div>
+                <img class="user-img" src="assets/images/profile_pic.png" alt="">
+            </div>
+            <div class="fw-medium fs-14 p-l-5">
+                <p class="m-0 text-primary fs-16">Shawna Howell</p>
+                <p class="m-0 fs-12 text-secondary">Coralie34@yahoo.com</p>
+                <p>Role: Admin</p>
+            </div>
+            <div class="fs-14 ">
+                <div class="bg-light">
+
+                    Active
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <div class="d-flex flex-col align-items-center action-btn-gap">
+
+                <span (click)="inviteuser()" class="action-btn primary"><svg xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em"
+                        viewBox="0 0 24 24">
+                        <path fill="#0163d2"
+                            d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83l3.75 3.75z" />
+                    </svg></span>
+                <span (click)="inactive()" class="action-btn text-info"><svg xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2m0 18c-4.42 0-8-3.58-8-8c0-1.85.63-3.55 1.69-4.9L16.9 18.31A7.902 7.902 0 0 1 12 20m6.31-3.1L7.1 5.69A7.902 7.902 0 0 1 12 4c4.42 0 8 3.58 8 8c0 1.85-.63 3.55-1.69 4.9" />
+                    </svg></span>
+                <span (click)="delete()" class="action-btn danger"><svg xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em"
+                        viewBox="0 0 24 24">
+                        <path fill="#da0000"
+                            d="M9 3v1H4v2h1v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1V4h-5V3zM7 6h10v13H7zm2 2v9h2V8zm4 0v9h2V8z" />
+                    </svg></span>
+            </div>
+        </div>
+    </div>
+
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="tab-group div-2 m-t-10">
+        <mat-tab class="rounded " label="More Details">
+            <div class="table-div">
+                <table>
+                    <tr>
+                        <th>CUSTOM FIELDS</th>
+                    </tr>
+                    <tr>
+                        <td class="text-center text-secondary">You haven't added any custom field information.</td>
+                    </tr>
+                </table>
+            </div>
+        </mat-tab>
+        <mat-tab class="rounded " label="Recent Activities">
+            <div class="p-10 d-flex flex-col jc-c">
+                <div>
+                    <div class="d-flex gap-1 align-items-center">
+                        <div class="fs-14 text-primary fw-medium">
+                            <p class="m-0">19/03/2024</p>
+                            <p class="m-0">05:16 PM</p>
+                        </div>
+                        <div>
+                            <div class="bg-primary p-10 rounded">
+                                <div class="bg-white p-5"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="bg-primary rounded p-5 text-white fw-medium fs-14">
+                                Purchase Approval Preferences Updated.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-1 align-items-center m-t-30">
+                        <div class="fs-14 text-primary fw-medium">
+                            <p class="m-0">19/03/2024</p>
+                            <p class="m-0">05:16 PM</p>
+                        </div>
+                        <div>
+                            <div class="bg-primary p-10 rounded">
+                                <div class="bg-white p-5"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="bg-primary rounded p-5 text-white fw-medium fs-14">
+                                Organisation Profile's Personally identifiable information (PII) has been updated
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-1 align-items-center m-t-30">
+                        <div class="fs-14 text-primary fw-medium">
+                            <p class="m-0">19/03/2024</p>
+                            <p class="m-0">05:16 PM</p>
+                        </div>
+                        <div>
+                            <div class="bg-primary p-10 rounded">
+                                <div class="bg-white p-5"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="bg-primary rounded p-5 text-white fw-medium fs-14">
+                                Organization's Personally identifiable information (PII) has been updated
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-dotted"></div>
+            </div>
+
+        </mat-tab>
+    </mat-tab-group>
+
+</div>

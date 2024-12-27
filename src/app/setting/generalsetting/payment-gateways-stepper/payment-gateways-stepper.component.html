@@ -1,0 +1,120 @@
+<div class="p-10">
+    <div class="d-flex jc-sb align-items-center heading-column ">
+        <div class="heading-top">
+            <h1 class="text-dark">Finance</h1>
+        </div>
+        <div class="button-width">
+        </div>
+    </div>
+    <app-general-setting-headings></app-general-setting-headings>
+    <div class="main-container boxed space manuf-tab">
+
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="tab-group div-2">
+            <!-- General  -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+                    <span class="m-l-5">General</span>
+                </ng-template>
+                <app-payment-general></app-payment-general>
+            </mat-tab>
+
+            <!-- Branding  -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+
+                    <span class="m-l-5">Authorize.net Accept.js</span>
+                </ng-template>
+                <app-payment-authorize></app-payment-authorize>
+            </mat-tab>
+
+            <!-- Submission -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+
+                    <span class="m-l-5">Instamojo</span>
+                </ng-template>
+                <app-payment-instamojo></app-payment-instamojo>
+            </mat-tab>
+            <!-- Notifications -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+
+                    <span class="m-l-5"> Mollie </span>
+                </ng-template>
+                <app-payment-mollie></app-payment-mollie>
+            </mat-tab>
+            <!-- Notifications -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+
+                    <span class="m-l-5">Braintree</span>
+                </ng-template>
+                <app-payment-braintree></app-payment-braintree>
+            </mat-tab>
+            <!-- Notifications -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+
+                    <span class="m-l-5">Paypal Smart Checkout</span>
+                </ng-template>
+                <app-payment-paypal-smart-checkout></app-payment-paypal-smart-checkout>
+            </mat-tab>
+            <!-- Notifications -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+
+                    <span class="m-l-5">Paypal</span>
+                </ng-template>
+                <app-payment-paypal></app-payment-paypal>
+            </mat-tab>
+            <!-- Notifications -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+
+                    <span class="m-l-5">PayU Money</span>
+                </ng-template>
+                <app-payment-payu-money></app-payment-payu-money>
+            </mat-tab>
+            <!-- Notifications -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+
+                    <span class="m-l-5">Stripe Checkout</span>
+                </ng-template>
+                <app-payment-stripe-checkout></app-payment-stripe-checkout>
+            </mat-tab>
+            <!-- Notifications -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+
+                    <span class="m-l-5">Stripe iDEAL</span>
+                </ng-template>
+                <app-payment-stripe-ideal> </app-payment-stripe-ideal>
+            </mat-tab>
+            <!-- Notifications -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+
+                    <span class="m-l-5">2Checkout</span>
+                </ng-template>
+                <app-payment-two-checkout></app-payment-two-checkout>
+            </mat-tab>
+
+
+
+
+        </mat-tab-group>
+    </div>
+
+
+    <hr>
+    <div class="d-flex gap-1 p-10">
+        <button mat-dialog-close="true"
+            class=" mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base "
+            mat-raised-button color="warn">Cancel</button>
+        <button mat-dialog-close="true"
+            class="bg-success"
+            mat-raised-button> Save</button>
+
+    </div>
+</div>

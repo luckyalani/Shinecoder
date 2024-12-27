@@ -1,0 +1,34 @@
+.info-p{
+    margin: 0;
+}
+
+.selected-form-field {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .icon-add {
+    height: 1.9rem !important;
+    width: 2.2rem !important;
+    position: absolute;
+    /* left: 0.7rem; */
+    right: 0.7rem;
+    border-left: 0.1rem solid gray;
+    background-color: white !important;
+    padding-top: 0.3rem;
+    text-align: center;
+    color: #505050;
+    background-color: gray;
+  }
+  .mat-input {
+    margin: 0.6rem;
+  }
+  .down-arrow {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.1rem;
+  }
+
+  .selected-form-field{
+    margin-left: -10px;
+  }

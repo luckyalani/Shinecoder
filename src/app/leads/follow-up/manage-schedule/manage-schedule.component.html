@@ -1,0 +1,137 @@
+<div class="header d-flex jc-sb align-items-center px-5  flex-no-wrap">
+    <p class="heading">
+        Lead Follow up-Manage Schedule</p>
+    <mat-icon mat-dialog-close="true">cancel</mat-icon>
+</div>
+
+<div class="main-container boxed space">
+
+    <div class=" px-5">
+
+
+
+        <div>
+            <mat-label class=" form-input-label">Schedule Name
+            </mat-label>
+            <div class="">
+                <mat-form-field appearance="outline" class="form-field">
+                    <input matInput class="input" placeholder="All staff Members">
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <!-- left Div -->
+            <div class="in-form-row">
+                <div>
+                    <mat-label class=" form-input-label">Lead Status
+                    </mat-label>
+                    <div class="mt2">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <mat-select class="select_in" placeholder="Bank">
+                                <mat-option value="Bank">FaceBook</mat-option>
+                                <mat-option value="Bank">Bank</mat-option>
+                                <mat-option value="Bank">Bank</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <mat-label class=" form-input-label">Auto send reminder after (days)
+                    </mat-label>
+                    <div class="">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="6547.00">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Right Div -->
+            <div class="in-form-row">
+
+                <div class="mt2">
+                    <mat-label class="form-input-label">
+                        Lead Source </mat-label>
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-select class="select_in" placeholder="Bank">
+                            <mat-option value="Bank">FaceBook</mat-option>
+                            <mat-option value="Bank">Bank</mat-option>
+                            <mat-option value="Bank">Bank</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-label class="form-input-label">
+                        Schedule Hour </mat-label>
+                    <div class="">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="Nothing Selected">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="check d-flex">
+
+            <mat-radio-button formControlName="formControlName">Leads</mat-radio-button>
+            <mat-radio-button formControlName="formControlName">Staff Members</mat-radio-button>
+        </div>
+        <div class="check d-flex">
+
+            <mat-checkbox value="" color="primary">SMS</mat-checkbox>
+            <mat-checkbox value="" color="primary">Email</mat-checkbox>
+
+        </div>
+
+        <div class="">
+            <mat-label class="form-input-label d-flex jc-sb align-items-center ">
+                <div> <span class="text-danger">*</span>SMS Text</div>
+                <p class="text-primary f-w-5 m-l-5">Available merge fields</p>
+            </mat-label>
+            <div>
+                <textarea name="" id="" cols="30" rows="10" class="mat-input text-area"></textarea>
+            </div>
+        </div>
+
+        <div class="">
+            <p class="text-grey">
+                <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name
+                    &#125; </span>, <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name &#125; </span>,
+                <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name
+                    &#125; </span>, <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name &#125; </span>,
+                <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name
+                    &#125; </span>, <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name &#125; </span>,
+                <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name
+                    &#125; </span>, <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name &#125; </span>,
+                <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name &#125; </span>, <span>&#123; lead_name
+                    &#125; </span>, <span>&#123; lead_name &#125; </span>,
+            </p>
+        </div>
+
+        <div class="">
+            <mat-label class="form-input-label d-flex jc-sb align-items-center ">
+                <div> <span class="text-danger">*</span>SMS Text</div>
+                <p class="text-primary f-w-5 m-l-5">Available merge fields</p>
+            </mat-label>
+            <div>
+                <ckeditor [editor]="Editor" data="<p> Minimum 300 words. HTML and images supported. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit similique et illo obcaecati temporibus asperiores culpa sequi at, id voluptate. Ab vero quibusdam quas blanditiis iste ducimus officia accusantium. Quaerat illo aut facere dolores nihil quidem consequatur nostrum dolorem porro voluptatem autem enim, hic, eveniet maiores voluptatum animi ipsa 
+                </p>">
+                </ckeditor>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <hr class="m-t-20">
+    <div class="d-flex m-t-5 gap-1">
+        <button mat-dialog-close mat-raised-button class="bg-close">Close</button>
+        <button mat-dialog-close mat-raised-button class="bg-success">Save</button>
+    </div>
+</div>

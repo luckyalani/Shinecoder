@@ -1,0 +1,87 @@
+
+
+.space{
+    padding:1rem;
+}
+
+.header{
+    background-color: #f6f6f6;
+    padding: 0 1rem;
+}
+mat-icon{
+    color:red;
+}
+
+.heading{
+    font-weight: 500;
+    color: black;
+}
+.description{
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 3rem; */
+    margin: 1rem 0rem;
+}
+.main-box{
+    width: 50vw;
+    border-radius: 1rem;
+}
+
+
+.mat-mdc-raised-button:not(:disabled) {
+    /* color: var(--mdc-protected-button-label-text-color, inherit); */
+    margin: 10px !important;
+    margin-left: 1rem !important;
+}
+/*  */
+/* Button */
+ /* .jc-c button{
+    width:15% !important;
+   } */
+   
+   /* Button */
+   .main-box .jc-c button{
+    height:30px;
+    width:10% !important;
+    border-radius: 3px;
+    font-size: 12px;
+   }
+   .main-box .jc-c button:nth-child(1){
+    border-style: none;
+   }
+   
+   /* Button */
+   .main-box .jc-c button:nth-child(2){
+    background-color:#ff0000;
+    color:#ffffff;
+    border-style:none;
+   }
+
+
+   @media (max-width:720px){
+
+    /* Main box */
+     .main-box{
+     width:80vw;
+    }
+    
+   }
+
+
+   
+   @media (max-width:500px){
+   
+    /* Button */
+   .main-box .jc-c button{
+     width:30% !important;
+    }
+    
+   }
+   
+   
+
+
+
+

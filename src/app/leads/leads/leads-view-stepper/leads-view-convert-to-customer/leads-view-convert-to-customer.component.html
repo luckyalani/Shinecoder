@@ -1,0 +1,164 @@
+<div class="main-container boxed space">
+    <!-- <div class="d-flex jc-sb align-items-center"> -->
+    <div>
+        <h1 class="text-dark fs-30">Convert to customer</h1>
+    </div>
+    <div class="form">
+        <div class="form-row">
+            <!-- Left Side -->
+            <div class="in-form-row">
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span>First Name </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label">Position </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span>Company </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label">Website </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label">City </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label">State </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label">Zip Code </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="256323">
+                        </mat-form-field>
+                    </div>
+                </div>
+               
+                
+              
+
+             
+
+                
+               
+               
+              
+              
+            </div>
+            <!-- ---------------------Right Side----------------------------- -->
+            <div class="in-form-row">
+               
+              
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span>Last Name </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="Chauncey Kiehn">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span>Email </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="Chauncey@Kiehn.com">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label">Phone </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="+919009392932">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <label>Address</label>
+                    <textarea name="" id="" cols="30" rows="10" class="mat-input text-area"></textarea>
+                </div>
+
+                <div>
+                    <mat-label class="form-input-label">Country </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="UK">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger"></span>password </mat-label>
+                    <div class="calendar-input-field ">
+                       
+                        <mat-form-field appearance="outline" class="form-field"> 
+                           <img  (click)=" eyeToggle();onClick()"  src="../../../../../assets/images/Leads/eye.png" alt=""  id="eye"   aria-hidden="true" *ngIf="eyeRef"  >
+                           <!-- *ngIf="show" -->
+
+                           <img src="../../../../../assets/images/Leads/closeEye.png" alt="" id="eye"  (click)="onClick(); eyeToggle()" *ngIf="!eyeRef" aria-hidden="true" >
+                           <!-- *ngIf="showp" -->
+
+                           <!-- <i class="fa fa-eye" aria-hidden="true" *ngIf="!show"></i>
+                           <i class="fa fa-eye-slash" aria-hidden="true" *ngIf="show"></i>
+                            -->
+                            <input matInput class="input" [type]="password" #inputPsw>
+                             <img src="../../../../../assets/images/Leads/reset.png" alt="" id="reset" (click)="reset()">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <!-- City And state Div -->
+             
+
+            </div>
+
+        </div>
+      
+
+        <div class="checkContainer d-flex jc-sb">
+          <div class="check d-flex"><input type="checkbox"><p class="semi-bold">Send SET password email</p></div>
+          <div class="check d-flex"><input type="checkbox"><p class="semi-bold">Send SET password email</p></div>
+          <div class="check d-flex"><input type="checkbox"><p class="semi-bold">Send SET password email</p></div>
+        </div>
+       
+       
+      
+
+        <hr>
+        <div class="d-flex gap-2">
+            <button mat-raised-button color="warn">Cancle</button>
+            <button mat-raised-button class="bg-success">Save</button>
+        </div>
+
+
+    </div>
+</div>

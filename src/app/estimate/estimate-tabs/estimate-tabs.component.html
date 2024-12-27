@@ -1,0 +1,127 @@
+<div class="main-container boxed ">
+    <h1 class="text-dark m-b-20">Estimate</h1>
+
+    <div>
+
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="tab-group ">
+            <mat-tab label="General" class="rounded ">
+
+                <div class="p-5">
+
+                    <label><span class="text-danger">*</span>Form Name</label>
+                    <input type="text" class="mat-input">
+
+                    <label for="">Use Google Recaptcha</label>
+                    <mat-radio-group aria-label="Select an option" class="radio-btns">
+                        <div>
+                            <mat-radio-button class="m-l-10 m-r-15" value="">Yes</mat-radio-button>
+                            <mat-radio-button value="">No</mat-radio-button>
+                        </div>
+                    </mat-radio-group>
+
+                    <label><span class="text-danger">*</span>Language</label>
+                    <div class="selected-form-field">
+                        <input name="" id="" class="mat-input" placeholder="English">
+                        <span class="down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15"><path fill="#808080" d="M7.5 12L0 4h15z"/></svg></span>
+                    </div>
+
+                    <label><span class="text-danger">*</span>Status</label>
+                    <div class="selected-form-field">
+                        <input name="" id="" class="mat-input" placeholder="Processing">
+                        <span class="down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15"><path fill="#808080" d="M7.5 12L0 4h15z"/></svg></span>
+                    </div>
+
+                    <label><span class="text-danger">*</span>Responsible (Assignee)</label>    
+                    <div class="selected-form-field">
+                        <input name="" id="" class="mat-input" placeholder="Nothing selected">
+                        <span class="down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15"><path fill="#808080" d="M7.5 12L0 4h15z"/></svg></span>
+                    </div>
+
+                    <mat-divider></mat-divider>
+                    <button mat-raised-button color="primary">Save</button>
+                    <button mat-raised-button>Close</button>
+                    
+
+                </div>
+            </mat-tab>
+            <mat-tab label="Branding">
+                <div class="p-5">
+
+                    <label><span class="text-danger">*</span>Submit button text</label>
+                    <input type="text" class="mat-input" placeholder="Submit">
+
+                    <div class="d-flex align-items-center jc-sb">
+                        <div class="width">
+                            <label for="">Submit button background color</label>
+                            <div class="selected-form-field">
+                                <span class="icon-add"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="#85c529" d="M3 21V3h18v18z"/></svg></span>
+                                <input type="text" class="mat-input input-space" placeholder="#85c529">
+                            </div>
+                        </div>
+                        <div class="width">
+                            <label for="">Submit button background text</label>
+                            <div class="selected-form-field">
+                                <span class="icon-add"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="black" d="M3 21V3h18v18z"/></svg></span>
+                                <input type="text" class="mat-input input-space" placeholder="#000000" >
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                    <mat-divider></mat-divider>
+                    <button mat-raised-button color="primary">Save</button>
+                    <button mat-raised-button>Close</button>
+                </div>
+                
+            </mat-tab>
+            <mat-tab label="Submission">
+                <div class="p-5">
+                    <label for="">What should happen after a visitor submits this form?</label>
+                    <mat-radio-group aria-label="Select an option" class="radio-btns">
+                        <div class="m-l-10"><mat-radio-button  value="">Display thank you message</mat-radio-button></div>
+                        <div class="m-l-10"><mat-radio-button value="">Redirect to another website</mat-radio-button></div>
+                    </mat-radio-group>
+                    <label for=""><span class="text-danger">*</span> Message to show after form is succcesfully submitted</label>
+                    <textarea name="" id="" cols="30" rows="10" class="mat-input"></textarea> 
+
+                    <mat-divider></mat-divider>
+                    <button mat-raised-button color="primary">Save</button>
+                    <button mat-raised-button>Close</button>
+                </div>
+
+              
+            </mat-tab>
+            <mat-tab label="Notifications">
+                <div class="p-5">
+                    <p class="fs-14 fw-medium m-l-10 ">Notification Setting</p>
+                    <mat-checkbox class="example-margin" color="primary">Notify when estimate request submitted</mat-checkbox>
+                    <mat-divider></mat-divider>
+
+                    <mat-radio-group aria-label="Select an option" class="radio-btns">
+                        <div>
+                            <mat-radio-button class="m-l-10 m-r-15" value="">Specific Staff Members</mat-radio-button>
+                            <mat-radio-button class="m-l-10 m-r-15" value="">Staff Members with roles</mat-radio-button>
+                            <mat-radio-button class="m-l-10 m-r-15" value="">Responsible Person</mat-radio-button>
+                        </div>
+                    </mat-radio-group>
+                    <label for="">Staff Members to Notify</label>
+                    <div class="selected-form-field">
+                        
+                        <select name="" id="" class="mat-input">
+                            <option value="">Nothing selected</option>
+                        </select>
+                        <span class="down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15"><path fill="#808080" d="M7.5 12L0 4h15z"/></svg></span>
+                    </div>
+                    <mat-divider></mat-divider>
+                    <button mat-raised-button color="primary">Save</button>
+                    <button mat-raised-button>Close</button>
+
+
+                </div>
+
+            </mat-tab>
+            
+        </mat-tab-group>
+    </div>
+</div> 

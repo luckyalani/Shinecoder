@@ -1,0 +1,55 @@
+<div class="main-container boxed space">
+    <div>
+        <h1 class="text-dark">New Tax</h1>
+    </div>
+    <div class="form">
+        <div class="w-full">
+            <div class="m-t-10">
+                <mat-label class="form-input-label"><span class="text-danger">*</span> Tax Name
+                </mat-label>
+                <div class="m-t-10">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="m-t-10">
+                <mat-label class="form-input-label"><span class="text-danger">*</span> Rate (%)</mat-label>
+                <mat-form-field appearance="outline" class="form-field">
+                    <svg class="divider" xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="6" r="1" fill="currentColor"/><circle cx="12" cy="18" r="1" fill="currentColor"/><path d="M5 12h14"/></g></svg>
+                    <div class="divider-border"></div>
+                    <input matInput class="input">
+                </mat-form-field>
+            </div>
+            <div class="m-t-10 gray">
+                <mat-label class="form-input-label">Tax Type</mat-label>
+                <mat-form-field appearance="outline" class="m-t-10">
+                    <mat-select placeholder="Select a Tax  Type.">
+                        <mat-option value="Goods">Goods</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="m-t-10">
+                <mat-checkbox class="example-margin" color="primary" checked>This tax will be applicable only during the sale of digital services to overseas customers.</mat-checkbox><br>
+            </div>
+            <div class="m-t-10 gray">
+                <mat-label class="form-input-label"><span class="text-danger">*</span> Country / Region</mat-label>
+                <mat-form-field appearance="outline" class="m-t-10">
+                    <mat-select placeholder="Select a Country">
+                        <mat-option value="India">India</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            
+        </div>
+        
+        <mat-divider class="m-t-20"></mat-divider>
+
+
+        <div class="d-flex gap-1 m-t-10">
+            <button mat-raised-button color="warn">Cancle</button>
+            <button mat-raised-button class="bg-success">Save</button>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,14 @@
+.text-area, .mat-mdc-form-field-textarea-control {
+    height: 6rem !important;
+    overflow: hidden !important;
+    resize: none !important;
+    width: 100%;
+}
+
+.input-bottom-text {
+    color: grey;
+    margin: 0;
+    /* margin: 0 0 10px 10px; */
+    font-size: 14px;
+    font-weight: 400;
+  }

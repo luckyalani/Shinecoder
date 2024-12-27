@@ -1,0 +1,16 @@
+.text-areas {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width:565px) {
+    .right-area {
+        text-align: start;
+    }
+
+    .d-flex {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+}

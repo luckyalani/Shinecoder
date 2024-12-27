@@ -1,0 +1,45 @@
+.icon-delete {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.input {
+    padding: 0.5rem;
+    padding-left: 1.4rem;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.customer-img {
+    width: 35%;
+}
+
+.icon-search {
+    position: absolute;
+    top: 6px;
+    left: 1px;
+}
+
+@media (max-width: 767px) {
+
+    .right-icon {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .icon-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar {
+        display: flex;
+    }
+
+    .cards {
+        justify-content: space-between;
+    }
+
+}

@@ -1,0 +1,60 @@
+.Hello {
+    font-size: medium;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.boxed{
+    justify-content: space-between;
+    flex-direction: row;
+}
+mat-card {
+    margin-top: 1rem;
+    padding: 4rem;
+}
+
+.mat-mdc-card .mat-mdc-card-title {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+img {
+    width: 10rem;
+}
+
+label {
+    font-size: medium;
+    color: #343A40;
+    font-weight: 500;
+}
+
+button{
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.mat-input{
+    background-color: #f0f0f1;
+}
+
+.form-gruop{
+ margin-top: 1rem;
+}
+
+.visible-hidden{
+    visibility: hidden;
+}
+
+.height{
+    height: 100vh;
+}
+
+
+@media (max-width: 767px){
+    .boxed{
+        flex-direction: column;
+    }
+    img {
+        width: 7rem;
+    }
+}

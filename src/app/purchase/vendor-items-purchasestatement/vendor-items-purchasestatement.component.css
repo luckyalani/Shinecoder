@@ -1,0 +1,123 @@
+
+.selected-form-field{
+    display: flex;
+    position: relative;
+    align-items: center;
+
+}
+.dual-input{
+    height: 2.2rem;
+    border: 0.1rem solid #979797;
+    border-radius: 0.3rem;
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+}
+.dual-form{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+  
+}
+.dual-down-arrow{
+    position: absolute;
+    right: 0.8rem;
+    top: 0.8rem;
+}
+
+
+.statement-tag{
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+}
+.statement-1{
+    text-align: right;
+    margin-bottom: 0.5rem;
+}
+
+.customer-name{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0.2rem 0;
+}
+
+.customer-detail{
+    font-size: 15px;
+    font-weight: 400;
+    color: #9c9c9c;
+    margin: 0.2rem 0;
+}
+.date{
+    margin:0;
+    font-size: 14px;
+    font-weight: 400;
+}
+.account-summary{
+    color: black;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 0.2rem 0;
+    text-align: right;
+    margin-top: 0.5rem;
+}
+.divider{
+    width: 100%;
+    justify-content: flex-end;
+    margin: 0.5rem 0;
+}
+.divider-2{
+    width: 100%;
+    justify-content: flex-end;
+    margin:0;
+}
+
+.line-half{
+    width: 40%;
+    
+}
+.line-half-2{
+    width: 35%;
+    margin: 0;
+}
+.balance-div{
+    gap: 10rem;
+}
+.balance-div-gap{
+    gap: 13rem;
+}
+.balance{
+    margin:0.5rem 0;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+.heading-2{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+}
+.table-full{
+    width: 100%;
+}
+
+@media (max-width: 767px){
+    .balance {
+        font-size: 12px;
+    }
+    .customer-name {
+        font-size: 12px;
+    }
+    .heading-2 {
+        font-size: 14px;
+    }
+    .customer-detail{
+        font-size: 13px;
+    }
+    .statement-tag{
+        font-size: 18px;
+    }
+    
+}

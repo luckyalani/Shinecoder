@@ -1,0 +1,32 @@
+/* --------------------------------------------- 
+Template Name: Material Pro Admin
+Author: Themedesigner
+Email: niravjoshi87@gmail.com
+File: scss
+/* --------------------------------------------- */
+@import 'variable';
+
+@import 'mixins/spacing';
+@import 'mixins/color';
+@import 'mixins/font';
+@import 'mixins/weight';
+
+@import 'grid/grid';
+
+@import 'component/global';
+// @import 'component/heading';
+
+// @import 'component/header';
+@import 'component/sidebar';
+// @import 'component/spinner';
+@import 'component/card';
+@import 'component/tabs.scss';
+// @import 'component/dashboard';
+
+@import 'component/table.scss';
+
+@import 'responsive';
+
+@import "../styles/icons/material-design-iconic-font/css/materialdesignicons.min.css";
+
+@import "../styles/component/mat-input.scss"

@@ -1,0 +1,73 @@
+.mat-expansion-panel-header {
+    padding: 0px;
+    font-weight: 400;
+}
+
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+    box-shadow: unset;
+}
+
+.active .mat-expansion-panel-header.mat-expanded{
+    /* height: 3rem; */
+    background-color: #0163d2 !important;
+    border-radius: 12px;
+
+}
+
+.active .mat-expansion-panel-header-title, .mat-expansion-panel-header:hover .mat-expansion-panel-header-title{
+    color: white !important;
+}
+
+
+::ng-deep .mat-expansion-panel-body {
+    padding: 0 !important;
+}
+
+.arrow-down{
+  line-height: 0;
+}
+
+.mat-expanded .arrow-down {
+    transform: rotate(90deg);
+}
+
+.list span {
+    color: black;
+}
+
+.activate-list span {
+    font-weight: 600;
+    color: #0163d2;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;}
+.mdc-list {
+    padding: 0 !important;
+  }
+.mat-mdc-list-base {
+    --mdc-list-list-item-one-line-container-height: 45px !important;
+}
+
+.example-container {
+  width: 100%;
+  height: 95vh;
+  margin-top: 0.4rem;
+}
+::ng-deep .mat-drawer-inner-container {
+  padding-bottom: 5rem !important;
+  padding-top: 0.3rem;
+}
+
+.mat-expansion-panel-header-title{
+  margin-right: 0 !important;
+}
+app-svg-icons{
+    line-height: 0;
+}
+
+.mat-expansion-panel-spacing{
+    margin: 0 !important;
+}

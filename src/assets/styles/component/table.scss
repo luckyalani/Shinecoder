@@ -1,0 +1,131 @@
+th{
+    background-color: #e6effa;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    padding: 0.5rem 1rem;
+    text-align: start;
+    white-space: nowrap;
+}
+table{
+    width: 100%;
+}
+
+.table-div{
+    margin-top: 0.5rem;
+    width: auto;
+    overflow-x: scroll;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 5px 1px #f0f0f0;
+}
+td{
+    padding: 0.5rem 1rem;;
+    text-align: start;
+    white-space: nowrap;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+table{
+    width: 100%;
+}
+
+table, td, th {
+    border-collapse: collapse;
+   }
+
+  .action-btn {
+    font-size: 1.6rem;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    border: 0.5px solid;
+}
+
+.icon-btn{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+.action-btn.success{
+    border-color: $success;
+}
+.action-btn.primary{
+    border-color: $primary;
+}
+.action-btn.danger{
+    border-color: $danger;
+}
+
+
+
+.action-btn-gap{
+    gap: 0.5rem;
+    
+}
+// .icon-search {
+//     position: absolute;
+//     top: 6px;
+//     left: 1px;
+// }
+
+.drop-down-left{
+    border-radius: 5px;
+    height: 35px;
+    min-width: 3rem;
+    padding: 0.3rem;
+    cursor: pointer;
+    color: #717171;
+    border: 1px solid #9c9c9c;
+}
+
+.search-button{
+    margin-left: -1rem;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    outline: none;
+    // margin-left: 0.8rem;
+    margin-right: 0;
+}
+
+.search-icon-2 {
+    color: #e0e0e0;
+}
+
+.search-input{
+    border: 1px solid #0163d2 !important; 
+    border-radius: 5px;
+    height: 2rem;
+    padding-left: 1.4rem;
+}
+
+tr:hover{
+    background: #f8f8f8;
+}
+
+td img{
+    width: 2.6rem;
+}
+
+@media (max-width: 767px){
+    .icon-smallscreen {
+        justify-content: space-between;
+        width: 95%;
+    }
+    .action-btn-gap{
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .search-input{
+        width: 100%;
+    }
+}

@@ -1,0 +1,74 @@
+.form {
+    padding: 0px !important;
+}
+
+.line-div {
+    display: flex;
+    align-items: center;
+    gap: -1;
+    width: 100%;
+}
+
+.arrow-icon {
+    color: #0163D2;
+    font-size: 8px;
+    width: fit-content;
+    height: 100% !important;
+    transform: rotate(45deg);
+}
+
+.text-primary {
+    color: #0163D2;
+    width: max-content;
+}
+
+.line {
+    width: 100%;
+    background-color: #0163D2;
+    height: 1px;
+}
+
+/* input-border */
+.m-t-2{
+    margin-top: 2.5px !important;
+}
+
+.date-picker .mat-mdc-form-field {
+    width: 100% !important;
+}
+::ng-deep .gray .mat-mdc-text-field-wrapper {
+    background-color: #EEEEEE !important;
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+.b-b {
+    border-bottom: 1px solid black;
+}
+
+::ng-deep .manuf-tab .mat-mdc-tab-body-wrapper {
+    box-shadow: unset !important;
+}
+
+.plus {
+    background-color: #26BF00;
+    height: 2rem;
+    width: 3rem;
+    border-radius: 0.3rem;
+}
+
+.remove {
+    height: 2rem;
+    width: 3rem;
+    border-radius: 0.3rem;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-60 {
+    width: 60%;
+}

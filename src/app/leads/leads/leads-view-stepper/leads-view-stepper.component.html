@@ -1,0 +1,99 @@
+<div class="main-container boxed space">
+    <!-- <div>
+        <h1 class="fw-medium fs-26 m-l-3">#50 - Kieran Lowe </h1>
+    </div> -->
+
+    <div class="header d-flex jc-sb align-items-center ">
+        <p class="heading">#50 - Kieran Lowe</p>
+        <mat-icon mat-dialog-close="true">cancel</mat-icon>
+    </div>
+
+    <div class="subject-tab box-shadow">
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="tab-group div-2 box-shadow">
+            <!-- --------------------------Proposal------------------------ -->
+            <mat-tab label="Proposal" class="rounded ">
+                <ng-template mat-tab-label>
+                    Profile
+                </ng-template>
+             
+<app-leads-view-profile></app-leads-view-profile>
+            </mat-tab>
+            <!-- --------------------------Propopsal Tab End------------------------ -->
+
+            <!-- --------------------------Comments Tab Start------------------------ -->
+            <mat-tab label="Comments">
+                <ng-template mat-tab-label>
+                    Proposals
+                </ng-template>
+              <app-leads-view-proposal></app-leads-view-proposal>
+            </mat-tab>
+            <!-- --------------------------Comments Tab End------------------------ -->
+
+            <!-- --------------------------Reminders Tab Start------------------------ -->
+            <mat-tab label="Reminders">
+                <ng-template mat-tab-label>
+                    Tasks
+                </ng-template>
+               <app-leads-view-task></app-leads-view-task>
+            </mat-tab>
+            <!-- --------------------------Reminder Tab End ------------------------ -->
+
+            <!-- --------------------------Tasks Tab Start------------------------ -->
+            <mat-tab label="Tasks">
+                <ng-template mat-tab-label>
+                    Attachments
+                </ng-template>
+
+                
+        <div class="importing">
+            <div class="choosing">
+                <p> Attachment</p>
+
+                <!-- <label for="imgInput"> <img src="assets/images/Group.png" alt=""></label> -->
+                <label for="imgInput"><img src="assets/images/Group.png" alt=""></label>
+                <input type="file" hidden id="imgInput">
+            </div>
+
+            </div>
+
+            <mat-divider></mat-divider>
+
+            <button mat-raised-button color="primary" id="attachmentBtn">Choose from Dropbox</button>
+
+            </mat-tab>
+            <!-- --------------------------Notes------------------------ -->
+            <mat-tab label="Notes">
+                <ng-template mat-tab-label>
+                    Reminders
+                </ng-template>
+               <app-edit-reminder></app-edit-reminder>
+            </mat-tab>
+            <!-- --------------------------Templets------------------------ -->
+            <mat-tab label="Templates">
+                <!-- <app-common></app-common> -->
+                   <ng-template mat-tab-label>
+                    Notes
+                </ng-template>
+                <app-leads-notes></app-leads-notes>
+                        </mat-tab>
+            <!-- --------------------------Email------------------------ -->
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    Activity Log
+                </ng-template>
+                <!-- <app-common></app-common> -->
+                <app-leads-edit-activity-log></app-leads-edit-activity-log>
+            </mat-tab>
+            <!-- --------------------------Eye------------------------ -->
+            <!-- <mat-tab>
+                <ng-template mat-tab-label>
+                    <mat-icon>remove_red_eye</mat-icon>
+                </ng-template>
+                <!-- <app-common></app-common>
+                <div class="b-t p-20 m-b-10 text-secondary text-medium ">
+                    This proposal is not viewed yet by the customer
+                </div>
+            </mat-tab> -->
+        </mat-tab-group>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="main-container boxed space">
+    <div class="d-flex jc-sb">
+        <p class="text-dark p-l-5">Telegram Notification</p>
+    </div>
+
+    <p class="text-blue p-10">Telegram Notification</p>
+    <div class="p-10">
+        
+    <div class="">
+        <mat-label class="form-input-label"> Enable Telegram Notification</mat-label>
+        <div>
+            <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value=""> Yes </mat-radio-button>
+                <mat-radio-button value="">No </mat-radio-button>
+            </mat-radio-group>
+        </div>
+    </div>
+    
+    <div class="m-t-10">
+        <label> Telegram bot token</label>
+        <div class="selected-form-field">
+            <input type="text" class="mat-input">
+        </div>
+    </div>
+    <div class="m-t-10">
+        <label> Telegram Channel Link (for example “https://t.me/channelname”)</label>
+        <div class="selected-form-field">
+            <input type="text" class="mat-input">
+        </div>
+    </div>
+
+    </div>
+
+    <div class="d-flex gap-1 p-10">
+        <button mat-dialog-close="true"
+            class=" mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base "
+            mat-raised-button color="warn">Cancel</button>
+        <button mat-dialog-close="true"
+            class="bg-success mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base "
+            mat-raised-button> Save</button>
+    </div>
+</div>

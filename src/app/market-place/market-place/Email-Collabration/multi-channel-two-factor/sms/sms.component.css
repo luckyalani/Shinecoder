@@ -1,0 +1,85 @@
+p {
+    margin: 0;
+  }
+  .text-area,
+.mat-mdc-form-field-textarea-control {
+  height: 8rem !important;
+  overflow: hidden !important;
+  resize: none !important;
+  width: 100%;
+}
+  .text-14 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .text-red {
+    color: red;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .text-20{
+    font-size: 20px;
+    font-weight: 400;
+
+  }
+  .text-blue {
+    color: blue;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .top-3 {
+    margin-bottom: -3px;
+  }
+  label {
+    margin: 0rem;
+  }
+  .Active{
+    color: #0163d2;
+    font-weight: 800;
+    font-size: 0.9rem;
+    
+}
+a{
+  text-decoration: none;
+  color: black;
+  padding: 0.3rem 1.4rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.linkdiv {
+  display: flex;
+  flex-wrap: wrap;
+}
+.linkdiv-text {
+  text-wrap: nowrap;
+}
+
+::ng-deep .sms-div .mat-mdc-checkbox label {
+  cursor: pointer;
+  margin-left: -10px !important;
+}
+
+/* --------------------------------- Mat expansion panel -------------------------------- */
+
+::ng-deep .mat-expansion-panel-body {
+  background-color: rgb(248, 248, 248);
+}
+.mat-expansion-panel {
+  background: rgb(212, 234, 248);
+}
+
+.mat-expansion-panel-header-title {
+  color: blue;
+}
+::ng-deep.mat-expansion-indicator::after {
+  color: blue;
+}
+
+.text-bg-blue {
+  font-size: 14px;
+  font-weight: 400;
+  color: blue;
+  background-color: rgb(212, 234, 248);
+  padding: 12px;
+}

@@ -1,0 +1,10 @@
+.second mat-radio-group {
+    display: flex;
+    flex-direction: column !important;
+}
+.input-bottom-text {
+    color: grey;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+  }

@@ -1,0 +1,155 @@
+
+
+.space{
+    padding:1rem;
+}
+
+.header{
+    background-color: #f6f6f6;
+    padding: 0 1rem;
+}
+mat-icon{
+    color:red;
+}
+
+.heading{
+    font-weight: 500;
+    color: black;
+}
+.description{
+    display: flex ;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 3rem; */
+    margin: 1rem 0rem;
+    padding-inline: 20px;
+}
+.main-box{
+    width: 50vw;
+    border-radius: 1rem;
+}
+
+
+.mat-mdc-raised-button:not(:disabled) {
+    /* color: var(--mdc-protected-button-label-text-color, inherit); */
+    margin: 10px !important;
+    margin-left: 1rem !important;
+}
+/*  */
+/* Button */
+
+   /* Button */
+   .main-box .jc-c button{
+    height:30px;
+    width:10% !important;
+    border-radius: 3px;
+    font-size: 12px;
+   }
+   
+   /* Button */
+   .main-box .jc-c button:nth-child(2){
+    background-color:#ff0000;
+    color:#ffffff;
+    border-style:none;
+   }
+
+
+
+
+   
+
+
+   .checkboxdiv{
+    display: flex;
+    flex-direction: column;
+   }
+   
+   .inputtextdiv{
+    border: none !important;
+    outline: none !important;
+   }
+
+.inputdivofmain{
+    border: 1px solid black;
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.inputfielddiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*  */
+ .mainuimage{
+    display:inline;
+    /* position: absolute; */
+    border-right: 1px solid black;
+    padding: 20px;
+    /* overflow: hidden; */
+   }
+   
+   /* Image */
+    .mainuimage img{
+    height:20px;
+    margin-top: 5px;
+    /* margin-left:10px;
+    margin-top:7px; */
+   }
+
+   .main-box .jc-c button:nth-child(1){
+    background-color: #00B807;
+    color:#ffffff;
+    border-style:none;
+   }
+   .main-box .jc-c{
+    justify-content:flex-start;
+   }
+
+
+
+   /* media query */
+   @media (max-width:1023px){
+
+    /* Description */
+     .main-box .description{
+     flex-direction:column;
+    }
+    
+   }
+   
+   @media (max-width:960px){
+   
+    /* Division */
+    .main-box .jc-c{
+     justify-content:center !important;
+    }
+    
+ 
+   }
+   
+   @media (max-width:592px){
+   
+    /* Inputdivofmain */
+    .description .inputfielddiv .inputdivofmain{
+     height:35px;
+    }
+    
+    /* Button */
+      .main-box .jc-c button{
+     width:50px !important;
+    }
+    
+    /* Main box */
+    .main-box{
+     width:70vw;
+    }
+    
+   }
+   
+
+
+
+

@@ -1,0 +1,140 @@
+
+
+.space{
+    padding:1rem;
+}
+
+.header{
+    background-color: #f6f6f6;
+    padding: 0 1rem;
+}
+mat-icon{
+    color:red;
+}
+
+.heading{
+    font-weight: 500;
+    color: black;
+}
+.description{
+    display: flex ;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* padding: 3rem; */
+    margin: 1rem 0rem;
+    gap: 15px;
+}
+.main-box{
+    width: 50vw;
+    border-radius: 1rem;
+}
+
+
+.mat-mdc-raised-button:not(:disabled) {
+    /* color: var(--mdc-protected-button-label-text-color, inherit); */
+    margin: 10px !important;
+    margin-left: 1rem !important;
+}
+/*  */
+/* Button */
+ .jc-c button{
+    width:15% !important;
+   }
+   
+   /* Button */
+   .main-box .jc-c button{
+    height:30px;
+    width:10% !important;
+    border-radius: 3px;
+    font-size: 12px;
+   }
+   
+   /* Button */
+   .main-box .jc-c button:nth-child(2){
+    background-color:#ff0000;
+    color:#ffffff;
+    border-style:none;
+   }
+
+
+
+
+
+   
+
+    
+   
+   
+   .firstselectbox{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 15px;
+    gap: 10px;
+   }
+   .Secondselectbox{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 15px;
+    gap: 10px;
+   }
+   .Thirdselectbox{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 15px;
+    gap: 10px;
+   }
+
+.firstselectbox > select{
+    height: 40px;
+    padding-left: 10px;
+    appearance: auto;
+}   
+.Secondselectbox > select{
+    height: 40px;
+    padding-left: 10px;
+    appearance: auto;
+}   
+.Thirdselectbox > select{
+    height: 40px;
+    padding-left: 10px;
+    appearance: auto;
+}   
+
+.main-box .jc-c button{
+    background-color:#00b807;
+    color:#ffffff;
+    border-style:none;
+   }
+   
+   /* Division */
+    .main-box .jc-c{
+    justify-content:flex-start;
+    padding-block: 6px;
+    padding-left: 5px;
+   }
+   
+/*  */
+@media (max-width:960px){
+
+    /* Main box */
+    .main-box{
+     width:70vw;
+    }
+    
+   }
+   
+   @media (max-width:592px){
+   
+    /* Division */
+     .main-box .jc-c{
+     justify-content:center !important;
+    }
+    
+    /* Button */
+    .main-box .jc-c button{
+     width:30% !important;
+    }
+    
+   }
+

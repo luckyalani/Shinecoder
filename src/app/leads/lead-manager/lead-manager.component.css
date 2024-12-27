@@ -1,0 +1,45 @@
+::ng-deep  .lead-manager .mat-mdc-tab-labels {
+    border: 0px solid lightgrey !important;
+    border-radius: 0.2rem;
+    padding-left: 0rem !important;
+}
+::ng-deep .lead-manager  .mat-mdc-tab-header, .shadow {
+    box-shadow: unset !important;
+    border-radius: 0.2rem;
+}
+::ng-deep .lead-manager .mdc-tab {
+    margin: 0px!important;
+    border: 0px solid #0163d2 !important;
+    border-radius: 4px;
+    background-color: unset !important;
+}
+::ng-deep .lead-manager
+{
+    .mat-mdc-tab-labels{
+        /* background-color: #EEEEEE !important; */
+    }
+    .mat-mdc-tab .mdc-tab__text-label {
+        color: unset !important;
+        font-weight: 500 !important;
+        font-size: 0.8rem !important;
+    }
+    .mdc-tab:hover , .mdc-tab-indicator--active{
+        background-color: unset !important;
+        color: #0163d2;
+    }
+    .mat-mdc-tab-labels :nth-child(2){
+        margin: 0px 10px !important;
+    }
+    .mat-mdc-tab-labels{
+        display: flex;
+        justify-content: end;
+        background-color:unset !important;
+        width:max-content;
+    }
+    .mdc-tab:hover.mat-mdc-tab .mdc-tab__text-label, .mdc-tab-indicator--active  .mdc-tab__text-label{
+        color:#0163d2 !important;
+    }
+    .mdc-tab:hover , .mdc-tab-indicator--active{
+        background-color: unset !important;
+    }
+} 

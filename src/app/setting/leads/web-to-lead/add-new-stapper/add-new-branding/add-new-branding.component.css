@@ -1,0 +1,17 @@
+.first_icon {
+    border-right: 1px solid #9C9C9C;
+    padding: 5px 10px 5px 0px;
+    display: flex;
+}
+.color-fields{
+    display: flex;
+    gap: 20px;
+}
+@media (max-width:768px) {
+    
+.color-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+}

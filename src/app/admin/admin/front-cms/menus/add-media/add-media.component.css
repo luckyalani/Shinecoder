@@ -1,0 +1,15 @@
+label{
+    margin: 0 !important;
+}
+.list{
+    border: 1px solid #9c9c9c;
+    background: #eeeeee;
+    border-radius: 0.2rem;
+}
+.col-6 {
+    max-width: 48% !important;
+}
+.icons{
+    cursor: pointer;
+    margin: 0px 0.2rem;
+}

@@ -1,0 +1,69 @@
+<div class="main-container boxed space">
+    <div class="header  m-t-10 m-b-10 ">
+        <div class="icon_and_heading">
+
+            <h1 class="text-dark ">Import Items</h1>
+        </div>
+        <button mat-raised-button color="primary" class="btn"><mat-icon>download</mat-icon>Download Sample</button>
+    </div>
+    <div class="instructions">
+        <ol>
+            <li>Your CSV data should be in the format below. The first line of your CSV file should be the column
+                headers as in the table example. Also make sure that your file is UTF-8 to avoid unnecessary encoding
+                problems.
+            </li>
+            <li> . If the column you are trying to import is date make sure that is formatted in format Y-m-d
+                (2024-02-08).</li>
+            <li>In the column Group, you must add either the GROUP NAME or the GROUP ID, which you can get them by
+                clicking here.
+            </li>
+            <li> In the column Tax and Tax2, you must add either the TAX NAME or the TAX ID, which you can get them by
+                navigating to Setup->Finance->Taxes.</li>
+            <!-- <li class="special-list"> Duplicate email rows won't be imported.</li> -->
+        </ol>
+
+    </div>
+    <div class="form">
+        <div class="table-div">
+            <table>
+                <tr>
+                    <th><span color="danger">*</span>Description</th>
+                    <th>Long Description</th>
+                    <th><span color="danger">*</span>Rate-USD</th>
+                    <th>Tax</th>
+                    <th>TAx2</th>
+                    <th>Unit</th>
+                    <th>Group</th>
+                </tr>
+                <tr>
+                    <td>Sample Data</td>
+                    <td>Sample Data</td>
+                    <td>Sample Data</td>
+                    <td>Sample Data</td>
+                    <td>Sample Data</td>
+                    <td>Sample Data</td>
+                    <td>Sample Data</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="importing">
+            <div class="choosing">
+                <p><span>*</span> Choose CSV File</p>
+                <img src="assets/images/Group.png" alt="">
+            </div>
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <button mat-raised-button color="primary">Import</button>
+        <button mat-raised-button color="primary">Simulate Import</button>
+
+    </div>
+
+
+
+
+
+</div>

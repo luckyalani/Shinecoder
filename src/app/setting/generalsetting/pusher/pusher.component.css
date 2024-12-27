@@ -1,0 +1,8 @@
+.text-blue {
+    color: rgb(83, 186, 250);
+    cursor: pointer;
+  }
+
+  .question-icon{
+    margin-bottom: -3px;
+  }

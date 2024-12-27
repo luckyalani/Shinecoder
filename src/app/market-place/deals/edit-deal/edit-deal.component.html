@@ -1,0 +1,239 @@
+<div class="main-container boxed space">
+    <div class="d-flex flex-no-wrap  align-items-center  ">
+        <div class="text-blue d-flex">
+            <h1 class="text-dark text-no-wrap text-blue">Edit Deals</h1>
+            
+        </div>
+        <div class="d-flex flex-no-wrap align-items-center w-full">
+            <span id="diamond"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><path fill="currentColor" d="M240 128a15.85 15.85 0 0 1-4.67 11.28l-96.05 96.06a16 16 0 0 1-22.56 0l-96-96.06a16 16 0 0 1 0-22.56l96.05-96.06a16 16 0 0 1 22.56 0l96.05 96.06A15.85 15.85 0 0 1 240 128"/></svg></span>
+       <span id="line"></span>
+    </div>
+    </div>
+
+
+    <div class="form">
+
+
+
+       
+            <div class="form-row">
+                <!-- Left Side -->
+                <div class="in-form-row">
+                    <div>
+                        <mat-label class="form-input-label"><span class="text-danger">*</span> Title </mat-label>
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <mat-select class="select_in" placeholder="Draft">
+                                    <mat-option value="Draft">Draft</mat-option>
+                                    <mat-option value="Draft">Draft</mat-option>
+                                    <mat-option value="Draft">Draft</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <div>
+                        <mat-label class="form-input-label"><span class="text-danger">*</span>Source</mat-label>
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                               <div class="m-r-3 b-r d-flex align-items-center "> <mat-icon class="mat-18  p-r-5">add</mat-icon></div>
+                                <input matInput class="input" placeholder="Nothing Selected">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    
+
+
+                    <div>
+                        <mat-label class="form-input-label"><span class="text-danger">*</span>Pipeline</mat-label>
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                                 <input matInput class="input" placeholder="Nothing Selected">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Related to </mat-label>
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <mat-select class="select_in" placeholder="Draft">
+                                    <mat-option value="Draft">Draft</mat-option>
+                                    <mat-option value="Draft">Draft</mat-option>
+                                    <mat-option value="Draft">Draft</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label"><span class="text-danger">*</span>Deal Owner </mat-label>
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <mat-select class="select_in" placeholder="Draft">
+                                    <mat-option value="Draft">Draft</mat-option>
+                                    <mat-option value="Draft">Draft</mat-option>
+                                    <mat-option value="Draft">Draft</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    
+
+
+                  
+                </div>
+                <!-- ---------------------Right Side----------------------------- -->
+                <div class="in-form-row">
+                  
+                    <div>
+                        <mat-label class="form-input-label">
+                            <span class="text-danger">*</span> Deal Value </mat-label>
+                        <div class="">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" placeholder="Nothing Selected">
+                            
+                            </mat-form-field>
+                            <!-- <span class="text-xxs text-grey mt-0">Enter decimal value Ex. 300.00</span> -->
+                        </div>
+                    </div>
+
+                    <div>
+                        <mat-label class="form-input-label"><span class="text-danger">*</span>Expected Close Date </mat-label>
+                        <div class="calendar-input-field  date-picker ">
+                            <mat-form-field appearance="outline" class="form-field date">
+                                <mat-datepicker-toggle matIconSuffix [for]="picker2" class="">
+                                    <svg matDatepickerToggleIcon xmlns="http://www.w3.org/2000/svg" width="1.4em"
+                                        height="1.4em" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M2 19c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-8H2zM19 4h-2V3c0-.6-.4-1-1-1s-1 .4-1 1v1H9V3c0-.6-.4-1-1-1s-1 .4-1 1v1H5C3.3 4 2 5.3 2 7v2h20V7c0-1.7-1.3-3-3-3" />
+                                    </svg>
+                                </mat-datepicker-toggle>
+                                <div class="date-border"></div>
+                                <input matInput [matDatepicker]="picker2" class="input">
+                                <mat-datepicker #picker2></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <div>
+                        <mat-label class="form-input-label">Stage</mat-label>
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <mat-select class="select_in" placeholder="Customer">
+                                    <mat-option value="Customer">Customer</mat-option>
+                                    <mat-option value="Customer">Customer</mat-option>
+                                    <mat-option value="Customer">Customer</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label"><span class="text-danger">*</span>Customer</mat-label>
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <mat-select class="select_in" placeholder="Draft">
+                                    <mat-option value="Draft">Draft</mat-option>
+                                    <mat-option value="Draft">Draft</mat-option>
+                                    <mat-option value="Draft">Draft</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label"><span class="text-danger">*</span>Assigne</mat-label>
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <mat-select class="select_in" placeholder="Draft">
+                                    <mat-option value="Draft">Draft</mat-option>
+                                    <mat-option value="Draft">Draft</mat-option>
+                                    <mat-option value="Draft">Draft</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                  
+                
+
+
+
+                 
+               
+    
+                </div>
+    
+            </div>
+
+
+            <div>
+                <mat-label class="form-input-label">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M5.5 9A1.5 1.5 0 0 0 7 7.5A1.5 1.5 0 0 0 5.5 6A1.5 1.5 0 0 0 4 7.5A1.5 1.5 0 0 0 5.5 9m11.91 2.58c.36.36.59.86.59 1.42c0 .55-.22 1.05-.59 1.41l-5 5a1.996 1.996 0 0 1-2.83 0l-6.99-6.99C2.22 12.05 2 11.55 2 11V6c0-1.11.89-2 2-2h5c.55 0 1.05.22 1.41.58zm-3.87-5.87l1-1l6.87 6.87c.37.36.59.87.59 1.42c0 .55-.22 1.05-.58 1.41l-5.38 5.38l-1-1L20.75 13z"/></svg>
+                  </span>  Tage </mat-label>
+                <div class="">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input" placeholder="Tags">
+                    </mat-form-field>
+                </div>
+            </div>
+
+
+            <!-------------- LinkBox ---------------->
+           <div id="linkBox" *ngIf="linkBox">
+            <div class="main-box form ">
+                <div class="header d-flex jc-sb align-items-center">
+                    <p class="heading">Link</p>
+                </div>
+                <div class="description ">
+                    
+                    <div>
+                        <mat-label class="form-input-label">
+                            Title </mat-label>
+                        <div class="">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" placeholder="">
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <div>
+                        <mat-label class="form-input-label">Url</mat-label>
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                               <div class="m-r-3 b-r2 d-flex align-items-center "> 
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M8 12a1 1 0 0 0 1 1h6a1 1 0 0 0 0-2H9a1 1 0 0 0-1 1"/><path fill="currentColor" d="M9 16H7.21A4.13 4.13 0 0 1 3 12.37A4 4 0 0 1 7 8h2a1 1 0 0 0 0-2H7.21a6.15 6.15 0 0 0-6.16 5.21A6 6 0 0 0 7 18h2a1 1 0 0 0 0-2m14-4.76A6.16 6.16 0 0 0 16.76 6h-1.51C14.44 6 14 6.45 14 7a1 1 0 0 0 1 1h1.79A4.13 4.13 0 0 1 21 11.63A4 4 0 0 1 17 16h-2a1 1 0 0 0 0 2h2a6 6 0 0 0 6-6.76"/></svg>
+                                </span>
+                            </div>
+                                <input matInput class="input" placeholder=" ">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                 
+                </div>
+               <mat-divider class="divider-bottom m-t-15 m-b-10"></mat-divider>
+            
+                <div class="d-flex align-items-center jc-sb m-10"> <button mat-flat-button color="secondary"
+                        mat-dialog-close="true" (click)="linkBoxToggle()">cancle</button>
+                    <button mat-flat-button  class="m-l-15 bg-blue" mat-dialog-close="true">apply</button>
+            
+                </div>
+            </div>
+           </div>
+
+
+                       <!------------- LinkBox End-------->
+
+
+            <p routerLink="/market-place/deal/edit-deal/edit" class="cursor-pointer">Link
+                 <span class="text-blue"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" d="M15.49 7.3h-1.16v6.35H1.67V3.28H8V2H1.67A1.21 1.21 0 0 0 .5 3.28v10.37a1.21 1.21 0 0 0 1.17 1.25h12.66a1.21 1.21 0 0 0 1.17-1.25z"/><path fill="currentColor" d="M10.56 2.87L6.22 7.22l-.44.44l-.08.08l-1.52 3.16a1.08 1.08 0 0 0 1.45 1.45l3.14-1.53l.53-.53l.43-.43l4.34-4.36l.45-.44l.25-.25a2.18 2.18 0 0 0 0-3.08a2.17 2.17 0 0 0-1.53-.63a2.19 2.19 0 0 0-1.54.63l-.7.69l-.45.44zM5.51 11l1.18-2.43l1.25 1.26zm2-3.36l3.9-3.91l1.3 1.31L8.85 9zm5.68-5.31a.91.91 0 0 1 .65.27a.93.93 0 0 1 0 1.31l-.25.24l-1.3-1.3l.25-.25a.88.88 0 0 1 .69-.25z"/></svg></span>
+                </p>
+                <p  (click)="linkBoxToggle()" class="text-blue f-w-5 cursor-pointer text-sm">Click here to add link</p>
+
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <div class="d-flex m-t-5 gap-1">
+     <button mat-raised-button color="warn">Cancel</button>
+     <button mat-raised-button class="bg-success">Save</button>
+ </div>

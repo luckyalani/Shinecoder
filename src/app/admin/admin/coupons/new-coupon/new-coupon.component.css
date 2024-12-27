@@ -1,0 +1,45 @@
+.left{
+    width: 48%;
+}
+.right{
+    width: 48%;
+}
+.selected-form-field{
+    display: flex;
+    position: relative;
+    align-items: center;
+
+}
+.down-arrow {
+    position: absolute;
+    right: 10px !important;
+    top: 8px !important;
+}
+label{
+    margin: 0rem !important;
+}
+.icon-eye{
+    height: 1.9rem !important;
+    width: 2.5rem !important;
+    color: #505050;
+    position: absolute;
+    left: 1px;
+    /* border-radius: 0.3rem; */
+    border-right: 0.1rem solid #9c9c9c;
+    background-color: gray;
+    padding-top: 0.3rem;
+    text-align: center;
+    background-color: #fff;
+    font-size: 22px;
+}
+.percentage {
+    position: absolute;
+    right: 2rem;
+    font-size: 13px;
+    font-weight: 400;
+    border-left: 1px solid #9c9c9c;
+    padding: 6px;
+}
+.padding{
+    padding-left: 3rem;
+}

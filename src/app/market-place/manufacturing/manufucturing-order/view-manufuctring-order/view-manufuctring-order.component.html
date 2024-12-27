@@ -1,0 +1,228 @@
+<div class="main-container boxed space manuf-tab">
+
+    <div class="d-flex align-items-center m-b-10">
+        <div>
+            <h1 class="text-dark text-primary m-0 m-r-5">Add manufacturing order</h1>
+        </div>
+        <div class="line-div">
+            <mat-icon class="arrow-icon">square</mat-icon>
+            <p class="line "></p>
+        </div>
+    </div>
+    <div class="form">
+        <div class="d-flex flex-wrap gap-1 p-10 gray">
+            <!-- Left Side -->
+            <div class="w-full">
+                <div class="">
+                    <mat-label class="form-input-label"><span class="text-danger">*</span> Product</mat-label>
+                    <mat-form-field appearance="outline" class="m-t-10">
+                        <mat-select placeholder="None Selected">
+                            <mat-option value="None Selected">None Selected</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="m-t-10">
+                    <mat-label class="form-input-label"><span class="text-danger">*</span> Quantity </mat-label>
+                    <div class="m-t-10">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="1">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="m-t-10">
+                    <mat-label class="form-input-label"><span class="text-danger">*</span> Unit of
+                        measure</mat-label>
+                    <mat-form-field appearance="outline" class="m-t-10">
+                        <mat-select placeholder="KG">
+                            <mat-option value="KG">KG</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="m-t-10">
+                    <mat-label class="form-input-label"><span class="text-danger">*</span> Bills of
+                        material</mat-label>
+                    <mat-form-field appearance="outline" class="m-t-10">
+                        <mat-select placeholder="BOM00112 LG Fridge 10L">
+                            <mat-option value="BOM00112 LG Fridge 10L">BOM00112 LG Fridge 10L</mat-option>
+                            <mat-option value="BOM00112 LG Fridge 10L">BOM00112 LG Fridge 10L</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="m-t-10 gray">
+                    <mat-label class="form-input-label">Routing</mat-label>
+                    <div class="m-t-10">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input">
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Side -->
+            <div class="w-full">
+                <div class="">
+                    <mat-label class="form-input-label"><span class="text-danger">*</span> Deadline</mat-label>
+                    <div class="m-t-10">
+                        <mat-form-field appearance="outline" class="form-field ">
+                            <input matInput class="input">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="m-t-10">
+                    <mat-label class="form-input-label"><span class="text-danger">*</span> Plan from</mat-label>
+                    <div class="m-t-10">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="m-t-10">
+                    <mat-label class="form-input-label"><span class="text-danger">*</span> Planned Date</mat-label>
+                    <div class="m-t-10">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="m-t-10">
+                    <mat-label class="form-input-label">Responsible</mat-label>
+                    <mat-form-field appearance="outline" class="m-t-10">
+                        <mat-select placeholder="None Selected">
+                            <mat-option value="None Selected">None Selected</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="m-t-10">
+                    <mat-label class="form-input-label">Responsible</mat-label>
+                    <div class="m-t-10 status">
+                        <span class="Canceled">Canceled</span>
+                    </div>
+                </div>
+
+                <div class="m-t-10">
+                    <mat-label class="form-input-label"><span class="text-danger">*</span>Reference Code</mat-label>
+                    <div class="m-t-10">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input">
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Information -->
+        <div>
+            <div class="d-flex align-items-center m-b-10 p-10">
+                <div>
+                    <h1 class="text-dark text-primary m-0 m-r-5">Production Information</h1>
+                </div>
+                <div class="line-div">
+                    <mat-icon class="arrow-icon">square</mat-icon>
+                    <p class="line "></p>
+                </div>
+            </div>
+            <!-- Tabs  -->
+            <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="tab-group div-2">
+                <!-- -------------------------Componnet Tab Start--------------------------- -->
+                <mat-tab class="rounded  " label="Componnet">
+                    <div class="p-10">
+                        <table class="">
+                            <thead>
+                                <tr>
+                                    <th>SNo.</th>
+                                    <th>Product</th>
+                                    <th>Unit</th>
+                                    <th>To Consume</th>
+                                    <th>Reserved</th>
+                                    <th>Consumed</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>REFRIGERATOR LABORATORY DOUBLE DOOR 1400L 2°C -20°C</td>
+                                    <td>Gram</td>
+                                    <td class="text-danger">200.00</td>
+                                    <td class="text-danger">0.00</td>
+                                    <td class="text-danger">0.00</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>REFRIGERATOR LABORATORY DOUBLE DOOR 1400L 2°C -20°C</td>
+                                    <td>Gram</td>
+                                    <td class="text-danger">200.00</td>
+                                    <td class="text-danger">0.00</td>
+                                    <td class="text-danger">0.00</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </mat-tab>
+                <!-- -------------------------Componnet Tab End--------------------------- -->
+
+                <!-- -------------------------Finished product Tab Start--------------------------- -->
+                <mat-tab class="rounded" label="Finished product">
+                    <p class="fs-14 p-10 b-b fw-medium">Use the Produce button or process the work orders to create
+                        some
+                        finished products.</p>
+                </mat-tab>
+                <!-- -------------------------Finished product Tab Start--------------------------- -->
+
+
+
+                <!-- -------------------------Miscellaneous Tab Start--------------------------- -->
+                <mat-tab class="rounded " label="Miscellaneous">
+                    <div class="d-flex flex-wrap gap-1 p-10">
+                        <!-- Left Side -->
+                        <div class="w-full">
+                            <div class="">
+                                <mat-label class="form-input-label">Components warehouse</mat-label>
+                                <mat-form-field appearance="outline" class="m-t-10">
+                                    <mat-select placeholder="All">
+                                        <mat-option value="All">All</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <!-- Right Side -->
+                        <div class="w-full">
+                            <div class="">
+                                <mat-label class="form-input-label"><span class="text-danger">*</span> Finished Products
+                                    warehouse</mat-label>
+                                <mat-form-field appearance="outline" class="m-t-10">
+                                    <mat-select placeholder="Sams -Deport Central">
+                                        <mat-option value="Sams -Deport Central">Sams -Deport Central</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+
+                </mat-tab>
+                <!-- -------------------------Miscellaneous Tab Start--------------------------- -->
+            </mat-tab-group>
+        </div>
+
+    </div>
+    <hr class="m-t-20">
+    <div class="d-flex gap-1 p-10">
+        <button routerLink="/market-place/manufacturing/add-manufuctring-order" mat-raised-button color="primary">Add</button>
+        <button routerLink="/market-place/manufacturing/add-manufuctring-order" mat-raised-button color="primary">Edit</button>
+        <button mat-raised-button class="bg-close">Close</button>
+    </div>
+
+</div>

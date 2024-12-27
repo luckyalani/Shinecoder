@@ -1,0 +1,94 @@
+<div class="rounded">
+    <div class="d-flex jc-sb p-10 bg-light align-items-center">
+        <h1 class="fw-medium ">Add new custom field</h1>
+
+    </div>
+    <div class="p-20 form">
+        <div class="inner-right">
+            <mat-label class="form-input-label"> <span class="text-danger">*</span> Field Belongs to</mat-label>
+            <div class="mt2">
+                <mat-form-field appearance="outline" class="form-field">
+                    <mat-select class="select_in" placeholder="Nothing Selected">
+                        <mat-option value="1">1</mat-option>
+                        <mat-option value="1">1</mat-option>
+                        <mat-option value="1">1</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="">
+            <mat-label class="form-input-label"> <span class="text-danger">*</span>Field Name</mat-label>
+            <div class="calendar-input-field">
+                <mat-form-field appearance="outline" class="form-field">
+                    <input matInput class="input" placeholder="OC">
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="inner-right">
+            <mat-label class="form-input-label"> <span class="text-danger">*</span>Type</mat-label>
+            <div class="mt2">
+                <mat-form-field appearance="outline" class="form-field">
+                    <mat-select class="select_in" placeholder="Nothing Selected">
+                        <mat-option value="1">1</mat-option>
+                        <mat-option value="1">1</mat-option>
+                        <mat-option value="1">1</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+
+        <!-- Strreet -->
+        <div class="">
+            <mat-label class="form-input-label">Default Value</mat-label>
+            <div class="m-t-5">
+                <textarea name="" id="" cols="30" rows="10" class="mat-input text-area"></textarea>
+            </div>
+        </div>
+        <div class="">
+            <mat-label class="form-input-label">Default Value</mat-label>
+            <div class="calendar-input-field">
+                <mat-form-field appearance="outline" class="form-field">
+                    <input matInput class="input" placeholder="">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="">
+            <mat-label class="form-input-label">Order</mat-label>
+            <div class="calendar-input-field">
+                <mat-form-field appearance="outline" class="form-field">
+                    <input matInput class="input" placeholder="">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="">
+            <mat-label class="form-input-label"> <span class="text-danger">*</span>Grid (Bootstrap Column eq. 12) - Max is 12</mat-label>
+            <div class="calendar-input-field">
+                <mat-form-field appearance="outline" class="form-field">
+                    <div id="smallDiv"> <p>col-md-</p> </div>
+                    <input matInput class="input" placeholder="12">
+                </mat-form-field>
+            </div>
+        </div>
+
+        <!-- CheckBoxes -->
+      
+       <div class="checkDiv">
+       <div> <input type="checkbox"><span class="semi-bold">Disabled</span></div>
+       <div> <input type="checkbox"><span class="semi-bold">Restrict visibility for administrators only</span></div>
+       <span class="semi-bold">visible</span>
+       <div> <input type="checkbox"><span class="semi-bold">Required</span></div>
+       <div> <input type="checkbox"><span class="semi-bold">Show on table</span></div>
+     
+
+       </div>
+
+
+    </div>
+
+    <div class="d-flex gap-1 mt-10 b-t">
+        <button mat-dialog-close="true" mat-raised-button class="bg-close">Close</button>
+        <button mat-dialog-close="true" mat-raised-button class="bg-success">Save</button>
+    </div>
+</div>

@@ -1,0 +1,147 @@
+.min-h-50vh{
+    min-height: 50dvh;
+}
+.f-col {
+    flex-direction: column;
+}
+.w-75p{
+    width: 68%;
+}
+.w-full{
+width: 100%;
+}
+.px-10{
+    padding-inline: 10px;
+}
+.h-2r{
+ height: 2rem;
+}
+.h-10r{
+    height: 10rem;
+}
+.js-fe{
+    justify-self: flex-end;
+}
+.gap-12 {
+    gap: 12px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.my-10{
+    margin-block: 10px;
+}
+
+/* Ovel Card */
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-block: 15px;
+
+
+}
+@media(max-width:400px){
+    .container{
+        margin-inline: 5px;
+    }
+}
+.lineContainer{
+    display: flex;
+    flex-direction: column;
+    /* margin: 10px; */
+    margin-inline: 20px;
+
+}
+
+.dotLine{
+    display: flex;
+    flex-direction: column;
+    color: blue;
+}
+.dotLine span{
+position: relative;
+left: 5px;
+margin-top: -7px;
+font-weight: bold;
+}
+.capsule{
+    gap: 8px;
+    align-items: center;
+    color: white;
+    padding-inline: 20px;
+    
+    border-radius: 5rem;
+}
+.bg-blue{
+    background: #0163D2;
+}
+.capsule p{
+    font-size: x-small;
+}
+.capsuleContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.mx-8{
+    margin-inline: 8px;
+}
+.mx-20{
+    margin-inline: 20px;
+}
+.py-10{
+    padding-block: 10px;
+}
+.text-area,
+.mat-mdc-form-field-textarea-control {
+    height: 4.5rem;
+    overflow: hidden !important;
+    resize: none !important;
+    width: 100%;
+}
+
+.bg-green{
+    background: #00B807;
+    color: white;
+}
+.gap-5{
+    gap:20px;
+}
+.font-md{
+    font-weight: 600;
+    font-size: medium;
+}
+.pb-0{
+    margin-bottom: 0px;
+
+}
+.gap-3{
+    gap: 3px;
+}
+ 
+@media(max-width:520px){
+    .capsuleContainer{
+        margin-inline: auto;
+    }
+    .capsule{
+        justify-content: center;
+    }
+.res-col{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 2rem;
+}
+.lineContainer{
+    display: none;
+}
+.res-mx-auto{
+    margin-inline: auto;
+}
+.res-jc,.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}

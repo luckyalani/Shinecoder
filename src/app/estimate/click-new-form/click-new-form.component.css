@@ -1,0 +1,287 @@
+label {
+    font-size: small;
+    color: black;
+    font-weight: 500;
+    margin-left: 0.6rem;
+}
+
+.mat-input {
+    margin: 0.6rem;
+}
+
+/* -------- main form styling------------ */
+
+.selected-form-field {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+}
+
+.icon-add {
+    height: 2rem !important;
+    width: 2.2rem !important;
+    position: absolute;
+    left: 0.7rem;
+    /* border-radius: 0.3rem; */
+    border-right: 0.1rem solid gray;
+    background-color: gray;
+    padding-top: 0.3rem;
+    text-align: center;
+    color: #505050;
+    background-color: #eeeeee;
+}
+
+.dual-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+    margin: 0.8rem 0.6rem;
+
+}
+
+.dual-input {
+    height: 2.2rem;
+    border: 0.5px solid lightgray;
+    border-radius: 0.3rem;
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.dual-form {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+
+}
+
+.icon-help {
+    font-size: 1rem !important;
+    height: 0.9rem !important;
+    width: 1.2rem !important;
+}
+
+mat-divider {
+    margin: 1.4rem 0rem;
+}
+
+.text-area {
+    height: 6rem !important;
+}
+
+.dual-down-arrow {
+    position: absolute;
+    right: 0.8rem;
+    top: 0.8rem;
+}
+
+.mat-mdc-raised-button:not(:disabled) {
+    /* color: var(--mdc-protected-button-label-text-color, inherit); */
+    margin: 10px !important;
+}
+
+.space {
+    padding: 1rem;
+}
+
+
+/* ##################### Profile ##################### */
+
+.links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1.7rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* ######################### summary ############################## */
+
+
+.summary-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary-form-left {
+    width: 50%;
+    border-right: 0.5px solid #efefef;
+    padding-right: 2rem;
+
+}
+
+.summary-form-right {
+    border-left: 0.5px solid #efefef;
+    width: 50%;
+    padding-left: 2rem;
+
+}
+
+.labeling {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 13px;
+    margin: 0.3rem 0.7rem;
+    color: black;
+    font-weight: 500;
+}
+
+.radio_btn {
+    padding: 0px 5px;
+}
+
+.multi_input {
+    display: flex;
+
+    margin: 0px 10px;
+    gap: 40px;
+}
+
+.first_input {
+    width: 50%;
+}
+
+.second_input {
+    width: 50%;
+}
+
+.calendar-input-field {
+    display: flex;
+    height: fit-content !important;
+    width: 100% !important;
+}
+
+.form-div {
+    padding: 30px 20px;
+    box-shadow: 0px 0px 5px 0px gray;
+    border-radius: 10px;
+}
+
+.form-input-label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.calendar-input-field {
+    display: flex;
+    height: fit-content !important;
+    width: 100% !important;
+}
+
+.width-full {
+    width: 100% !important;
+}
+
+
+
+.form-field {
+    width: 100% !important;
+    height: fit-content;
+    margin: 0.5rem 0;
+}
+
+.select_in {
+    display: flex !important;
+    align-items: center;
+}
+
+.date {
+    position: relative;
+    left: -0.3rem;
+    width: 2.5rem;
+    border-right: 1px solid gray;
+    height: 100%;
+}
+
+
+.form-row {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row;
+    gap: 3rem !important;
+}
+
+::ng-deep .mat-mdc-form-field-infix {
+    padding: 0px 1rem !important;
+    display: flex;
+    align-items: center;
+    min-height: 2rem !important;
+}
+
+
+label {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.first_icon {
+    border-right: 1px solid #9C9C9C;
+    padding: 5px 10px 5px 0px;
+    display: flex;
+}
+
+.para-p {
+    padding: 20px 5px;
+}
+
+.input_top {
+    padding-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+
+@media (max-width: 767px) {
+
+    .summary-form {
+        flex-direction: column;
+
+    }
+
+    .summary-form-left {
+        width: 100%;
+        /* border:none; */
+        border: 1px solid #efefef;
+        padding: 0.1rem;
+        border-radius: 0.8rem;
+
+
+
+    }
+
+    .summary-form-right {
+        border: 1px solid #efefef;
+        width: 100%;
+        margin-top: 1.5rem;
+        padding: 0.1rem;
+        border-radius: 0.8rem;
+
+    }
+    .multi_input{
+        gap: 5px;
+    }
+
+    
+    
+
+}
+

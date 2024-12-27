@@ -1,0 +1,13 @@
+{
+    "colorTabs.config": [
+        {
+            "regex": "src/app/purchase/pucrhase-readmore\\.*"
+        },
+        {
+            "regex": ".*/web/.*"
+        },
+        {
+            "regex": ".*/mobile/.*"
+        }
+    ]
+}

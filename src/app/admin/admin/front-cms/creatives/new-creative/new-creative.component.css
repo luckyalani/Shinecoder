@@ -1,0 +1,23 @@
+label{
+    margin: 0 !important;
+}
+.dual-form{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+  
+}
+.dual-field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.8rem 0rem;
+}
+.lable-img-col{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+.input-width{
+    width: 47%;
+}

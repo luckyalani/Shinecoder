@@ -1,0 +1,94 @@
+<div class="rounded">
+    <div class="d-flex jc-sb p-10 bg-light align-items-center">
+        <div class="d-flex align-items-center">
+            <span class="fw-medium fs-16">Add Operations</span>
+        </div>
+        <svg class="close-btn" mat-dialog-close="true" xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em"
+            viewBox="0 0 32 32">
+            <path fill="#f70202"
+                d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2m5.4 21L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z" />
+        </svg>
+    </div>
+    <div class="d-flex flex-wrap gap-1 p-10">
+        <!-- Left Side -->
+        <div class="w-full">
+            <div class="m-t-8">
+                <mat-label class="form-input-label">Operation</mat-label>
+                <div class="m-t-10">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input" placeholder="1">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="m-t-10">
+                <mat-label class="form-input-label"><span class="text-danger">*</span> Work Center Name</mat-label>
+                <mat-form-field appearance="outline" class="m-t-10">
+                    <mat-select placeholder="None Selected">
+                        <mat-option value="None Selected">None Selected</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class=" m-t-5">
+                <mat-label class="form-input-label">Start next operation</mat-label> <br>
+                <mat-radio-group aria-label=" Select an option" class="radio">
+                    <mat-radio-button class="p-r-5" value="1">Once all products are processed</mat-radio-button> <br>
+                    <mat-radio-button class="p-r-5" value="2">Once some products are processed</mat-radio-button>
+                </mat-radio-group>
+            </div>
+        </div>
+        <!-- Right Side -->
+        <div class="w-full">
+            <div class="">
+                <mat-label class="form-input-label">Duration (minutes)</mat-label> <br>
+                <mat-radio-group aria-label=" Select an option" class="radio">
+                    <mat-radio-button class="p-r-5" value="1">Compute based on real-time</mat-radio-button> <br>
+                    <mat-radio-button class="p-r-5" value="2">Set duration manually</mat-radio-button>
+                </mat-radio-group>
+            </div>
+            <div>
+                <mat-label class="form-input-label">Default duration (minutes)</mat-label>
+                <div class="m-t-10">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input" placeholder="60">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div>
+                <mat-label class="form-input-label">Order</mat-label>
+                <div class="m-t-10">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input" placeholder="0">
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-10">
+        <div class="m-t-10">
+            <mat-label class="form-input-label">Description</mat-label>
+            <div class="m-t-10">
+                <ckeditor [editor]="Editor" data="<p>Hello, world!</p>"></ckeditor>
+            </div>
+        </div>
+        <div class="m-t-10">
+            <mat-label class="form-input-label d-flex align-items-center"> Attech Image <svg class="close-btn m-l-5"
+                    xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                    <path fill="#6BCE81"
+                        d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2m5 11h-4v4h-2v-4H7v-2h4V7h2v4h4z" />
+                </svg></mat-label>
+            <div class="file-border  m-t-10">
+                <div class=" ">
+                    <img class="product-img" src="/assets/images/choose-file.png" alt="">
+                    <label for="file" class="file"> Choose File</label>
+                    <input type="file" name="" id="file" class="hidden">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex gap-1 p-10 b-t">
+        <button mat-dialog-close="true" mat-raised-button class="bg-close">Close</button>
+        <button mat-dialog-close="true" mat-raised-button class="bg-success">Save</button>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+<div class="main-container boxed space manuf-tab">
+    <div class="d-flex gap-1 align-items-center m-b-10">
+        <div>
+            <h1 class="text-dark text-primary m-0">Banking</h1>
+        </div>
+        <div class="line-div">
+            <mat-icon class="arrow-icon">square</mat-icon>
+            <p class="line "></p>
+        </div>
+    </div>
+    <div class="form">
+        <button  mat-raised-button color="primary">Download Sample</button>
+        <mat-divider></mat-divider>
+        <div class="table-div">
+            <table>
+                <thead>
+                    <tr>
+                        <th><span class="text-danger">*</span>Date</th>
+                        <th><span class="text-danger">*</span>Withdrawals</th>
+                        <th><span class="text-danger">*</span>Deposits</th>
+                        <th><span class="text-danger">*</span>Payee</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center text-secondary" colspan="5">No Entries Found</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="m-t-10 w-50">
+            <mat-label class="form-input-label"><span class="text-danger">*</span> Bank account</mat-label>
+            <mat-form-field appearance="outline" class="m-t-10">
+                <mat-select placeholder="Nothing selected">
+                    <mat-option value="Nothing selected">Nothing selected</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="m-t-10">
+            <mat-label class="form-input-label"><span class="text-danger">*</span>Choose excel file</mat-label>
+            <div class="file-border  m-t-10">
+                <div class="m-b-20 full">
+                    <label for="file" class="file"> Choose File</label>
+                    <input type="file" name="" id="file" class="hidden">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <mat-divider></mat-divider>
+    <div>
+        <button  mat-raised-button color="primary">Import</button>
+    </div>
+</div>

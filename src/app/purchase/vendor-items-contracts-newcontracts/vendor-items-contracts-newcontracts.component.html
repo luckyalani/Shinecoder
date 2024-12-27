@@ -1,0 +1,266 @@
+<div class="main-container boxed space">
+    <!-- <div class="d-flex jc-sb align-items-center"> -->
+    <div>
+        <h1 class="text-dark fs-30">Create New Contract</h1>
+    </div>
+    <div class="form">
+        <div class="form-row">
+            <!-- Left Side -->
+            <div class="in-form-row">
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span>Subject </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span>Related</mat-label>
+                    <div class="mt2">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <mat-select class="select_in" placeholder="Customer">
+                                <mat-option value="Customer">Customer</mat-option>
+                                <mat-option value="Customer">Customer</mat-option>
+                                <mat-option value="Customer">Customer</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span>Related</mat-label>
+                    <div class="mt2">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <mat-select class="select_in" placeholder="Customer">
+                                <mat-option value="Customer">Customer</mat-option>
+                                <mat-option value="Customer">Customer</mat-option>
+                                <mat-option value="Customer">Customer</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+
+                <div>
+                    <mat-label class="form-input-label">Open Till </mat-label>
+                    <div class="calendar-input-field date-picker">
+                        <mat-form-field appearance="outline" class="form-field date">
+                            <mat-datepicker-toggle matIconSuffix [for]="picker2" class="">
+                                <svg matDatepickerToggleIcon xmlns="http://www.w3.org/2000/svg" width="1.4em"
+                                    height="1.4em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M2 19c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-8H2zM19 4h-2V3c0-.6-.4-1-1-1s-1 .4-1 1v1H9V3c0-.6-.4-1-1-1s-1 .4-1 1v1H5C3.3 4 2 5.3 2 7v2h20V7c0-1.7-1.3-3-3-3" />
+                                </svg>
+                            </mat-datepicker-toggle>
+                            <div class="date-border"></div>
+                            <input matInput [matDatepicker]="picker2" class="input">
+                            <mat-datepicker #picker2></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+  
+                
+            </div>
+            <!-- ---------------------Right Side----------------------------- -->
+            <div class="in-form-row">
+                <div>
+                    <mat-label class="form-input-label">Status </mat-label>
+                    <div class="mt2">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <mat-select class="select_in" placeholder="Draft">
+                                <mat-option value="Draft">Draft</mat-option>
+                                <mat-option value="Draft">Draft</mat-option>
+                                <mat-option value="Draft">Draft</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <!-- <app-purchase-commontag></app-purchase-commontag> -->
+
+                    <mat-label class="form-input-label">Assigned</mat-label>
+                    <div class="mt2">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <mat-select class="select_in" placeholder="Rigoberto Langworth">
+                                <mat-option value="Rigoberto Langworth">Rigoberto Langworth</mat-option>
+                                <mat-option value="Rigoberto Langworth">Rigoberto Langworth</mat-option>
+                                <mat-option value="Rigoberto Langworth">Rigoberto Langworth</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+
+                    
+                </div>
+
+ 
+ 
+                
+
+                <mat-label class="form-input-label">Assigned</mat-label>
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-select class="select_in" placeholder="Rigoberto Langworth">
+                            <mat-option value="Rigoberto Langworth">Rigoberto Langworth</mat-option>
+                            <mat-option value="Rigoberto Langworth">Rigoberto Langworth</mat-option>
+                            <mat-option value="Rigoberto Langworth">Rigoberto Langworth</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-label class="form-input-label">Open Till </mat-label>
+                    <div class="calendar-input-field date-picker">
+                        <mat-form-field appearance="outline" class="form-field date">
+                            <mat-datepicker-toggle matIconSuffix [for]="picker3" class="">
+                                <svg matDatepickerToggleIcon xmlns="http://www.w3.org/2000/svg" width="1.4em"
+                                    height="1.4em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M2 19c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-8H2zM19 4h-2V3c0-.6-.4-1-1-1s-1 .4-1 1v1H9V3c0-.6-.4-1-1-1s-1 .4-1 1v1H5C3.3 4 2 5.3 2 7v2h20V7c0-1.7-1.3-3-3-3" />
+                                </svg>
+                            </mat-datepicker-toggle>
+                            <div class="date-border"></div>
+                            <input matInput [matDatepicker]="picker3" class="input">
+                            <mat-datepicker #picker3></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                
+
+
+    
+
+  
+
+
+            </div>
+            
+
+        </div>
+
+        <div class="form-row">
+            <!-- Left Side -->
+            <div class="in-form-row">
+ 
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span>Subject </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span>Related</mat-label>
+                    <div class="mt2">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <mat-select class="select_in" placeholder="Customer">
+                                <mat-option value="Customer">Customer</mat-option>
+                                <mat-option value="Customer">Customer</mat-option>
+                                <mat-option value="Customer">Customer</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span>Related</mat-label>
+                    <div class="mt2">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <mat-select class="select_in" placeholder="Customer">
+                                <mat-option value="Customer">Customer</mat-option>
+                                <mat-option value="Customer">Customer</mat-option>
+                                <mat-option value="Customer">Customer</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+  
+                
+            </div>
+            <!-- ---------------------Right Side----------------------------- -->
+            <div class="in-form-row">
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span>Subject </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span>Subject </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+ 
+ 
+                
+                <div>
+                    <mat-label class="form-input-label">Open Till </mat-label>
+                    <div class="calendar-input-field date-picker">
+                        <mat-form-field appearance="outline" class="form-field date">
+                            <mat-datepicker-toggle matIconSuffix [for]="picker4" class="">
+                                <svg matDatepickerToggleIcon xmlns="http://www.w3.org/2000/svg" width="1.4em"
+                                    height="1.4em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M2 19c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-8H2zM19 4h-2V3c0-.6-.4-1-1-1s-1 .4-1 1v1H9V3c0-.6-.4-1-1-1s-1 .4-1 1v1H5C3.3 4 2 5.3 2 7v2h20V7c0-1.7-1.3-3-3-3" />
+                                </svg>
+                            </mat-datepicker-toggle>
+                            <div class="date-border"></div>
+                            <input matInput [matDatepicker]="picker4" class="input">
+                            <mat-datepicker #picker4></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                </div>
+                
+
+
+    
+
+  
+
+
+            </div>
+            
+
+        </div>
+
+        <!-- <mat-divider></mat-divider> -->
+
+
+
+        <!-- <mat-divider></mat-divider> -->
+<div class="textareadivpinvoice">
+    <div class="firsttextarea">
+        <span>Admin Note</span>
+        <textarea></textarea>
+    </div>
+    <div class="firsttextarea">
+        <span>Attachments</span>
+        <div class="imageselectdiv">
+            <!-- <span>Attach Receipt</span> -->
+            <img src="../../../assets/images/attachfileimage.png" alt="">
+            <label for="select">Choose File</label>
+            <input type="file" id="select" hidden>
+        </div>
+    
+    </div>
+
+</div>
+<mat-divider></mat-divider>
+<div class="p-10">
+    <button mat-raised-button class="m-r-10" color="warn">Close</button>
+    <button mat-raised-button class="bg-success">Save</button>
+</div>
+
+
+
+    </div>
+</div>

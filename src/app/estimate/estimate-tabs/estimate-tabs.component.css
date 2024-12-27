@@ -1,0 +1,73 @@
+
+
+label {
+    font-size: small;
+    color: black;
+    font-weight: 500;
+    margin-left: 0.6rem;
+}
+.mat-input{
+    margin: 0.6rem;
+    
+}
+/* -------- main form styling------------ */
+.width{
+    width: 40%;
+}
+.input-space{
+    padding-left: 2.5rem !important;
+}
+.selected-form-field{
+    display: flex;
+    position: relative;
+    align-items: center;
+
+}
+.icon-add{
+    height: 2rem !important;
+    width: 2.2rem !important;
+    position: absolute;
+    left: 0.7rem;
+    border-right: 0.1rem solid #9c9c9c;
+    padding-top: 0.3rem;
+    text-align: center;
+}
+
+
+
+mat-divider{
+    margin: 1.4rem 0rem;
+}
+
+.text-area{
+    height: 6rem !important;
+}
+
+
+
+.mat-mdc-raised-button:not(:disabled) {
+    /* color: var(--mdc-protected-button-label-text-color, inherit); */
+    margin: 10px !important;
+}
+
+.space{
+    padding:1rem;
+}
+
+
+/* ##################### Profile ##################### */
+
+
+
+/* ######################### summary ############################## */
+
+
+
+
+
+
+@media (max-width: 767px){
+
+    
+}
+

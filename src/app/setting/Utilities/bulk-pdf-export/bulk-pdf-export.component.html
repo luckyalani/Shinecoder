@@ -1,0 +1,99 @@
+<div class="main-container">
+    <div class="d-flex flex-wrap jc-sb align-items-center">
+        <div>
+            <h1 class="text-dark">Utilities</h1>
+        </div>
+    </div>
+    <div class="form boxed space">
+
+
+        <div class="main-div">
+
+            <div>
+                <label><span class="text-danger">*</span>Select Type</label>
+                <div class="selected-form-field">
+                    <select name="" id="" class="mat-input">
+                        <option value="">Nothing Selected</option>
+                    </select>
+                    <span class="down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 15 15">
+                            <path fill="#808080" d="M7.5 12L0 4h15z" />
+                        </svg></span>
+                </div>
+            </div>
+
+            <div class="p-t-10 m-t-10 d-flex jc-sb">
+
+
+
+
+
+                <div class="right">
+
+                    <div class="w-full">
+
+                        <div>
+                            <mat-label class="form-input-label">From Date:</mat-label>
+                            <div class="calendar-input-field date-picker">
+                                <mat-form-field appearance="outline" class="form-field date">
+                                    <mat-datepicker-toggle matIconSuffix [for]="picker1" class="">
+                                        <svg matDatepickerToggleIcon xmlns="http://www.w3.org/2000/svg" width="1.4em"
+                                            height="1.4em" viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M2 19c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-8H2zM19 4h-2V3c0-.6-.4-1-1-1s-1 .4-1 1v1H9V3c0-.6-.4-1-1-1s-1 .4-1 1v1H5C3.3 4 2 5.3 2 7v2h20V7c0-1.7-1.3-3-3-3" />
+                                        </svg>
+                                    </mat-datepicker-toggle>
+                                    <div class="date-border"></div>
+                                    <input matInput [matDatepicker]="picker1" class="input">
+                                    <mat-datepicker #picker1></mat-datepicker>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="w-full">
+
+                        <div>
+                            <mat-label class="form-input-label">To Date:</mat-label>
+                            <div class="calendar-input-field date-picker">
+                                <mat-form-field appearance="outline" class="form-field date">
+                                    <mat-datepicker-toggle matIconSuffix [for]="picker2" class="">
+                                        <svg matDatepickerToggleIcon xmlns="http://www.w3.org/2000/svg" width="1.4em"
+                                            height="1.4em" viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M2 19c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-8H2zM19 4h-2V3c0-.6-.4-1-1-1s-1 .4-1 1v1H9V3c0-.6-.4-1-1-1s-1 .4-1 1v1H5C3.3 4 2 5.3 2 7v2h20V7c0-1.7-1.3-3-3-3" />
+                                        </svg>
+                                    </mat-datepicker-toggle>
+                                    <div class="date-border"></div>
+                                    <input matInput [matDatepicker]="picker2" class="input">
+                                    <mat-datepicker #picker2></mat-datepicker>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class=" w-full m-t-10">
+                <label>Include Tag</label>
+                <input type="text" class="mat-input w-full">
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <mat-divider class="divider-bottom m-t-15 m-b-10"></mat-divider>
+
+        <div>
+            <button mat-raised-button class="m-r-10" color="warn" mat-dialog-close="true">Close</button>
+            <button mat-raised-button class="bg-success">Export</button>
+        </div>
+    </div>
+</div>

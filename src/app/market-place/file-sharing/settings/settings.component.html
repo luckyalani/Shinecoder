@@ -1,0 +1,713 @@
+<div class="main-container boxed space lead-manager">
+
+    <!-- Main Heading -->
+    <div>
+        <h1 class="fw-medium fs-26 m-l-3 m-0 m-b-10">File Sharing</h1>
+    </div>
+
+    <!-- Stepper Div -->
+    <div class="form">
+        <div class=" d-flex gap-1 flex-wrap">
+            <button routerLink="/market-place/file-sharing/file-manager" class="disactive">File Manager</button>
+            <button routerLink="/market-place/file-sharing/manage-sharing" class="disactive">Manage Sharing</button>
+            <button routerLink="/market-place/file-sharing/manage-downloads" class="disactive">Manage Downloads</button>
+            <button routerLink="/market-place/file-sharing/reports" class="disactive">Reports</button>
+            <button routerLink="/market-place/file-sharing/settings" class="active word-nowrap">Settings</button>
+        </div>
+    </div>
+
+    <div class="form">
+
+        <!-- Page Heading -->
+        <div class="arrow-line-main-div">
+
+            <div class="arrow-line-text-div">Settings</div>
+            <div class="arrow-line-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
+                    <path fill="rgba(1, 99, 210, 0.3)" d="m10 17l5-5l-5-5z" />
+                </svg>
+                <div class="line-div"></div>
+            </div>
+
+        </div>
+
+        <!-- Tabs Div Start -->
+        <div class="subject-tab box-shadow">
+            <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="tab-group div-2 box-shadow">
+
+                <!-- --------------------------General Div Start------------------------ -->
+                <mat-tab label="General" class="rounded ">
+
+                    <!-- Tab's Main Content Start -->
+                    <div class="form ">
+
+                        <div>
+                            <mat-label class="form-input-label">Allowed extension </mat-label>
+                            <div class="mt2">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput type="text"
+                                        placeholder=".docx,.php,.png,.jpg,.pdf,.txt,.xlsx,.doc,.docx,.mp4,.mov,.mp3,.phtml,.php">
+                                </mat-form-field>
+                            </div>
+                        </div>
+
+                        <div>
+                            <mat-label class="form-input-label"><span>*</span>Password</mat-label>
+                            <div class="calendar-input-field form-field two-icon-div-1">
+
+                                <div class="img-right-border">
+                                    Mb
+                                </div>
+                                <input type="text" class="link-div" />
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <mat-label class="form-input-label">Maximum number of storage months </mat-label>
+                            <div class="mt2">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput type="text">
+                                </mat-form-field>
+                            </div>
+                        </div>
+
+                        <div>
+                            <mat-label class="form-input-label">The administrator of the public folder </mat-label>
+                            <div class="mt2">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <mat-select class="select_in" placeholder="Albi Solution Solutions">
+                                        <mat-option value="Draft">Albi Solution Solutions</mat-option>
+                                        <mat-option value="Draft">Draft</mat-option>
+                                        <mat-option value="Draft">Draft</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+
+                        <div>
+                            <mat-label class="form-input-label">Hidden files</mat-label>
+                            <div class="mt2">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput type="text">
+                                </mat-form-field>
+                            </div>
+                        </div>
+
+                        <!-- Text With Line and Toggle -->
+                        <div class="download-line-div toggle-div">
+                            <mat-label class="form-input-label">Allow file editing</mat-label>
+                            <p></p>
+                            <mat-slide-toggle checked="" color="primary"></mat-slide-toggle>
+                        </div>
+
+                        <mat-divider></mat-divider>
+
+                        <div class="toggles-parent-div">
+
+                            <!-- Staff Permissions Toggle Div Start -->
+                            <div class="toggle-div">
+                                <mat-label class="form-input-label">Staff permissions</mat-label>
+                                <div class="left-space-div">
+
+                                    <div class="download-line-div">
+                                        <mat-label class="form-input-label">View</mat-label>
+                                        <p></p>
+                                        <mat-slide-toggle checked="" color="primary"></mat-slide-toggle>
+                                    </div>
+
+                                    <div class="download-line-div">
+                                        <mat-label class="form-input-label">Upload and override</mat-label>
+                                        <p></p>
+                                        <mat-slide-toggle checked="" color="primary"></mat-slide-toggle>
+                                    </div>
+
+                                    <div class="download-line-div">
+                                        <mat-label class="form-input-label">Delete</mat-label>
+                                        <p></p>
+                                        <mat-slide-toggle checked="" color="primary"></mat-slide-toggle>
+                                    </div>
+
+                                    <div class="download-line-div">
+                                        <mat-label class="form-input-label">Upload</mat-label>
+                                        <p></p>
+                                        <mat-slide-toggle checked="" color="primary"></mat-slide-toggle>
+                                    </div>
+
+                                    <div class="download-line-div">
+                                        <mat-label class="form-input-label">Download</mat-label>
+                                        <p></p>
+                                        <mat-slide-toggle checked="" color="primary"></mat-slide-toggle>
+                                    </div>
+
+                                    <div class="download-line-div">
+                                        <mat-label class="form-input-label">Share</mat-label>
+                                        <p></p>
+                                        <mat-slide-toggle checked="" color="primary"></mat-slide-toggle>
+                                    </div>
+
+                                    <div class="download-line-div">
+                                        <mat-label class="form-input-label">Share to client</mat-label>
+                                        <p></p>
+                                        <mat-slide-toggle checked="" color="primary"></mat-slide-toggle>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- Staff Permissions Toggle Div End -->
+
+                            <!-- Middle Line for Separation -->
+                            <p class="rotate-line"></p>
+
+                            <!-- Client Permissions Toggle Div Start -->
+                            <div class="toggle-div">
+                                <mat-label class="form-input-label">Client permissions</mat-label>
+                                <div class="left-space-div">
+
+                                    <div class="download-line-div">
+                                        <mat-label class="form-input-label">View</mat-label>
+                                        <p></p>
+                                        <mat-slide-toggle checked="" color="primary"></mat-slide-toggle>
+                                    </div>
+
+                                    <div class="download-line-div">
+                                        <mat-label class="form-input-label">Upload and override</mat-label>
+                                        <p></p>
+                                        <mat-slide-toggle checked="" color="primary"></mat-slide-toggle>
+                                    </div>
+
+                                    <div class="download-line-div">
+                                        <mat-label class="form-input-label">Delete</mat-label>
+                                        <p></p>
+                                        <mat-slide-toggle checked="" color="primary"></mat-slide-toggle>
+                                    </div>
+
+                                    <div class="download-line-div">
+                                        <mat-label class="form-input-label">Upload</mat-label>
+                                        <p></p>
+                                        <mat-slide-toggle checked="" color="primary"></mat-slide-toggle>
+                                    </div>
+
+                                    <div class="download-line-div">
+                                        <mat-label class="form-input-label">Download</mat-label>
+                                        <p></p>
+                                        <mat-slide-toggle checked="" color="primary"></mat-slide-toggle>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- Client Permissions Toggle Div End -->
+
+                        </div>
+
+                        <mat-divider></mat-divider>
+
+                        <div class="toggles-parent-div">
+
+                            <!-- Notification Toggle Div Start -->
+                            <div class="toggle-div">
+                                <mat-label class="form-input-label">Notification</mat-label>
+                                <div class="left-space-div">
+
+                                    <div class="download-line-div">
+                                        <mat-label class="form-input-label">Web notification</mat-label>
+                                        <p></p>
+                                        <mat-slide-toggle checked="" color="primary"></mat-slide-toggle>
+                                    </div>
+
+                                    <div class="download-line-div">
+                                        <mat-label class="form-input-label">Email notification</mat-label>
+                                        <p></p>
+                                        <mat-slide-toggle checked="" color="primary"></mat-slide-toggle>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- Notification Toggle Div End -->
+
+                            <p class="rotate-line"></p>
+
+                            <!-- Visible Toggle Div Start -->
+                            <div class="toggle-div">
+                                <mat-label class="form-input-label">Visible</mat-label>
+                                <div class="left-space-div">
+
+                                    <div class="download-line-div">
+                                        <mat-label class="form-input-label">Visible to customer</mat-label>
+                                        <p></p>
+                                        <mat-slide-toggle checked="" color="primary"></mat-slide-toggle>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- Visible Toggle DIv End -->
+
+                        </div>
+
+                        <mat-divider></mat-divider>
+
+                        <!-- Close and Save Buttons -->
+                        <div class="d-flex">
+                            <button mat-raised-button mat-dialog-close="" class="bg-success">Save</button>
+                            <button mat-raised-button mat-dialog-close="" class="bg-close">Close</button>
+                        </div>
+
+                    </div>
+                    <!-- Tab's Main Content End -->
+
+                </mat-tab>
+                <!-- --------------------------General Tab End------------------------ -->
+
+                <!-- --------------------------Configurations Tab Start------------------------ -->
+                <mat-tab label="Configuration" class="rounded ">
+
+                    <!-- Tab's Main Content Start -->
+                    <div class="form">
+
+                        <!-- Add New Configuration Button -->
+                        <div class="d-flex jc-e">
+                            <button mat-raised-button color="primary" (click)="addNewConfiguration()">+ Add
+                                Configuration</button>
+                        </div>
+
+                        <!-- Table Upper Section Start -->
+                        <div class="d-flex jc-sb align-items-center icon-bar m-t-10 m-b-10">
+                            <div class="d-flex align-items-center action-btn-gap">
+                                <select name="" id="" class="drop-down-left">
+                                    <option value="">25</option>
+                                    <option value="">26</option>
+                                </select>
+                                <span class="icon-btn bg-dark">
+                                    <svg width="1.2em" height="1.2em" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.401 29.3952H9.89652C8.66005 29.3952 7.47421 28.904 6.59989 28.0297C5.72556 27.1553 5.23438 25.9695 5.23438 24.733V10.2286C5.23438 8.99208 5.72556 7.80624 6.59989 6.93192C7.47421 6.0576 8.66005 5.56641 9.89652 5.56641H24.401C25.6375 5.56641 26.8233 6.0576 27.6976 6.93192C28.572 7.80624 29.0631 8.99208 29.0631 10.2286V24.733C29.0631 25.9695 28.572 27.1553 27.6976 28.0297C26.8233 28.904 25.6375 29.3952 24.401 29.3952Z"
+                                            fill="white" />
+                                        <path
+                                            d="M8.34295 3.49482H23.6167C23.2943 2.5865 22.6988 1.80017 21.9119 1.2437C21.125 0.687233 20.1851 0.387882 19.2213 0.386719H4.71684C3.48036 0.386719 2.29452 0.877908 1.4202 1.75223C0.545877 2.62655 0.0546875 3.81239 0.0546875 5.04887V19.5533C0.0558511 20.5171 0.355202 21.457 0.911672 22.2439C1.46814 23.0309 2.25447 23.6264 3.16279 23.9487V8.67498C3.16279 7.30112 3.70855 5.98352 4.68002 5.01205C5.65149 4.04058 6.96909 3.49482 8.34295 3.49482Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+
+                                <span class="icon-btn bg-secondary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="0.9em" height="1.2em"
+                                        viewBox="0 0 384 512">
+                                        <path fill="white"
+                                            d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24m-96 144c0 4.42-3.58 8-8 8h-8c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h8c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8h-8c-26.51 0-48-21.49-48-48v-32c0-26.51 21.49-48 48-48h8c4.42 0 8 3.58 8 8zm44.27 104H160c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h12.27c5.95 0 10.41-3.5 10.41-6.62c0-1.3-.75-2.66-2.12-3.84l-21.89-18.77c-8.47-7.22-13.33-17.48-13.33-28.14c0-21.3 19.02-38.62 42.41-38.62H200c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8h-12.27c-5.95 0-10.41 3.5-10.41 6.62c0 1.3.75 2.66 2.12 3.84l21.89 18.77c8.47 7.22 13.33 17.48 13.33 28.14c.01 21.29-19 38.62-42.39 38.62M256 264v20.8c0 20.27 5.7 40.17 16 56.88c10.3-16.7 16-36.61 16-56.88V264c0-4.42 3.58-8 8-8h16c4.42 0 8 3.58 8 8v20.8c0 35.48-12.88 68.89-36.28 94.09c-3.02 3.25-7.27 5.11-11.72 5.11s-8.7-1.86-11.72-5.11c-23.4-25.2-36.28-58.61-36.28-94.09V264c0-4.42 3.58-8 8-8h16c4.42 0 8 3.58 8 8m121-159L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9" />
+                                    </svg>
+                                </span>
+
+                                <span class="icon-btn bg-success">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                                        viewBox="0 0 384 512">
+                                        <path fill="white"
+                                            d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24m60.1 106.5L224 336l60.1 93.5c5.1 8-.6 18.5-10.1 18.5h-34.9c-4.4 0-8.5-2.4-10.6-6.3C208.9 405.5 192 373 192 373c-6.4 14.8-10 20-36.6 68.8c-2.1 3.9-6.1 6.3-10.5 6.3H110c-9.5 0-15.2-10.5-10.1-18.5l60.3-93.5l-60.3-93.5c-5.2-8 .6-18.5 10.1-18.5h34.8c4.4 0 8.5 2.4 10.6 6.3c26.1 48.8 20 33.6 36.6 68.5c0 0 6.1-11.7 36.6-68.5c2.1-3.9 6.2-6.3 10.6-6.3H274c9.5-.1 15.2 10.4 10.1 18.4M384 121.9v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9" />
+                                    </svg>
+                                </span>
+                                <span class="icon-btn bg-danger">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="white"
+                                            d="M8.267 14.68c-.184 0-.308.018-.372.036v1.178c.076.018.171.023.302.023c.479 0 .774-.242.774-.651c0-.366-.254-.586-.704-.586m3.487.012c-.2 0-.33.018-.407.036v2.61c.077.018.201.018.313.018c.817.006 1.349-.444 1.349-1.396c.006-.83-.479-1.268-1.255-1.268" />
+                                        <path fill="white"
+                                            d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM9.498 16.19c-.309.29-.765.42-1.296.42a2.23 2.23 0 0 1-.308-.018v1.426H7v-3.936A7.558 7.558 0 0 1 8.219 14c.557 0 .953.106 1.22.319c.254.202.426.533.426.923c-.001.392-.131.723-.367.948m3.807 1.355c-.42.349-1.059.515-1.84.515c-.468 0-.799-.03-1.024-.06v-3.917A7.947 7.947 0 0 1 11.66 14c.757 0 1.249.136 1.633.426c.415.308.675.799.675 1.504c0 .763-.279 1.29-.663 1.615M17 14.77h-1.532v.911H16.9v.734h-1.432v1.604h-.906V14.03H17zM14 9h-1V4l5 5z" />
+                                    </svg>
+                                </span>
+                                <span class="icon-btn bg-info">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="white"
+                                            d="M18 3H6v4h12m1 5a1 1 0 0 1-1-1a1 1 0 0 1 1-1a1 1 0 0 1 1 1a1 1 0 0 1-1 1m-3 7H8v-5h8m3-6H5a3 3 0 0 0-3 3v6h4v4h12v-4h4v-6a3 3 0 0 0-3-3" />
+                                    </svg>
+                                </span>
+
+                            </div>
+
+                            <!-- Search Div -->
+                            <div class="search-plus-filter">
+                                <div class="d-flex align-items-center search-div">
+
+                                    <div class="search-bar">
+                                        <mat-icon class="icon-search ">search</mat-icon>
+                                        <input type="search" placeholder="Search" class="input search-input">
+                                        <button mat-raised-button color="primary" class="search-button">Search</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- Table Upper Section End -->
+
+                        <!-- Table Div Start -->
+                        <div class="table-div">
+                            <table class="table-full">
+
+                                <!-- Table Heads -->
+                                <tr>
+                                    <th>Staff/Customer</th>
+                                    <th>Role/Group</th>
+                                    <th>Type</th>
+                                    <th>View</th>
+                                    <th>Upload and override</th>
+                                    <th>Delete</th>
+                                    <th>Upload files</th>
+                                    <th>Download</th>
+                                    <th>Minimum Size</th>
+                                    <th>Maximum Size</th>
+                                    <th>Created By</th>
+                                    <th>Created Date</th>
+                                    <th>Action</th>
+                                </tr>
+
+                                <!-- Table Data -->
+                                <tr>
+                                    <td>Test Test2</td>
+                                    <td>Employee</td>
+                                    <td>Staff</td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td>0 Mb</td>
+                                    <td>100 Mb</td>
+                                    <td>Albi Solution Solutions</td>
+                                    <td>2022-07-02</td>
+                                    <td>
+                                        <div class="flex align-items-center action-btn-gap">
+                                            <!-- Edit Icon -->
+                                            <span (click)="editPopup()" class="action-btn primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="#0163d2"
+                                                        d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83l3.75 3.75z" />
+                                                </svg>
+                                            </span>
+
+                                            <!-- Delete Icon -->
+                                            <span (click)="deleteDialog()" class="action-btn danger"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="#da0000"
+                                                        d="M9 3v1H4v2h1v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1V4h-5V3zM7 6h10v13H7zm2 2v9h2V8zm4 0v9h2V8z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>Test Test2</td>
+                                    <td>Employee</td>
+                                    <td>Staff</td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td>0 Mb</td>
+                                    <td>100 Mb</td>
+                                    <td>Albi Solution Solutions</td>
+                                    <td>2022-07-02</td>
+                                    <td>
+                                        <div class="flex align-items-center action-btn-gap">
+                                            <!-- Edit Icon -->
+                                            <span (click)="editPopup()" class="action-btn primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="#0163d2"
+                                                        d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83l3.75 3.75z" />
+                                                </svg>
+                                            </span>
+
+                                            <!-- Delete Icon -->
+                                            <span (click)="deleteDialog()" class="action-btn danger"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="#da0000"
+                                                        d="M9 3v1H4v2h1v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1V4h-5V3zM7 6h10v13H7zm2 2v9h2V8zm4 0v9h2V8z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Test Test2</td>
+                                    <td>Employee</td>
+                                    <td>Staff</td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td>0 Mb</td>
+                                    <td>100 Mb</td>
+                                    <td>Albi Solution Solutions</td>
+                                    <td>2022-07-02</td>
+                                    <td>
+                                        <div class="flex align-items-center action-btn-gap">
+                                            <!-- Edit Icon -->
+                                            <span (click)="editPopup()" class="action-btn primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="#0163d2"
+                                                        d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83l3.75 3.75z" />
+                                                </svg>
+                                            </span>
+
+                                            <!-- Delete Icon -->
+                                            <span (click)="deleteDialog()" class="action-btn danger"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="#da0000"
+                                                        d="M9 3v1H4v2h1v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1V4h-5V3zM7 6h10v13H7zm2 2v9h2V8zm4 0v9h2V8z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Test Test2</td>
+                                    <td>Employee</td>
+                                    <td>Staff</td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td>0 Mb</td>
+                                    <td>100 Mb</td>
+                                    <td>Albi Solution Solutions</td>
+                                    <td>2022-07-02</td>
+                                    <td>
+                                        <div class="flex align-items-center action-btn-gap">
+                                            <!-- Edit Icon -->
+                                            <span (click)="editPopup()" class="action-btn primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="#0163d2"
+                                                        d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83l3.75 3.75z" />
+                                                </svg>
+                                            </span>
+
+                                            <!-- Delete Icon -->
+                                            <span (click)="deleteDialog()" class="action-btn danger"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="#da0000"
+                                                        d="M9 3v1H4v2h1v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1V4h-5V3zM7 6h10v13H7zm2 2v9h2V8zm4 0v9h2V8z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Test Test2</td>
+                                    <td>Employee</td>
+                                    <td>Staff</td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td>0 Mb</td>
+                                    <td>100 Mb</td>
+                                    <td>Albi Solution Solutions</td>
+                                    <td>2022-07-02</td>
+                                    <td>
+                                        <div class="flex align-items-center action-btn-gap">
+                                            <!-- Edit Icon -->
+                                            <span (click)="editPopup()" class="action-btn primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="#0163d2"
+                                                        d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83l3.75 3.75z" />
+                                                </svg>
+                                            </span>
+
+                                            <!-- Delete Icon -->
+                                            <span (click)="deleteDialog()" class="action-btn danger"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="#da0000"
+                                                        d="M9 3v1H4v2h1v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1V4h-5V3zM7 6h10v13H7zm2 2v9h2V8zm4 0v9h2V8z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Test Test2</td>
+                                    <td>Employee</td>
+                                    <td>Staff</td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td>0 Mb</td>
+                                    <td>100 Mb</td>
+                                    <td>Albi Solution Solutions</td>
+                                    <td>2022-07-02</td>
+                                    <td>
+                                        <div class="flex align-items-center action-btn-gap">
+                                            <!-- Edit Icon -->
+                                            <span (click)="editPopup()" class="action-btn primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="#0163d2"
+                                                        d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83l3.75 3.75z" />
+                                                </svg>
+                                            </span>
+
+                                            <!-- Delete Icon -->
+                                            <span (click)="deleteDialog()" class="action-btn danger"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="#da0000"
+                                                        d="M9 3v1H4v2h1v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1V4h-5V3zM7 6h10v13H7zm2 2v9h2V8zm4 0v9h2V8z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Test Test2</td>
+                                    <td>Employee</td>
+                                    <td>Staff</td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td>0 Mb</td>
+                                    <td>100 Mb</td>
+                                    <td>Albi Solution Solutions</td>
+                                    <td>2022-07-02</td>
+                                    <td>
+                                        <div class="flex align-items-center action-btn-gap">
+                                            <!-- Edit Icon -->
+                                            <span (click)="editPopup()" class="action-btn primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="#0163d2"
+                                                        d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83l3.75 3.75z" />
+                                                </svg>
+                                            </span>
+
+                                            <!-- Delete Icon -->
+                                            <span (click)="deleteDialog()" class="action-btn danger"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="#da0000"
+                                                        d="M9 3v1H4v2h1v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1V4h-5V3zM7 6h10v13H7zm2 2v9h2V8zm4 0v9h2V8z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Test Test2</td>
+                                    <td>Employee</td>
+                                    <td>Staff</td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td>0 Mb</td>
+                                    <td>100 Mb</td>
+                                    <td>Albi Solution Solutions</td>
+                                    <td>2022-07-02</td>
+                                    <td>
+                                        <div class="flex align-items-center action-btn-gap">
+                                            <!-- Edit Icon -->
+                                            <span (click)="editPopup()" class="action-btn primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="#0163d2"
+                                                        d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83l3.75 3.75z" />
+                                                </svg>
+                                            </span>
+
+                                            <!-- Delete Icon -->
+                                            <span (click)="deleteDialog()" class="action-btn danger"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="#da0000"
+                                                        d="M9 3v1H4v2h1v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1V4h-5V3zM7 6h10v13H7zm2 2v9h2V8zm4 0v9h2V8z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Test Test2</td>
+                                    <td>Employee</td>
+                                    <td>Staff</td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td><mat-slide-toggle color="primary" checked=""></mat-slide-toggle></td>
+                                    <td>0 Mb</td>
+                                    <td>100 Mb</td>
+                                    <td>Albi Solution Solutions</td>
+                                    <td>2022-07-02</td>
+                                    <td>
+                                        <div class="flex align-items-center action-btn-gap">
+                                            <!-- Edit Icon -->
+                                            <span (click)="editPopup()" class="action-btn primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="#0163d2"
+                                                        d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83l3.75 3.75z" />
+                                                </svg>
+                                            </span>
+
+                                            <!-- Delete Icon -->
+                                            <span (click)="deleteDialog()" class="action-btn danger"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="#da0000"
+                                                        d="M9 3v1H4v2h1v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1V4h-5V3zM7 6h10v13H7zm2 2v9h2V8zm4 0v9h2V8z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </table>
+
+                        </div>
+                        <!-- Table Div End -->
+
+
+                    </div>
+                    <!-- Tab's Main Content End -->
+
+
+                    <!-- Graphs Div Starts Here -->
+                    <div>
+
+                    </div>
+                    <!-- Graphs Div Ends Here -->
+
+
+                </mat-tab>
+                <!-- --------------------------Configurations Tab End------------------------ -->
+
+
+            </mat-tab-group>
+
+        </div>
+        <!-- Tabs Div End -->
+    </div>
+
+</div>

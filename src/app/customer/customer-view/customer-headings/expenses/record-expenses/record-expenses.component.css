@@ -1,0 +1,98 @@
+.icon-help{
+    font-size: 1rem !important;
+    height: 0.9rem !important;
+    width: 1.2rem !important;
+}
+.selected-form-field{
+    display: flex;
+    position: relative;
+    align-items: center;
+
+}
+.icon-add {
+    height: 1.9rem !important;
+    width: 2.5rem !important;
+    color: #505050;
+    position: absolute;
+    left: 0.7rem;
+    border-radius: 0.3rem;
+    border-right: 0.1rem solid gray;
+    background-color: gray;
+    padding-top: 0.3rem;
+    text-align: center;
+    background-color: #eeeeee;
+    font-size: 22px;
+}
+.input-padding{
+    padding-left: 3rem;
+}
+
+.img-name{
+display: flex;
+justify-content: center;
+justify-items: center;
+padding: 0.6rem;
+}
+
+.choosing{
+width: 30%;
+}
+.special-input{
+    width: 65%;
+}
+
+.profile-tag{
+font-size: 13px;
+color: black;
+font-weight: 500;
+margin:  0.1rem 0;
+}
+
+.profile-sec{
+display: flex;
+justify-content: space-between;
+margin-top: 0.4rem;
+}
+
+label {
+font-size: small;
+color: black;
+font-weight: 500;
+margin-left: 0.6rem;
+}
+.mat-input{
+margin: 0.6rem;
+}
+
+.group-img{
+    width: 90%;
+    height: 85%;
+    margin-top: 0.5rem;
+}
+
+
+
+
+
+
+@media (max-width: 767px){
+
+.profile-sec{
+    flex-direction: column;
+}    
+.special-input{
+    width: 100%;
+}
+
+.group-img{
+    width: 100%;
+    height: 80%;
+}
+.choosing[_ngcontent-ng-c3769669326] {
+    width: 50%;
+   
+    margin: 0 auto;
+}
+    
+
+}

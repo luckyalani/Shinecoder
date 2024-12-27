@@ -1,0 +1,27 @@
+
+.links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: 0.3rem 1.4rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.Active{
+    color: #0163d2;
+    font-weight: 800;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.8rem;
+    
+}
+
+@media (max-width: 767px){
+    a{
+        padding: 0.3rem 0.4rem;
+    }
+}

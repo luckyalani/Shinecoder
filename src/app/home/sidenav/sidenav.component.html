@@ -1,0 +1,40 @@
+<app-header></app-header>
+<mat-drawer-container class="example-container" [hasBackdrop]="isMobile">
+    <mat-drawer *ngIf="menuData" #drawer [mode]="sliderMode" [opened]="!isMobile">
+        <mat-nav-list class="menu-list">
+            <div class="search-menu">
+                <input type="text" placeholder="Search menu" class="mat-input">
+                <mat-icon class="search-icon">search</mat-icon>
+            </div>
+            <mat-accordion>
+                <mat-expansion-panel *ngFor="let menu of menuData" hideToggle>
+                    <mat-expansion-panel-header class="mdc-list-item" routerLinkActive="active"
+                        [routerLink]="menu.link">
+                        <mat-panel-title class="d-flex jc-sb align-items-center title">
+                            <div class="d-flex mdc-list-item__content">
+                                <app-svg-icons [iconName]="menu.svgName" [viewBox]="menu.viewBox"></app-svg-icons>
+                                <div class="label">{{menu.label}}</div>
+                            </div>
+                            <div *ngIf="menu.subMenu" class="right arrow-down"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="1.3em" height="1.3em" viewBox="0 0 20 20">
+                                    <path fill="currentColor" fill-rule="evenodd"
+                                        d="M9 17a1 1 0 0 0 1.707.707l5-5a1 1 0 0 0 0-1.414l-5-5A1 1 0 0 0 9 7z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div *ngIf="menu.subMenu" class="p-l-25 p-t-5 p-b-5 fs-16 list">
+                        <a *ngFor="let item of menu.subMenu" title="Feedback" routerLinkActive="activate-list"
+                            [routerLink]="item.link" [routerLinkActiveOptions]="{exact: true}">
+                            <span class="label">{{item.label}}</span>
+                        </a>
+                    </div>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </mat-nav-list>
+    </mat-drawer>
+    <mat-drawer-content>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>

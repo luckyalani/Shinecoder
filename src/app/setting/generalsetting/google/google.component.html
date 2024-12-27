@@ -1,0 +1,81 @@
+<div class="main-container boxed space">
+    <div class="d-flex jc-sb align-items-center heading-column ">
+        <div class="heading-top">
+            <h1 class="text-dark">Google</h1>
+        </div>
+        <div class="button-width"></div>
+    </div>
+    <app-general-setting-headings></app-general-setting-headings>
+
+    <div class="p-10">
+        <div class="m-t-10">
+            <mat-label class="form-input-label"> Google API Key</mat-label>
+            <div class="selected-form-field">
+                <input type="text" class="mat-input" placeholder="">
+            </div>
+        </div>
+        <div class="m-t-10">
+            <mat-label class="form-input-label"> Google API Client ID</mat-label>
+            <div class="selected-form-field">
+                <input type="text" class="mat-input" placeholder="">
+            </div>
+        </div>
+        <hr>
+        <div class="m-t-10">
+            <mat-label class="form-input-label text-16 "> reCAPTCHA</mat-label> <br>
+            <mat-label class="form-input-label"> Site key</mat-label>
+            <div class="selected-form-field">
+                <input type="text" class="mat-input" placeholder="">
+            </div>
+        </div>
+        <div class="m-t-10">
+            <mat-label class="form-input-label"> Secret key</mat-label>
+            <div class="selected-form-field">
+                <input type="text" class="mat-input" placeholder="">
+            </div>
+        </div>
+        <div>
+            <mat-label class="form-input-label">Enable reCAPTCHA on customers area (Login/Register)</mat-label>
+            <div>
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="">Yes </mat-radio-button>
+                    <mat-radio-button value="">No </mat-radio-button>
+                </mat-radio-group>
+            </div>
+        </div>
+        <div>
+            <mat-label class="form-input-label">Ignored IP Addresses</mat-label>
+            <textarea name="" id="" cols="50" rows="20" class="mat-input text-area"></textarea>
+            <p class="input-bottom-text">Enter coma separated IP addresses that you want the reCaptcha to skip validation.</p>
+        </div>
+        <hr>
+        <div class="m-t-10">
+            <mat-label class="form-input-label text-16 "> Calendar</mat-label> <br>
+            <mat-label class="form-input-label"> Google Calendar ID</mat-label>
+            <div class="selected-form-field">
+                <input type="text" class="mat-input" placeholder="">
+            </div>
+        </div>
+
+        <div>
+            <mat-label class="form-input-label">Google Picker</mat-label> <br>
+            <mat-label class="form-input-label">Enable Google Picker</mat-label>
+            <div>
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="">Yes </mat-radio-button>
+                    <mat-radio-button value="">No </mat-radio-button>
+                </mat-radio-group>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex gap-1 p-10">
+        <button mat-dialog-close="true"
+            class=" mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base "
+            mat-raised-button color="warn">Cancel</button>
+        <button mat-dialog-close="true"
+            class="bg-success"
+            mat-raised-button> Save</button>
+
+    </div>
+</div>

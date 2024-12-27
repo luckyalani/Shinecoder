@@ -1,0 +1,307 @@
+<div class="rounded">
+    <div class="d-flex jc-sb p-10 bg-light align-items-center">
+        <div class="d-flex align-items-center">
+            <span class="fw-medium fs-16">Users - Custom Fields Usage</span>
+        </div>
+        <svg class="close-btn" mat-dialog-close="true" xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em"
+            viewBox="0 0 32 32">
+            <path fill="#f70202"
+                d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2m5.4 21L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z" />
+        </svg>
+    </div>
+
+    <div class="">
+        <div class="d-flex jc-c gap-2 flex-wrap m-t-10 p-10">
+            <div class="border-light rounded text-center p-5">
+                <p class="fw-medium m-0">Used Fields</p>
+                <p class="fw-semibold m-0 fs-20">0</p>
+            </div>
+            <div class="border-light rounded text-center p-5">
+                <p class="fw-medium m-0">Remaining Fields</p>
+                <p class="fw-semibold m-0 fs-20">103</p>
+            </div>
+            <div class="border-light rounded text-center p-5">
+                <p class="fw-medium m-0">Maximum Limit</p>
+                <p class="fw-semibold m-0 fs-20">103</p>
+            </div>
+        </div>
+        <div class="fw-medium fs-16 text-center">
+            The number of custom fields that can be created for each data type is limited. Based on the <br>
+            limitations, custom fields are grouped into 7 sections:
+        </div>
+
+    </div>
+
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="tab-group div-2 m-t-10">
+        <mat-tab class="rounded " label="Numerical">
+            <div class="table-div">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SNo.</th>
+                            <th>DATA TYPES</th>
+                            <th>USED FIELDS</th>
+                            <th>REMAINING FIELDS</th>
+                            <th>MAXIMUM LIMIT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Number</td>
+                            <td>0</td>
+                            <td>30</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>date</td>
+                            <td>0</td>
+                            <td>30</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>date and time</td>
+                            <td>0</td>
+                            <td>30</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>lookup</td>
+                            <td>0</td>
+                            <td>5</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Attachment</td>
+                            <td>0</td>
+                            <td>5</td>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="fs-14 text-secondary m-10">
+                <span class="fw-medium text-black">Note: </span>The sum of all the custom fields created under this type must not exceed 30
+            </div>
+        </mat-tab>
+        <mat-tab class="rounded " label="Decimal">
+            <div class="table-div">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SNo.</th>
+                            <th>DATA TYPES</th>
+                            <th>USED FIELDS</th>
+                            <th>REMAINING FIELDS</th>
+                            <th>MAXIMUM LIMIT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Decimal</td>
+                            <td>0</td>
+                            <td>10</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Amount</td>
+                            <td>0</td>
+                            <td>10</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Percent</td>
+                            <td>0</td>
+                            <td>10</td>
+                            <td>10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="fs-14 text-secondary m-10">
+                <span class="fw-medium text-black">Note: </span>The sum of all the custom fields created under this type must not exceed 10
+            </div>
+        </mat-tab>
+        <mat-tab class="rounded " label="String">
+            <div class="table-div">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SNo.</th>
+                            <th>DATA TYPES</th>
+                            <th>USED FIELDS</th>
+                            <th>REMAINING FIELDS</th>
+                            <th>MAXIMUM LIMIT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Text Box (Single Line)</td>
+                            <td>0</td>
+                            <td>50</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Email</td>
+                            <td>0</td>
+                            <td>50</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>URL</td>
+                            <td>0</td>
+                            <td>50</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Phone</td>
+                            <td>0</td>
+                            <td>50</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Auto-Generate Number</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Dropdown</td>
+                            <td>0</td>
+                            <td>20</td>
+                            <td>20</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="fs-14 text-secondary m-10">
+                <span class="fw-medium text-black">Note: </span>The sum of all the custom fields created under this type must not exceed 50
+            </div>
+        </mat-tab>
+        <mat-tab class="rounded " label="Boolean">
+            <div class="table-div">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SNo.</th>
+                            <th>DATA TYPES</th>
+                            <th>USED FIELDS</th>
+                            <th>REMAINING FIELDS</th>
+                            <th>MAXIMUM LIMIT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Check box</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>3</td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </div>
+            <div class="fs-14 text-secondary m-10">
+                <span class="fw-medium text-black">Note: </span>The sum of all the custom fields created under this type must not exceed 50
+            </div>
+        </mat-tab>
+        <mat-tab class="rounded " label="Long Text">
+            <div class="table-div">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SNo.</th>
+                            <th>DATA TYPES</th>
+                            <th>USED FIELDS</th>
+                            <th>REMAINING FIELDS</th>
+                            <th>MAXIMUM LIMIT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Text Box (Multi-line)</td>
+                            <td>0</td>
+                            <td>5</td>
+                            <td>5</td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </div>
+            <div class="fs-14 text-secondary m-10">
+                <span class="fw-medium text-black">Note: </span>The sum of all the custom fields created under this type must not exceed 50
+            </div>
+        </mat-tab>
+        <mat-tab class="rounded " label="Multi -Select">
+            <div class="table-div">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SNo.</th>
+                            <th>DATA TYPES</th>
+                            <th>USED FIELDS</th>
+                            <th>REMAINING FIELDS</th>
+                            <th>MAXIMUM LIMIT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Multi-select</td>
+                            <td>0</td>
+                            <td>5</td>
+                            <td>5</td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </div>
+            <div class="fs-14 text-secondary m-10">
+                <span class="fw-medium text-black">Note: </span>The sum of all the custom fields created under this type must not exceed 50
+            </div>
+        </mat-tab>
+        <mat-tab class="rounded " label="Formula">
+            <div class="table-div">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SNo.</th>
+                            <th>DATA TYPES</th>
+                            <th>USED FIELDS</th>
+                            <th>REMAINING FIELDS</th>
+                            <th>MAXIMUM LIMIT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Formula</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </div>
+            <div class="fs-14 text-secondary m-10">
+                <span class="fw-medium text-black">Note: </span>Creating a formula custom field depends on the field type in which you want the output displayed. For example, if you have exhausted the total number of string fields you can use in your organization, you’ll not be able to create a formula field with string as the output field, even if you have formula fields remaining.
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+</div>

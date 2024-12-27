@@ -1,0 +1,104 @@
+.mat-toolbar {
+    background: white !important;
+    box-shadow: 0px 2px 10px 0px #efefef;
+}
+
+.menu-icon.mdc-icon-button {
+    margin: 0 1vw;
+    background-color: #EFEFEF !important;
+}
+
+.menu-icon-2 {
+    background-color: #EFEFEF !important;
+}
+
+.search {
+    background: #EFEFEF;
+    border: none;
+    border-radius: 0.5rem;
+    height: 2rem;
+}
+
+.search-menu {
+    position: relative;
+    padding: 1rem;
+    width: 50vw;
+}
+
+.icon-div {
+    position: absolute;
+    right: 1rem;
+    top: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    border-left: 1px solid #fff;
+}
+
+.mat-icon.mat-primary {
+    font-weight: 600;
+}
+
+.add-icon {
+    background: #0163d2;
+}
+
+.mat-icon.mat-accent {
+    font-weight: 700;
+}
+
+.last-div {
+    justify-content: end;
+    width: -webkit-fill-available;
+    gap: 0.5vw;
+}
+
+.mat-mdc-mini-fab {
+    background-color: #efefef !important;
+    box-shadow: none !important;
+}
+
+.icon {
+    color: black;
+}
+
+.user-img {
+    width: 2.3rem;
+}
+
+.logo-img {
+    width: 12rem;
+}
+
+.notification-button{
+    position: relative;
+}
+
+.dot{
+    position: absolute;
+    top: 6px;
+    right: 7px;
+}
+.arrow{
+    margin-left: -0.6rem;
+}
+.example-icon{
+    height: 2.5rem;
+    padding: 8px;
+    width: 2.5rem;
+}
+.example-icon.icon{
+    height: 2rem;
+    padding: 6px;
+    width: 2rem;
+}
+
+@media (max-width: 767px) {
+
+    .search-menu,
+    .logo-img,
+    .add-icon {
+        display: none
+    }
+}

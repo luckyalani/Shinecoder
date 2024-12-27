@@ -1,0 +1,163 @@
+<div class="header d-flex jc-sb align-items-center ">
+    <p class="heading">
+     
+               Update Meeting Details</p>
+    <mat-icon mat-dialog-close="true">cancel</mat-icon>
+</div>
+<div class="main-container boxed space">
+    <!-- <div>
+        <h1 class="fw-medium fs-26 m-l-3">#50 - Kieran Lowe </h1>
+    </div> -->
+
+    
+
+ <!-- PROFILE -->
+ 
+   
+   <!-- EDIT PROFILE -->
+   
+   <div > 
+       
+   
+       <!---------------------------- inputSection----------- -->
+   
+       <div class="">
+           <div class="form-row">
+               <!-- Left Side -->
+               <div class="in-form-row">
+                   <div>
+                       <mat-label class="form-input-label"><span class="text-danger"></span>Customer Name : </mat-label>
+                       <div class="calendar-input-field">
+                           <mat-form-field appearance="outline" class="form-field">
+                               <input matInput class="input" placeholder="giovanni santi">
+                           </mat-form-field>
+                       </div>
+                   </div>
+                   <div>
+                       <mat-label class="form-input-label"><span class="text-danger"></span>Staff Name: </mat-label>
+                       <div class="calendar-input-field">
+                           <mat-form-field appearance="outline" class="form-field">
+                               <input matInput class="input" placeholder="XYZ Calling BPO">
+                           </mat-form-field>
+                       </div>
+                   </div>
+                   <div>
+                       <mat-label class="form-input-label"><span class="text-danger"></span>Default Timezone </mat-label>
+                       <div class="calendar-input-field">
+                           <mat-form-field appearance="outline" class="form-field">
+                               <input matInput class="email" placeholder="">
+                           </mat-form-field>
+                       </div>
+                   </div>
+                   <div>
+                       <mat-label class="form-input-label"><span class="text-danger"></span>Meeting Duration (Minute) </mat-label>
+                       <div class="calendar-input-field">
+                           <mat-form-field appearance="outline" class="form-field">
+                               <input matInput class="email" placeholder="2 minutes">
+                           </mat-form-field>
+                       </div>
+                   </div>
+                
+   
+                   <div>
+                      
+                       
+                   </div>
+                  
+               </div>
+               <!-- ---------------------Right Side----------------------------- -->
+               <div class="in-form-row">
+   
+   
+   
+                   <div>
+                       <mat-label class="form-input-label"><span class="text-danger"></span>Customer Email:</mat-label>
+                       <div class="calendar-input-field">
+                           <mat-form-field appearance="outline" class="form-field">
+                               <input matInput class="input" placeholder="commerciale@sangishop.com">
+                           </mat-form-field>
+                       </div>
+                   </div>
+                   <div>
+                       <mat-label class="form-input-label"><span class="text-danger"></span>Staff Email :</mat-label>
+                       <div class="calendar-input-field">
+                           <mat-form-field appearance="outline" class="form-field">
+                               <input matInput class="input" placeholder="sales@zonvoir.com">
+                           </mat-form-field>
+                       </div>
+                   </div>
+                  <!-- Date lagana hai -->
+                  <div>
+                    <mat-label class="form-input-label ">Date  </mat-label>
+                    <div class="calendar-input-field date-picker w-auto">
+                        <mat-form-field appearance="outline" class="form-field date">
+                            <mat-datepicker-toggle matIconSuffix [for]="picker1" class=" w-99p">
+                                <svg matDatepickerToggleIcon xmlns="http://www.w3.org/2000/svg" width="1.4em"
+                                    height="1.4em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M2 19c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-8H2zM19 4h-2V3c0-.6-.4-1-1-1s-1 .4-1 1v1H9V3c0-.6-.4-1-1-1s-1 .4-1 1v1H5C3.3 4 2 5.3 2 7v2h20V7c0-1.7-1.3-3-3-3" />
+                                </svg>
+                            </mat-datepicker-toggle>
+                            <div class="date-border"></div>
+                            <input matInput [matDatepicker]="picker1" class="input">
+                            <mat-datepicker #picker1></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                </div>
+                   <div>
+                       <mat-label class="form-input-label"><span class="text-danger"></span>Meeting Agenda</mat-label>
+                       <div class="calendar-input-field">
+                           <mat-form-field appearance="outline" class="form-field">
+                               <input matInput class="input" placeholder="test">
+                           </mat-form-field>
+                       </div>
+                   </div>
+                  
+                     
+         
+       </div>
+       </div>
+   
+       <div class="">
+   
+           <div>
+               <mat-label class="form-input-label"><span class="text-danger"></span>Description </mat-label>
+               <div class="calendar-input-field">
+                   <mat-form-field appearance="outline" class="form-field">
+                       <input matInput class="input" placeholder="test">
+                   </mat-form-field>
+               </div>
+           </div>
+       
+       <div class="">
+        <h5>Meeting Options</h5>
+        <div class="d-flex flex-col">
+            <mat-checkbox color="primary">Allow Participants To Join Anytime</mat-checkbox>
+            <mat-checkbox color="primary">Mute Participants Upon Entry</mat-checkbox>
+            <mat-checkbox color="primary">Automatically Record Meeting on the Local Computer</mat-checkbox>
+        </div>
+       </div>
+   
+          
+        
+       
+         
+       </div>
+   
+   </div>
+   
+
+   
+   
+   </div>
+   </div>
+   <hr>
+   <div class="d-flex gap-2">
+       <button mat-raised-button color="warn">Cancle</button>
+       <button mat-raised-button class="bg-success">Save</button>
+   </div>
+
+   
+   
+   
+   

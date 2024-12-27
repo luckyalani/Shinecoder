@@ -1,0 +1,12 @@
+.text-area, .mat-mdc-form-field-textarea-control {
+    height: 6rem !important;
+    overflow: hidden !important;
+    resize: none !important;
+    width: 100%;
+}
+/* Input */
+ .gray-bg .selected-form-field input[type=text]{
+    background-color:rgb(224, 223, 223);
+   }
+   
+   

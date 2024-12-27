@@ -1,0 +1,194 @@
+<div class="main-container boxed">
+    <p class="text-dark">Add new Expense </p>
+
+    <!-- input-and-file-div -->
+    <div class="input-and-file-div">
+        <div class="w-70">
+            <div class="m-t-10">
+                <mat-label class="form-input-label"><svg
+                        matTooltip="If you add contract to trash, won't be shown on client side, won't be included in chart and other stats and also by default won't be shown when you will list all contracts."
+                        class="question-icon" xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                        viewBox="0 0 24 24">
+                        <g fill="none">
+                            <path
+                                d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                            <path fill="black"
+                                d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 14a1 1 0 1 0 0 2a1 1 0 0 0 0-2m0-9.5a3.625 3.625 0 0 0-3.625 3.625a1 1 0 1 0 2 0a1.625 1.625 0 1 1 2.23 1.51c-.676.27-1.605.962-1.605 2.115V14a1 1 0 1 0 2 0c0-.244.05-.366.261-.47l.087-.04A3.626 3.626 0 0 0 12 6.5" />
+                        </g>
+                    </svg> Name</mat-label>
+                <div class="selected-form-field">
+                    <input type="text" class="mat-input" placeholder="">
+                </div>
+            </div>
+            <div>
+                <mat-label class="form-input-label"> <svg
+                        matTooltip="If you add contract to trash, won't be shown on client side, won't be included in chart and other stats and also by default won't be shown when you will list all contracts."
+                        class="question-icon" xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                        viewBox="0 0 24 24">
+                        <g fill="none">
+                            <path
+                                d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                            <path fill="black"
+                                d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 14a1 1 0 1 0 0 2a1 1 0 0 0 0-2m0-9.5a3.625 3.625 0 0 0-3.625 3.625a1 1 0 1 0 2 0a1.625 1.625 0 1 1 2.23 1.51c-.676.27-1.605.962-1.605 2.115V14a1 1 0 1 0 2 0c0-.244.05-.366.261-.47l.087-.04A3.626 3.626 0 0 0 12 6.5" />
+                        </g>
+                    </svg> Note</mat-label>
+                <textarea name="" id="" cols="50" rows="20" class="mat-input text-area"></textarea>
+            </div>
+        </div>
+        <div class="w-30">
+            <div class="imagee-lable">
+                <mat-label class="form-input-label">Attach Receipt</mat-label>
+                <div class="file-border  m-t-10">
+                    <div class="m-b-20 full">
+                        <label for="file" class="file"> Choose File</label>
+                        <input type="file" name="" id="file" class="hidden">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- input-and-file-div close  -->
+
+    <div class="Expense-Category">
+        <mat-label class="form-input-label  m-l-10 "><span class="text-danger">*</span>Expense Category</mat-label>
+        <div class="selected-form-field">
+            <mat-icon class="icon-add">add</mat-icon>
+            <select name="" id="" class="mat-input">
+                <option value="">abc</option>
+            </select>
+            <span class="down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                    viewBox="0 0 15 15">
+                    <path fill="#808080" d="M7.5 12L0 4h15z" />
+                </svg></span>
+        </div>
+        <div class="date-field m-b-10 ">
+            <mat-label class="form-input-label"><span class="text-danger">*</span>Expense Date </mat-label>
+            <div class="calendar-input-field date-picker ">
+                <mat-form-field appearance="outline" class="form-field date">
+                    <mat-datepicker-toggle matIconSuffix [for]="picker1" class="">
+                        <svg matDatepickerToggleIcon xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em"
+                            viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M2 19c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-8H2zM19 4h-2V3c0-.6-.4-1-1-1s-1 .4-1 1v1H9V3c0-.6-.4-1-1-1s-1 .4-1 1v1H5C3.3 4 2 5.3 2 7v2h20V7c0-1.7-1.3-3-3-3" />
+                        </svg>
+                    </mat-datepicker-toggle>
+                    <div class="date-border"></div>
+                    <input matInput [matDatepicker]="picker1" class="input">
+                    <mat-datepicker #picker1></mat-datepicker>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="amount-customer-fields">
+            <div>
+                <mat-label class="form-input-label m-l-10 "> <span class="text-danger">*</span>Amount</mat-label>
+                <div class="selected-form-field">
+                    <input type="text" class="mat-input" placeholder="">
+                </div>
+            </div>
+
+            <div>
+                <mat-label class="form-input-label m-l-10 "> Customer</mat-label>
+                <div class="selected-form-field ">
+                    <select name="" id="" class="mat-input  ">
+                        <option value="">Select and begin typing</option>
+                    </select>
+                    <span class="down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 15 15">
+                            <path fill="#808080" d="M7.5 12L0 4h15z" />
+                        </svg></span>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-dark">Advanced Options</p>
+        <div class="Advanced-Options m-t-10 ">
+            <div>
+                <mat-label class="form-input-label m-l-10 "><span class="text-danger">*</span>Currency</mat-label>
+                <div class="selected-form-field gray-bg ">
+                    <!-- <mat-icon class="icon-add">add</mat-icon> -->
+                    <select name="" id="" class="mat-input  ">
+                        <option value="">USD $</option>
+                    </select>
+                    <span class="down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 15 15">
+                            <path fill="#808080" d="M7.5 12L0 4h15z" />
+                        </svg></span>
+                </div>
+            </div>
+
+            <div>
+                <mat-label class="form-input-label m-l-10 ">Tax 1</mat-label>
+                <div class="selected-form-field  ">
+                    <!-- <mat-icon class="icon-add">add</mat-icon> -->
+                    <select name="" id="" class="mat-input  ">
+                        <option value="">No Tax</option>
+                    </select>
+                    <span class="down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 15 15">
+                            <path fill="#808080" d="M7.5 12L0 4h15z" />
+                        </svg></span>
+                </div>
+            </div>
+
+            <div>
+                <mat-label class="form-input-label m-l-10 ">Tax 2</mat-label>
+                <div class="selected-form-field gray-bg ">
+                    <!-- <mat-icon class="icon-add">add</mat-icon> -->
+                    <select name="" id="" class="mat-input  ">
+                        <option value="">No Tax</option>
+                    </select>
+                    <span class="down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 15 15">
+                            <path fill="#808080" d="M7.5 12L0 4h15z" />
+                        </svg></span>
+                </div>
+            </div>
+
+            <div>
+                <mat-label class="form-input-label m-l-10 ">Payment Mode</mat-label>
+                <div class="selected-form-field  ">
+                    <!-- <mat-icon class="icon-add">add</mat-icon> -->
+                    <select name="" id="" class="mat-input  ">
+                        <option value="">Nothing selected</option>
+                    </select>
+                    <span class="down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 15 15">
+                            <path fill="#808080" d="M7.5 12L0 4h15z" />
+                        </svg></span>
+                </div>
+            </div>
+            <div>
+                <mat-label class="form-input-label m-l-10 "> Reference #</mat-label>
+                <div class="selected-form-field">
+                    <input type="text" class="mat-input" placeholder="">
+                </div>
+            </div>
+            <div>
+                <mat-label class="form-input-label m-l-10 ">Repeat every</mat-label>
+                <div class="selected-form-field  ">
+                    <!-- <mat-icon class="icon-add">add</mat-icon> -->
+                    <select name="" id="" class="mat-input  ">
+                        <option value="">Nothing selected</option>
+                    </select>
+                    <span class="down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 15 15">
+                            <path fill="#808080" d="M7.5 12L0 4h15z" />
+                        </svg></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<hr>
+    <div class="d-flex gap-1 p-10">
+        <button mat-dialog-close="true"
+            class=" mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base "
+            mat-raised-button color="warn">Cancel</button>
+        <button mat-dialog-close="true"
+            class="bg-success mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base "
+            mat-raised-button> Save</button>
+
+    </div>
+
+</div>

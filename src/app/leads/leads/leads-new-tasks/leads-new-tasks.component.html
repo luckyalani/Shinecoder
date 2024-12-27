@@ -1,0 +1,248 @@
+<div class="header d-flex jc-sb align-items-center ">
+    <p class="heading">Add New Task</p>
+    <mat-icon mat-dialog-close="true">cancel</mat-icon>
+</div>
+
+<div class="main-container boxed space">
+
+<div class="d-flex jc-sb">
+    <div class="check d-flex align-items-center">
+        <input type="checkbox"><p>Public</p>
+        <input type="checkbox"><p>Billable</p>
+    </div>
+ <button mat-raised-button class="px-   3" color="primary">Attach Files</button>
+</div>
+
+
+
+    <div class="form">
+
+
+        <div class="importing">
+            <div class="choosing">
+                <p><span>*</span> Attachment <span class="bg-green" id="redPlus">+</span> </p>
+
+                <!-- <label for="imgInput"> <img src="assets/images/Group.png" alt=""></label> -->
+                <label for="imgInput"><img src="assets/images/Group.png" alt=""></label>
+                <input type="file" hidden id="imgInput">
+            </div>
+
+
+            <div class="choosing">
+                <p><span>*</span> Attachment <span class="bg-red" id="redPlus">+</span></p>
+                <label for="imgInput"> <img src="assets/images/Group.png" alt=""></label>
+                <input type="file" hidden id="imgInput">
+            </div>
+
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <div class="form">
+            <div class="form-row">
+                <!-- Left Side -->
+                <div class="in-form-row">
+                    <div>
+                        <mat-label class="form-input-label"><span class="text-danger">*</span>Subject </mat-label>
+                        <div class="calendar-input-field">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label"><span class="text-danger"></span>Last Contact </mat-label>
+                        <div class="calendar-input-field ">
+
+                            <mat-form-field appearance="outline" class="form-field">
+                                <img src="../../../../assets/images/Leads/calender.png" alt="" id="dollorImg">
+                                <input matInput class="input">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Priority </mat-label>
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <mat-select class="select_in" placeholder="Draft">
+                                    <mat-option value="Draft">Draft</mat-option>
+                                    <mat-option value="Draft">Draft</mat-option>
+                                    <mat-option value="Draft">Draft</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Related To </mat-label>
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <mat-select class="select_in" placeholder="Draft">
+                                    <mat-option value="Draft">Draft</mat-option>
+                                    <mat-option value="Draft">Draft</mat-option>
+                                    <mat-option value="Draft">Draft</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <!-- <div>
+                        <mat-label class="form-input-label"><span class="text-danger"></span>Website </mat-label>
+                        <div class="calendar-input-field">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input">
+                            </mat-form-field>
+                        </div>
+                    </div> -->
+                    <div>
+                        <mat-label class="form-input-label">Asignees </mat-label>
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <mat-select class="select_in" placeholder="Draft">
+                                    <mat-option value="Draft">Draft</mat-option>
+                                    <mat-option value="Draft">Draft</mat-option>
+                                    <mat-option value="Draft">Draft</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div>
+
+
+                    </div>
+
+                </div>
+                <!-- ---------------------Right Side----------------------------- -->
+                <div class="in-form-row">
+
+
+
+
+                    <div>
+                        <mat-label class="form-input-label"><span class="text-danger"></span>Hourly Rate </mat-label>
+                        <div class="calendar-input-field">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label"><span class="text-danger"></span>Last Contact </mat-label>
+                        <div class="calendar-input-field ">
+
+                            <mat-form-field appearance="outline" class="form-field">
+                                <img src="../../../../assets/images/Leads/calender.png" alt="" id="dollorImg">
+                                <input matInput class="input">
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <mat-label class="form-input-label">Repeat every </mat-label>
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <mat-select class="select_in" placeholder="Draft">
+                                    <mat-option value="Draft">Draft</mat-option>
+                                    <mat-option value="Draft">Draft</mat-option>
+                                    <mat-option value="Draft">Draft</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <div>
+                        <mat-label class="form-input-label">Lead </mat-label>
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <mat-select class="select_in" placeholder="Draft">
+                                    <mat-option value="Draft">Draft</mat-option>
+                                    <mat-option value="Draft">Draft</mat-option>
+                                    <mat-option value="Draft">Draft</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Followers </mat-label>
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <mat-select class="select_in" placeholder="Draft">
+                                    <mat-option value="Draft">Draft</mat-option>
+                                    <mat-option value="Draft">Draft</mat-option>
+                                    <mat-option value="Draft">Draft</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+            <app-common-tag></app-common-tag>
+
+
+            <div class="">
+
+                <div>
+                    <mat-label class="form-input-label">
+                        <span class="text-blue" routerLink="/leads/edit-customfield" (click)="closeAll()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0l-30.1 30l97.9 97.9l30.1-30.1c21.9-21.9 21.9-57.3 0-79.2zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.7 15.7-7.4 21.9-13.5l167.3-167.4l-98-98zM96 64c-53 0-96 43-96 96v256c0 53 43 96 96 96h256c53 0 96-43 96-96v-96c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32z" />
+                            </svg>
+                        </span>
+                        Sub Task </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+
+                <div class="ckeditorpart">
+                    <div class="labeldiv">
+                        <mat-label>Task Description</mat-label>
+                    </div>
+                    <ckeditor [editor]="Editor" data="<p> Minimum 300 words. HTML and images supported. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit similique et illo obcaecati temporibus asperiores culpa sequi at, id voluptate. Ab vero quibusdam quas blanditiis iste ducimus officia accusantium. Quaerat illo aut facere dolores nihil quidem consequatur nostrum dolorem porro voluptatem autem enim, hic, eveniet maiores voluptatum animi ipsa 
+                      </p>">
+                    </ckeditor>
+                </div>
+
+
+
+                <hr>
+                <div class="d-flex gap-2">
+                    <button mat-raised-button color="warn">Cancle</button>
+                    <button mat-raised-button class="bg-success">Save</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    .
+
+
+
+
+</div>

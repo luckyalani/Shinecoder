@@ -1,0 +1,128 @@
+.line-div {
+    display: flex;
+    align-items: center;
+    gap: -1;
+    width: 100%;
+}
+
+.arrow-icon {
+    color: #0163D2;
+    font-size: 8px;
+    width: fit-content;
+    height: 100% !important;
+    transform: rotate(45deg);
+}
+
+.text-primary {
+    color: #0163D2;
+    width: 14rem;
+}
+
+.line {
+    width: 100%;
+    background-color: #0163D2;
+    height: 1px;
+}
+
+/* input-border */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+::ng-deep .manuf-tab .mat-mdc-tab-body-wrapper {
+    box-shadow: unset !important;
+}
+
+.plus {
+    background-color: #26BF00;
+    height: 2rem;
+    width: 3rem;
+    border-radius: 0.3rem;
+}
+
+.remove {
+    height: 2rem;
+    width: 3rem;
+    border-radius: 0.3rem;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+/* File  */
+
+
+
+.file {
+    background-color: #8FBBFD;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.5rem;
+    position: relative;
+    top: -103px;
+    left: 27px;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.file-border {
+    background-image: url('/assets/images/file-border.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 16rem;
+    height: 12rem;
+    padding: 17px 33px 17px 16px;
+
+}
+
+.product-img {
+    width: 13rem;
+    height: 10rem;
+}
+
+/* ::ng-deep mat-icon {
+    color: rgb(255, 0, 0);
+} */
+
+@media (max-width: 767px) {
+    .flex-wrap {
+        flex-wrap: wrap;
+    }
+
+    .flex-remove {
+        display: unset;
+    }
+
+    .w-30 {
+        width: 100%;
+    }
+
+    .w-60 {
+        width: 100%;
+    }
+}

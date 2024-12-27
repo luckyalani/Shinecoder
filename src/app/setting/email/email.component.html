@@ -1,0 +1,623 @@
+<div class="main-container boxed space">
+    <div>
+        <h1 class="text-dark">Email</h1>
+    </div>
+
+    <div class="form p-0 outer d-flex flex-remove gap-3">
+        <!-- Left -->
+        <div class="w-full">
+            <!-- ------------------------------------Tickets Div Start----------------------------- -->
+            <div>
+                <div class="form d-flex jc-sb inner m-b-15 align-items-center b-r b-b">
+                    <div class="fw-medium">Tickets</div>
+                    <div class="">
+                        <button mat-stroked-button color="primary" class="btn rounded">Enable All</button>
+                        <button mat-stroked-button color="primary" class="btn rounded m-l-10">Disable All</button>
+                    </div>
+                </div>
+                <div class="p-l-10 fw-medium">
+                    <p class="fw-medium fs-16 m-0">Template Name</p>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12" [ngClass]="ischeck?'enable':''">
+                        <p class="text-primary pointer" routerLink="/setting/template" routerLink="/setting/template">
+                            New Ticket Opened (Opened by Staff, Sent to
+                            Customer)</p>
+                        <div class="text-primary btn-disable" (click)="check()">{{ischeck?"Enable":"Disable"}}</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Ticket Reply (Sent to Customer)
+                        </p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Ticket Opened - Autoresponse
+                        </p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Ticket Created (Opened by
+                            Customer, Sent to Staff Members)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Ticket Reply (Sent to Staff)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Auto Close Ticket</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Auto Assigned (Sent to Staff)
+                        </p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------Tickets Div End----------------------------- -->
+
+            <!-- ------------------------------------Contracts Div Start----------------------------- -->
+            <div>
+                <div class="form d-flex jc-sb inner m-t-20 m-b-15 align-items-center b-all">
+                    <div class="fw-medium">Contracts</div>
+                    <div class="">
+                        <button mat-stroked-button color="primary" class="btn rounded">Enable All</button>
+                        <button mat-stroked-button color="primary" class="btn rounded m-l-10">Disable All</button>
+                    </div>
+                </div>
+                <div class="p-l-10 fw-medium">
+                    <p class="fw-medium fs-16 m-0">Template Name</p>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Contract Expiration Reminder
+                            (Sent to Customer Contacts)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Send Contract to Customer</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Comment (Send to Customer
+                            Contacts)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Comment (Send to Staff)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Contact Expiration Reminder (Send
+                            to Staff)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Contract Signed (Sent to Staff)
+                        </p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Contract Signed (Sent to Staff)
+                        </p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------Contracts Div End----------------------------- -->
+
+            <!-- ------------------------------------Subscriptions Div Start----------------------------- -->
+            <div>
+                <div class="form d-flex jc-sb inner m-t-20 m-b-15 align-items-center b-all">
+                    <div class="fw-medium">Subscriptions</div>
+                    <div class="">
+                        <button mat-stroked-button color="primary" class="btn rounded">Enable All</button>
+                        <button mat-stroked-button color="primary" class="btn rounded m-l-10">Disable All</button>
+                    </div>
+                </div>
+                <div class="p-l-10 fw-medium">
+                    <p class="fw-medium fs-16 m-0">Template Name</p>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Send Subscription to Customer</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Subscription Payment Failed</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Subscription Canceled (Sent to
+                            customer primary contact)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Subscription Payment Succeeded
+                            (Sent to customer primary contact)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Customer Subscribed to a
+                            Subscription (Sent to administrators and
+                            subscription creator)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Credit Card Authorization
+                            Required - SCA</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------Subscriptions Div End----------------------------- -->
+
+            <!-- ------------------------------------Tasks Div Start----------------------------- -->
+            <div>
+                <div class="form d-flex jc-sb inner m-t-20 m-b-15 align-items-center b-all">
+                    <div class="fw-medium">Tasks</div>
+                    <div class="">
+                        <button mat-stroked-button color="primary" class="btn rounded">Enable All</button>
+                        <button mat-stroked-button color="primary" class="btn rounded m-l-10">Disable All</button>
+                    </div>
+                </div>
+                <div class="p-l-10 fw-medium">
+                    <p class="fw-medium fs-16 m-0">Template Name</p>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Task Assigned (Sent to Staff)
+                        </p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Staff Member Added as Follower on
+                            Task (Sent to Staff)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Comment on Task (Sent to
+                            Staff)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Attachment(s) on Task (Sent
+                            to Staff)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Task Deadline Reminder - Sent to
+                            Assigned Members</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Attachment(s) on Task (Sent
+                            to Customer Contacts)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Comment on Task (Sent to
+                            Customer Contacts)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Task Status Changed (Sent to
+                            Staff)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Task Status Changed (Sent to
+                            Customer Contacts)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------Tasks Div End----------------------------- -->
+
+            <!-- ------------------------------------Proposals Div Start----------------------------- -->
+            <div>
+                <div class="form d-flex jc-sb inner m-t-20 m-b-15 align-items-center b-all">
+                    <div class="fw-medium">Proposals</div>
+                    <div class="">
+                        <button mat-stroked-button color="primary" class="btn rounded">Enable All</button>
+                        <button mat-stroked-button color="primary" class="btn rounded m-l-10">Disable All</button>
+                    </div>
+                </div>
+                <div class="p-l-10 fw-medium">
+                    <p class="fw-medium fs-16 m-0">Template Name</p>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Customer Action - Accepted (Sent
+                            to Staff)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Send Proposal to Customer</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Customer Action - Declined (Sent
+                            to Staff)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Thank You Email (Sent to Customer
+                            After Accept)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Comment  (Sent to
+                            Customer/Lead)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Comment (Sent to Staff)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Proposal Expiration Reminder</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------Proposals Div End----------------------------- -->
+
+            <!-- ------------------------------------Staff Members Div Start----------------------------- -->
+            <div>
+                <div class="form d-flex jc-sb inner m-t-20 m-b-15 align-items-center b-all">
+                    <div class="fw-medium">Staff Members</div>
+                    <div class="">
+                        <button mat-stroked-button color="primary" class="btn rounded">Enable All</button>
+                        <button mat-stroked-button color="primary" class="btn rounded m-l-10">Disable All</button>
+                    </div>
+                </div>
+                <div class="p-l-10 fw-medium">
+                    <p class="fw-medium fs-16 m-0">Template Name</p>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Staff Created (Welcome Email)
+                        </p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Forgot Password</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Password Reset - Confirmation</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Two Factor Authentication</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Staff Reminder Email</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Event Notification (Calendar)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------Staff Members Div End----------------------------- -->
+
+            <!-- ------------------------------------Notifications Div Start----------------------------- -->
+            <div>
+                <div class="form d-flex jc-sb inner m-t-20 m-b-15 align-items-center b-all">
+                    <div class="fw-medium">Notifications</div>
+                    <div class="">
+                        <button mat-stroked-button color="primary" class="btn rounded">Enable All</button>
+                        <button mat-stroked-button color="primary" class="btn rounded m-l-10">Disable All</button>
+                    </div>
+                </div>
+                <div class="p-l-10 fw-medium">
+                    <p class="fw-medium fs-16 m-0">Template Name</p>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Non-billed tasks reminder (sent
+                            to selected staff members)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------Notifications Div End----------------------------- -->
+
+        </div>
+
+        <!-- Right  -->
+        <div class="w-full">
+
+            <!-- ------------------------------------Estimates Div Start----------------------------- -->
+            <div>
+                <div class="form d-flex jc-sb inner m-b-15 align-items-center b-b b-l">
+                    <div class="fw-medium">Estimates</div>
+                    <div class="">
+                        <button mat-stroked-button color="primary" class="btn rounded">Enable All</button>
+                        <button mat-stroked-button color="primary" class="btn rounded m-l-10">Disable All</button>
+                    </div>
+                </div>
+                <div class="p-l-10 fw-medium">
+                    <p class="fw-medium fs-16 m-0">Template Name</p>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Send Estimates to Customer</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Estimates Already Sent to
+                            Customer</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Estimate Declined (Sent to Staff)
+                        </p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Estimate Accepted (Sent to Staff)
+                        </p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Thank You Email (Sent to Customer
+                            After Accept)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Estimate Expiration Reminder</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------Estimates Div End----------------------------- -->
+
+            <!-- ------------------------------------Invoices Div Start----------------------------- -->
+            <div>
+                <div class="form d-flex jc-sb inner m-t-20 m-b-15 align-items-center b-b b-l">
+                    <div class="fw-medium">Invoices</div>
+                    <div class="">
+                        <button mat-stroked-button color="primary" class="btn rounded">Enable All</button>
+                        <button mat-stroked-button color="primary" class="btn rounded m-l-10">Disable All</button>
+                    </div>
+                </div>
+                <div class="p-l-10 fw-medium">
+                    <p class="fw-medium fs-16 m-0">Template Name</p>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Send Invoice to Customer</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Invoice Payment Recorded (Send to
+                            Customer)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Invoice Overdue Notice</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Invoice Already Sent to Customer
+                        </p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Invoice Payment Recorded (Sent to
+                            Staff)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Invoice Due Notice</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Invoices Payments Recorded in
+                            Batch (Sent to Customer)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------Invoices Div End----------------------------- -->
+
+            <!-- ------------------------------------Credit Note Div Start----------------------------- -->
+            <div>
+                <div class="form d-flex jc-sb inner m-t-20 m-b-15 align-items-center b-b b-l">
+                    <div class="fw-medium">Credit Note</div>
+                    <div class="">
+                        <button mat-stroked-button color="primary" class="btn rounded">Enable All</button>
+                        <button mat-stroked-button color="primary" class="btn rounded m-l-10">Disable All</button>
+                    </div>
+                </div>
+                <div class="p-l-10 fw-medium">
+                    <p class="fw-medium fs-16 m-0">Template Name</p>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Send Credit Note To Email</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------Credit Note Div End----------------------------- -->
+
+            <!-- ------------------------------------Customers Div Start----------------------------- -->
+            <div>
+                <div class="form d-flex jc-sb inner m-t-20 m-b-15 align-items-center b-b b-l">
+                    <div class="fw-medium">Customers</div>
+                    <div class="">
+                        <button mat-stroked-button color="primary" class="btn rounded">Enable All</button>
+                        <button mat-stroked-button color="primary" class="btn rounded m-l-10">Disable All</button>
+                    </div>
+                </div>
+                <div class="p-l-10 fw-medium">
+                    <p class="fw-medium fs-16 m-0">Template Name</p>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Contact Added/Registered
+                            (Welcome Email)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Forgot Password</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Password Reset - Confirmation</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Set New Password</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Statement - Account Summary</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Customer Registration (Sent
+                            to admins)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Email Verification (Sent to
+                            Contact After Registration)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Customer Profile File(s)
+                            Uploaded (Sent to Staff)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------Customers Div End----------------------------- -->
+
+            <!-- ------------------------------------Projects Div Start----------------------------- -->
+            <div>
+                <div class="form d-flex jc-sb inner m-t-20 m-b-15 align-items-center b-b b-l">
+                    <div class="fw-medium">Projects</div>
+                    <div class="">
+                        <button mat-stroked-button color="primary" class="btn rounded">Enable All</button>
+                        <button mat-stroked-button color="primary" class="btn rounded m-l-10">Disable All</button>
+                    </div>
+                </div>
+                <div class="p-l-10 fw-medium">
+                    <p class="fw-medium fs-16 m-0">Template Name</p>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Project Discussion (Sent to
+                            Project Members)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Project Discussion (Sent to
+                            Customer Contacts)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Project File(s) Uploaded
+                            (Sent to Customer Contacts)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Project File(s) Uploaded
+                            (Sent to Project Members)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Discussion Comment (Sent to
+                            Customer Contacts)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Discussion Comment (Sent to
+                            Project Members)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Staff Added as Project Member</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Project Created (Sent to
+                            Customer Contacts)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Project Marked as Finished (Sent
+                            to Customer Contacts)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------Projects Div End----------------------------- -->
+
+            <!-- ------------------------------------Leads Div Start----------------------------- -->
+            <div>
+                <div class="form d-flex jc-sb inner m-t-20 m-b-15 align-items-center b-b b-l">
+                    <div class="fw-medium">Leads</div>
+                    <div class="">
+                        <button mat-stroked-button color="primary" class="btn rounded">Enable All</button>
+                        <button mat-stroked-button color="primary" class="btn rounded m-l-10">Disable All</button>
+                    </div>
+                </div>
+                <div class="p-l-10 fw-medium">
+                    <p class="fw-medium fs-16 m-0">Template Name</p>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">New Lead Assigned to Staff Member
+                        </p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12 enable">
+                        <p class="text-primary pointer" routerLink="/setting/template"><s>Web to lead form submitted -
+                                Sent to lead</s></p>
+                        <div class="text-primary btn-disable">Enable</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------Leads Div End----------------------------- -->
+
+            <!-- ------------------------------------Estimates Request Div Start----------------------------- -->
+            <div>
+                <div class="form d-flex jc-sb inner m-t-20 m-b-15 align-items-center b-b b-l">
+                    <div class="fw-medium">Estimates Request</div>
+                    <div class="">
+                        <button mat-stroked-button color="primary" class="btn rounded">Enable All</button>
+                        <button mat-stroked-button color="primary" class="btn rounded m-l-10">Disable All</button>
+                    </div>
+                </div>
+                <div class="p-l-10 fw-medium">
+                    <p class="fw-medium fs-16 m-0">Template Name</p>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Estimate Request Submitted (Sent
+                            to Staff)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Estimate Request Assigned (Sent
+                            to Staff)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12 enable">
+                        <p class="text-primary pointer" routerLink="/setting/template"><s>Estimate Request Received
+                                (Sent to User)</s></p>
+                        <div class="text-primary btn-disable">Enable</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------Estimates Request Div End----------------------------- -->
+
+            <!-- ------------------------------------General Data Request Div Start----------------------------- -->
+            <div>
+                <div class="form d-flex jc-sb inner m-t-20 m-b-15 align-items-center b-b b-l">
+                    <div class="fw-medium">General Data Request</div>
+                    <div class="">
+                        <button mat-stroked-button color="primary" class="btn rounded">Enable All</button>
+                        <button mat-stroked-button color="primary" class="btn rounded m-l-10">Disable All</button>
+                    </div>
+                </div>
+                <div class="p-l-10 fw-medium">
+                    <p class="fw-medium fs-16 m-0">Template Name</p>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Removal Request From Contact
+                            (Sent to administrators)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                    <div class="inner-in d-flex jc-sb align-items-center m-t-10 fs-12">
+                        <p class="text-primary pointer" routerLink="/setting/template">Removal Request From Lead (Sent
+                            to administrators)</p>
+                        <div class="text-primary btn-disable">Disable</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------General Data Request Div End----------------------------- -->
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,73 @@
+.setting{
+    margin: 5px 10px;
+}
+.para{
+    font-size: 30px;
+    font-weight: 500;
+}
+.icon-search {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+}
+.search-bar {
+    position: relative;
+}
+
+.search{
+    background-color: #EFEFEF;
+}
+@media (max-width: 767px){
+    .first_card,
+    .second_card,
+    .third_card
+    {
+        width: 100%!important;
+        margin-bottom: 10px;
+    }
+    .setting_card{
+        display: block;
+       
+    }
+} 
+.search-div,
+.search-bar,
+.input.search-input
+{
+    width: 100%;
+}
+.setting_detail{
+    gap: 10px;
+}
+.para-medium{
+    font-size: 20px;
+    font-weight: 500;
+}
+/*card css start*/
+.first_card,
+.second_card,
+.third_card
+{
+background-color: var(--gray);
+border-radius: 10px;
+padding: 0px 20px 60px 20px;
+border: 1px solid #EBEAF2;
+}
+.setting_card{
+    gap: 40px;
+}
+.first_card{
+    width: 20%;
+}
+.second_card{
+    width: 40%;
+}
+.para-small{
+    font-size: 13px;
+    font-weight: 600;
+}
+.third_card{
+    width: 20%;
+    margin:20px 0px;
+}
+/*card css end*/

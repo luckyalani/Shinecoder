@@ -1,0 +1,314 @@
+<div class="main mt-6 d-flex h-dvh">
+
+
+    <!-- Left Side Contacts -->
+    <div class=" form fixed" id="contacts-section">
+        <!-- Header -->
+        <div class="header d-flex jc-sb align-items-center">
+            <span>Messages</span>
+            <button mat-button [matMenuTriggerFor]="menu">...</button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>Item 1</button>
+                <button mat-menu-item>Item 2</button>
+            </mat-menu>
+        </div>
+
+        <!-- ALL CONTACTS -->
+        <div class="overflow-y-auto">
+
+            <!-- First Contact -->
+            <div class="bg-white mt-6">
+
+                <div class="card-upper d-flex bg-white align-items-center jc-sb">
+                    <img matCardImage src="../../../../assets/images/user.png">
+                    <p class="font-md">Text content</p>
+                    <!-- searchbar -->
+                    <div class="searchbar align-items-center d-flex no-wrap rounded-10">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5l-1.5 1.5l-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16A6.5 6.5 0 0 1 3 9.5A6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14S14 12 14 9.5S12 5 9.5 5" />
+                            </svg>
+                        </span>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                </div>
+
+                <!-- Lower Buttons of contact -->
+                <div class="card-lower d-flex jc-c">
+                    <div class="rounded-10 btnContainer bg-grey jc-c">
+                        <button class="rounded-10 text-blue bg-white py-5 my-5 px-20">Leads</button>
+                        <button class=" bg-grey text-drk-grey border-none py-5 my-5  px-20">Customer</button>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="bg-white mt-6">
+
+                <div class="card-upper d-flex bg-white align-items-center jc-sb">
+                    <div class=" d-flex align-items-center gap-5">
+                        <div> <img matCardImage src="../../../../assets/images/user.png"></div>
+                        <div>
+                            <p class="font-md">Text content</p>
+                            <p>+91 9549345670</p>
+                        </div>
+                    </div>
+                    <!-- searchbar -->
+                    <div class=" align-items-center d-flex flex-col gap-5 ">
+                        <span class="text-s">5s</span>
+                        <span class="text-s px-5 bg-green rounded-full">5</span>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+    <!-- Right Side Contacts -->
+    <div class="form w-100p px-5" id="chatBox">
+        <!-- Upper Info Bar -->
+        <div class="card-upper d-flex bg-white align-items-center jc-sb">
+            <div class=" d-flex align-items-center gap-5">
+                <div> <img matCardImage src="../../../../assets/images/user.png"></div>
+                <div>
+                    <p class="font-md my-0">Rajeshwar Singh</p>
+
+                    <div class="d-flex"> <span id="greenDot">.</span>
+                        <p class=" my-0">Active now</p>
+                    </div>
+                </div>
+            </div>
+            <!-- searchbar -->
+            <div class=" align-items-center d-flex  gap-5 ">
+                <span class="text-l text-green circle">
+                    <svg id="rightSvg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2">
+                            <path stroke-dasharray="64" stroke-dashoffset="64"
+                                d="M8 3C8.5 3 10.5 7.5 10.5 8C10.5 9 9 10 8.5 11C8 12 9 13 10 14C10.3943 14.3943 12 16 13 15.5C14 15 15 13.5 16 13.5C16.5 13.5 21 15.5 21 16C21 18 19.5 19.5 18 20C16.5 20.5 15.5 20.5 13.5 20C11.5 19.5 10 19 7.5 16.5C5 14 4.5 12.5 4 10.5C3.5 8.5 3.5 7.5 4 6C4.5 4.5 6 3 8 3Z">
+                                <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0" />
+                            </path>
+                            <path stroke-dasharray="4" stroke-dashoffset="4"
+                                d="M14 7.04404C14.6608 7.34734 15.2571 7.76718 15.7624 8.27723M16.956 10C16.6606 9.35636 16.2546 8.77401 15.7624 8.27723"
+                                opacity="0">
+                                <set attributeName="opacity" begin="0.7s" to="1" />
+                                <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.2s"
+                                    values="4;8" />
+                            </path>
+                            <path stroke-dasharray="10" stroke-dashoffset="10"
+                                d="M20.748 9C20.3874 7.59926 19.6571 6.347 18.6672 5.3535M15 3.25203C16.4105 3.61507 17.6704 4.3531 18.6672 5.3535"
+                                opacity="0">
+                                <set attributeName="opacity" begin="1s" to="1" />
+                                <animate fill="freeze" attributeName="stroke-dashoffset" begin="1s" dur="0.2s"
+                                    values="10;20" />
+                            </path>
+                        </g>
+                    </svg>
+                </span>
+                <span class="text-l  px-5 text-green circle">
+                    <svg id="rightSvg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11z" />
+                    </svg>
+                </span>
+                <span class="text-l  px-5 text-green circle">
+                    <svg id="rightSvg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M2.5 7.5a2.5 2.5 0 1 1 0 5a2.5 2.5 0 0 1 0-5m15 0a2.5 2.5 0 1 1 0 5a2.5 2.5 0 0 1 0-5m-7.274 0a2.5 2.5 0 1 1 0 5a2.5 2.5 0 0 1 0-5" />
+                    </svg>
+                </span>
+
+            </div>
+        </div>
+
+        <!-- Chats -->
+
+        <div class="chats mt-10 flex-col d-flex overflow-y-auto">
+
+            <!------------------------ my Chat---------------- -->
+            <div class=" d-flex  jc-fe flex-col mt-6">
+                <div class="myChat d-flex ">
+                    <div class="d-flex jc-fe gap-5">
+                        <div class="bg-blue myChatRound w-37p w-37p-res px-5 py-5">
+                            <p class="msg">Animations can enhance user engagement, but use them judiciously. Subtle
+                                animations for transitions or highlighting elements can make the site feel dynamic
+                                without overwhelming users.</p>
+                        </div>
+                        <div class="d-flex jc-fe"> <img matCardImage src="../../../../assets/images/user.png"></div>
+
+
+
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <span class="text-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5" d="m1.75 9.75l2.5 2.5m3.5-4l2.5-2.5m-4.5 4l2.5 2.5l6-6.5" />
+                        </svg>
+                    </span>
+                    <span>10:43 Am</span>
+                </div>
+            </div>
+
+
+
+            <!---------------------- REPLY---------- -->
+            <div class=" d-flex   flex-col mt-6">
+                <div class="myChat d-flex ">
+                    <div class="d-flex gap-5">
+                        <div class="d-flex jc-fe"> <img matCardImage src="../../../../assets/images/user.png"></div>
+                        <div class="reply-border form  w-37p w-37p-res">
+                            <p class="msg">Animations can enhance user engagement, but use them judiciously. Subtle
+                                animations for transitions or highlighting elements can make the site feel dynamic
+                                without overwhelming users.</p>
+                        </div>
+
+
+
+
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+                <div class="d-flex">
+
+                    <span class="ml-43">10:43 Am</span>
+                </div>
+            </div>
+
+
+            <!------------------------ my Chat---------------- -->
+            <div class=" d-flex  jc-fe flex-col mt-6">
+                <div class="myChat d-flex ">
+                    <div class="d-flex jc-fe gap-5">
+                        <div class="bg-blue myChatRound w-37p w-37p-res px-5 py-5">
+                            <p class="msg">Animations can enhance user engagement, but use them judiciously. Subtle
+                                animations for transitions or highlighting elements can make the site feel dynamic
+                                without overwhelming users.</p>
+                        </div>
+                        <div class="d-flex jc-fe"> <img matCardImage src="../../../../assets/images/user.png"></div>
+
+
+
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <span class="text-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5" d="m1.75 9.75l2.5 2.5m3.5-4l2.5-2.5m-4.5 4l2.5 2.5l6-6.5" />
+                        </svg>
+                    </span>
+                    <span>10:43 Am</span>
+                </div>
+            </div>
+
+            <!-- -----------------Typing------------- -->
+
+
+            <div class="typing">
+                <div class=" d-flex   flex-col mt-6">
+                    <div class="myChat d-flex ">
+                        <div class="d-flex gap-5">
+                            <div class="d-flex jc-fe"> <img matCardImage src="../../../../assets/images/user.png"></div>
+                            <div class="reply-border   w-37p w-37p-res">
+                                <button mat-raised-button >
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20"><path fill="currentColor" fill-rule="evenodd" d="M2.5 7.5a2.5 2.5 0 1 1 0 5a2.5 2.5 0 0 1 0-5m15 0a2.5 2.5 0 1 1 0 5a2.5 2.5 0 0 1 0-5m-7.274 0a2.5 2.5 0 1 1 0 5a2.5 2.5 0 0 1 0-5"/></svg>
+                            </span>
+    </button>
+    
+    
+    
+                        </div>
+                       
+                    </div>
+                    
+                </div>
+    
+            
+            </div>
+
+        </div>
+
+        <!------------- Text Editor --------------------->
+
+        <div class="textEditor mt-20">
+            <div class="ckeditorpart form">
+
+                <!-- Input Text -->
+                <div class="">
+                    <mat-form-field  class="form-field">
+                        <input matInput class="input" placeholder="">
+                    </mat-form-field>
+                </div>
+                <div class="d-flex jc-sb">
+                <div class="Text-icons text-drk-grey mx-20 gap-20">
+
+                    <!-- Video -->
+                    <div class="icon-div">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m22 8l-6 4l6 4z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/></g></svg>
+                    </span>
+
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 14q-1.25 0-2.125-.875T9 11V5q0-1.25.875-2.125T12 2q1.25 0 2.125.875T15 5v6q0 1.25-.875 2.125T12 14m-1 7v-3.075q-2.6-.35-4.3-2.325T5 11h2q0 2.075 1.463 3.538T12 16q2.075 0 3.538-1.463T17 11h2q0 2.625-1.7 4.6T13 17.925V21z"/></svg>
+                    </span>
+
+                </div>
+
+                    <span>|</span>
+ <div class="icon-div">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16m2.8 9.857a1 1 0 1 1 1.4 1.428A5.984 5.984 0 0 1 12 17a5.984 5.984 0 0 1-4.2-1.715a1 1 0 0 1 1.4-1.428A3.984 3.984 0 0 0 12 15c1.09 0 2.077-.435 2.8-1.143M8.5 8a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m7 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3"/></g></svg>
+                    </span>
+
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><path fill="currentColor" d="M209.66 122.34a8 8 0 0 1 0 11.32l-82.05 82a56 56 0 0 1-79.2-79.21l99.26-100.72a40 40 0 1 1 56.61 56.55L105 193a24 24 0 1 1-34-34l83.3-84.62a8 8 0 1 1 11.4 11.22l-83.31 84.71a8 8 0 1 0 11.27 11.36L192.93 81A24 24 0 1 0 159 47L59.76 147.68a40 40 0 1 0 56.53 56.62l82.06-82a8 8 0 0 1 11.31.04"/></svg>
+                    </span>
+
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="4"><path d="M18 8h-7a1 1 0 0 0-1 1v34a1 1 0 0 0 1 1h28a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1h-7"/><path d="M18 13V8h3.95a.05.05 0 0 0 .05-.05V6a3 3 0 1 1 6 0v1.95c0 .028.022.05.05.05H32v5a1 1 0 0 1-1 1H19a1 1 0 0 1-1-1Z"/></g></svg>
+                    </span>
+</div>
+                    <span>|</span>
+
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M12 16.5a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m0-6a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m0-6a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3"/></g></svg>
+                    </span>
+
+
+                </div>
+                <span class="text-blue mx-10 text-l">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M3 20v-6l8-2l-8-2V4l19 8z"/></svg>
+                </span>
+            </div>
+             
+            </div>        </div>
+
+    </div>

@@ -1,0 +1,16 @@
+.bg-light{
+    background-color: #00489a1c;
+    width: max-content;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.date-picker .mat-mdc-form-field {
+    width: 100% !important;
+}
+@media screen and (max-width:767px) {
+    .grid{
+        grid-template-columns: 1fr ;
+    }
+}

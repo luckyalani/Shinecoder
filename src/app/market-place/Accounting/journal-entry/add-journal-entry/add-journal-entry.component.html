@@ -1,0 +1,104 @@
+<div class="main-container boxed space manuf-tab">
+    <div class="d-flex gap-1 align-items-center m-b-10">
+        <div>
+            <h1 class="text-dark text-primary m-0">Journal Entry</h1>
+        </div>
+        <div class="line-div">
+            <mat-icon class="arrow-icon">square</mat-icon>
+            <p class="line "></p>
+        </div>
+    </div>
+    <div class="form">
+       <div class="fw-medium fs-16">Journal Entry</div>
+        <mat-divider></mat-divider>
+        <div class="d-flex gap-1 m-t-10">
+            <div class="w-full">
+                <mat-label class="form-input-label"><span class="text-danger">*</span> Journal date</mat-label>
+                <div class="calendar-input-field date-picker m-t-10">
+                    <mat-form-field appearance="outline" class="form-field date w-full">
+                        <mat-datepicker-toggle matIconSuffix [for]="picker1" class="">
+                            <svg matDatepickerToggleIcon xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em"
+                                viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M2 19c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-8H2zM19 4h-2V3c0-.6-.4-1-1-1s-1 .4-1 1v1H9V3c0-.6-.4-1-1-1s-1 .4-1 1v1H5C3.3 4 2 5.3 2 7v2h20V7c0-1.7-1.3-3-3-3" />
+                            </svg>
+                        </mat-datepicker-toggle>
+                        <div class="date-border"></div>
+                        <input matInput [matDatepicker]="picker1" class="input">
+                        <mat-datepicker #picker1></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="w-full">
+                <mat-label class="form-input-label"><span class="text-danger">*</span> Number
+                </mat-label>
+                <div class="m-t-10">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input" placeholder="2">
+                    </mat-form-field>
+                </div>
+            </div>
+
+        </div>
+        <div class="table-div">
+            <table>
+                <thead>
+                    <tr>
+                        <th>SNo.</th>
+                        <th>Account</th>
+                        <th>Debit</th>
+                        <th>Credit</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="d-flex jc-e m-t-10">
+            <div>
+                <div class="outer d-flex gap-2 jc-e align-items-center fw-medium fs-16">
+                    <div class="mid text-right">Debit</div>
+                    <div class="right text-right">Credit</div>
+                </div>
+                <div class="outer d-flex gap-2 jc-e align-items-center fw-noraml fs-16">
+                    <div>Total</div>
+                    <div class="mid text-right">R0.00</div>
+                    <div class="right text-right">R0.00</div>
+                </div>
+            </div>
+        </div>
+      
+
+        <div class="ckeditorpart">
+            <div class="labeldiv m-b-10">
+                <mat-label class="form-input-label">Description
+                </mat-label>
+            </div>
+            <ckeditor [editor]="Editor" >
+            </ckeditor>
+        </div>
+    </div>
+
+    <mat-divider></mat-divider>
+    <div>
+        <button  mat-raised-button color="primary">Import</button>
+    </div>
+</div>

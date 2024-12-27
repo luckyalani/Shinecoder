@@ -1,0 +1,10 @@
+.question-icon{
+    margin-bottom: -4px;
+    }
+    
+    .text-area, .mat-mdc-form-field-textarea-control {
+        height: 8rem !important;
+        overflow: hidden !important;
+        resize: none !important;
+        width: 100%;
+    }

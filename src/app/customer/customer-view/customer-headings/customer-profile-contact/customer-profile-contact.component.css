@@ -1,0 +1,69 @@
+
+
+.edit-del-pic{
+    width: 4rem;
+    height: 2rem;
+    cursor: pointer;
+}
+.edit-del-pic{
+    width: 4rem;
+    height: 2rem;
+    cursor: pointer;
+}
+.search-bar {
+    position: relative;
+}
+.search-div {
+    gap: 5px;
+
+}
+.icon-delete {
+    margin-left: 5px;
+    cursor: pointer;
+}
+.icon-search {
+    position: absolute;
+    top: 6px;
+    left: 1px;
+}
+.icon-bar{
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+@media (max-width: 767px){
+    .heading-column{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .heading-top{
+        /* width: 100% ; */
+        text-align: left ;
+    }
+    
+    .icon-bar{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+
+    .search-bar {
+        display: flex;
+    }
+
+    .search-div {
+        flex-direction: column;
+    }
+
+    .right-icon {
+        flex-direction: column;
+        width: 100%;
+    }
+    .action-btn-gap {
+        justify-content: center !important;
+        /* width: none !important; */
+    }
+}

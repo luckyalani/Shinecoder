@@ -1,0 +1,180 @@
+<div class="main-container boxed space">
+    <div class="left-icon d-flex jc-sb">
+        <div>
+            <h1 class="text-dark">Payment for Invoice<span class="text-primary m-l-5">INV-000011</span></h1>
+        </div>
+        <div class="d-flex gap-1 align-items-center">
+            <span class="action-btn primary rounded d-flex align-items-center email p-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em" viewBox="0 0 512 512">
+                    <path fill="#0163d2"
+                        d="M64 464h48v48H64c-35.3 0-64-28.7-64-64V64C0 28.7 28.7 0 64 0h165.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V304h-48V160h-80c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16v384c0 8.8 7.2 16 16 16m112-112h32c30.9 0 56 25.1 56 56s-25.1 56-56 56h-16v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V368c0-8.8 7.2-16 16-16m32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-16v48zm96-80h32c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48h-32c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16m32 128c8.8 0 16-7.2 16-16v-64c0-8.8-7.2-16-16-16h-16v96zm80-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v48c0 8.8-7.2 16-16 16s-16-7.2-16-16v-64z" />
+                </svg>
+                <svg class="" xmlns="http://www.w3.org/2000/svg" width="0.4em" height="0.4em" viewBox="0 0 24 24">
+                    <path fill="#0163d2"
+                        d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569z" />
+                </svg>
+            </span>
+            <span class=" action-btn primary rounded p-10 p-r-5 p-l-5 ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="0.8em" height="0.8em" viewBox="0 0 24 24">
+                    <g fill="none" stroke="#0163d2" stroke-linecap="round" stroke-width="2">
+                        <rect width="18" height="14" x="3" y="5" stroke-dasharray="64" stroke-dashoffset="64" rx="1">
+                            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0" />
+                        </rect>
+                        <path stroke-dasharray="24" stroke-dashoffset="24" d="M3 6.5L12 12L21 6.5">
+                            <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.4s"
+                                values="24;0" />
+                        </path>
+                    </g>
+                </svg>
+            </span>
+            <svg class="action-btn danger" xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                viewBox="0 0 24 24">
+                <path fill="white"
+                    d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z" />
+            </svg>
+        </div>
+    </div>
+    <div class="form">
+        <div class="form-row">
+            <!-- left Div -->
+            <div class="in-form-row">
+                <div>
+                    <mat-label class=" form-input-label"><span class="text-danger">*</span>Amount Received
+                    </mat-label>
+                    <div class="">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="6547.00">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label">Payment Mode</mat-label>
+                    <div class="mt2">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <mat-select class="select_in" placeholder="Bank">
+                                <mat-option value="Bank">Bank</mat-option>
+                                <mat-option value="Bank">Bank</mat-option>
+                                <mat-option value="Bank">Bank</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Div -->
+            <div class="in-form-row">
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span>Payment Date </mat-label>
+                    <div class="">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <div class=" date m-r-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 24 24"
+                                    class="m-t-5">
+                                    <path fill="currentColor"
+                                        d="M2 19c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-8H2zM19 4h-2V3c0-.6-.4-1-1-1s-1 .4-1 1v1H9V3c0-.6-.4-1-1-1s-1 .4-1 1v1H5C3.3 4 2 5.3 2 7v2h20V7c0-1.7-1.3-3-3-3" />
+                                </svg>
+                            </div>
+                            <input matInput class="input" class="date-input" placeholder="2024-02-01">
+                            <!-- <input matInput [matDatepicker]="picker"> -->
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label">
+                        <span class="d-flex align-items-center">
+                            <svg matTooltip="Subject is also visible to customer" matTooltipPosition="above"
+                                xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 1024 1024">
+                                <path fill="black"
+                                    d="M512 64a448 448 0 1 1 0 896a448 448 0 0 1 0-896m23.744 191.488c-52.096 0-92.928 14.784-123.2 44.352c-30.976 29.568-45.76 70.4-45.76 122.496h80.256c0-29.568 5.632-52.8 17.6-68.992c13.376-19.712 35.2-28.864 66.176-28.864c23.936 0 42.944 6.336 56.32 19.712c12.672 13.376 19.712 31.68 19.712 54.912c0 17.6-6.336 34.496-19.008 49.984l-8.448 9.856c-45.76 40.832-73.216 70.4-82.368 89.408c-9.856 19.008-14.08 42.24-14.08 68.992v9.856h80.96v-9.856c0-16.896 3.52-31.68 10.56-45.76c6.336-12.672 15.488-24.64 28.16-35.2c33.792-29.568 54.208-48.576 60.544-55.616c16.896-22.528 26.048-51.392 26.048-86.592c0-42.944-14.08-76.736-42.24-101.376c-28.16-25.344-65.472-37.312-111.232-37.312m-12.672 406.208a54.272 54.272 0 0 0-38.72 14.784a49.408 49.408 0 0 0-15.488 38.016c0 15.488 4.928 28.16 15.488 38.016A54.848 54.848 0 0 0 523.072 768c15.488 0 28.16-4.928 38.72-14.784a51.52 51.52 0 0 0 16.192-38.72a51.968 51.968 0 0 0-15.488-38.016a55.936 55.936 0 0 0-39.424-14.784" />
+                            </svg>Payment Method</span> </mat-label>
+                    <div class="">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <mat-label class=" form-input-label">Transaction ID
+            </mat-label>
+            <div class="">
+                <mat-form-field appearance="outline" class="form-field">
+                    <input matInput class="input" placeholder="">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="">
+            <mat-label class="form-input-label">Note</mat-label>
+            <div>
+                <textarea name="" id="" cols="30" rows="10" class="mat-input text-area"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <!-- Secound Part -->
+    <div>
+        <div>
+            <h1 class="fw-medium fs-24">Payment</h1>
+        </div>
+        <div class="form">
+            <div class="d-flex jc-sb p-10">
+                <div>
+                    <p class="fw-medium fs-16 m-0">Perfex INC</p>
+                    <p class="fw-4 m-0">172 Ivy Club Gottliebfurt <br> New Heaven <br> Canada [CA] 2364</p>
+                </div>
+                <div class="text-right right-area">
+                    <p class="fw-medium m-0">Boyer-Williamson</p>
+                    <p class="fw-normal m-0">9902 Donato Knoll Suite 813</p>
+                    <p class="fw-normal m-0">New Lydia Delaware</p>
+                    <p class="fw-normal m-0">PA 76978-5276</p>
+                </div>
+            </div>
+            <div class="d-flex jc-c">
+                <div class="w-payment">
+                    <h2 class="text-primary fw-medium fs-20 text-center">PAYMENT RECEIPT</h2>
+                    <div class="d-flex jc-sb text-secondary">
+                        <p class="m-0">Payment Date :</p>
+                        <p class="m-0">2024-02-08</p>
+                    </div>
+                    <mat-divider></mat-divider>
+                    <div class="d-flex jc-sb text-secondary">
+                        <p class="m-0">Payment Mode :</p>
+                        <p class="m-0">Bank</p>
+                    </div>
+                    <div class="bg-info text-center rounded m-t-5 bg-green m-t-10">
+                        <p class=" m-0">Total Amount</p>
+                        <p class="m-0">$6953.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <h5 class="fw-medium">Payment For</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Invoice Number</th>
+                        <th>Invoice Date</th>
+                        <th>Invoice Amount</th>
+                        <th>Payment Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>INV-000011</td>
+                        <td>2024-02-08</td>
+                        <td>$6520.00</td>
+                        <td>$6920.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <hr class="m-t-20">
+    <div class="d-flex m-t-5 gap-1">
+        <button mat-raised-button color="warn">Cancel</button>
+        <button mat-raised-button class="bg-success">Save</button>
+    </div>
+</div>

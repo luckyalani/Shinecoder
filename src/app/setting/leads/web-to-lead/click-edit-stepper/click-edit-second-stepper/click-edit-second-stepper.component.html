@@ -1,0 +1,50 @@
+<div class="">
+
+
+    <div class="main-container boxed space manuf-tab">
+        
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="tab-group div-2">
+            <!-- General  -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+                    <span class="m-l-5">Header </span>
+                </ng-template>
+                <app-second-stepper-fileupload></app-second-stepper-fileupload>
+            </mat-tab>
+
+            <!-- Branding  -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+
+                    <span class="m-l-5"> Paragraph</span>
+                </ng-template>
+                <app-second-stepper-fileupload></app-second-stepper-fileupload>
+            </mat-tab>
+
+            <!-- Submission -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+
+                    <span class="m-l-5">  File Upload</span>
+                </ng-template>
+                <app-second-stepper-fileupload></app-second-stepper-fileupload>
+            </mat-tab>
+         
+
+
+
+        </mat-tab-group>
+    </div>
+
+
+    <hr>
+    <div class="d-flex gap-2 p-10">
+        <button mat-dialog-close="true"
+            class="bg-success"
+            mat-raised-button> Save</button>
+     
+        
+    </div>
+
+    
+</div>

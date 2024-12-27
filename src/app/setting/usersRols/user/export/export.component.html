@@ -1,0 +1,78 @@
+<div class="rounded">
+    <div class="d-flex jc-sb p-10 align-items-center">
+        <div class="d-flex align-items-center">
+            <span class="fw-medium fs-16">Export</span>
+        </div>
+        <svg class="close-btn" mat-dialog-close="true" xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em"
+            viewBox="0 0 32 32">
+            <path fill="#f70202"
+                d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2m5.4 21L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z" />
+        </svg>
+    </div>
+
+    <div class="d-flex align-items-center bg-light p-10 m-10 rounded fw-medium fs-14 text-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 36 36">
+            <path fill="currentColor"
+                d="M18 6a12 12 0 1 0 12 12A12 12 0 0 0 18 6m-2 5.15a2 2 0 1 1 2 2a2 2 0 0 1-2.1-2ZM23 24a1 1 0 0 1-1 1h-7a1 1 0 1 1 0-2h2v-6h-1a1 1 0 0 1 0-2h4v8h2a1 1 0 0 1 1 1"
+                class="clr-i-solid clr-i-solid-path-1" />
+            <path fill="none" d="M0 0h36v36H0z" />
+        </svg>
+        You can export your data from Zoho Books in CSV or XLS format.
+    </div>
+    <div class="p-10">
+        <div class="m-t-10">
+            <mat-label class="form-input-label"><span class="text-danger">*</span> Select Module</mat-label>
+            <mat-form-field appearance="outline" class="m-t-10">
+                <mat-select placeholder="User">
+                    <mat-option value="User">User</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="m-t-10">
+            <mat-label class="form-input-label d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg"
+                    matTooltip="If you add contract to trash, won't be shown on client side, won't be included in chart and other stats and also by default won't be shown when you will list all contracts."
+                    matTooltipPosition="above" width="1.6em" height="1.6em" viewBox="0 0 36 36">
+                    <path fill="currentColor"
+                        d="M18 6a12 12 0 1 0 12 12A12 12 0 0 0 18 6m-2 5.15a2 2 0 1 1 2 2a2 2 0 0 1-2.1-2ZM23 24a1 1 0 0 1-1 1h-7a1 1 0 1 1 0-2h2v-6h-1a1 1 0 0 1 0-2h4v8h2a1 1 0 0 1 1 1"
+                        class="clr-i-solid clr-i-solid-path-1" />
+                    <path fill="none" d="M0 0h36v36H0z" />
+                </svg>Fields in Export File</mat-label>
+            <mat-form-field appearance="outline" class="m-t-10">
+                <mat-select placeholder="Select an Export template">
+                    <mat-option value="Select an Export template">Select an Export template</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="p-10">
+        <div class="">
+            <mat-label class="form-input-label"><span class="text-danger">*</span> Select Module</mat-label>
+            <div class="m-t-10">
+                <mat-radio-button value="one" checked>CSV (Comma Separated Value)</mat-radio-button> <br>
+                <mat-radio-button value="two">XLS (Microsoft Excel 1997-2004 Compatible)</mat-radio-button> <br>
+                <mat-radio-button value="three">XLSX (Microsoft Excel)</mat-radio-button>
+            </div>
+            <mat-checkbox class="example-margin " color="primary">Include Sensitive Personally Identifiable Information
+                (PII) while exporting.</mat-checkbox>
+            <div class="m-t-10">
+                <mat-label class="form-input-label">Password to protect the file
+                </mat-label>
+                <div class="m-t-10">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="fw-medium fs-14 m-t-10">
+                Note: <span class="text-secondary">You can export only the first 25,000 rows. If you have more rows, please initiate a backup for the data in your Zoho Books organization, and download it. Backup Your Data</span>
+            </div>
+        </div>
+    </div>
+
+    <mat-divider></mat-divider>
+    <div class="d-flex gap-1 p-10">
+        <button mat-dialog-close="true" mat-raised-button class="bg-close">Close</button>
+        <button mat-dialog-close="true" mat-raised-button color="primary">Export</button>
+    </div>
+</div>

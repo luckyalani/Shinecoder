@@ -1,0 +1,110 @@
+.market-card {
+    background: #f7f7f7;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0.3rem;
+}
+.img-p{
+    justify-content: space-around;
+    align-items: center;
+}
+.img-p-2{
+    justify-content: space-around;
+    align-items: center;
+    /* height: 75%; */
+
+}
+.heading {
+    background: #efefef;
+    padding: 1rem 0rem;
+    font-size: 22px;
+    margin: 2rem 0rem;
+}
+.heading-para-div{
+    text-align: center;
+}
+.heading-para {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+.heading-para-2{
+    font-size: 15px;
+    font-weight: 500;
+}
+span{
+    border-bottom: 1px solid #f75588;
+}
+.info-para{
+    font-size: 11px;
+    font-weight: 500;
+}
+.btn-width{
+    width: 100%;
+}
+
+
+.mat-mdc-card-sm-image {
+    width: 75px !important;
+    height: 75px !important;
+}
+.col-4 {
+    flex: 0 0 33.3333333333%;
+    max-width: 24% !important;
+}
+
+@media (max-width: 767px){
+    .info-para {
+        /* font-size: 11px; */
+        /* font-weight: 500; */
+        display: none;
+    }
+    .img-p{
+        flex-direction: column;
+    }
+    .heading-para{
+        font-size: 10px;
+    }
+    .mat-mdc-card-sm-image {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    .col-4 {
+        max-width: 22% !important;
+    }
+    .buttons{
+        display: none;
+    }
+    .img-p-2[_ngcontent-ng-c310803396] {
+        height: none;
+        flex-direction: column;
+    }
+    .heading-para-2[_ngcontent-ng-c310803396] {
+        font-size: 10px;
+    }
+}
+.btn-read{
+    background-color: #F75588;
+    color: white;
+    padding: 0 1rem;
+}
+.btn-read-2{
+    background-color: #FFC700;
+    color: white;
+    padding: 0 1rem;
+}
+.btn-read-3{
+    background-color: #AF1EA0;
+    color: white;
+    padding: 0 1rem;
+}
+.btn-read-4{
+    background-color: #00C2FF;
+    color: white;
+    padding: 0 1rem;
+}
+.btn-read-5{
+    background-color: #FF5C00;
+    color: white;
+    padding: 0 1rem;
+}

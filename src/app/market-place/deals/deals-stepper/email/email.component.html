@@ -1,0 +1,145 @@
+<!-- <div class="form"> -->
+
+
+
+<!-- Stepper -->
+<div class="main-container boxed space">
+    <div>
+    </div>
+    <div class="subject-tab box-shadow">
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="tab-group div-2 box-shadow">
+            <!-- --------------------------Dashboard Div Start------------------------ -->
+            <mat-tab label="All Email" class=" ">
+                <div class="table-div shadow my-1r mt-2r">
+                    <table class="table-full">
+                        <tr>
+                            <th>SNo.</th>
+                            <th>Mail To.</th>
+                            <th>subject</th>
+                            <th>Mail From</th>
+                            <th>Message Time</th>
+                            <th>Action</th>
+                           
+                           
+                            
+                        </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                       
+                      </tr>
+                    </table>
+                    
+                </div>
+            </mat-tab>
+            <!-- --------------------------Dashboard Tab End------------------------ -->
+
+            <!-- --------------------------Meetings Settings Tab Start------------------------ -->
+            <mat-tab label="New Meeting">
+                
+                        <div class="mx-10">
+                            <!-- <mat-label class="form-input-label">
+                                Location</mat-label> -->
+                            <div class="">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="You Can Sent Multiple Email Semicolon(;) Separated">
+        
+                                </mat-form-field>
+                                <!-- <span class="text-xxs text-grey mt-0">Enter decimal value Ex. 300.00</span> -->
+                            </div>
+                        </div>
+                        
+                   <div class="form-row px-10 py-5">
+
+                   
+
+                            <!-- Left Side -->
+                            <div class="in-form-row">
+
+                                <div>
+                                    <!-- <mat-label class="form-input-label">
+                                        Metting Subject</mat-label> -->
+                                    <div class="">
+                                        <mat-form-field appearance="outline" class="form-field">
+                                            <input matInput class="input" placeholder="Add CC">
+                
+                                        </mat-form-field>
+                                        <!-- <span class="text-xxs text-grey mt-0">Enter decimal value Ex. 300.00</span> -->
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!-- ---------------------Right Side----------------------------- -->
+                            <div class="in-form-row">
+                                                              
+                                <div>
+                                    <!-- <mat-label class="form-input-label">
+                                        Location</mat-label> -->
+                                    <div class="">
+                                        <mat-form-field appearance="outline" class="form-field">
+                                            <input matInput class="input" placeholder="Subject:">
+                
+                                        </mat-form-field>
+                                        <!-- <span class="text-xxs text-grey mt-0">Enter decimal value Ex. 300.00</span> -->
+                                    </div>
+                                </div>
+                              
+                              
+
+
+                            </div>
+
+                            
+                               
+                
+                        </div>
+
+                           <!-- CK EDITOR Start -->
+
+                    <div class="ckeditorpart px-10 py-5">
+                        <div class="labeldiv">
+                        </div>
+                        <ckeditor [editor]="Editor" data="  ">
+                        </ckeditor>
+                    </div>
+                    <!-- CK EDITOR Ends -->
+
+                    <!-- Image Picker -->
+                
+                    <div class="choosing my-auto mx-10">
+                        <p class="f-w-5 text-no-wrap"> Attach image  </p>
+                    
+                        <!-- <label for="imgInput"> <img src="assets/images/Group.png" alt=""></label> -->
+                        <label for="imgInput"><img src="assets/images/Group.png" alt=""></label>
+                        <input type="file" hidden id="imgInput">
+                    </div>
+
+                                        <!-- Image Picker -->
+
+
+                    <mat-divider></mat-divider>
+
+                    <button mat-raised-button color="primary">Updates</button>
+
+                  
+            </mat-tab>
+            <!-- --------------------------Meetings Settings Tab End------------------------ -->
+
+
+        </mat-tab-group>
+    </div>
+</div>
+
+
+
+    
+
+    
+  
+
+
+<!-- </div> -->

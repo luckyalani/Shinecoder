@@ -1,0 +1,89 @@
+<div>
+    <div class="">
+        <p class="m-0 fs-16 fw-medium m-l-5">Automatic mapping</p>
+    </div>
+    <div class="form">
+        <div class="d-flex align-items-center gap-2 ">
+            <p class="m-0 fs-16 fw-medium left">Total insurance</p>
+            <mat-slide-toggle (click)="total=!total"></mat-slide-toggle>
+        </div>
+        <div [ngClass]="total?'':'hidden'">
+            <div class="d-flex gap-1 flex-wrap">
+                <div class="w-full">
+                    <mat-label class="form-input-label"> Payment Account</mat-label>
+                    <mat-form-field appearance="outline" class="m-t-10">
+                        <mat-select placeholder="Sales Income">
+                            <mat-option value="Sales Income">Sales Income</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="w-full">
+                    <mat-label class="form-input-label"> Deposit to</mat-label>
+                    <mat-form-field appearance="outline" class="m-t-10">
+                        <mat-select placeholder="Any">
+                            <mat-option value="Any">Any</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <div class="d-flex align-items-center gap-2 ">
+            <p class="m-0 fs-16 fw-medium left">Income tax paye</p>
+            <mat-slide-toggle (click)="income=!income"></mat-slide-toggle>
+        </div>
+        <div [ngClass]="income?'':'hidden'">
+            <div class="d-flex gap-1 flex-wrap">
+                <div class="w-full">
+                    <mat-label class="form-input-label"> Payment Account</mat-label>
+                    <mat-form-field appearance="outline" class="m-t-10">
+                        <mat-select placeholder="Sales Income">
+                            <mat-option value="Sales Income">Sales Income</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="w-full">
+                    <mat-label class="form-input-label"> Deposit to</mat-label>
+                    <mat-form-field appearance="outline" class="m-t-10">
+                        <mat-select placeholder="Any">
+                            <mat-option value="Any">Any</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <div class="d-flex align-items-center gap-2 ">
+            <p class="m-0 fs-16 fw-medium left">Net pay</p>
+            <mat-slide-toggle (click)="net=!net"></mat-slide-toggle>
+        </div>
+        <div [ngClass]="net?'':'hidden'">
+            <div class="d-flex gap-1 flex-wrap">
+                <div class="w-full">
+                    <mat-label class="form-input-label"> Payment Account</mat-label>
+                    <mat-form-field appearance="outline" class="m-t-10">
+                        <mat-select placeholder="Sales Income">
+                            <mat-option value="Sales Income">Sales Income</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="w-full">
+                    <mat-label class="form-input-label"> Deposit to</mat-label>
+                    <mat-form-field appearance="outline" class="m-t-10">
+                        <mat-select placeholder="Any">
+                            <mat-option value="Any">Any</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <mat-divider></mat-divider>
+    <div class="p-5">
+        <button mat-raised-button class="bg-success">Save</button>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+
+/* .heading-column{
+    margin-bottom: 0.5rem;
+} */
+
+.icon-delete{
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* table header contains search bar and icons */
+.search-bar{
+    position: relative;
+}
+.search-div {
+    gap: 5px;
+
+}
+
+.icon-search{
+    position: absolute;
+    top: 6px;
+    left: 1px;
+}
+.edit-del-pic {
+    width: 3.5rem;
+    height: 1.7rem;
+    cursor: pointer;
+}
+
+
+@media (max-width: 767px){
+    .heading-column{
+        flex-direction: column;
+    }
+    .search-bar{
+        margin: 0.5rem 0;
+    }
+    .icon-smallscreen{
+        gap: 0.7rem;
+    }
+    .right-icon {
+        flex-direction: column;
+        width: 100%;
+    }
+    .icon-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .action-btn-gap {
+        justify-content: center !important;
+        /* width: none !important; */
+    }
+}

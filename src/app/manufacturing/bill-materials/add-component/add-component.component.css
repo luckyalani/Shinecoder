@@ -1,0 +1,27 @@
+/* input-border */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+::ng-deep .manuf-tab .mat-mdc-tab-body-wrapper {
+    box-shadow: unset !important;
+}
+
+@media screen and (max-width:767px) {
+    .d-flex {
+        flex-wrap: wrap;
+    }
+}

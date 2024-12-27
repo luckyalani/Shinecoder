@@ -1,0 +1,63 @@
+<div class="header d-flex ">
+    <p class="heading">New Task Bookmark</p>
+    <mat-icon mat-dialog-close="true">cancel</mat-icon>
+</div>
+
+<div class="main-container boxed space">
+
+
+
+    <div class="">
+
+
+        <div class="form-row">
+            <!-- Left Side -->
+            <div class="in-form-row">
+                <div>
+                    <mat-label class="form-input-label"><span class="text-danger">*</span>Task Bookmark Name
+                    </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="Name">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <mat-label class="form-input-label"> Color </mat-label>
+                    <div class="calendar-input-field date-picker">
+                        <mat-form-field appearance="outline" class="form-field date">
+
+
+                            <input type="color" class="input" [(ngModel)]="linkColor" [value]="linkColor" />
+                            <div class="date-border"></div>
+                            <input matInput type="text" #picker1 for="picker1" [(ngModel)]="linkColor"
+                                [value]="linkColor" class="input">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <div>
+                    <mat-label class="form-input-label"> Icon </mat-label>
+                    <div class="calendar-input-field">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <div class="d-flex">
+            <button mat-raised-button mat-dialog-close="" class="bg-close">Close</button>
+            <button mat-raised-button mat-dialog-close="" class="bg-success">Save</button>
+        </div>
+
+    </div>
+
+
+
+
+</div>

@@ -1,0 +1,12 @@
+.menu-icon{
+    line-height: 0;
+}
+.no-data-p {
+    margin: 1rem;
+    text-align: center;
+    font-size: 16px;
+    color: gray;
+}
+.cursor{
+    cursor: pointer;
+}

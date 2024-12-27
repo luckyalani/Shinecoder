@@ -1,0 +1,201 @@
+<div class="">
+    <div class="header">
+        <p>Edit Contacts</p>
+        <mat-icon mat-dialog-close="true">cancel</mat-icon>
+    </div>
+    <div class="img-name">
+        <img src="assets/images/profile_pic.png" alt="" class="profile-img">
+        <div class="names">
+            <p class="customer-name1">Evan Reinger</p>
+            <p class="customer-name2">Feil-Greenfelder</p>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="main-div">
+    <div class="profile-sec">
+        <div class="special-input">
+            <label><span>*</span>First Name</label>
+            <input type="text" class="mat-input">
+
+            <label><span>*</span>Last Name</label>
+            <input type="text" class="mat-input">
+
+            <label>Position</label>
+            <input type="text" class="mat-input">
+        </div>
+
+        <div class="choosing">
+            <p class="profile-tag">Profile image</p>
+            <img class="group-img" src="assets/images/Group.png" alt="">
+        </div>
+    </div>
+    <label><span>*</span>Email</label>
+    <input type="text" class="mat-input">
+
+    <label>Phone</label>
+    <input type="text" class="mat-input" placeholder="+44">
+
+    <label>Direction</label>
+    <select name="" id="" class="mat-input">
+        <option value="">RTL</option>
+    </select>
+
+    <label>Password</label>
+    <div class="selected-form-field">
+        <mat-icon class="icon-add">visibility</mat-icon>
+       <input type="text" class="mat-input">
+    </div>
+    <p class="note">Note: if you populate this field, password will be changed on this contact.</p>
+
+    <mat-divider class="divider-bottom"></mat-divider>
+
+    <mat-checkbox class="example-margin" color="primary">Primary Contact </mat-checkbox>
+    <mat-checkbox class="example-margin" color="primary">Send SET password email</mat-checkbox>
+
+    <mat-divider class="divider-bottom"></mat-divider>
+
+    <div class="row">
+        <div class="col-6 border">
+            <p class="profile-tag">Permissions</p>
+            <p class="profile-tag"><span>Make sure to set appropriate permissions for this contact</span></p>
+            <div class="row permissions">
+                <div class="col-2"><p class="toggle-list">Invoices</p></div>
+                <div class="line-toggle col-10">
+                    <img src="assets/images/line.png" alt="" class="line">
+                    <mat-slide-toggle color="primary"></mat-slide-toggle>
+
+                </div>
+
+            </div>
+
+            <div class="row permissions">
+                <div class="col-2"><p class="toggle-list">Estimates</p></div>
+                <div class="line-toggle col-10">
+                    <img src="assets/images/line.png" alt="" class="line">
+                    <mat-slide-toggle [color]="color"></mat-slide-toggle>
+
+                </div>
+
+            </div>
+
+            <div class="row permissions">
+                <div class="col-2"><p class="toggle-list">Contracts</p></div>
+                <div class="line-toggle col-10">
+                    <img src="assets/images/line.png" alt="" class="line">
+                    <mat-slide-toggle color="primary"></mat-slide-toggle>
+
+                </div>
+
+            </div>
+
+            <div class="row permissions">
+                <div class="col-2"><p class="toggle-list">Proposals</p></div>
+                <div class="line-toggle col-10">
+                    <img src="assets/images/line.png" alt="" class="line">
+                    <mat-slide-toggle color="primary"></mat-slide-toggle>
+
+                </div>
+
+            </div>
+
+            <div class="row permissions">
+                <div class="col-2"><p class="toggle-list">Support</p></div>
+                <div class="line-toggle col-10">
+                    <img src="assets/images/line.png" alt="" class="line">
+                    <mat-slide-toggle color="primary"></mat-slide-toggle>
+
+                </div>
+
+            </div>
+            <div class="row permissions">
+                <div class="col-2"><p class="toggle-list">projects</p></div>
+                <div class="line-toggle col-10">
+                    <img src="assets/images/line.png" alt="" class="line">
+                    <mat-slide-toggle color="primary"></mat-slide-toggle>
+
+                </div>
+
+            </div>
+        </div>
+
+        
+
+        <div class="col-6">
+            <p class="profile-tag">Permissions</p>
+            <div class="row permissions">
+                <div class="col-2"><p class="toggle-list">Invoices</p></div>
+                <div class="line-toggle col-10">
+                    <img src="assets/images/line.png" alt="" class="line">
+                    <mat-slide-toggle color="primary"></mat-slide-toggle>
+
+                </div>
+
+            </div>
+
+            <div class="row permissions">
+                <div class="col-2"><p class="toggle-list">Credit Note</p></div>
+                <div class="line-toggle col-10">
+                    <img src="assets/images/line.png" alt="" class="line">
+                    <mat-slide-toggle color="primary"></mat-slide-toggle>
+
+                </div>
+
+            </div>
+
+            <div class="row permissions">
+                <div class="col-2"><p class="toggle-list">Tickets</p></div>
+                <div class="line-toggle col-10">
+                    <img src="assets/images/line.png" alt="" class="line">
+                    <mat-slide-toggle color="primary"></mat-slide-toggle>
+
+                </div>
+
+            </div>
+
+            <div class="row permissions">
+                <div class="col-2"><p class="toggle-list">Task</p></div>
+                <div class="line-toggle col-10">
+                    <img src="assets/images/line.png" alt="" class="line">
+                    <mat-slide-toggle color="primary"></mat-slide-toggle>
+
+                </div>
+
+            </div>
+
+            <div class="row permissions">
+                <div class="col-2"><p class="toggle-list">Estimate</p></div>
+                <div class="line-toggle col-10">
+                    <img src="assets/images/line.png" alt="" class="line">
+                    <mat-slide-toggle color="primary"></mat-slide-toggle>
+
+                </div>
+
+            </div>
+
+            <div class="row permissions">
+                <div class="col-2"><p class="toggle-list">Projects</p></div>
+                <div class="line-toggle col-10">
+                    <img src="assets/images/line.png" alt="" class="line">
+                    <mat-slide-toggle color="primary"></mat-slide-toggle>
+
+                </div>
+
+            </div>
+            <div class="row permissions">
+                <div class="col-2"><p class="toggle-list">Contract</p></div>
+                <div class="line-toggle col-10">
+                    <img src="assets/images/line.png" alt="" class="line">
+                    <mat-slide-toggle color="primary"></mat-slide-toggle>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <mat-divider class="divider-bottom"></mat-divider>
+
+    <div><button mat-raised-button class="m-r-10" color="warn">Cancel</button>
+        <button mat-raised-button class="bg-success">Save</button>
+</div>
+

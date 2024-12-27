@@ -1,0 +1,54 @@
+<div class="main-container boxed space">
+    <div class="d-flex jc-sb align-items-center heading-column">
+        <div>
+            <h1 class="text-dark">Edit Custom Field</h1>
+        </div>
+        <div><button routerLink="/customer/" mat-raised-button color="primary"><mat-icon>add</mat-icon>New Customer Field</button></div>
+    </div>
+    <div class="form">
+        <div class="notice">
+            <p class="notice-para">Custom fields for Customers can be easily embedded into PDF and HTML documents by
+                adding the merge fields into the page format at the following page:
+                https://perfexcrm.com/demo/admin/settings?group=clients</p>
+        </div>
+
+        <label><span color="danger">*</span>Field Belongs to</label>
+        <select name="" id="" class="mat-input">
+            <option value="">Customer</option>
+        </select>
+
+        <label><span color="danger">*</span>Field Name</label>
+        <input type="text" class="mat-input" placeholder="IP-address">
+
+        <label><span color="danger">*</span>Type</label>
+        <select name="" id="" class="mat-input">
+            <option value="">Input</option>
+        </select>
+
+        <label>Default Value</label>
+        <input type="text" class="mat-input">
+
+        <label>Order</label>
+        <input type="text" class="mat-input" placeholder="0">
+
+        <label>* Grid (Bootstrap Column eq. 12) - Max is 12</label>
+        <input type="text" class="mat-input" placeholder="col-md-     12">
+
+        <div class="check-boxes">
+            <mat-checkbox class="example-margin" color="primary">Disabled</mat-checkbox>
+            <mat-checkbox class="example-margin" color="primary">Restrict visibility for administrators only</mat-checkbox>
+            <mat-checkbox class="example-margin" color="primary">Disallow customer to edit this field</mat-checkbox>
+            <mat-checkbox class="example-margin" color="primary">Required</mat-checkbox>
+            <label>Visibility</label> 
+            <mat-checkbox class="example-margin" color="primary">Show on table</mat-checkbox>
+            <mat-checkbox class="example-margin" color="primary"><mat-icon class="icon-help">help</mat-icon> on client portal</mat-checkbox>
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <button mat-raised-button  color="warn">Cancel</button>
+        <button mat-raised-button class="bg-success">Save</button>
+        
+    </div>
+    
+</div>

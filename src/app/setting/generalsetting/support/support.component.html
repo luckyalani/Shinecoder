@@ -1,0 +1,51 @@
+<div class="main-container boxed space ">
+    <div class="d-flex jc-sb align-items-center heading-column ">
+        <div class="heading-top">
+            <h1 class="text-dark">Support</h1>
+        </div>
+        <div class="button-width"></div>
+    </div>
+    <app-general-setting-headings></app-general-setting-headings>
+
+    <div class=" ">
+
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="tab-group div-2">
+            <!-- General  -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+                    <span class="m-l-5">General</span>
+                </ng-template>
+                <app-support-general></app-support-general>
+            </mat-tab>
+
+            <!-- Branding  -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+
+                    <span class="m-l-5"> Email Piping </span>
+                </ng-template>
+                <app-support-email-piping></app-support-email-piping>
+            </mat-tab>
+
+            <!-- Submission -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+
+                    <span class="m-l-5">Ticket Form</span>
+                </ng-template>
+                <app-support-ticket-form></app-support-ticket-form>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+
+    <div class="d-flex gap-1 p-10">
+        <button mat-dialog-close="true"
+            class=" mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base "
+            mat-raised-button color="warn">Cancel</button>
+        <button mat-dialog-close="true"
+            class="bg-success"
+            mat-raised-button> Save</button>
+
+    </div>
+
+</div>

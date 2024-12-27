@@ -1,0 +1,36 @@
+.grey-text-14 {
+  color: grey;
+  /* margin: 0 0 10px 10px; */
+  font-size: 14px;
+  font-weight: 400;
+}
+textarea {
+  color: grey;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.link-text {
+  color: rgb(45, 139, 247);
+  /* margin: 0 0 10px 10px; */
+  font-size: 14px;
+  font-weight: 400;
+}
+label {
+  font-size: small;
+  color: black;
+  margin: 0rem;
+  font-weight: 500 !important;
+}
+.text-14 {
+  /* color: rgb(45, 139, 247); */
+  /* margin: 0 0 10px 10px; */
+  font-size: 14px;
+  font-weight: 400;
+}
+.green-text-14 {
+  color: rgb(35, 216, 50);
+  /* margin: 0 0 10px 10px; */
+  font-size: 14px;
+  font-weight: 400;
+}

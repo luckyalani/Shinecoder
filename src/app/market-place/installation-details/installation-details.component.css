@@ -1,0 +1,46 @@
+.blue-box{
+    height: 10rem;
+    background-color: #0163d2;
+}
+.dialog-box{
+    width: 60vw;
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0px 2px 0px 1px #efefef !important;
+    margin-top: -5rem;
+}
+.install-detail-div{
+    border-radius: 0.5rem;
+    width: 95%;
+    margin: 1.2rem auto;
+    box-shadow: 0px 0px 8px 4px #efefef !important;
+    padding: 1rem;
+}
+.line-div {
+    display: flex;
+    align-items: center;
+    gap: -1;
+    width: 80%;
+}
+.arrow-icon {
+    color: #0163D2;
+    font-size: 8px;
+    width: fit-content;
+    height: 100% !important;
+    transform: rotate(45deg);
+}
+.text-primary {
+    color: #0163D2;
+}
+.line {
+    width: 100%;
+    background-color: #0163D2;
+    height: 1px;
+}
+label {
+    margin: 0rem !important;
+    
+}
+.links{
+    color:#0163D2;
+}

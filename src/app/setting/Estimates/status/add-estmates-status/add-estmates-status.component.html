@@ -1,0 +1,44 @@
+<div class="rounded">
+    <div class="d-flex jc-sb p-10 bg-light align-items-center">
+        <div class="d-flex align-items-center">
+            <span class="fw-medium fs-16">New Status</span>
+        </div>
+        <svg class="close-btn" mat-dialog-close="true" xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em"
+            viewBox="0 0 32 32">
+            <path fill="#f70202"
+                d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2m5.4 21L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z" />
+        </svg>
+    </div>
+    <div class="p-10">
+        <div>
+            <mat-label class="form-input-label"><span class="text-danger">*</span> Status Name</mat-label>
+            <div class="m-t-10">
+                <mat-form-field appearance="outline" class="form-field">
+                    <input matInput class="input">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="m-t-10">
+            <mat-label class="form-input-label">Color</mat-label>
+            <div class="m-t-10 ">
+                <div class="color-picker d-flex">
+                    <input type="color" matInput class="input">
+                    <input matInput class="input" placeholder="#000000">
+                </div>
+            </div>
+        </div>
+        <div class="m-t-10">
+            <mat-label class="form-input-label">Order</mat-label>
+            <div class="m-t-10">
+                <mat-form-field appearance="outline" class="form-field">
+                    <input matInput class="input" placeholder="4">
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="d-flex gap-1 p-10">
+        <button mat-dialog-close="true" mat-raised-button class="bg-close">Close</button>
+        <button mat-dialog-close="true" mat-raised-button class="bg-success">Save</button>
+    </div>
+</div>

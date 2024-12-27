@@ -1,0 +1,82 @@
+.dual-field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+    margin: 0.8rem 0.6rem;
+
+}
+
+.dual-input{
+    height: 2.2rem;
+    border: 0.5px solid lightgray;
+    border-radius: 0.3rem;
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+}
+.dual-form{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+  
+}
+.icon-help{
+    font-size: 1rem !important;
+    height: 0.9rem !important;
+    width: 1.2rem !important;
+}
+
+.dual-down-arrow {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.4rem;
+}
+.selected-form-field{
+    display: flex;
+    position: relative;
+    align-items: center;
+
+}
+label{
+    font-size: small;
+    color: black;
+    font-weight: 500;
+    margin-left: 0rem !important;
+}
+
+
+.info{
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 0.6rem;
+}
+
+
+
+@media (max-width: 767px) {
+
+    /* heading and button */
+    .heading-column{
+        flex-direction: column;
+        /* margin-bottom: 0.5rem; */
+    }
+   
+    .button-width{
+        width: 100%;
+        /* margin-bottom: 0.5rem; */
+       
+    }
+    
+    .heading-top{
+        width: 100% ;
+        text-align: left ;
+    }
+
+   
+    .action-btn-gap {
+        justify-content: center !important;
+        /* width: none !important; */
+    }
+}

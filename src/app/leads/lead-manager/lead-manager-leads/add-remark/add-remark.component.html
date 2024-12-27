@@ -1,0 +1,55 @@
+<div class="header d-flex jc-sb align-items-center ">
+    <p class="heading">
+         Message</p>
+    <mat-icon mat-dialog-close="true">cancel</mat-icon>
+</div>
+
+
+<div class="main-container boxed space w-95">
+ 
+
+    <div>
+        <mat-label class="form-input-label"><span class="text-danger"></span>Description </mat-label>
+        <div class="calendar-input-field">
+            <mat-form-field appearance="outline" class="form-field h-40">
+                <input matInput class="input">
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div>
+        <mat-label class="form-input-label ">Next Follow up  </mat-label>
+        <div class="calendar-input-field date-picker w-auto">
+            <mat-form-field appearance="outline" class="form-field date">
+                <mat-datepicker-toggle matIconSuffix [for]="picker1" class=" w-99p">
+                    <svg matDatepickerToggleIcon xmlns="http://www.w3.org/2000/svg" width="1.4em"
+                        height="1.4em" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M2 19c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-8H2zM19 4h-2V3c0-.6-.4-1-1-1s-1 .4-1 1v1H9V3c0-.6-.4-1-1-1s-1 .4-1 1v1H5C3.3 4 2 5.3 2 7v2h20V7c0-1.7-1.3-3-3-3" />
+                    </svg>
+                </mat-datepicker-toggle>
+                <div class="date-border"></div>
+                <input matInput [matDatepicker]="picker1" class="input">
+                <mat-datepicker #picker1></mat-datepicker>
+            </mat-form-field>
+        </div>
+    </div>
+   
+   
+
+
+   
+
+
+
+    <!-- Lower Section -->
+    <mat-divider></mat-divider>
+
+   <div class="d-flex gap-2">
+    <button mat-raised-button color="warn">Cancle</button>
+    <button mat-raised-button class="bg-success">Save</button>
+</div>
+   
+</div>
+
+

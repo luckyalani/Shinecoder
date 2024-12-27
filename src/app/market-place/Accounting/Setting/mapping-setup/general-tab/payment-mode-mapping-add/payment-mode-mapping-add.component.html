@@ -1,0 +1,72 @@
+<div class="rounded">
+    <div class="d-flex jc-sb p-10 bg-light align-items-center">
+        <div class="d-flex align-items-center">
+            <span class="fw-medium fs-16">Payment mode mapping</span>
+        </div>
+        <svg class="close-btn" mat-dialog-close="true" xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em"
+            viewBox="0 0 32 32">
+            <path fill="#f70202"
+                d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2m5.4 21L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z" />
+        </svg>
+    </div>
+
+    <div class="w-full p-l-10 p-r-10">
+        <mat-label class="form-input-label"><span class="text-danger">*</span> Payment Mode</mat-label>
+        <mat-form-field appearance="outline" class="m-t-10">
+            <mat-select placeholder="Nothing Selected">
+                <mat-option value="Nothing Selected">Nothing Selected</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="p-l-10 p-r-10">
+        <p class="bg-light-blue">Sales</p>
+        <div class="d-flex gap-1 flex-wrap">
+            <div class="w-full">
+                <mat-label class="form-input-label"> Payment Account</mat-label>
+                <mat-form-field appearance="outline" class="m-t-10">
+                    <mat-select placeholder="Sales Income">
+                        <mat-option value="Sales Income">Sales Income</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="w-full">
+                <mat-label class="form-input-label"> Deposit to</mat-label>
+                <mat-form-field appearance="outline" class="m-t-10">
+                    <mat-select placeholder="Any">
+                        <mat-option value="Any">Any</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+    <div class="p-l-10 p-r-10">
+        <p class="bg-light-blue">Expenses</p>
+        <div class="d-flex gap-1 flex-wrap">
+            <div class="w-full">
+                <mat-label class="form-input-label"> Payment Account</mat-label>
+                <mat-form-field appearance="outline" class="m-t-10">
+                    <mat-select placeholder="Sales Income">
+                        <mat-option value="Sales Income">Sales Income</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="w-full">
+                <mat-label class="form-input-label"> Deposit to</mat-label>
+                <mat-form-field appearance="outline" class="m-t-10">
+                    <mat-select placeholder="Any">
+                        <mat-option value="Any">Any</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+   
+    <mat-divider></mat-divider>
+    <div class="d-flex gap-1 p-10">
+        <button mat-dialog-close="true" class="bg-close" mat-raised-button color="primary">Close</button>
+        <button mat-dialog-close="true" class="bg-success" mat-raised-button> Save</button>
+
+
+    </div>
+
+</div>

@@ -1,0 +1,9 @@
+.last{
+    border: 1px solid #8080809e;
+    width: 12rem;
+    margin-left: 2rem;
+}
+
+.rounded{
+    border-radius: 40% !important;
+}

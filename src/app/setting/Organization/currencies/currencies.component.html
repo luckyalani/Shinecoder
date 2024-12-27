@@ -1,0 +1,54 @@
+<div class="main-container boxed space ">
+
+    <div class="d-flex gap-1 align-items-center">
+        <div class="icon_and_heading">
+            <h1 class="text-dark ">Currencies</h1>
+        </div>
+    </div>
+    <div class="form">
+        <div class=" d-flex gap-1 flex-wrap">
+            <button routerLink="/setting/organization/profile" class="disactive">Profile</button>
+            <button routerLink="/setting/organization/brand" class="disactive">Brand</button>
+            <button routerLink="/setting/organization/branches" class="disactive">Branches</button>
+            <button routerLink="/setting/organization/currencies" class="active">Currencies</button>
+            <button routerLink="/setting/organization/manage-subscription" class="disactive word-nowrap">Manage Subscription</button>
+        </div>
+    </div>
+    <div class="form">
+        <div class="table-div">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S. No </th>
+                        <th>Name</th>
+                        <th>Symbol</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>UAE Dirham</td>
+                        <td>AED</td>
+                        <td>
+                            <div class="d-flex align-items-center action-btn-gap">
+
+                                <span class="action-btn primary" ><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="#0163d2"
+                                            d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83l3.75 3.75z" />
+                                    </svg></span>
+                                <span class="action-btn danger" (click)="delete()" ><svg xmlns="http://www.w3.org/2000/svg" width="0.6em"
+                                        height="0.6em" viewBox="0 0 24 24">
+                                        <path fill="#da0000"
+                                            d="M9 3v1H4v2h1v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1V4h-5V3zM7 6h10v13H7zm2 2v9h2V8zm4 0v9h2V8z" />
+                                    </svg></span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

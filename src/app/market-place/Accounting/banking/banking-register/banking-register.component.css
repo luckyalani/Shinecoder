@@ -1,0 +1,56 @@
+.date-picker .mat-mdc-form-field {
+    width: 100% !important;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-div {
+    gap: 5px;
+
+}
+
+.icon-search {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+}
+.grid{
+    display: grid;
+}
+.grid-cols-4{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media (max-width: 1023px) {
+    .grid-cols-4{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+@media (max-width: 767px) {
+
+    .right-icon {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .icon-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar {
+        display: flex;
+    }
+
+    .cards {
+        justify-content: space-between;
+    }
+}
+@media (max-width: 575px) {
+    .grid-cols-4{
+        grid-template-columns: 1fr ;
+    }
+
+}

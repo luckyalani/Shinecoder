@@ -1,0 +1,76 @@
+.space {
+    /* padding: 1rem; */
+    width: 60vw;
+}
+
+.header {
+    background-color: #f6f6f6;
+    padding: 0 1rem;
+}
+
+mat-icon {
+    color: red;
+    cursor: pointer;
+}
+
+radio-btns 
+.heading {
+    font-weight: 500;
+    color: black;
+}
+.main-div{
+    padding: 1rem;
+}
+
+.radio-btns {
+    display: flex;
+    flex-direction: column;
+}
+
+.des-heading {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.selected-form-field {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+}
+
+.icon-add{
+    height: 1.8rem !important;
+    width: 3rem !important;
+    position: absolute;
+    left: 0.9px;
+    border-right: 0.1rem solid gray;
+    background-color: gray;
+    padding-top: 0.3rem;
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+    bottom: 0.2rem;
+}
+.mat-input{
+    width: 100% !important;
+}
+
+
+
+.mat-mdc-raised-button:not(:disabled) {
+    /* color: var(--mdc-protected-button-label-text-color, inherit); */
+    margin: 10px !important;
+    margin-left: 1rem !important;
+}
+
+.label-2{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    color: #000;
+    margin-bottom: 0.5rem;
+
+}
+

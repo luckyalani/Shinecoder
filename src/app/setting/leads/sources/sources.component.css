@@ -1,0 +1,52 @@
+.search-bar {
+    position: relative;
+  }
+  
+  .icon-search {
+    position: absolute;
+    top: 5px;
+    left: 1px;
+  }
+  
+  @media (max-width: 767px) {
+    /* heading and button */
+    .heading-column {
+      /* flex-direction: column; */
+      /* margin-bottom: 0.5rem; */
+    }
+    .source-sercha .mat-mdc-raised-button:not(:disabled) {
+      width: 30% !important;
+    }
+    .button-width {
+      width: 100%;
+      /* margin-bottom: 0.5rem; */
+    }
+  
+    .heading-top {
+      width: 100%;
+      text-align: left;
+    }
+  
+    .icon-bar {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .search-bar {
+      display: flex;
+    }
+  
+    /* .search-div {
+          flex-direction: column;
+          gap: 10px;
+      } */
+  
+    .action-btn-gap {
+      justify-content: center !important;
+      /* width: none !important; */
+    }
+  }
+  
+  .delete-with-text{
+    font-size: 10px !important;
+  }

@@ -1,0 +1,82 @@
+<div class="main-container boxed space">
+    <!-- <div>
+        <h1 class="fw-medium fs-26 m-l-3">#50 - Kieran Lowe </h1>
+    </div> -->
+
+    <div class="header d-flex jc-sb align-items-center ">
+        <p class="heading">#289 - Angelo mio</p>
+        <mat-icon mat-dialog-close="true">cancel</mat-icon>
+    </div>
+
+    <div class="subject-tab box-shadow">
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="tab-group div-2 box-shadow">
+            <!-- --------------------------Proposal------------------------ -->
+            <mat-tab label="Proposal" class="rounded ">
+                <ng-template mat-tab-label>
+                    All
+                </ng-template>
+                <app-view-stepper-all></app-view-stepper-all>
+             
+            </mat-tab>
+            <!-- --------------------------Propopsal Tab End------------------------ -->
+
+            <!-- --------------------------Comments Tab Start------------------------ -->
+            <mat-tab label="Comments">
+                <ng-template mat-tab-label>
+                    Call Details
+                </ng-template>
+            <div class="d-flex jc-c ">
+                <input type="text" id="text">
+            </div>
+            </mat-tab>
+            <!-- --------------------------Comments Tab End------------------------ -->
+
+            <!-- --------------------------Reminders Tab Start------------------------ -->
+            <mat-tab label="Reminders">
+                <ng-template mat-tab-label>
+                    Sms
+                </ng-template>
+
+                <div class="d-flex jc-c ">
+                    <input type="text" id="text">
+                </div>
+
+            </mat-tab>
+            <!-- --------------------------Reminder Tab End ------------------------ -->
+
+            <!-- --------------------------Tasks Tab Start------------------------ -->
+            <mat-tab label="Tasks">
+                <ng-template mat-tab-label>
+                    Recordings
+                </ng-template>
+
+                
+                <div class="d-flex jc-c ">
+                    <input type="text" id="text">
+                </div>
+
+
+            </mat-tab>
+            <!-- --------------------------Notes------------------------ -->
+            <mat-tab label="Notes">
+                <ng-template mat-tab-label>
+                    Conference
+                </ng-template>
+                <div class="d-flex jc-c ">
+                    <input type="text" id="text">
+                </div>
+                        </mat-tab>
+            <!-- --------------------------Templets------------------------ -->
+            <mat-tab label="Templates">
+                <!-- <app-common></app-common> -->
+                   <ng-template mat-tab-label>
+                    Remarks
+                </ng-template>
+                
+                <app-view-stepper-remark></app-view-stepper-remark>
+           
+              </mat-tab>
+        
+        </mat-tab-group>
+    </div>
+</div>

@@ -1,0 +1,57 @@
+<div class="main-container boxed space">
+    <div class="d-flex jc-sb">
+        <p class="text-dark p-l-5">Multi channel two factor</p>
+    </div>
+    <div class="linkdiv text-14 p-10 m-b-10 ">
+        <div class="linkdiv-text">
+            <a class="" routerLink="/market-place/multi-channel-two-factor" routerLinkActive="Active"> Multichannel
+                Two
+                Factor Authentication </a>
+        </div>
+        <div class="linkdiv-text">
+            <a class="" routerLink="/market-place/multi-channel-two-factor-google-authenticator"
+                routerLinkActive="Active">Google
+                authenticator Settings
+            </a>
+        </div>
+        <div class="linkdiv-text">
+            <a class="" routerLink="/market-place/multi-channel-two-factor-whatsapp" routerLinkActive="Active">
+                WhatsApp
+                Settings</a>
+        </div>
+        <div class="linkdiv-text">
+            <a class="" routerLink="/market-place/multi-channel-two-factor-sms" routerLinkActive="Active"> SMS
+                Settings</a>
+        </div>
+    </div>
+
+    <div class="p-10 input-with-checkbox ">
+
+        <mat-checkbox color="primary">Enable Google Authenticator </mat-checkbox>
+        <div class="m-l-20" >
+            <mat-label class="form-input-label">Secret Key</mat-label>
+            <div class="selected-form-field">
+                <svg class="icon-add" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17.651 7.65a7.131 7.131 0 0 0-12.68 3.15M18.001 4v4h-4m-7.652 8.35a7.13 7.13 0 0 0 12.68-3.15M6 20v-4h4" />
+                </svg>
+                <select name="" id="" class="mat-input">
+                    <option value="">DTKWNBJY2MW02GKI</option>
+                </select>
+            </div>
+            <p class="text-red m-t-10 ">Note: Make sure the security key is generated when you enable the Google Authenticator feature. When you update this key, the QR code
+                will also be updated so please notify the user to re-scan the QR code when you update it!</p>
+        </div>
+
+
+    </div>
+    <div class="d-flex gap-1 p-10">
+        <button mat-dialog-close="true"
+            class=" mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base "
+            mat-raised-button color="warn">Cancel</button>
+        <button mat-dialog-close="true"
+            class="bg-success mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base "
+            mat-raised-button> Save</button>
+    </div>
+</div>

@@ -1,0 +1,128 @@
+<div class="main-container boxed space manuf-tab">
+    <div class="d-flex align-items-center m-b-10">
+        <div>
+            <h1 class="text-dark text-primary m-0 m-r-5">Manufacturing</h1>
+        </div>
+        <div class="line-div">
+            <mat-icon class="arrow-icon">square</mat-icon>
+            <p class="line "></p>
+        </div>
+    </div>
+    <div class="form">
+        <!-- -------------------------------Laser Div Start--------------------------- -->
+        <div>
+            <div class="p-10 box-shadow "><button mat-raised-button color="primary">Laser</button>
+            </div>
+            <div class="d-flex flex-wrap gap-3 p-10 gray">
+                <!-- Left Side -->
+                <div class="w-full">
+                    <div class="">
+                        <mat-label class="form-input-label">Code
+                        </mat-label>
+                        <div class="m-t-10">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" placeholder="LMT">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="m-t-10">
+                        <mat-label class="form-input-label">Working Hours
+                        </mat-label>
+                        <div class="m-t-10">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" placeholder="Shift 1">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Side -->
+                <div class="w-full">
+                    <div class="">
+                        <mat-label class="form-input-label">Work center Name
+                        </mat-label>
+                        <div class="m-t-10">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" placeholder="Laser Cut">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------------------------------Laser Div End--------------------------- -->
+
+        <!-- -------------------------------Production Information Div Start--------------------------- -->
+        <div>
+            <div class="p-10 box-shadow "><button mat-raised-button color="primary">Production Information</button>
+            </div>
+            <div class="d-flex flex-wrap gap-3 p-10 gray">
+                <!-- Left Side -->
+                <div class="w-full">
+                    <div>
+                        <mat-label class="form-input-label">Time Efficiency (%)</mat-label>
+                        <div class="m-t-10">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" placeholder="100">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="m-t-10">
+                        <mat-label class="form-input-label">Capacity</mat-label>
+                        <div class="m-t-10">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" placeholder="1">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="m-t-10">
+                        <mat-label class="form-input-label">Time before prod (m)</mat-label>
+                        <div class="m-t-10">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" placeholder="0">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Side -->
+                <div class="w-full">
+                    <div>
+                        <mat-label class="form-input-label">Cost per hour</mat-label>
+                        <div class="m-t-10">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" placeholder="0">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="m-t-10">
+                        <mat-label class="form-input-label">OEE Target (%)</mat-label>
+                        <div class="m-t-10">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" placeholder="90">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="m-t-10">
+                        <mat-label class="form-input-label">Time after prod</mat-label>
+                        <div class="m-t-10">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" placeholder="0">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------------------------------Production Information Div End--------------------------- -->
+
+
+
+        <!-- -------------------------------Internal notes Div End--------------------------- -->
+    </div>
+    <hr class="m-t-20">
+    <div class="d-flex gap-1 p-10">
+        <button routerLink="/market-place/manufacturing/add-work-center" mat-raised-button color="primary">Edit Work Center</button>
+        <button routerLink="/market-place/manufacturing/add-work-center" mat-raised-button color="primary">Add Work Center</button>
+        <button mat-raised-button class="bg-close">Close</button>
+    </div>
+
+</div>

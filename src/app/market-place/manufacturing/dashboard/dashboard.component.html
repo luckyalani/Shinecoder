@@ -1,0 +1,171 @@
+<div class="main-container boxed space manuf-tab">
+    <div class="d-flex align-items-center m-b-10">
+        <div>
+            <h1 class="text-dark text-primary m-0 m-r-5">Manufacturing</h1>
+        </div>
+        <div class="line-div">
+            <mat-icon class="arrow-icon">square</mat-icon>
+            <p class="line "></p>
+        </div>
+    </div>
+
+    <div class="d-flex flex-wrap gap-1 m-10">
+        <div class="w-full">
+            <mat-label class="form-input-label">Measures</mat-label>
+            <mat-form-field appearance="outline" class="m-t-5">
+                <mat-select placeholder="Count">
+                    <mat-option value="Count">Count</mat-option>
+                    <mat-option value="Count">Count</mat-option>
+                    <mat-option value="Count">Count</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="w-full">
+            <mat-label class="form-input-label">Stage</mat-label>
+            <mat-form-field appearance="outline" class="m-t-5">
+                <mat-select placeholder="Ever">
+                    <mat-option value="Ever">Ever</mat-option>
+                    <mat-option value="Ever">Ever</mat-option>
+                    <mat-option value="Ever">Ever</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="form">
+        <div class="fs-24 fw-medium m-10 p-l-20">Manufacturing order</div>
+        <canvasjs-chart [options]="chartOptions" [styles]="{width: '100%', height:'360px'}"></canvasjs-chart>
+    </div>
+    <div class="d-flex flex-wrap gap-1 m-10 ">
+        <div class="w-full">
+            <mat-label class="form-input-label">Measures</mat-label>
+            <mat-form-field appearance="outline" class="m-t-5">
+                <mat-select placeholder="Count">
+                    <mat-option value="Count">Count</mat-option>
+                    <mat-option value="Count">Count</mat-option>
+                    <mat-option value="Count">Count</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="w-full">
+            <mat-label class="form-input-label">Period</mat-label>
+            <mat-form-field appearance="outline" class="m-t-5">
+                <mat-select placeholder="All  Time">
+                    <mat-option value="All  Time">All Time</mat-option>
+                    <mat-option value="All  Time">All Time</mat-option>
+                    <mat-option value="All  Time">All Time</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="form">
+        <div class="fs-24 fw-medium m-10 p-l-20">Work Order</div>
+        <canvasjs-chart [options]="chartOptions1" [styles]="{width: '100%', height:'360px'}"></canvasjs-chart>
+    </div>
+
+    <div class="form">
+        <div class="fw-medium fs-16 m-10 p-b-20">Work centers</div>
+        <div class="grid grid-cols">
+            <mat-card class="first rounded">
+                <mat-card-header class="d-flex gap-1 ">
+                    <img mat-card-image src="/assets/images/Icon.png" class="dashboard-icon">
+                    <div>
+                        <p class="fw-medium fs-18 m-0">SCRP</p>
+                        <p class="fw-normal m-0 fs-14">Scarp</p>
+                    </div>
+                </mat-card-header>
+
+                <mat-card-content class="content fw-medium">
+                    <div class="m-0 text-primary fs-14">Work Order</div>
+                    <div class="d-flex jc-sb b-b-pink fs-14">
+                        <span>To Launch</span>
+                        <span>0</span>
+                    </div>
+                    <div class="d-flex jc-sb b-b-pink fs-14">
+                        <span>In Progress</span>
+                        <span>0</span>
+                    </div>
+                    <div class="d-flex jc-sb b-b-pink fs-14">
+                        <span>Late</span>
+                        <span>0</span>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+            <mat-card class="secound rounded">
+                <mat-card-header class="d-flex gap-1 ">
+                    <img mat-card-image src="/assets/images/Icon.png" class="dashboard-icon">
+                    <div>
+                        <p class="fw-medium fs-18 m-0">INVTRY</p>
+                        <p class="fw-normal m-0 fs-14">Inventory</p>
+                    </div>
+                </mat-card-header>
+
+                <mat-card-content class="content fw-medium">
+                    <div class="m-0 text-primary fs-14">Work Order</div>
+                    <div class="d-flex jc-sb b-b-pink fs-14">
+                        <span>To Launch</span>
+                        <span>0</span>
+                    </div>
+                    <div class="d-flex jc-sb b-b-pink fs-14">
+                        <span>In Progress</span>
+                        <span>0</span>
+                    </div>
+                    <div class="d-flex jc-sb b-b-pink fs-14">
+                        <span>Late</span>
+                        <span>0</span>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+            <mat-card class="third rounded">
+                <mat-card-header class="d-flex gap-1 ">
+                    <img mat-card-image src="/assets/images/Icon.png" class="dashboard-icon">
+                    <div>
+                        <p class="fw-medium fs-18 m-0">MLTG</p>
+                        <p class="fw-normal m-0 fs-14">Melting</p>
+                    </div>
+                </mat-card-header>
+
+                <mat-card-content class="content fw-medium">
+                    <div class="m-0 text-primary fs-14">Work Order</div>
+                    <div class="d-flex jc-sb b-b-pink fs-14">
+                        <span>To Launch</span>
+                        <span>0</span>
+                    </div>
+                    <div class="d-flex jc-sb b-b-pink fs-14">
+                        <span>In Progress</span>
+                        <span>0</span>
+                    </div>
+                    <div class="d-flex jc-sb b-b-pink fs-14">
+                        <span>Late</span>
+                        <span>0</span>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+            <mat-card class="fourth rounded">
+                <mat-card-header class="d-flex gap-1 ">
+                    <img mat-card-image src="/assets/images/Icon.png" class="dashboard-icon">
+                    <div>
+                        <p class="fw-medium fs-18 m-0">PRCSNG</p>
+                        <p class="fw-normal m-0 fs-14">Processing</p>
+                    </div>
+                </mat-card-header>
+
+                <mat-card-content class="content fw-medium">
+                    <div class="m-0 text-primary fs-14">Work Order</div>
+                    <div class="d-flex jc-sb b-b-pink fs-14">
+                        <span>To Launch</span>
+                        <span>0</span>
+                    </div>
+                    <div class="d-flex jc-sb b-b-pink fs-14">
+                        <span>In Progress</span>
+                        <span>0</span>
+                    </div>
+                    <div class="d-flex jc-sb b-b-pink fs-14">
+                        <span>Late</span>
+                        <span>0</span>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+
+        </div>
+    </div>
+</div>

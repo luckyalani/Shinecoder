@@ -1,0 +1,16 @@
+.accept {
+    background-color: #CDFFD2;
+    color: #00C814;
+    border: 1px solid #00C814;
+
+}
+
+
+
+.d-flex {
+    flex-wrap: wrap;
+}
+
+.side-btn span {
+    height: 2rem;
+}

@@ -1,0 +1,120 @@
+<div class="main-container boxed space">
+    <div class="instructions">
+        <ol>
+            <li> Your CSV data should be in the format below. The first line of your CSV file should be the column
+                headers as in the table example. Also make sure that your file is <b>UTF-8</b> to avoid unnecessary <b>encoding
+                problems.</b></li>
+            <li> If the column <b>you are trying to import is date make sure that is formatted in format Y-m-d
+                (2024-01-30).</b></li>
+            <li> Make sure you configure the default contact permission in Setup->Settings->Customers to get the best
+                results like auto assigning contact permissions and email notification settings based on the permission.</li>
+            <li class="special-list"> Duplicate email rows won't be imported.</li>
+        </ol>
+
+    </div> 
+
+    <div class="header  m-t-10 m-b-10 ">
+        <div class="icon_and_heading">
+            
+            <h1 class="text-dark ">Import Customers</h1>
+        </div>
+        <button mat-raised-button color="primary" class="btn"><mat-icon>download</mat-icon>Download Sample</button>
+    </div>
+    
+
+    <div class="form">
+       <div  class="table-div">
+        <table >
+            <tr>
+                <th><span color="danger">*</span>Firstname</th>
+                <th><span color="danger">*</span>Lastname</th>
+                <th><span color="danger">*</span>Email</th>
+                <th>Contact Phone Number</th>
+                <th>Position</th>
+                <th><span color="danger">*</span>Company</th>
+                <th>Vat</th>
+                <th>Phone Number</th>
+                <th>Country</th>
+                <th>City</th>
+                <th>Zip</th>
+                <th>State</th>
+                <th>Address</th>
+                <th>Website</th>
+                <th>Billing Street</th>
+                <th>Billing City</th>
+                <th>Billing State</th>
+                <th>Billing Zip</th>
+                <th>Billing Country</th>
+                <th>Shipping Street</th>
+                <th>Shipping City</th>
+                <th>Shipping State</th>
+                <th>Shipping Zip</th>
+                <th>Shipping Country</th>
+                <th>Longitute</th>
+                <th>Latitude</th>
+                <th>Stripe Id</th>
+            </tr>
+            <tr>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+            </tr>
+        </table>
+       </div> 
+        
+
+        <div class="importing">
+            <div class="choosing">
+                <p><span>*</span> Choose CSV File</p>
+                <img src="assets/images/Group.png" alt="">
+            </div>
+            <div class="groups">
+                <label>Groups</label>
+                    <div class="selected-form-field">
+                        <mat-icon class="icon-add">add</mat-icon>
+                        <select name="" id="" class="mat-input input-2">
+                            <option value="">Nothing selected</option>
+                        </select>
+                        <span class="dual-down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15"><path fill="#808080" d="M7.5 12L0 4h15z"/></svg></span>
+                    </div>
+                    <label>Default Password for all Contacts</label>
+                    <input type="text" class="mat-input">
+            </div>
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <button mat-raised-button color="primary">Import</button>
+        <button mat-raised-button color="primary">Simulate Import</button>
+
+    </div>
+
+    
+
+
+
+</div>

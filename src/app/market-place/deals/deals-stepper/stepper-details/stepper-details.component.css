@@ -1,0 +1,44 @@
+.f-w-5{
+    font-weight:500;
+}
+.px-10{
+    padding-inline: 10px;
+}
+.grid{
+        display: grid;
+        grid-template-columns:  auto auto;
+        grid-gap: 10px;
+}
+.bg-litegreen{
+    background: #CDFFD2;
+}
+.border-1-txt-green{
+color: #00C814;
+border: 1px solid #00C814;
+}
+.gap-5r{
+    gap: 5rem !important;
+}
+.text-blue {
+    color: #0163D2 !important;
+}
+.flex-wrap  {
+
+flex-wrap: wrap;
+}
+
+.py-10{
+    padding-block: 10px;
+}
+h3{
+    margin:unset;
+}
+.text-sm {
+    font-size: small;
+}
+.text-md {
+    font-size: medium;
+}
+.f-w-5{
+    font-weight:500;
+}

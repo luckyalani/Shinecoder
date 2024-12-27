@@ -1,0 +1,75 @@
+/* input-border */
+
+
+
+/* Text-area */
+.text-area,
+.mat-mdc-form-field-textarea-control {
+    height: 6rem;
+    overflow: hidden !important;
+    resize: none !important;
+    width: 100%;
+}
+
+::ng-deep .text-area .mat-mdc-form-field-input-control {
+    height: 6rem !important;
+}
+
+
+
+
+
+
+
+/* Table */
+.search-bar {
+    position: relative;
+}
+
+.search-div {
+    gap: 5px;
+
+}
+
+.icon-search {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+}
+
+@media (max-width: 767px) {
+
+    .right-icon {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .icon-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar {
+        display: flex;
+    }
+
+    .cards {
+        justify-content: space-between;
+    }
+
+    .flex-wrap {
+        flex-wrap: wrap;
+    }
+
+}
+
+.blue-text-div {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0163D2;
+    background-color: #DCE9FF;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}

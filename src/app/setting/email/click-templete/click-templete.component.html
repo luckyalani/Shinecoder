@@ -1,0 +1,1122 @@
+<div class="main-container boxed space">
+    <div>
+        <h1 class="text-dark">Email</h1>
+    </div>
+
+    <div class="form">
+        <div class="p-10 pb-0 fw-normal fs-16">New Ticket Opened (Opened by Staff, Sent to Customer)</div>
+        <mat-divider></mat-divider>
+
+        <div class="d-flex flex-wrap gap-2 p-10">
+            <!-- Left -->
+            <div class="w-full">
+                <div class="gray">
+                    <mat-label class="form-input-label"><span class="text-danger">*</span> Template Title
+                    </mat-label>
+                    <div class="m-t-10">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input"
+                                placeholder="New Ticket Opened (Opened by Staff, Sent to Customer)">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="m-t-10">
+                    <mat-label class="form-input-label"><span class="text-danger">*</span> From Name
+                    </mat-label>
+                    <div class="m-t-10">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="{companyname} | CRM">
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+            <!-- Right -->
+            <div class="w-full">
+                <div class="">
+                    <mat-label class="form-input-label"><span class="text-danger">*</span> Subject
+                    </mat-label>
+                    <div class="m-t-10">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input" placeholder="New Support Ticket Opened">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="m-t-10">
+                    <mat-checkbox class="example-margin" color="primary" checked>Send as Plaintext</mat-checkbox><br>
+                    <mat-checkbox class="example-margin" color="primary" checked>Disabled</mat-checkbox>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-10">
+            <p class="fw-medium fs-18 m-0">English</p>
+            <p class="fw-medium fs-14 m-0">Email Message</p>
+            <div class="ckeditorpart m-t-10">
+                <ckeditor [editor]="Editor" data="">
+                </ckeditor>
+            </div>
+        </div>
+
+
+        <div class="email p-10  gap-2 d-flex flex-wrap">
+            <!-- --------------------------Left----------------------- -->
+            <div class="w-45">
+                <mat-expansion-panel hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Slovak</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Ukrainian</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Finnish</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Polish</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Japanese</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Czech</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Persian</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Chinese</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Norwegian</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Spanish</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Romanian</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Turkish</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Dutch</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+            </div>
+
+            <!-- --------------------------Right----------------------- -->
+            <div class="w-45">
+
+                <mat-expansion-panel hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Ukrainian</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Vietnamese</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Portuguese_br</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>German</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>French</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Indonesia</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Swedish</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Russian</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Catalan</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Greek</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Italian</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Bulgarian</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel hideToggle class="m-t-20">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>Portuguese</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="p-15">
+                        <div class="">
+                            <mat-label class="form-input-label">Subject
+                            </mat-label>
+                            <div class="m-t-10">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <input matInput class="input" placeholder="New Support Ticket Opened">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="m-t-10">
+                            <mat-label class="form-input-label">Email Message
+                            </mat-label>
+                            <div class=" m-t-10">
+                                <ckeditor [editor]="Editor" data="">
+                                </ckeditor>
+                            </div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ------------------------------------------------------- -->
+    <div class="form">
+        <div class="p-10 pb-0 fw-normal fs-16">Available merge fields</div>
+        <mat-divider></mat-divider>
+        <div class="p-10">
+            <div class="p-20 rounded bg-yellow fw-medium fs-14">If ticket is imported with email piping and the contact
+                does not exists
+                in the
+                CRM the won't be replaced.
+            </div>
+            <!-- Client Detials Div Start -->
+            <div>
+                <div class="d-flex align-items-center m-b-10 m-t-5">
+                    <div>
+                        <h1 class="m-0 m-r-5 fs-20 fw-normal">Client</h1>
+                    </div>
+                    <div class="line-div">
+                        <mat-icon class="arrow-icon">square</mat-icon>
+                        <p class="line "></p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-1 p-10 gray">
+                    <div>
+                        <mat-label class="form-input-label">Contact Firstname
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Contact Firstname}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Contact Lastname
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Contact Lastname}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Contact Phone Number
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Contact Phone Number}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Contact Title
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Contact Title}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Contact Email
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Contact Email}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Client Company
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Client Company}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Client Phone Number
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Client Phone Number}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Client Country
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Client Country}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Client City
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Client City}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Client Zip
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Client Zip}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Client State
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Client State}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Client Address
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Client Address}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Client Vat Number
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Client Vat Number}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Client ID
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Client ID}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Client Website
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Client Website}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Client Detials Div End -->
+
+            <!-- Ticket Detials Div Start -->
+            <div>
+                <div class="d-flex align-items-center m-b-10 m-t-5">
+                    <div>
+                        <h1 class="m-0 m-r-5 fs-20 fw-normal">Ticket</h1>
+                    </div>
+                    <div class="line-div">
+                        <mat-icon class="arrow-icon">square</mat-icon>
+                        <p class="line "></p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-1 p-10 gray">
+                    <div>
+                        <mat-label class="form-input-label">Ticket ID
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Ticket ID}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Ticket URL
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Ticket URL}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Ticket Public URL
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Ticket Public URL}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Department
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Department}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Department Email
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Department Email}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Date Opened
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Date Opened}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Ticket Subject
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Ticket Subject}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Ticket Message
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Ticket Message}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Ticket Status
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Ticket Status}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Ticket Priority
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Ticket Priority}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Ticket Service
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Ticket Service}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Project name
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Project name}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Ticket Detials Div End -->
+
+            <!-- Other Detials Div Start -->
+            <div>
+                <div class="d-flex align-items-center m-b-10 m-t-5">
+                    <div>
+                        <h1 class="m-0 m-r-5 fs-20 fw-normal">Other</h1>
+                    </div>
+                    <div class="line-div">
+                        <mat-icon class="arrow-icon">square</mat-icon>
+                        <p class="line "></p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-1 p-10 gray">
+                    <div>
+                        <mat-label class="form-input-label">Logo URL
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Logo URL}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Logo image with URL
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Logo image with URL}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Dark logo image with URL
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Dark logo image with URL}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">CRM URL
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{CRM URL}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Admin URL
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Admin URL}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Main Domain
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Main Domain}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Company Name
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Company Name}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">Email Signature
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{Email Signature}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">(GDPR) Terms & Conditions URL
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{(GDPR) Terms & Conditions URL}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div>
+                        <mat-label class="form-input-label">(GDPR) Privacy Policy URL
+                        </mat-label>
+                        <div class="m-t-5">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" disabled placeholder="{(GDPR) Privacy Policy URL}">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Other Detials Div End -->
+        </div>
+    </div>
+
+    <hr class="m-t-20">
+    <div class="d-flex gap-1 m-t-10">
+        <button mat-raised-button color="warn">Cancle</button>
+        <button mat-raised-button class="bg-success">Save</button>
+    </div>
+</div>

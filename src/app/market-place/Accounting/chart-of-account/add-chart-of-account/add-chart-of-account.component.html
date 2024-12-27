@@ -1,0 +1,89 @@
+<div class="rounded">
+    <div class="d-flex jc-sb p-10 bg-light align-items-center">
+        <div class="d-flex align-items-center">
+            <span class="fw-medium fs-16">Account</span>
+        </div>
+        <svg class="close-btn" mat-dialog-close="true" xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em"
+            viewBox="0 0 32 32">
+            <path fill="#f70202"
+                d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2m5.4 21L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z" />
+        </svg>
+    </div>
+
+
+    <div class="d-flex flex wrap gap-1 p-10">
+        <div class="w-full">
+            <mat-label class="form-input-label"><span class="text-danger">*</span> Account type</mat-label>
+            <mat-form-field appearance="outline" class="m-t-10">
+                <mat-select placeholder="Accounts Receivable (A/R)">
+                    <mat-option value="Accounts Receivable (A/R)">Accounts Receivable (A/R)</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="w-full">
+            <mat-label class="form-input-label"><span class="text-danger">*</span> Detail type</mat-label>
+            <mat-form-field appearance="outline" class="m-t-10">
+                <mat-select placeholder="Accounts Receivable (A/R)">
+                    <mat-option value="Accounts Receivable (A/R)">Accounts Receivable (A/R)</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+    </div>
+
+
+    <div class="fs-normal fs-14 p-10 p-r-20">
+        Accounts receivable (also called A/R, Debtors, or Trade and other receivables) tracks money that customers owe
+        you for products or services, and payments customers make. Each customer has a register, which functions like an
+        Accounts receivable account for each customer.
+    </div>
+
+    <div class="d-flex flex wrap gap-1 p-10">
+        <div class="w-full">
+            <mat-label class="form-input-label"><span class="text-danger">*</span> Name
+            </mat-label>
+            <div class="m-t-10">
+                <mat-form-field appearance="outline" class="form-field">
+                    <input matInput class="input">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="w-full">
+            <mat-label class="form-input-label">Number
+            </mat-label>
+            <div class="m-t-10">
+                <mat-form-field appearance="outline" class="form-field">
+                    <input matInput class="input">
+                </mat-form-field>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="w-full p-10">
+        <mat-label class="form-input-label">Parent account</mat-label>
+        <mat-form-field appearance="outline" class="m-t-10">
+            <mat-select placeholder="None Selected">
+                <mat-option value="None Selected">None Selected</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+    <div class="ckeditorpart p-10">
+        <div class="labeldiv m-b-10">
+            <mat-label class="form-input-label">Description
+            </mat-label>
+        </div>
+        <ckeditor [editor]="Editor">
+        </ckeditor>
+    </div>
+
+    <mat-divider></mat-divider>
+    <div class="d-flex gap-1 p-10">
+        <button mat-dialog-close="true" class="bg-close" mat-raised-button color="primary">Close</button>
+        <button mat-dialog-close="true" class="bg-success" mat-raised-button> Save</button>
+
+
+    </div>
+
+</div>

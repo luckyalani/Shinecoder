@@ -1,0 +1,83 @@
+<div class="main-container boxed space">
+    <div class="d-flex jc-sb">
+        <p class="text-dark p-l-5">Multi channel two factor</p>
+    </div>
+    <div class="linkdiv text-14 p-10 m-b-10 ">
+        <div class="linkdiv-text">
+            <a class="" routerLink="/market-place/multi-channel-two-factor" routerLinkActive="Active"> Multichannel
+                Two
+                Factor Authentication </a>
+        </div>
+        <div class="linkdiv-text">
+            <a class="" routerLink="/market-place/multi-channel-two-factor-google-authenticator"
+                routerLinkActive="Active">Google
+                authenticator Settings
+            </a>
+        </div>
+        <div class="linkdiv-text">
+            <a class="" routerLink="/market-place/multi-channel-two-factor-whatsapp" routerLinkActive="Active">
+                WhatsApp
+                Settings</a>
+        </div>
+        <div class="linkdiv-text">
+            <a class="" routerLink="/market-place/multi-channel-two-factor-sms" routerLinkActive="Active"> SMS
+                Settings</a>
+        </div>
+
+    </div>
+
+    <div class="p-10 whatsapp-div">
+        <mat-checkbox color="primary">Enable WhatsApp</mat-checkbox>
+        <hr>
+        <div class="p-l-10">
+            <div>
+                <label class="form-input-label"> <span class="text-danger">*</span> Twilio Account SID</label>
+                <input type="text" class="mat-input">
+            </div>
+            <div>
+                <label class="form-input-label"> <span class="text-danger">*</span> Twilio Auth Token</label>
+                <input type="text" class="mat-input">
+            </div>
+            <div>
+                <label class="form-input-label"> <span class="text-danger">*</span> Twilio Sender phone Number For
+                    WhatsApp </label>
+                <input type="text" class="mat-input">
+            </div>
+            <div>
+                <label class="form-input-label"> <span class="text-danger">*</span> WhatsApp message Template</label>
+                <input type="text" class="mat-input" placeholder="Your login code for {{'{{1}}'}} is {{'{{2}}'}}">
+            </div>
+            <div class="text-list-div">
+                <p class="text-14">You need to create Whatsapp messages template on Twilio to use this feature. Please
+                    create a template
+                    with the following template
+                    (Only content in quotes) <span class="text-red"> "Your login code for {{'{{1}}'}} is
+                        {{'{{2}}'}}"!</span></p>
+                <p class="text-14"> You can refer this template: "Your login code for ((1)) is ((2))" </p>
+                <p class="text-14"> {{'{{1}}'}} will be replaced with your site ex "https://abc.com </p>
+                <p class="text-14"> {{'{{2}}'}} will be replaced with security code ex: <span
+                        class="text-red">123456</span> Your login code for https://abc.com/ is 123456
+                </p>
+                <p class="text-14"> Click <span class="text-blue">here</span> to see how to create detail.</p>
+            </div>
+            <div class="text-with-input-div">
+                <p class="text-blue-22">Test WhatsApp Config</p>
+
+                <label class="form-input-label"> Your WhatsApp Phonenumber</label>
+                <input type="text" class="mat-input  m-b-15">
+
+                <button class=" mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base "
+                    mat-raised-button color="primary">SEND TEST MASSAGE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex gap-1 p-10">
+        <button mat-dialog-close="true"
+            class=" mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base "
+            mat-raised-button color="warn">Cancel</button>
+        <button mat-dialog-close="true"
+            class="bg-success mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base "
+            mat-raised-button> Save</button>
+    </div>
+</div>

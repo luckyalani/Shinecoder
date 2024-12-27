@@ -1,0 +1,15 @@
+label {
+    margin: 0rem !important;
+}
+.dual-form{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+  
+}
+.dual-field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.8rem 0rem;
+}

@@ -1,0 +1,172 @@
+<div class="main-container boxed space ">
+
+    <div class="d-flex jc-sb align-items-center">
+        <div>
+            <h1 class="text-dark">Estimation</h1>
+        </div>
+    </div>
+
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="tab-group div-2 m-t-10">
+        <mat-tab class="rounded " label="General">
+            <div>
+                <div class="p-10">
+                    <div>
+                        <mat-label class="form-input-label"><span class="text-danger">*</span> Form
+                            name</mat-label>
+                        <div class="m-t-10">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="m-t-10">
+                        <p class="fs-12 m-0 fw-medium">Use Google Recaptcha</p>
+                        <mat-radio-group aria-label="Select an option" class="radio-btns">
+                            <mat-radio-button value="one" class="m-r-5" checked>Yes</mat-radio-button>
+                            <mat-radio-button value="two" class="m-r-5">No</mat-radio-button>
+                        </mat-radio-group>
+                    </div>
+                    <div class="m-t-10">
+                        <mat-label class="form-input-label"> <span class="d-flex align-items-center">
+                                <span class="text-danger m-r-5">*</span>
+                                <svg matTooltip="Subject is also visible to customer" matTooltipPosition="above"
+                                    xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                                    viewBox="0 0 1024 1024">
+                                    <path fill="black"
+                                        d="M512 64a448 448 0 1 1 0 896a448 448 0 0 1 0-896m23.744 191.488c-52.096 0-92.928 14.784-123.2 44.352c-30.976 29.568-45.76 70.4-45.76 122.496h80.256c0-29.568 5.632-52.8 17.6-68.992c13.376-19.712 35.2-28.864 66.176-28.864c23.936 0 42.944 6.336 56.32 19.712c12.672 13.376 19.712 31.68 19.712 54.912c0 17.6-6.336 34.496-19.008 49.984l-8.448 9.856c-45.76 40.832-73.216 70.4-82.368 89.408c-9.856 19.008-14.08 42.24-14.08 68.992v9.856h80.96v-9.856c0-16.896 3.52-31.68 10.56-45.76c6.336-12.672 15.488-24.64 28.16-35.2c33.792-29.568 54.208-48.576 60.544-55.616c16.896-22.528 26.048-51.392 26.048-86.592c0-42.944-14.08-76.736-42.24-101.376c-28.16-25.344-65.472-37.312-111.232-37.312m-12.672 406.208a54.272 54.272 0 0 0-38.72 14.784a49.408 49.408 0 0 0-15.488 38.016c0 15.488 4.928 28.16 15.488 38.016A54.848 54.848 0 0 0 523.072 768c15.488 0 28.16-4.928 38.72-14.784a51.52 51.52 0 0 0 16.192-38.72a51.968 51.968 0 0 0-15.488-38.016a55.936 55.936 0 0 0-39.424-14.784" />
+                                </svg>Language</span>
+                        </mat-label>
+                        <div class="m-t-10">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" placeholder="Name">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="m-t-10">
+                        <mat-label class="form-input-label"><span class="text-danger">*</span> Status
+                        </mat-label>
+                        <div class="m-t-10">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input">
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <div class="m-t-10">
+                        <mat-label class="form-input-label">Responsible (Assignee)</mat-label>
+                        <div class="m-t-10">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" placeholder="Nothing Selected">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                <mat-divider></mat-divider>
+                <div class="d-flex gap-1 p-10">
+                    <button mat-dialog-close="true" mat-raised-button class="bg-close">Close</button>
+                    <button mat-dialog-close="true" mat-raised-button class="bg-success">Save</button>
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab class="rounded " label="Branding">
+            <div>
+                <div class="p-10">
+                    <div>
+                        <mat-label class="form-input-label"><span class="text-danger">*</span> Submit button
+                            text</mat-label>
+                        <div class="m-t-10">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="input" placeholder="Submit">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-1 flex-wrap">
+                        <div class="m-t-10 w-full">
+                            <mat-label class="form-input-label">Pick Color</mat-label>
+                            <div class="m-t-10 ">
+                                <div class="color-picker d-flex">
+                                    <input type="color" matInput class="input">
+                                    <input matInput class="input" placeholder="#000000">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-t-10 w-full">
+                            <mat-label class="form-input-label">Pick Color</mat-label>
+                            <div class="m-t-10 ">
+                                <div class="color-picker d-flex">
+                                    <input type="color" matInput class="input">
+                                    <input matInput class="input" placeholder="#000000">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <mat-divider></mat-divider>
+                <div class="d-flex gap-1 p-10">
+                    <button mat-dialog-close="true" mat-raised-button class="bg-close">Close</button>
+                    <button mat-dialog-close="true" mat-raised-button class="bg-success">Save</button>
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab class="rounded " label="Submission">
+            <div>
+                <div class="p-10">
+                    <div class="">
+                        <p class="fs-12 m-0 fw-medium">What should happen after a visitor submits this form?</p>
+                        <mat-radio-group aria-label="Select an option" class="radio-btns">
+                            <mat-radio-button value="one" class="m-r-5" checked>Display thank you
+                                message</mat-radio-button><br>
+                            <mat-radio-button value="two" class="m-r-5">Redirect to another website</mat-radio-button>
+                        </mat-radio-group>
+                    </div>
+                    <div class="m-t-10">
+                        <mat-label class="form-input-label"><span class="text-danger">*</span> Message to show after
+                            form is succcesfully submitted</mat-label>
+                        <div class="text-area m-t-10">
+                            <mat-form-field appearance="outline" class="">
+                                <textarea matInput class="input"></textarea>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                <mat-divider></mat-divider>
+                <div class="d-flex gap-1 p-10">
+                    <button mat-dialog-close="true" mat-raised-button class="bg-close">Close</button>
+                    <button mat-dialog-close="true" mat-raised-button class="bg-success">Save</button>
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab class="rounded " label="Notifications">
+            <div>
+                <div class="p-l-10 m-t-10">
+                    <p class="fs-12 m-0 fw-medium">Notification settings</p>
+                    <mat-checkbox class="example-margin" color="primary" checked>Notify when estimate request
+                        submitted</mat-checkbox><br>
+                </div>
+                <mat-divider></mat-divider>
+                <div class="p-l-10">
+                    <p class="fs-12 m-0 fw-medium">Use Google Recaptcha</p>
+                    <mat-radio-group aria-label="Select an option" class="radio-btns">
+                        <mat-radio-button value="one" class="m-r-5" checked>Specific Staff Members</mat-radio-button>
+                        <mat-radio-button value="two" class="m-r-5">Staff members with roles</mat-radio-button>
+                        <mat-radio-button value="two" class="m-r-5">Responsible person</mat-radio-button>
+                    </mat-radio-group>
+                </div> 
+                <div class="p-10">
+                    <mat-label class="form-input-label"><span class="text-danger">*</span> Staff Members to Notify</mat-label>
+                    <mat-form-field appearance="outline" class="m-t-10">
+                        <mat-select placeholder="Nothing selected">
+                            <mat-option value="Nothing selected">Nothing selected</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+
+                <mat-divider></mat-divider>
+                <div class="d-flex gap-1 p-10">
+                    <button mat-dialog-close="true" mat-raised-button class="bg-close">Close</button>
+                    <button mat-dialog-close="true" mat-raised-button class="bg-success">Save</button>
+                </div>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+</div>

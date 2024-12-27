@@ -1,0 +1,9 @@
+
+<ng-container *ngIf="url !== '/'; else loginTemplate">
+  <app-sidenav></app-sidenav>
+</ng-container>
+
+<ng-template #loginTemplate>
+  <!-- User is not logged in, load AppLogInComponent -->
+  <app-log-in></app-log-in>
+</ng-template>

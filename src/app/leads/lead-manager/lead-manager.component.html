@@ -1,0 +1,40 @@
+<div class="main-container boxed space">
+    <div>
+        <h1 class="fw-medium fs-26 m-l-3 m-0 m-b-10">Lead Manager</h1>
+    </div>
+    <div class="subject-tab lead-manager box-shadow">
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="tab-group div-2 box-shadow">
+            <!-- --------------------------Dashboard Div Start------------------------ -->
+            <mat-tab label="Dashboard" class=" ">
+
+            </mat-tab>
+            <!-- --------------------------Dashboard Tab End------------------------ -->
+
+            <!-- --------------------------Meetings Settings Tab Start------------------------ -->
+            <mat-tab label="Meeting">
+                <app-leeds-manager-meeting></app-leeds-manager-meeting>
+            </mat-tab>
+            <!-- --------------------------Meetings Settings Tab End------------------------ -->
+
+            <!-- --------------------------Leads Settings Tab Start------------------------ -->
+            <mat-tab label="Leads">
+                <app-lead-manager-leads></app-lead-manager-leads>
+            </mat-tab>
+            <!-- --------------------------Leads Settings Tab End------------------------ -->
+
+            <!-- --------------------------SMS Settings Tab Start------------------------ -->
+            <mat-tab label="SMS">
+                <app-sms></app-sms>
+            </mat-tab>
+            <!-- --------------------------SMS Settings Tab End------------------------ -->
+
+            <!-- --------------------------Mailbox Settings Tab Start------------------------ -->
+            <mat-tab label="Mailbox">
+                <app-lead-manager-mailbox></app-lead-manager-mailbox>
+            </mat-tab>
+            <!-- --------------------------Mailbox Settings Tab End------------------------ -->
+
+
+        </mat-tab-group>
+    </div>
+</div>

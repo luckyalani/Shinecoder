@@ -1,0 +1,115 @@
+<div class="main-container boxed space">
+    <div class="d-flex jc-sb align-items-center heading-column ">
+        <div class="heading-top">
+            <h1 class="text-dark">Notes</h1>
+        </div>
+        <div class="button-width"><button mat-raised-button color="primary"><mat-icon>add</mat-icon>New Note</button>
+        </div>
+    </div>
+    <app-customer-headings></app-customer-headings>
+
+    <div class="form">
+        <div class="d-flex jc-sb align-items-center icon-bar m-t-10 m-b-10">
+            <div class="d-flex align-items-center action-btn-gap">
+                <select name="" id="" class="drop-down-left">
+                    <option value="">25</option>
+                    <option value="">26</option>
+                </select>
+                <span class="icon-btn bg-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="0.9em" height="1.2em" viewBox="0 0 384 512"><path fill="white" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24m-96 144c0 4.42-3.58 8-8 8h-8c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h8c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8h-8c-26.51 0-48-21.49-48-48v-32c0-26.51 21.49-48 48-48h8c4.42 0 8 3.58 8 8zm44.27 104H160c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h12.27c5.95 0 10.41-3.5 10.41-6.62c0-1.3-.75-2.66-2.12-3.84l-21.89-18.77c-8.47-7.22-13.33-17.48-13.33-28.14c0-21.3 19.02-38.62 42.41-38.62H200c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8h-12.27c-5.95 0-10.41 3.5-10.41 6.62c0 1.3.75 2.66 2.12 3.84l21.89 18.77c8.47 7.22 13.33 17.48 13.33 28.14c.01 21.29-19 38.62-42.39 38.62M256 264v20.8c0 20.27 5.7 40.17 16 56.88c10.3-16.7 16-36.61 16-56.88V264c0-4.42 3.58-8 8-8h16c4.42 0 8 3.58 8 8v20.8c0 35.48-12.88 68.89-36.28 94.09c-3.02 3.25-7.27 5.11-11.72 5.11s-8.7-1.86-11.72-5.11c-23.4-25.2-36.28-58.61-36.28-94.09V264c0-4.42 3.58-8 8-8h16c4.42 0 8 3.58 8 8m121-159L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9"/></svg>
+                </span>
+               <span class="icon-btn bg-success">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 384 512"><path fill="white" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24m60.1 106.5L224 336l60.1 93.5c5.1 8-.6 18.5-10.1 18.5h-34.9c-4.4 0-8.5-2.4-10.6-6.3C208.9 405.5 192 373 192 373c-6.4 14.8-10 20-36.6 68.8c-2.1 3.9-6.1 6.3-10.5 6.3H110c-9.5 0-15.2-10.5-10.1-18.5l60.3-93.5l-60.3-93.5c-5.2-8 .6-18.5 10.1-18.5h34.8c4.4 0 8.5 2.4 10.6 6.3c26.1 48.8 20 33.6 36.6 68.5c0 0 6.1-11.7 36.6-68.5c2.1-3.9 6.2-6.3 10.6-6.3H274c9.5-.1 15.2 10.4 10.1 18.4M384 121.9v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9"/></svg>
+               </span>
+                <span class="icon-btn bg-danger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="white" d="M8.267 14.68c-.184 0-.308.018-.372.036v1.178c.076.018.171.023.302.023c.479 0 .774-.242.774-.651c0-.366-.254-.586-.704-.586m3.487.012c-.2 0-.33.018-.407.036v2.61c.077.018.201.018.313.018c.817.006 1.349-.444 1.349-1.396c.006-.83-.479-1.268-1.255-1.268"/><path fill="white" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM9.498 16.19c-.309.29-.765.42-1.296.42a2.23 2.23 0 0 1-.308-.018v1.426H7v-3.936A7.558 7.558 0 0 1 8.219 14c.557 0 .953.106 1.22.319c.254.202.426.533.426.923c-.001.392-.131.723-.367.948m3.807 1.355c-.42.349-1.059.515-1.84.515c-.468 0-.799-.03-1.024-.06v-3.917A7.947 7.947 0 0 1 11.66 14c.757 0 1.249.136 1.633.426c.415.308.675.799.675 1.504c0 .763-.279 1.29-.663 1.615M17 14.77h-1.532v.911H16.9v.734h-1.432v1.604h-.906V14.03H17zM14 9h-1V4l5 5z"/></svg>
+                </span>
+                <span class="icon-btn bg-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="white" d="M18 3H6v4h12m1 5a1 1 0 0 1-1-1a1 1 0 0 1 1-1a1 1 0 0 1 1 1a1 1 0 0 1-1 1m-3 7H8v-5h8m3-6H5a3 3 0 0 0-3 3v6h4v4h12v-4h4v-6a3 3 0 0 0-3-3"/></svg>
+                </span>
+
+            </div>
+            <div class="d-flex align-items-center search-div">
+                <div class="search-bar">
+                    <mat-icon class="icon-search search-icon-2 ">search</mat-icon><input type="search" placeholder="Search"
+                        class="input search-input">
+                    <button mat-raised-button color="primary" class="search-button">Search</button>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div class="table-div ">
+            <table class="table-full">
+                <tr>
+                    <th>S.No.</th>
+                    <th>Description</th>
+                    <th>Added From</th>
+                    <th>Date Added</th>
+                    <th>Option</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td class="description">Hatter. Alice felt that she began nursing her child again, singing a sort of mixed flavour of
+                        cherry-tart, custard, pine-apple, roast turkey, toffee, and hot buttered toast, she very soon
+                        came upon a little hot tea upon its forehead the position.</td>
+                        <td>Lon Hauck</td>
+                        <td>2024-01-30 21:00:09</td>
+                        <td><div class="d-flex align-items-center action-btn-gap">
+                            <span (click)="editDialog()" class="action-btn primary"><svg xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em" viewBox="0 0 24 24"><path fill="#0163d2" d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83l3.75 3.75z"/></svg></span>
+                            <span (click)="deleteDialog()" class="action-btn danger"><svg xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em" viewBox="0 0 24 24"><path fill="#da0000" d="M9 3v1H4v2h1v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1V4h-5V3zM7 6h10v13H7zm2 2v9h2V8zm4 0v9h2V8z"/></svg></span>
+                        </div></td>
+            
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="description">Hatter. Alice felt that she began nursing her child again, singing a sort of mixed flavour of
+                        cherry-tart, custard, pine-apple, roast turkey, toffee, and hot buttered toast, she very soon
+                        came upon a little hot tea upon its forehead the position.</td>
+                        <td>Lon Hauck</td>
+                        <td>2024-01-30 21:00:09</td>
+                         <td><div class="d-flex align-items-center action-btn-gap">
+                            <span (click)="editDialog()" class="action-btn primary"><svg xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em" viewBox="0 0 24 24"><path fill="#0163d2" d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83l3.75 3.75z"/></svg></span>
+                            <span (click)="deleteDialog()" class="action-btn danger"><svg xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em" viewBox="0 0 24 24"><path fill="#da0000" d="M9 3v1H4v2h1v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1V4h-5V3zM7 6h10v13H7zm2 2v9h2V8zm4 0v9h2V8z"/></svg></span>
+                        </div></td>
+            
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="description">Hatter. Alice felt that she began nursing her child again, singing a sort of mixed flavour of
+                        cherry-tart, custard, pine-apple, roast turkey, toffee, and hot buttered toast, she very soon
+                        came upon a little hot tea upon its forehead the position.</td>
+                        <td>Lon Hauck</td>
+                        <td>2024-01-30 21:00:09</td>
+                         <td><div class="d-flex align-items-center action-btn-gap">
+                            <span (click)="editDialog()" class="action-btn primary"><svg xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em" viewBox="0 0 24 24"><path fill="#0163d2" d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83l3.75 3.75z"/></svg></span>
+                            <span (click)="deleteDialog()" class="action-btn danger"><svg xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em" viewBox="0 0 24 24"><path fill="#da0000" d="M9 3v1H4v2h1v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1V4h-5V3zM7 6h10v13H7zm2 2v9h2V8zm4 0v9h2V8z"/></svg></span>
+                        </div></td>
+            
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="description">Hatter. Alice felt that she began nursing her child again, singing a sort of mixed flavour of
+                        cherry-tart, custard, pine-apple, roast turkey, toffee, and hot buttered toast, she very soon
+                        came upon a little hot tea upon its forehead the position.</td>
+                        <td>Lon Hauck</td>
+                        <td>2024-01-30 21:00:09</td>
+                         <td><div class="d-flex align-items-center action-btn-gap">
+                            <span (click)="editDialog()" class="action-btn primary"><svg xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em" viewBox="0 0 24 24"><path fill="#0163d2" d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83l3.75 3.75z"/></svg></span>
+                            <span (click)="deleteDialog()" class="action-btn danger"><svg xmlns="http://www.w3.org/2000/svg" width="0.6em" height="0.6em" viewBox="0 0 24 24"><path fill="#da0000" d="M9 3v1H4v2h1v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1V4h-5V3zM7 6h10v13H7zm2 2v9h2V8zm4 0v9h2V8z"/></svg></span>
+                        </div></td>
+            
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</div>

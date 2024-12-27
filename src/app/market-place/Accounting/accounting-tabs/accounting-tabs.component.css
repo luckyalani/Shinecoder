@@ -1,0 +1,37 @@
+.line-div {
+    display: flex;
+    align-items: center;
+    gap: -1;
+    width: 100%;
+}
+
+.arrow-icon {
+    color: #0163D2;
+    font-size: 8px;
+    width: fit-content;
+    height: 100% !important;
+    transform: rotate(45deg);
+}
+
+.text-primary {
+    color: #0163D2;
+    width: max-content;
+}
+
+.line {
+    width: 100%;
+    background-color: #0163D2;
+    height: 1px;
+}
+
+::ng-deep .manuf-tab .mat-mdc-tab-labels {
+    flex-wrap: wrap !important;
+}
+
+/* ::ng-deep .manuf-tab .mdc-tab {
+    margin: 5px !important;
+} */
+
+::ng-deep .manuf-tab .mat-mdc-tab-body-wrapper {
+    box-shadow: unset !important;
+}

@@ -1,0 +1,72 @@
+<div class="p-10">
+    <div class="d-flex jc-sb align-items-center heading-column ">
+        <div class="heading-top">
+            <h1 class="text-dark">Finance</h1>
+        </div>
+        <div class="button-width">
+        </div>
+    </div>
+<app-general-setting-headings></app-general-setting-headings>
+    <div class="main-container boxed space manuf-tab">
+        
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="tab-group div-2">
+            <!-- General  -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+                    <span class="m-l-5">General</span>
+                </ng-template>
+                <app-finance-general></app-finance-general>
+            </mat-tab>
+
+            <!-- Branding  -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+
+                    <span class="m-l-5">Invoices</span>
+                </ng-template>
+                <app-finance-invoices></app-finance-invoices>
+            </mat-tab>
+
+            <!-- Submission -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+
+                    <span class="m-l-5">Credit Notes</span>
+                </ng-template>
+                <app-finance-credit-notes></app-finance-credit-notes>
+            </mat-tab>
+            <!-- Notifications -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+
+                    <span class="m-l-5"> Estimates </span>
+                </ng-template>
+                <app-finance-estimates></app-finance-estimates>
+            </mat-tab>
+            <!-- Notifications -->
+            <mat-tab class="rounded ">
+                <ng-template mat-tab-label class="d-flex align-items-center">
+
+                    <span class="m-l-5">Proposals</span>
+                </ng-template>
+                <app-finance-proposals></app-finance-proposals>
+            </mat-tab>
+
+
+
+
+        </mat-tab-group>
+    </div>
+
+
+    <hr>
+    <div class="d-flex gap-1 p-10">
+        <button mat-dialog-close="true"
+            class=" mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base "
+            mat-raised-button color="warn">Cancel</button>
+        <button mat-dialog-close="true"
+            class="bg-success"
+            mat-raised-button> Save</button>        
+        
+    </div>
+</div>

@@ -1,0 +1,102 @@
+<div class="rounded">
+    <div class="d-flex jc-sb p-10 bg-light align-items-center">
+        <div class="d-flex align-items-center">
+            <span class="fw-medium fs-16">New Department</span>
+        </div>
+        <svg class="close-btn" mat-dialog-close="true" xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em"
+            viewBox="0 0 32 32">
+            <path fill="#f70202"
+                d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2m5.4 21L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z" />
+        </svg>
+    </div>
+    <div class="p-10">
+        <div>
+            <mat-label class="form-input-label"><span class="text-danger">*</span>Department name</mat-label>
+            <div class="m-t-10">
+                <mat-form-field appearance="outline" class="form-field">
+                    <input matInput class="input">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="m-t-5">
+            <mat-checkbox class="example-margin " color="primary"><span class="">Hide from client?</span></mat-checkbox>
+        </div>
+        <div class="m-t-5">
+            <mat-label class="form-input-label">Department Email</mat-label>
+            <div class="m-t-10">
+                <mat-form-field appearance="outline" class="form-field">
+                    <input matInput class="input">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="m-t-5">
+            <p class="m-0 fw-normal fs-16">Email to ticket configuration</p>
+        </div>
+
+        <div class="m-t-5">
+            <mat-label class="form-input-label"> <span class="d-flex align-items-center">
+                    <svg matTooltip="Subject is also visible to customer" matTooltipPosition="above"
+                        xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 1024 1024">
+                        <path fill="black"
+                            d="M512 64a448 448 0 1 1 0 896a448 448 0 0 1 0-896m23.744 191.488c-52.096 0-92.928 14.784-123.2 44.352c-30.976 29.568-45.76 70.4-45.76 122.496h80.256c0-29.568 5.632-52.8 17.6-68.992c13.376-19.712 35.2-28.864 66.176-28.864c23.936 0 42.944 6.336 56.32 19.712c12.672 13.376 19.712 31.68 19.712 54.912c0 17.6-6.336 34.496-19.008 49.984l-8.448 9.856c-45.76 40.832-73.216 70.4-82.368 89.408c-9.856 19.008-14.08 42.24-14.08 68.992v9.856h80.96v-9.856c0-16.896 3.52-31.68 10.56-45.76c6.336-12.672 15.488-24.64 28.16-35.2c33.792-29.568 54.208-48.576 60.544-55.616c16.896-22.528 26.048-51.392 26.048-86.592c0-42.944-14.08-76.736-42.24-101.376c-28.16-25.344-65.472-37.312-111.232-37.312m-12.672 406.208a54.272 54.272 0 0 0-38.72 14.784a49.408 49.408 0 0 0-15.488 38.016c0 15.488 4.928 28.16 15.488 38.016A54.848 54.848 0 0 0 523.072 768c15.488 0 28.16-4.928 38.72-14.784a51.52 51.52 0 0 0 16.192-38.72a51.968 51.968 0 0 0-15.488-38.016a55.936 55.936 0 0 0-39.424-14.784" />
+                    </svg>IMAP Username</span>
+            </mat-label>
+
+            <div class="m-t-10">
+                <mat-form-field appearance="outline" class="form-field">
+                    <input matInput class="input">
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="m-t-5">
+            <mat-label class="form-input-label">IMAP Host</mat-label>
+            <div class="m-t-10">
+                <mat-form-field appearance="outline" class="form-field">
+                    <input matInput class="input">
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="m-t-5">
+            <mat-label class="form-input-label">Password</mat-label>
+            <div class="m-t-10">
+                <mat-form-field appearance="outline" class="form-field">
+                    <input matInput class="input">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="m-t-5">
+            <p class="fs-14 m-0 fw-normal">Encryption</p>
+            <mat-radio-group aria-label="Select an option" class="radio-btns">
+                <mat-radio-button value="" class="m-r-5">TLC</mat-radio-button>
+                <mat-radio-button value="" class="m-r-5">SSL</mat-radio-button>
+                <mat-radio-button value="" class="m-r-5">No Encryption</mat-radio-button>
+            </mat-radio-group>
+        </div>
+        <div class="m-t-5">
+            <mat-label class="form-input-label">Folder <span class="text-primary">Retrieve Folders</span></mat-label>
+            <mat-form-field appearance="outline" class="m-t-10">
+                <mat-select placeholder="Nothing Selected">
+                    <mat-option value="Nothing Selected">Nothing Selected</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="m-t-5">
+            <mat-checkbox class="example-margin" color="primary">Delete mail after import?</mat-checkbox>
+        </div>
+    </div>
+
+    <mat-divider></mat-divider>
+    <div class="m-t-10 m-b-10">
+        <div class="p-10 rounded last ">
+            Test IMAP Connection
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="d-flex gap-1 p-20">
+        <button mat-dialog-close="true" mat-raised-button class="bg-close">Close</button>
+        <button mat-dialog-close="true" mat-raised-button class="bg-success">Save</button>
+    </div>
+</div>

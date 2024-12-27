@@ -1,0 +1,202 @@
+<div class="main-container boxed space lead-manager">
+
+    <!-- Main Heading -->
+    <div>
+        <h1 class="fw-medium fs-26 m-l-3 m-0 m-b-10">File Sharing</h1>
+    </div>
+
+    <!-- Stepper Div -->
+    <div class="form">
+        <div class=" d-flex gap-1 flex-wrap">
+            <button routerLink="/market-place/file-sharing/file-manager" class="disactive">File Manager</button>
+            <button routerLink="/market-place/file-sharing/manage-sharing" class="disactive">Manage Sharing</button>
+            <button routerLink="/market-place/file-sharing/manage-downloads" class="disactive">Manage Downloads</button>
+            <button routerLink="/market-place/file-sharing/reports" class="active">Reports</button>
+            <button routerLink="/market-place/file-sharing/settings" class="disactive word-nowrap">Settings</button>
+        </div>
+    </div>
+
+
+    <div class="form">
+
+        <div class="arrow-line-main-div">
+
+            <div class="arrow-line-text-div">Charts Based Report</div>
+            <div class="arrow-line-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
+                    <path fill="rgba(1, 99, 210, 0.3)" d="m10 17l5-5l-5-5z" />
+                </svg>
+                <div class="line-div"></div>
+            </div>
+
+        </div>
+
+        <!-- Tabs Div Start -->
+        <div class="subject-tab box-shadow">
+            <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="tab-group div-2 box-shadow">
+
+                <!-- --------------------------Manage Sharing Div Start------------------------ -->
+                <mat-tab label="Manage Sharing" class="rounded ">
+
+                    <!-- Input Fields Div Start -->
+                    <div class="form grid-div">
+
+                        <div>
+                            <mat-label class="form-input-label">Employee </mat-label>
+                            <div class="mt2">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <mat-select class="select_in" placeholder="None Selected">
+                                        <mat-option value="Draft">None Selected</mat-option>
+                                        <mat-option value="Draft">Draft</mat-option>
+                                        <mat-option value="Draft">Draft</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+
+                        <div>
+                            <mat-label class="form-input-label">Hashshare </mat-label>
+                            <div class="mt2">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <mat-select class="select_in" placeholder="None Selected">
+                                        <mat-option value="Draft">None Selected</mat-option>
+                                        <mat-option value="Draft">Draft</mat-option>
+                                        <mat-option value="Draft">Draft</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+
+                        <div>
+                            <mat-label class="form-input-label">Medicine </mat-label>
+                            <div class="mt2">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <mat-select class="select_in" placeholder="Nothing selected">
+                                        <mat-option value="Draft">None Selected</mat-option>
+                                        <mat-option value="Draft">Draft</mat-option>
+                                        <mat-option value="Draft">Draft</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+
+                        <div>
+                            <mat-label class="form-input-label">Period </mat-label>
+                            <div class="mt2">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <mat-select class="select_in" placeholder="Year 2024">
+                                        <mat-option value="Draft">Year 2024</mat-option>
+                                        <mat-option value="Draft">Draft</mat-option>
+                                        <mat-option value="Draft">Draft</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Input Fields Div End -->
+
+
+                    <!-- Graphs Div Starts Here -->
+                    <div>
+
+                        <div class="graph-div col-graph">
+                            <canvasjs-chart [options]="sharedStatistics"
+                                [styles]="{width: '100%', height:'360px'}"></canvasjs-chart>
+                        </div>
+
+                    </div>
+                    <!-- Graphs Div Ends Here -->
+
+
+                </mat-tab>
+                <!-- --------------------------Manage Sharing Tab End------------------------ -->
+
+                <!-- --------------------------Downloads Tab Start------------------------ -->
+                <mat-tab label="Downloads" class="rounded ">
+
+                    <!-- Input Fields Div Start -->
+                    <div class="form grid-div">
+
+                        <div>
+                            <mat-label class="form-input-label">Employee </mat-label>
+                            <div class="mt2">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <mat-select class="select_in" placeholder="None Selected">
+                                        <mat-option value="Draft">None Selected</mat-option>
+                                        <mat-option value="Draft">Draft</mat-option>
+                                        <mat-option value="Draft">Draft</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+
+                        <div>
+                            <mat-label class="form-input-label">Hashshare </mat-label>
+                            <div class="mt2">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <mat-select class="select_in" placeholder="None Selected">
+                                        <mat-option value="Draft">None Selected</mat-option>
+                                        <mat-option value="Draft">Draft</mat-option>
+                                        <mat-option value="Draft">Draft</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+
+                        <div>
+                            <mat-label class="form-input-label">Medicine </mat-label>
+                            <div class="mt2">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <mat-select class="select_in" placeholder="Nothing selected">
+                                        <mat-option value="Draft">None Selected</mat-option>
+                                        <mat-option value="Draft">Draft</mat-option>
+                                        <mat-option value="Draft">Draft</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+
+                        <div>
+                            <mat-label class="form-input-label">Period </mat-label>
+                            <div class="mt2">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <mat-select class="select_in" placeholder="Year 2024">
+                                        <mat-option value="Draft">Year 2024</mat-option>
+                                        <mat-option value="Draft">Draft</mat-option>
+                                        <mat-option value="Draft">Draft</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Input Fields Div End -->
+
+
+                    <!-- Graphs Div Starts Here -->
+                    <div>
+
+                        <div class="graph-div col-graph">
+                            <canvasjs-chart [options]="downloadedStatistics"
+                                [styles]="{width: '100%', height:'360px'}"></canvasjs-chart>
+                        </div>
+
+                    </div>
+                    <!-- Graphs Div Ends Here -->
+
+
+                </mat-tab>
+                <!-- --------------------------Downloads Tab End------------------------ -->
+
+
+            </mat-tab-group>
+
+        </div>
+        <!-- Tabs Div End -->
+
+    </div>
+
+
+
+</div>

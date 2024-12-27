@@ -1,0 +1,20 @@
+.text-area, .mat-mdc-form-field-textarea-control {
+    height: 3rem !important;
+    overflow: hidden !important;
+    resize: none !important;
+    width: 100%;
+}
+
+.text-div{
+    font-weight: 500;
+    font-size: 14px;
+}
+p{
+    margin: 5px 0 5px 0;
+}
+.text-yellow{
+    color: orange
+}
+.text-blue{
+    color: rgb(62, 171, 221)
+}
